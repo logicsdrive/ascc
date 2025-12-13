@@ -1,0 +1,15 @@
+https://www.figma.com/proto/uDBYYSoSu9YdGxMSzjAiLK/ASCC-innerpages?node-id=47-642&viewport=-612%2C-19701%2C0.53&t=RgPPWvY0gjS7S0Nm-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=47%3A642&show-proto-sidebar=1
+
+prototype
+https://www.figma.com/proto/uDBYYSoSu9YdGxMSzjAiLK/ASCC-innerpages?node-id=47-642&viewport=-612%2C-19701%2C0.53&t=RgPPWvY0gjS7S0Nm-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=47%3A642&show-proto-sidebar=1
+
+
+figma
+https://www.figma.com/design/uDBYYSoSu9YdGxMSzjAiLK/ASCC-innerpages?node-id=573-5991&t=TiCM1lTBGOl3LjTT-0
+
+
+command to run php project
+php -S 127.0.0.1:8000
+
+command to compile custom-bootstrap file
+sass custom-bootstrap.scss custom-bootstrap.css --style=compressed --no-source-map

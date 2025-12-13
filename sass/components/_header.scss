@@ -1,0 +1,14 @@
+.site-header{
+    position: absolute; top: 0; left: 0; right: 0; z-index: 11; background: url(/images/header_pattern.png) center center no-repeat;
+
+    .container{display: flex; min-height: 160px; align-items: center; justify-content: space-between;}
+
+    .logo{display: block;}
+
+    .devider{width: 2px; height: 10px; display: block; background: white;}
+
+    .right{color: white; font-size: px_rem(18px);}
+    .list{gap: px_rem(40px);}
+    .menu-list{gap: px_rem(14px);}
+    .sign-list{gap: px_rem(30px);}
+}

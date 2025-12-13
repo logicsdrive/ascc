@@ -1,0 +1,19 @@
+.category-item{
+    background: rgba(245, 245, 245, 1); padding: 20px 30px;
+    border-radius: 22px; position: relative;
+
+    &:after{
+        content: ""; width: 1px; position: absolute;
+        top: 22px; bottom: 40px; left: 0; background: rgba(188, 173, 54, 1);
+    }
+
+    .image{height: 180px; overflow: hidden; background: #CCC; border-radius: 12px; margin: 0;}
+    .image img{width: 100%; height: 100%; object-fit: cover;}
+    .content{padding-top: px_rem(18px);}
+    .content h3{font-size: px_rem(22px); text-transform: capitalize; margin-bottom: 0.5rem; line-height: 140%;}
+    .content time{display: block; color: rgba(55, 55, 55, 1); font-size: 1rem; line-height: 124%;}
+
+    .booking-information{padding-top: px_rem(22px); justify-content: flex-end; display: flex; align-items: center; gap: 0.5rem;}
+    .booking-information .item{display: flex; font-size: 1rem; line-height: 1; text-decoration: none; color: rgba(0, 0, 0, 1); align-items: center;}
+    .booking-information .item:hover{color: var(--primary-color);}
+}

@@ -1,0 +1,15 @@
+.finearts{
+
+    .faqs{margin-bottom: px_rem(60px);}
+
+    .contact-info{
+        .title{font-size: px_rem(20px); line-height: 1; margin-bottom: px_rem(28px);}
+        .title a{text-decoration: none;}
+        .grid{
+            display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;
+        }
+        .item{display: flex; align-items: center; gap: 1rem; font-weight: 200;}
+        .item h5{font-size: px_rem(20px); margin-bottom: 0.25rem; line-height: 1; font-weight: 500;}
+        .item .icon{flex-shrink: 0;}        
+    }
+}

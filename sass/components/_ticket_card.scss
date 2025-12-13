@@ -1,0 +1,16 @@
+.ticket-card{
+    background: rgba(245, 245, 245, 1); padding: 20px; border-radius: 12px;
+    display: grid; grid-template-columns: 1fr auto; gap: px_rem(76px); align-items: center;
+
+    .title{font-size: px_rem(32px); line-height: px_rem(44px); margin-bottom: 10px; text-transform: uppercase;}
+    .text{
+        max-width: 382px; width: 100%;
+
+        .icon-list{gap: px_rem(35px); margin: px_rem(22px) 0;}
+        .icon-list .item{font-size: px_rem(14px);}
+
+        .btn{min-width: 200px;}
+    }
+    .image{margin: 0; width: 214px; height: 310px; border-radius: 12px; overflow: hidden; background: #CCC;}
+    .image img{width: 100%; height: 100%; object-fit: cover;}
+}

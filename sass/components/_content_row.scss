@@ -1,0 +1,19 @@
+.content-row{
+    padding: 65px 0; position: relative; margin-bottom: 80px;
+
+    .image{width: 60%; z-index: 1; position: absolute; left: 0; top: 0; bottom: 0; background: #CCC;}
+    .image img{width: 100%; height: 100%; object-fit: cover;}
+    
+    .container{display: flex; justify-content: flex-end; position: relative; z-index: 12;}
+
+    .content{
+        background: rgba(245, 245, 245, 1); padding: 65px 118px 65px 100px;
+        max-width: 60%;
+
+        .title{font-size: 44px; margin-bottom: 1rem; line-height: 1; text-transform: uppercase;}
+        p{margin-bottom: px_rem(20px);}
+    }
+
+    &:nth-child(even) .image{right: 0; left: auto;}
+    &:nth-child(even) .container{justify-content: flex-start;}
+}

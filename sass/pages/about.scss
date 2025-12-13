@@ -1,0 +1,16 @@
+.about{
+    .view1{
+        display: flex; align-items: center; justify-content: space-between; gap: 100px;
+
+        .text{max-width: 640px; width: 100%;}
+        .text h2{margin-bottom: px_rem(18px);}
+        .text p{margin-bottom: px_rem(20px);}
+        .image{margin: 0; background: #EEE; height: 436px; border-radius: 24px; max-width: 650px; width: 100%;}
+    }
+
+    .view2{}
+    
+    .view3{}
+    
+    .view4{}
+}

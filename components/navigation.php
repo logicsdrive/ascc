@@ -23,9 +23,9 @@
                 <a href="#" class="nav-item">Sub Menu Item 3</a>
             </div>
         </li>
-        <li><a href="#" class="nav-item">Fine Arts centre</a></li>
-        <li><a href="#" class="nav-item">Education</a></li>
+        <li><a href="/finearts.php" class="nav-item">Fine Arts centre</a></li>
+        <li><a href="/education.php" class="nav-item">Education</a></li>
         <li><a href="#" class="nav-item">Rentails</a></li>
-        <li><a href="#" class="nav-item">Contact Us</a></li>
+        <li><a href="/contact.php" class="nav-item">Contact Us</a></li>
     </ul>
 </div>

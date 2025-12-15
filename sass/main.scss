@@ -10,3 +10,9 @@
 @import "pages/finearts";
 @import "pages/booking-confirmation";
 @import "pages/contact";
+
+
+.tickets{
+    .title-1{margin-bottom: px_rem(28px);}
+    .tickets-holder{display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;}
+}

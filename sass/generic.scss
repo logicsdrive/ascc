@@ -1,23 +1,53 @@
-@font-face {
-    font-family: 'PFDinTextPro-Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('../fonts/light/PFDinTextPro-Light'),
-         url('../fonts/light/PFDinTextPro-Light.woff') format('woff');
+@font-face{
+    font-family: "PFDinTextArabicW21-Thin";
+    src: url("../fonts/thin/PFDinTextArabicW21-Thin.eot");
+    src: url("../fonts/thin/PFDinTextArabicW21-Thin.eot?#iefix")format("embedded-opentype"),
+	    url("../fonts/thin/PFDinTextArabicW21-Thin.woff")format("woff"),
+	    url("../fonts/thin/PFDinTextArabicW21-Thin.woff2")format("woff2"),
+	    url("../fonts/thin/PFDinTextArabicW21-Thin.ttf")format("truetype"),
+	    url("../fonts/thin/PFDinTextArabicW21-Thin.svg#PFDinTextArabicW21-Thin")format("svg");
+	font-weight:normal;
+	font-style:normal;
+	font-display:swap;
 }
-@font-face {
-    font-family: 'PFDinTextPro-Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('../fonts/light/PFDinTextPro-Medium')
+@font-face{
+    font-family: "PFDinTextArabicW21-Light";
+    src: url("../fonts/light/PFDinTextArabicW21-Light.eot");
+    src: url("../fonts/light/PFDinTextArabicW21-Light.eot?#iefix")format("embedded-opentype"),
+	    url("../fonts/light/PFDinTextArabicW21-Light.woff")format("woff"),
+	    url("../fonts/light/PFDinTextArabicW21-Light.woff2")format("woff2"),
+	    url("../fonts/light/PFDinTextArabicW21-Light.ttf")format("truetype"),
+	    url("../fonts/light/PFDinTextArabicW21-Light.svg#PFDinTextArabicW21-Light")format("svg");
+	font-weight:normal;
+	font-style:normal;
+	font-display:swap;
+}
+@font-face{
+    font-family: "PFDinTextArabicW21-Medium";
+    src: url("../fonts/medium/PFDinTextArabicW21-Medium.eot");
+    src: url("../fonts/medium/PFDinTextArabicW21-Medium.eot?#iefix")format("embedded-opentype"),
+	    url("../fonts/medium/PFDinTextArabicW21-Medium.woff")format("woff"),
+	    url("../fonts/medium/PFDinTextArabicW21-Medium.woff2")format("woff2"),
+	    url("../fonts/medium/PFDinTextArabicW21-Medium.ttf")format("truetype"),
+	    url("../fonts/medium/PFDinTextArabicW21-Medium.svg#PFDinTextArabicW21-Medium")format("svg");
+	font-weight:normal;
+	font-style:normal;
+	font-display:swap;
 }
 
 :root{
-    --font-light: "PFDinTextPro-Light", sans-serif;
-    --font-medium: "PFDinTextPro-Medium", sans-serif;
+    --font-thin: 'PFDinTextArabicW21-Thin', cursive;
+    --font-light: 'PFDinTextArabicW21-Light', cursive;
+    --font-medium: "PFDinTextArabicW21-Medium", cursive;
     --button-height: 56px;
     --primary-color: rgba(207, 156, 90, 1);
     --content-color: rgba(0, 0, 0, 1);
+}
+
+@mixin object-fit($fit: cover) {
+    object-fit: $fit;
+    width: 100%;
+    height: 100%;
 }
 
 @function px_rem($px, $base: 16px) {
@@ -43,6 +73,8 @@ svg{display: block; font-size: 0; line-height: 0;}
 img{display: block; line-height: 0; font-size: 0;}
 figure{margin: 0;}
 
+p{font-family: var(--font-thin);}
+
 .last-margin-0 > *:last-child{margin-bottom: 0 !important;}
 .cursor-pointer {
     cursor: pointer !important;
@@ -51,12 +83,13 @@ figure{margin: 0;}
 .h-list{display: flex; align-items: center;}
 
 .title-1{font-size: px_rem(44px); margin: 0; line-height: 1; text-transform: uppercase;}
+.section-title{font-size: px_rem(44px); line-height: 1; font-family: var(--font-light); margin: 0; text-transform: uppercase;}
 
 .btn{
     border-radius: 50px; font-size: px_rem(18px);
     --bs-btn-padding-x: 2.5rem;
     --bs-btn-padding-y: 0.75rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-light);
     min-height: var(--button-height);
     display: inline-flex; align-items: center; justify-content: center;
 }
@@ -93,7 +126,7 @@ figure{margin: 0;}
     position: relative; flex-grow: 1;
 
     .icon{position: absolute; top: 50%; transform: translateY(-50%); left: px_rem(26px);}
-    .form-control{height: 65px; font-size: px_rem(18px); padding: 4px 26px 4px 62px; background: rgba(245, 245, 245, 1); border: 0; border-radius: 50px;}
+    .form-control{height: 65px; font-size: px_rem(18px); font-family: var(--font-light); padding: 4px 26px 4px 62px; background: rgba(245, 245, 245, 1); border: 0; border-radius: 50px;}
     .form-control::-moz-placeholder{color: black; opacity: 1;}
     .form-control::-webkit-input-placeholder{color: black; opacity: 1;}
 }
@@ -107,12 +140,6 @@ figure{margin: 0;}
     .text{flex-grow: 1; max-width: 630px; width: 100%;}
     .image{max-width: 100%;}
 }
-
-.tickets{
-    .title-1{margin-bottom: px_rem(28px);}
-    .tickets-holder{display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;}
-}
-
 
 .tabs-list{gap: 14px; margin-bottom: 3rem; justify-content: center; flex-wrap: wrap;}
 .tabs-list .btn{--bs-btn-padding-x: 1.5rem;}

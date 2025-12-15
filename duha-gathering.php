@@ -13,7 +13,7 @@
             <div class="duha-gathering">
                 <div class="container">
                     <div class="title-holder d-flex align-items-center justify-content-between">
-                        <h2 class="title-1" date="16 Sep 2025">Duha Gathering</h2>
+                        <h2 class="section-title" date="16 Sep 2025">Duha Gathering</h2>
                         <a href="#" class="btn btn-primary">Add to Calendar</a>
                     </div>
                     <div class="last-margin-0">

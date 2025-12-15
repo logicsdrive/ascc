@@ -10,7 +10,7 @@
 
     .nav-list{display: grid; margin: 0; padding: 0; list-style-type: none;}
 
-    .nav-item{color: white; text-transform: uppercase; flex-wrap: wrap; display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 14px 0; line-height: 20px;}
+    .nav-item{color: white; font-family: var(--font-medium); text-transform: uppercase; flex-wrap: wrap; display: flex; justify-content: space-between; align-items: center; text-decoration: none; padding: 14px 0; line-height: 20px;}
     .nav-item:hover{color: var(--primary-color);}
     .nav-item .icon{transition: all 0.4s ease;}
     .nav-item[aria-expanded="true"] .icon{transform: rotate(90deg);}

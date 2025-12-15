@@ -9,7 +9,7 @@
 
         .item{
             display: flex; align-items: center; gap: 10px; background: rgba(245, 245, 245, 1); min-height: 65px; border-radius: 50px;
-            color: black; font-size: px_rem(18px); line-height: 1; padding: 6px 40px; cursor: pointer;
+            color: black; font-size: px_rem(18px); font-family: var(--font-thin); line-height: 1; padding: 6px 40px; cursor: pointer;
         }
     }
    .grid{display: grid; padding: 3rem 0; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;}

@@ -10,8 +10,10 @@
         background: rgba(245, 245, 245, 1); padding: 65px 118px 65px 100px;
         max-width: 60%;
 
-        .title{font-size: 44px; margin-bottom: 1rem; line-height: 1; text-transform: uppercase;}
-        p{margin-bottom: px_rem(20px);}
+        .section-title{margin-bottom: 1rem;}
+        p{margin-bottom: px_rem(20px); font-family: var(--font-thin);}
+
+        .btn{min-width: 200px;}
     }
 
     &:nth-child(even) .image{right: 0; left: auto;}

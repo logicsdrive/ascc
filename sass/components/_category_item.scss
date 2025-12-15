@@ -10,10 +10,10 @@
     .image{height: 180px; overflow: hidden; background: #CCC; border-radius: 12px; margin: 0;}
     .image img{width: 100%; height: 100%; object-fit: cover;}
     .content{padding-top: px_rem(18px);}
-    .content h3{font-size: px_rem(22px); text-transform: capitalize; margin-bottom: 0.5rem; line-height: 140%;}
-    .content time{display: block; color: rgba(55, 55, 55, 1); font-size: 1rem; line-height: 124%;}
+    .content h3{font-size: px_rem(22px); font-family: var(--font-medium); text-transform: capitalize; margin-bottom: 0.5rem; line-height: 140%;}
+    .content time{display: block; font-family: var(--font-medium); color: rgba(55, 55, 55, 1); font-size: 1rem; line-height: 124%;}
 
-    .booking-information{padding-top: px_rem(22px); justify-content: flex-end; display: flex; align-items: center; gap: 0.5rem;}
-    .booking-information .item{display: flex; font-size: 1rem; line-height: 1; text-decoration: none; color: rgba(0, 0, 0, 1); align-items: center;}
+    .booking-information{padding-top: px_rem(22px); justify-content: flex-end; display: flex; align-items: center; gap: 1rem;}
+    .booking-information .item{display: flex; gap: 0.5rem; font-family: var(--font-medium); font-size: 1rem; line-height: 1; text-decoration: none; color: rgba(0, 0, 0, 1); align-items: center;}
     .booking-information .item:hover{color: var(--primary-color);}
 }

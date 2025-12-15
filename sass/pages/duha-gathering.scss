@@ -4,7 +4,8 @@
         display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
     }
 
-    .title-1:before{content: attr(date); padding-bottom: 1rem; display: block; color: var(--primary-color); font-size: px_rem(20px); line-height: 1;}
+    .section-title:before{content: attr(date); font-family: var(--font-medium); padding-bottom: 1rem; display: block; color: var(--primary-color); font-size: px_rem(20px); line-height: 1;}
 
+    p{font-family: var(--font-thin); margin-bottom: px_rem(22px);}
     .image{max-width: 100%; margin: 3rem auto;}
 }

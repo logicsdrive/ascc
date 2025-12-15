@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <!-- SEO -->
-<title>Site Title</title>
+<title>ascc</title>
 <meta name="description" content="Description of your page" />
 <meta name="author" content="Your Name" />
 

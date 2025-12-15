@@ -22,7 +22,7 @@
             background: rgba(245, 245, 245, 1); border-radius: 10px; padding: 45px;
 
             .inner{display: flex; background: white; border-radius: 8px; overflow: hidden;}
-            .image{height: 490px; width: 45%; background: #CCC;}
+            .image{width: 45%; background: #CCC;}
             .image img{@include object-fit(cover);}
             
             
@@ -63,7 +63,7 @@
             .list .item{display: grid; gap: 22px; align-items: center; grid-template-columns: auto 1fr;}
             .list .item .icon-rounded{background: rgba(245, 245, 245, 1); --size: 78px;}
             .list .item h4{margin: 0; font-family: var(--font-medium); font-size: 20px; line-height: 1;}
-            .list .item h4:before{content: attr(data-gate); font-family: var(--font-light); display: block; padding-bottom: 0.25rem;}
+            .list .item h4:before{content: attr(data-gate); line-height: px_rem(22px); font-family: var(--font-light); display: block; padding-bottom: 0.25rem;}
         }
     }
 }

@@ -1,0 +1,95 @@
+.nature-page{
+    .main-content{padding: 0;}
+    
+    .video-area{padding: 80px 0 128px; position: relative;}
+    .video-area:after{content: ""; pointer-events: none; background: rgba(#48827E, 0.2); z-index: 1; position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+    .video-area .background-video{position: absolute; z-index: 0; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+    .video-area .container{position: relative; z-index: 2;}
+
+    .other-museums{padding: 66px 0 94px;}
+
+    .image-content{
+        .section-title{margin-bottom: 3rem; text-align: center; color: white;}
+
+        .grid{display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 34px;}
+
+        .image{border-radius: 18px; overflow: hidden; height: 540px; background: #CCC;}
+        .content{
+            padding: 50px; display: flex; align-items: center; border-radius: 15px;
+            backdrop-filter: blur(15.3px);
+            box-shadow: inset 0 0 25.3px 4px rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.01);
+        }
+        .content .inner{color: white;}
+        .content .inner > *:last-child{margin-bottom: 0;}
+    }
+
+    .explore-spacestation{
+        .section-title{text-align: center; color: white; margin-bottom: 3rem;}
+        .section-title[data-tagline]:after{content: attr(data-tagline); text-transform: capitalize; font-size: 20px; line-height: 1; display: block; font-family: var(--font-thin); padding-top: 1rem;}
+
+        .grid{display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 36px;}
+        .grid .item{border-radius: 10px; height: 316px; overflow: hidden;}
+        .grid .item img{width: 100%; height: 100%; object-fit: cover;}
+    }
+
+    .sections-grid{
+        display: grid; grid-gap: 120px;
+    }
+
+    .trans-block1{
+        display: flex; align-items: center; gap: px_rem(60px);
+    
+        .info{color: white;}
+        .info .section-title{margin-bottom: 2rem;}
+        .info p{margin-bottom: 1.5rem;}
+    }
+    .trans-block2{
+        overflow: hidden;
+
+        .section-title{position: relative; z-index: 11; color: white; text-align: center;}
+
+        .swiper{width: 100%; padding: 3rem 0;}
+        .swiper-slide {
+            width: 696px;
+            transition: transform 0.3s ease;
+        }
+        .swiper-slide .item{border-radius: 10px; overflow: hidden; overflow: hidden;}
+
+        .arrows{justify-content: center; gap: 20px; position: relative; z-index: 11;}
+        .arrows .arrow{color: white; cursor: pointer;}
+        .arrows .arrow:hover{color: var(--primary-color);}
+    }
+    .trans-block3{
+        backdrop-filter: blur(15.3px);
+        box-shadow: inset 0 0 25.3px 4px rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.01); border-radius: 15px;
+        display: flex; align-items: center; justify-content: space-between;
+
+        .info{max-width: 710px; color: white; padding: px_rem(94px) 0 px_rem(94px) px_rem(76px);}
+        .info .section-title{margin-bottom: 2rem;}
+        .info p{margin-bottom: 1.5rem;}
+        .info > *:last-child{margin-bottom: 0;}
+
+        .image{padding: 20px;}
+    }
+
+    .space-center{
+        backdrop-filter: blur(15.3px);
+        box-shadow: inset 0 0 25.3px 4px rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.01); border-radius: 15px;
+        padding: px_rem(94px) 0 px_rem(94px) px_rem(76px);
+
+        .info{max-width: 664px; color: white;}
+        .info > *:last-child{margin-bottom: 0;}
+    }
+
+    &.trans-page{
+        .page-title-banner .info{display: none;}
+        .video-area:after{background: rgba(21, 53, 126, 0.2);}
+    }
+    &.our-space-page{
+        .page-title-banner .info:after{background: rgba(89, 39, 111, 1);}
+        .video-area:after{background: rgba(138, 56, 245, 0.15);}
+    }
+}

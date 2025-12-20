@@ -122,6 +122,8 @@ p{font-family: var(--font-thin);}
 
 strong{font-family: var(--font-medium); font-weight: normal;}
 
+.object-fit-cover{width: 100%; height: 100%; object-fit: cover;}
+
 .custom-checkbox{
     position: relative; display: flex; align-items: center; gap: 8px;
 
@@ -168,6 +170,20 @@ strong{font-family: var(--font-medium); font-weight: normal;}
         .accordion-body{padding: 1.5rem var(--px);}
         .accordion-body > *:last-child{margin-bottom: 0;}
     }
+}
+
+.swiper{overflow: hidden;}
+.swiper-wrapper{display: flex;}
+.swiper-slide{flex-shrink: 0; width: 100%;}
+
+.other-museums{
+    .title-bar{margin-bottom: px_rem(38px); display: flex; align-items: center; justify-content: space-between;}
+    .arrows{gap: 20px;}
+    .arrows .arrow{color: #A9A9A9; cursor: pointer;}
+    .arrows .arrow:hover{color: var(--primary-color);}
+
+    .category-item .content time{display: none;}
+    .category-item .icon-bg{display: none;}
 }
 
 .form-element{

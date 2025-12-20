@@ -1,17 +1,23 @@
 .page-title-banner{
-    min-height: 380px; background: black; position: relative;
+    min-height: 380px; display: flex; align-items: flex-end; background: black; position: relative;
 
     &:after{
         content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
-        background: rgba(#202125, 1); opacity: 0.70; z-index: 1; pointer-events: none;
+        background: rgba(#202125, 1); opacity: 0.55; z-index: 1; pointer-events: none;
     }
 
     .image{position: absolute; width: 100%; height: 100%; z-index: 1; top: 0; right: 0; bottom: 0; left: 0; object-fit: cover;}
 
     h1{
         color: white; text-transform: uppercase; margin: 0; font-size: px_rem(44px); line-height: 1;
-        font-family: var(--font-light);
+        font-family: var(--font-light); position: relative;
     }
-    
-    .content{padding: 250px 0 84px; position: relative; z-index: 2;}
+
+    .info{position: relative; padding-left: 1rem;}
+    .info:after{content: ""; width: 2px; height: 38px; position: absolute; top: 0; left: 0; background: rgba(86, 152, 66, 1);}
+    .info .desc{padding-top: 1rem; color: white; max-width: 642px; font-family: var(--font-thin);}
+
+    .content{padding: 0 0 84px; width: 100%; position: relative; z-index: 2;}
+
+    &.v2{min-height: 100vh;}
 }

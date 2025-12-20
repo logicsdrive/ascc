@@ -3,13 +3,41 @@
     <head>
         <?php include 'components/head.php';  ?>
     </head>
-    <body class="our-earth-page">
+    <body class="our-earth-page nature-page">
         <?php
-            $title = "Courtyard";
-            $image = "images/inner-banner-about.jpg";
+            $title = "Natural History – Our Earth";
+            $tagline = "See the world of geology and geography come alive as we delve below the earth’s crust to its fiery core";
+            $image = "images/earth-banner-image.jpg";
+            $classes = "v2";
             include 'components/page-title-banner.php';
         ?>
         <main class="main-content">
+            <div class="video-area">
+                <video class="background-video" autoplay muted loop playsinline>
+                    <source src="images/sunshine.mp4" type="video/mp4">
+                </video>
+                <div class="container">
+                    <div class="image-content">
+                        <h2 class="section-title">When the Earth Was Different Stories</h2>
+                        <div class="grid">
+                            <figure class="image">
+                                <img src="images/earth-story-image.jpg" class="object-fit-cover" alt="" />
+                            </figure>
+                            <div class="content">
+                                <div class="inner">
+                                    <p>See the world of geology and geography come alive as we delve below the earth’s crust to its fiery core. How does Kuwait’s industry and climate affect the world and how can we affect changes in the environment, at home and in the community to ensure a cleaner, greener planet?</p>
+                                    <p>Experiment spaces are an important part of the Centre’s unique quest for innovation and intellectual growth in science, technology, geology, and the environment. The museum has a space for ground experiments (Earth Lab), a space for dinosaur experiments (Dino Lab), and Under Five Interactive Area (Animals & Us).</p>
+                                    <p>See the world of geology and geography come alive as we delve below the earth’s crust to its fiery core. How does Kuwait’s industry and climate affect the world and how can we affect changes in the environment, at home and in the community to ensure a cleaner, greener planet?</p>
+                                    <p>Experiment spaces are an important part of the Centre’s unique quest for innovation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secrets-before-human">
+                        ssdg
+                    </div>
+                </div>
+            </div>
             <section class="other-museums">
                 <div class="container">
                     <div class="title-bar">

@@ -18,7 +18,7 @@
 
     .form-element.full{grid-column: 1 / -1;}
     .form-element .icon{position: absolute; top: 10px; left: 0;}
-    .form-element .form-control{background: transparent; font-family: var(--font-light); color: white; padding: 2px 0 10px 22px; font-size: 14px; border-radius: 0; border-bottom: solid 1px rgba(255, 255, 255, 0.1);}
+    .form-element .form-control{background: transparent; box-shadow: none; font-family: var(--font-light); color: white; padding: 2px 0 10px 22px; font-size: 14px; border-radius: 0; border-bottom: solid 1px rgba(255, 255, 255, 0.1);}
 
     .action-button{max-width: 200px; width: 100%; display: flex; font-family: var(--font-medium);}
 

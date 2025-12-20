@@ -120,6 +120,8 @@ p{font-family: var(--font-thin);}
     .arrow.disabled{opacity: 0.4; pointer-events: none;}
 }
 
+strong{font-family: var(--font-medium); font-weight: normal;}
+
 .custom-checkbox{
     position: relative; display: flex; align-items: center; gap: 8px;
 
@@ -127,7 +129,7 @@ p{font-family: var(--font-thin);}
 
     .check{--size: 18px; display: flex; justify-content: center; align-items: center; flex-shrink: 0; width: var(--size); height: var(--size); border-radius: 2px; border: solid 1px var(--primary-color);}
     .check svg{opacity: 0;}
-    .lbl{display: block; font-size: 18px; line-height: 1;}
+    .lbl{display: block; font-size: 18px; line-height: 25px; padding-top: 2px;}
 
     input:checked + .check{background: var(--primary-color);}
     input:checked + .check svg{opacity: 1;}
@@ -158,7 +160,8 @@ p{font-family: var(--font-thin);}
         border-radius: 16px; border: 0;
         --px: 2.375rem;
     
-        .trigger{background: white; border-radius: 16px; cursor: pointer; padding: px_rem(10px) var(--px); display: flex; justify-content: space-between; align-items: center; text-transform: uppercase; font-size: px_rem(20px); line-height: px_rem(20px); min-height: 70px; box-shadow: 0 4px 20px rgba(black, 0.08);}
+        .trigger{background: white; font-family: var(--font-medium); border-radius: 16px; cursor: pointer; padding: px_rem(10px) var(--px); display: flex; justify-content: space-between; align-items: center; text-transform: uppercase; font-size: px_rem(20px); line-height: px_rem(20px); min-height: 70px; box-shadow: 0 4px 20px rgba(black, 0.08);}
+        .trigger span{display: block; padding-top: 3px;}
         .trigger svg{flex-shrink: 0;}
         .trigger[aria-expanded="true"] .arrow{transform: rotate(-180deg);}
 
@@ -172,7 +175,7 @@ p{font-family: var(--font-thin);}
 
     .icon{position: absolute; cursor: pointer; top: 50%; transform: translateY(-50%); right: 1.5rem;}
 
-    .control-label{position: absolute; color: black; font-family: var(--font-thin); font-size: 14px; line-height: 22px; left: 1.5rem; top: 1rem;}
+    .control-label{position: absolute; pointer-events: none; color: black; font-family: var(--font-thin); font-size: 14px; line-height: 22px; left: 1.5rem; top: 1rem;}
 
     .form-control{background: rgba(245, 247, 247, 1); color: black; font-family: var(--font-medium); font-size: 1rem; line-height: px_rem(22px); border: 0; padding: 36px 1.5rem 14px; border-radius: 50px;}
     .form-control::-moz-placeholder{color: inherit; opacity: 1;}

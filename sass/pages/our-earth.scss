@@ -1,0 +1,16 @@
+.our-earth-page{
+
+    .other-museums{
+        .title-bar{margin-bottom: px_rem(38px); display: flex; align-items: center; justify-content: space-between;}
+        .arrows{gap: 20px;}
+        .arrows .arrow{color: #A9A9A9; cursor: pointer;}
+        .arrows .arrow:hover{color: var(--primary-color);}
+
+        .swiper{overflow: hidden;}
+        .swiper-wrapper{display: flex;}
+        .swiper-slide{flex-shrink: 0; width: 100%;}
+    
+        .category-item .content time{display: none;}
+        .category-item .icon-bg{display: none;}
+    }
+}

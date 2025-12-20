@@ -1,4 +1,7 @@
 <div class="category-item v2 <?= $category_type ?>">
+    <span class="icon-bg">
+        <img src="images/<?= $category_type ?>_icon.svg" alt="" />
+    </span>
     <figure class="image">
         <img src="images/sea.jpg" alt="" />
     </figure>

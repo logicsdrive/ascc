@@ -21,6 +21,10 @@
         border-radius: var(--size);
     }
 
+    .rules{display: grid; padding-top: px_rem(154px); grid-gap: 23px 6px; grid-template-columns: repeat(2, 1fr);}
+    .rules .item{color: rgba(85, 85, 85, 1); display: grid; grid-template-columns: auto 1fr; grid-gap: 14px; font-family: var(--font-medium); font-size: px_rem(20px); line-height: 1;}
+    .rules .item span{padding-top: 3px;}
+
     .tdata{font-family: var(--font-thin); display: table; margin-bottom: 20px;}
     .tdata .trow{display: table-row;}
     .tdata .tcell{display: table-cell; font-size: 18px; padding-bottom: 10px;}
@@ -43,8 +47,20 @@
     
     .middle .title{color: black; margin-bottom: 14px;}
 
-    .your-information{padding: 32px 0;}
+    .your-information{margin: 32px 0;}
     .your-information .grid{display: grid; grid-gap: 14px; grid-template-columns: repeat(2, 1fr);}
+
+    .select-ticket-type{margin: 32px 0;}
+    .select-ticket-type .grid{display: grid; grid-gap: 16px; grid-template-columns: repeat(2, 1fr);}
+
+    .ticket-type{min-height: 72px; padding: 10px 24px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; background: #F5F7F7; border-radius: 50px;}
+    .ticket-type .icon{flex-shrink: 0;}
+    .ticket-type .name{font-size: 14px; padding-top: 2px; line-height: 22px; font-family: var(--font-light);}
+    .ticket-type .name strong{display: block; font-family: var(--font-medium); font-size: 16px;}
+
+    .qty{display: flex; gap: 12px; font-size: 18px; align-items: center;}
+    .qty .num{font-size: 16px; font-family: var(--font-thin);}
+    .qty .click-element{cursor: pointer; font-family: var(--font-medium);}
 
     .country-selector{display: flex; align-items: center; cursor: pointer; gap: 6px; position: absolute; bottom: 18px; inset-inline-end: 24px;}
     .phone-field .dropdown-menu .dropdown-item{cursor: pointer; display: flex; align-items: center; gap: 8px;}

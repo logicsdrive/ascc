@@ -14,8 +14,8 @@
                 <div class="container">
                     <div class="h-list nav tabs-list">
                         <a href="#tab1" data-bs-toggle="tab" class="btn btn-outline-dark">Sheikh Abdullah Al Salem</a>
-                        <a href="#tab2" data-bs-toggle="tab" class="btn btn-outline-dark">The Centre</a>
-                        <a href="#tab3" data-bs-toggle="tab" class="btn btn-outline-dark active">Visit Us</a>
+                        <a href="#tab2" data-bs-toggle="tab" class="btn btn-outline-dark active">The Centre</a>
+                        <a href="#tab3" data-bs-toggle="tab" class="btn btn-outline-dark">Visit Us</a>
                         <a href="#tab4" data-bs-toggle="tab" class="btn btn-outline-dark">Facilities</a>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="tab2" role="tabpanel">
+                    <div class="tab-pane active" id="tab2" role="tabpanel">
                         <div class="view2">
                             <div class="container">
                                 <div class="image-text">
@@ -52,14 +52,55 @@
                                 </div>
                                 <div class="leading-with-innovation">
                                     <h2 class="section-title text-primary mb-5">Leading with innovation, delivering value</h2>
+                                    <div class="grid">
+                                        <div class="item">
+                                            <figure class="image"><img src="images/our-mission-image.jpg" alt="" /></figure>
+                                            <div class="inner">
+                                                <h4 class="section-title">Our Mission</h4>
+                                                <p>To instill passion for arts, sciences, culture, and entertainment through the establishment of world class museums, a fine arts centre, and a theatre to promote Kuwait as a cultural destination</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                                            <div class="inner">
+                                                <h4 class="section-title">Our Vision</h4>
+                                                <p>The Centre aims at embracing and showcasing a diversity of the world’s finest cultural achievements and manifestations through maintaining a state of museums complex.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="awards">
                                     <h2 class="section-title text-primary mb-5">Awards & Recognisions</h2>
+                                    <div class="grid">
+                                        <div class="item">
+                                            <figure class="image"><img src="images/our-mission-image.jpg" alt="" /></figure>
+                                            <div class="inner">
+                                                <h4 class="section-title">Sheikh Abdullah Al-Salem Cultural Centre has won several awards</h4>
+                                                <p>The LEAF Award for the best building in 2017, which is considered one of the most prestigious architectural awards.</p>
+                                            </div>
+                                        </div>
+                                        <div class="devider"></div>
+                                        <div class="item">
+                                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                                            <div class="inner">
+                                                <h4 class="section-title">The International Buildings Foundation award</h4>
+                                                <p>the best engineering project in the category of public facilities in the Middle East and North Africa for the year 2018.</p>
+                                            </div>
+                                        </div>
+                                        <div class="devider"></div>
+                                        <div class="item">
+                                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                                            <div class="inner">
+                                                <h4 class="section-title">The International “Oscar of Museums” award</h4>
+                                                <p>the year 2021 under the category of Best Cultural Destination in the Middle East and North Africa.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane show active" id="tab3" role="tabpanel">
+                    <div class="tab-pane fade" id="tab3" role="tabpanel">
                         <div class="container">
                             <div class="view3">
                                 <h2 class="section-title text-primary mb-5">Opening Hours</h2>
@@ -70,7 +111,9 @@
                                         </figure>
                                         <div class="content">
                                             <ul class="list">
-                                                <li class="title">The museum is open today from 9 a.m to 8 p.m</li>
+                                                <li class="title">
+                                                    <span>The museum is open today from 9 a.m to 8 p.m</span>
+                                                </li>
                                                 <li>
                                                     <div class="slot">
                                                         <span>9 A.M</span>
@@ -119,8 +162,8 @@
                                 <div class="block3">
                                     <div class="h-list nav tabs-list">
                                         <a href="#" class="btn btn-outline-dark active">Gate Access</a>
-                                        <a href="#" class="btn btn-outline-dark">Terms And Conditions</a>
-                                        <a href="#" class="btn btn-outline-dark">Visitor Map</a>
+                                        <a href="terms.php" class="btn btn-outline-dark">Terms And Conditions</a>
+                                        <a href="visitor-map.php" class="btn btn-outline-dark">Visitor Map</a>
                                     </div>
                                     <div class="get-access">
                                         <div class="content">

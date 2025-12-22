@@ -13,9 +13,8 @@
         font-family: var(--font-light); position: relative;
     }
 
-    .info{position: relative; padding-left: 1rem;}
-    .info:after{content: ""; width: 2px; height: 38px; position: absolute; top: 0; left: 0; background: rgba(86, 152, 66, 1);}
-    .info .desc{padding-top: 1rem; color: white; max-width: 642px; font-family: var(--font-thin);}
+    .page-banner-desc{position: relative;}
+    .page-banner-desc .desc{padding-top: 1rem; color: white; max-width: 642px; font-family: var(--font-thin);}
 
     .content{padding: 0 0 84px; width: 100%; position: relative; z-index: 2;}
 

@@ -33,8 +33,11 @@
         .grid .item img{width: 100%; height: 100%; object-fit: cover;}
     }
 
+    .page-title-banner .page-banner-desc{padding-left: 1rem;}
+    .page-title-banner .page-banner-desc:after{content: ""; width: 2px; height: 38px; position: absolute; top: 0; left: 0; background: rgba(86, 152, 66, 1);}
+
     .sections-grid{
-        display: grid; grid-gap: 120px;
+        display: grid; grid-gap: 120px; position: relative; z-index: 11;
     }
 
     .trans-block1{
@@ -77,19 +80,152 @@
     .space-center{
         backdrop-filter: blur(15.3px);
         box-shadow: inset 0 0 25.3px 4px rgba(255, 255, 255, 0.1);
-        background: rgba(255, 255, 255, 0.01); border-radius: 15px;
-        padding: px_rem(94px) 0 px_rem(94px) px_rem(76px);
+        background: rgba(255, 255, 255, 0.01) url(/images/space-sun.png) bottom right no-repeat; border-radius: 15px;
+        padding: px_rem(94px) 0 px_rem(94px) px_rem(76px); min-height: 562px; display: flex; align-items: center;
 
         .info{max-width: 664px; color: white;}
+        .info p{margin-bottom: 1.5rem;}
         .info > *:last-child{margin-bottom: 0;}
     }
 
+    .explore-carousel{
+        position: relative; overflow: hidden;
+    
+        .section-title{color: white; text-align: center;}
+
+        .swiper{width: 100%; padding: 3rem 0;}
+        .swiper-wrapper{align-items: flex-end; min-height: 430px;}
+        .swiper-slide{width: 364px;}
+        .swiper-slide.swiper-slide-prev .image{height: 370px;}
+        .swiper-slide.swiper-slide-active .image{height: 430px;}
+        .swiper-slide.swiper-slide-next .image{height: 370px;}
+
+        .image{background: #EEE; height: 320px; transition: all 0.5s ease 0.4s;}
+        .image img{width: 100%; height: 100%; object-fit: cover;}
+
+        .arrows{justify-content: center; gap: 20px; position: relative; z-index: 11;}
+        .arrows .arrow{color: white; cursor: pointer;}
+        .arrows .arrow:hover{color: var(--primary-color);}
+    }
+    .echo-block3{
+        backdrop-filter: blur(15.3px);
+        box-shadow: inset 0 0 25.3px 4px rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.01); border-radius: 15px;
+        display: grid; grid-template-columns: 674px auto; align-items: center; grid-gap: 40px;
+        padding: px_rem(90px) px_rem(40px) px_rem(100px) px_rem(77px);
+
+        .text{color: white;}
+        .text .section-title{margin-bottom: 2rem; max-width: 535px;}
+        .text p{margin-bottom: 1.5rem;}
+        .text > *:last-child{margin-bottom: 0;}
+
+        .image{flex-shrink: 0;}
+    }
+
+    .earth-block3{
+        backdrop-filter: blur(15.3px);
+        box-shadow: inset 0 0 25.3px 4px rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.01); border-radius: 15px;
+        display: flex; align-items: center; justify-content: space-between; grid-gap: 20px;
+        padding: px_rem(90px) px_rem(40px) px_rem(100px) px_rem(77px);
+
+        .text{color: white; width: 674px;}
+        .text .section-title{margin-bottom: 2rem; max-width: 450px;}
+        .text p{margin-bottom: 1.5rem;}
+        .text > *:last-child{margin-bottom: 0;}
+
+        .image{flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 660px;}
+    }
+
+    .opacity-box{
+        backdrop-filter: blur(15.3px);
+        box-shadow: inset 0 0 25.3px 4px rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.01); border-radius: 15px; color: white;
+    }
+
+    .arabic-science-block{
+        .main-title{margin-bottom: px_rem(58px); text-align: center; color: white;}
+    }
+    .arabic-science-block1{
+        .opacity-box{
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 70px 42px 70px 74px;
+
+            .text{max-width: 616px;}
+            .images{display: flex; align-items: flex-end; gap: 18px;}
+            .images .image{height: 366px; width: 350px; background: #EEE; border-radius: 18px; overflow: hidden;}
+            .images .image.small{width: 268px; height: 282px;}
+            .images .image img{width: 100%; height: 100%; object-fit: cover;}
+        }
+    }
+    .arabic-science-block2{
+        position: relative;
+
+        .image{height: 290px; border-radius: 18px; overflow: hidden; transition: all 1s ease 1s;}
+        .image img{@include object-fit(cover);}
+        
+        .text{
+            width: calc(100% - 575px); color: white;
+            position: absolute; top: 130px; left: 587px;
+        }
+
+        .swiper-wrapper{align-items: flex-end;}
+        .swiper-slide{width: 290px; will-change: transform, width, height; transition: transform 0.6s ease, opacity 0.4s ease;}
+        .swiper-slide-active{width: 545px;}
+        .swiper-slide-active .image{height: 530px;}
+
+        .arrows{justify-content: center; margin-top: 3rem; gap: 20px; position: relative; z-index: 11;}
+        .arrows .arrow{color: white; cursor: pointer;}
+        .arrows .arrow:hover{color: var(--primary-color);}
+    }
+    .arabic-science-block3{
+        .opacity-box{
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 70px 32px 70px 77px;
+
+            .text{max-width: 674px;}
+            .text .section-title{max-width: 535px; margin-bottom: px_rem(32px);}
+            .text > *:last-child{margin-bottom: 0;}
+        }
+    }
+
+    .human-body-block1{
+        max-width: 524px; color: white;
+    
+        .section-title{margin-bottom: 1.5rem;}
+    }
+    .human-body-block3{
+        backdrop-filter: blur(15.3px);
+        box-shadow: inset 0 0 25.3px 4px rgba(255, 255, 255, 0.1);
+        background: rgba(0, 0, 0, 0.01); border-radius: 15px; color: white;
+        position: relative; isolation: isolate; overflow: hidden;
+
+        .text{max-width: 674px; padding: 90px 0 77px 77px;}
+        .text .section-title{margin-bottom: 2rem; max-width: 535px;}
+
+        .image{
+            position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+            mix-blend-mode: lighten; opacity: 0.8;
+        }
+    }
+
+    &.our-echosystem{
+        .video-area:after{background: rgba(0, 0, 0, 0.4);}
+    }
     &.trans-page{
-        .page-title-banner .info{display: none;}
         .video-area:after{background: rgba(21, 53, 126, 0.2);}
     }
     &.our-space-page{
-        .page-title-banner .info:after{background: rgba(89, 39, 111, 1);}
+        .page-title-banner .page-banner-desc:after{background: rgba(89, 39, 111, 1);}
         .video-area:after{background: rgba(138, 56, 245, 0.15);}
+    }
+    &.arabic-science-page{
+        .page-title-banner .page-banner-desc:after{background: rgba(207, 156, 90, 1);}
+        .video-area:after{background: rgba(0, 0, 0, 0.3);}
+    }
+    &.human-body-page {
+        .video-area{background: rgba(#CC2626, 0.30);}
+        .video-area:after{background: rgba(0, 0, 0, 0.3);}
+        .background-video{mix-blend-mode: luminosity;}
     }
 }

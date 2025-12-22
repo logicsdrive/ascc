@@ -24,7 +24,7 @@
                 <span>1.5 Kd - 3 KD</span>
             </div>
         </div>
-        <a href="#" class="btn btn-primary">Book Ticket</a>
+        <a href="book-ticket.php" class="btn btn-primary">Book Ticket</a>
     </div>
     <figure class="image">
         <img src="images/image.jpg" alt="" />

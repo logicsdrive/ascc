@@ -3,10 +3,10 @@
     <head>
         <?php include 'components/head.php';  ?>
     </head>
-    <body>
+    <body class="education-page">
         <?php
             $title = "Education";
-            $image = "images/inner-banner-about.jpg";
+            $image = "images/education-page-banner.jpg";
             include 'components/page-title-banner.php';
         ?>
         <main class="main-content">
@@ -17,13 +17,17 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane last-margin-0 tab1 show active" id="tab1" role="tabpanel">
-                        <?php include 'components/content_row.php'; ?>
-                        <?php include 'components/content_row.php'; ?>
-                        <?php include 'components/content_row.php'; ?>
+                        <div class="content_row_holder">
+                            <?php include 'components/content_row.php'; ?>
+                            <?php include 'components/content_row.php'; ?>
+                            <?php include 'components/content_row.php'; ?>
+                        </div>
                     </div>
                     <div class="tab-pane last-margin-0 fade" id="tab2" role="tabpanel">
-                        <?php include 'components/content_row.php'; ?>
-                        <?php include 'components/content_row.php'; ?>
+                        <div class="content_row_holder">
+                            <?php include 'components/content_row.php'; ?>
+                            <?php include 'components/content_row.php'; ?>
+                        </div>
                     </div>
                 </div>
             </div>

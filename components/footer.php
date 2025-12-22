@@ -12,18 +12,18 @@
             <div class="item">
                 <h4>Social Contact</h4>
                 <div class="h-list social-icons gap-2">
-                    <div class="icon-rounded">
+                    <a href="#" title="" class="icon-rounded">
                         <img src="images/facebook_icon.svg" alt="" />
-                    </div>
-                    <div class="icon-rounded">
+                    </a>
+                    <a href="#" title="" class="icon-rounded">
                         <img src="images/linkedin_icon.svg" alt="" />
-                    </div>
-                    <div class="icon-rounded">
+                    </a>
+                    <a href="#" title="" class="icon-rounded">
                         <img src="images/instagram_icon.svg" alt="" />
-                    </div>
-                    <div class="icon-rounded">
+                    </a>
+                    <a href="#" title="" class="icon-rounded">
                         <img src="images/twitter_icon.svg" alt="" />
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="item app-buttons-holder">

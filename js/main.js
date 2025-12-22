@@ -1,26 +1,45 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll('.js-datepicker').forEach(input => {
-        const picker = new Datepicker(input, {
-            format: 'dd-mm-yyyy',
-            autohide: true
-        });
-        const icon = input.closest('.form-element').querySelector('.js-datepicker');
-        icon.addEventListener('click', () => {
-            picker.show();
-        });
-    });
+    ascc_app.init();
 });
 
-function qtyUpdate(el, type) {
-    const qtyBox = el.closest('.qty');
-    const numEl = qtyBox.querySelector('.num');
-    let value = parseInt(numEl.innerText);
+const ascc_app = {
+    init: function(){
+        document.querySelectorAll('.js-datepicker').forEach(input => {
+            const picker = new Datepicker(input, {
+                format: 'dd-mm-yyyy',
+                autohide: true
+            });
+            const icon = input.closest('.form-element').querySelector('.js-datepicker');
+            icon.addEventListener('click', () => {
+                picker.show();
+            });
+        });
+    },
+    qtyUpdate: function(el, type) {
+        const qtyBox = el.closest('.qty');
+        const numEl = qtyBox.querySelector('.num');
+        let value = parseInt(numEl.innerText);
 
-    if (type === 'increment') {
-        value++;
-    } else if (type === 'decrement' && value > 1) {
-        value--;
+        if (type === 'increment') {
+            value++;
+        } else if (type === 'decrement' && value > 1) {
+            value--;
+        }
+
+        numEl.innerText = value;
     }
+};
 
-    numEl.innerText = value;
-}
+// function qtyUpdate(el, type) {
+//     const qtyBox = el.closest('.qty');
+//     const numEl = qtyBox.querySelector('.num');
+//     let value = parseInt(numEl.innerText);
+
+//     if (type === 'increment') {
+//         value++;
+//     } else if (type === 'decrement' && value > 1) {
+//         value--;
+//     }
+
+//     numEl.innerText = value;
+// }

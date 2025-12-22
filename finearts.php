@@ -6,23 +6,24 @@
     <body>
         <?php
             $title = "Fine Arts centre";
-            $image = "images/inner-banner-about.jpg";
+            $image = "images/finearts-page-banner.jpg";
             include 'components/page-title-banner.php';
         ?>
         <main class="main-content">
             <div class="finearts">
-                <?php include 'components/content_row.php'; ?>
-                <?php include 'components/content_row.php'; ?>
-                <?php include 'components/content_row.php'; ?>
-
-                <div class="selection-process">
+                <section class="content_row_holder">
+                    <?php include 'components/content_row.php'; ?>
+                    <?php include 'components/content_row.php'; ?>
+                    <?php include 'components/content_row.php'; ?>
+                </section>
+                <section class="selection-process">
                     <div class="container">
-                        <h2 class="section-title text-primary mb-5">Awards & Recognisions</h2>
+                        <h2 class="section-title text-primary mb-5">Application and Selection Process</h2>
                         <div class="grid">
                             <div class="item">
                                 <figure class="image"><img src="images/our-mission-image.jpg" alt="" /></figure>
                                 <div class="inner">
-                                    <h4 class="section-title">Sheikh Abdullah Al-Salem Cultural Centre has won several awards</h4>
+                                    <h4 class="section-title">Season 1, 2019 - Artists</h4>
                                     <p>The LEAF Award for the best building in 2017, which is considered one of the most prestigious architectural awards.</p>
                                 </div>
                             </div>
@@ -30,7 +31,7 @@
                             <div class="item">
                                 <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
                                 <div class="inner">
-                                    <h4 class="section-title">The International Buildings Foundation award</h4>
+                                    <h4 class="section-title">Season 2, 2020 - Artists</h4>
                                     <p>the best engineering project in the category of public facilities in the Middle East and North Africa for the year 2018.</p>
                                 </div>
                             </div>
@@ -38,18 +39,13 @@
                             <div class="item">
                                 <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
                                 <div class="inner">
-                                    <h4 class="section-title">The International “Oscar of Museums” award</h4>
+                                    <h4 class="section-title">Season 3, 2021 - Artists</h4>
                                     <p>the year 2021 under the category of Best Cultural Destination in the Middle East and North Africa.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- <section class="selection-process">
-                    <div class="container">
-                        <h2 class="title-1 text-primary">Application and Selection Process</h2>
-                    </div>
-                </section> -->
+                </section>
                 <section class="faqs">
                     <div class="container">
                         <h3 class="title-1">FAQs</h3>

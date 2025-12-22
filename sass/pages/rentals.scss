@@ -1,0 +1,22 @@
+.rentals-page{
+    .background-video{position: absolute; z-index: -1; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+}
+.rentals{
+    .container{
+        display: grid; grid-template-columns: auto 1fr; grid-gap: 60px;
+    }
+
+    .left-bar{
+        width: 380px;
+    
+        .section-title{margin-bottom: 12px;}
+        .buttons{display: grid; margin: 12px 0 20px; grid-template-columns: 1fr 1fr; grid-gap: 12px;}
+        .buttons .btn.active{background: var(--primary-color); border-color: var(--primary-color);}
+
+        .nav-bar{background: white; display: grid; grid-gap: 10px; border-radius: 15px; padding: 15px;}
+        .item{min-height: 54px; cursor: pointer; padding: 5px 20px 5px 24px; border-radius: 15px; font-size: 18px; display: grid; grid-template-columns: 24px 1fr; align-items: center; grid-gap: 10px; background: rgba(245, 247, 247, 1) url(/images/right-arrow.svg) calc(100% - 32px) center no-repeat;}
+    }
+    .right{
+
+    }
+}

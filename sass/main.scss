@@ -2,6 +2,7 @@
 @import "generic";
 
 // Page-specific
+@import "pages/home";
 @import "pages/about";
 @import "pages/whatson";
 @import "pages/duha-gathering";
@@ -16,23 +17,13 @@
 @import "pages/booking-details";
 @import "pages/nature-page";
 @import "pages/courtyard";
+@import "pages/rentals";
 
+.education-page{
+    .content_row_holder{display: grid; grid-gap: 80px;}
+}
 
 .tickets{
     .title-1{margin-bottom: px_rem(28px);}
     .tickets-holder{display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;}
-}
-
-.rentals{
-    display: grid; grid-template-columns: auto 1fr; grid-gap: 60px;
-
-    .left-bar{
-        width: 380px;
-    
-        .section-title{margin-bottom: 12px;}
-        .buttons{display: grid; margin: 12px 0 20px; grid-template-columns: 1fr 1fr; grid-gap: 12px;}
-
-        .nav-bar{background: white; display: grid; grid-gap: 10px; border-radius: 15px; padding: 15px;}
-        .item{min-height: 54px; cursor: pointer; padding: 5px 20px 5px 24px; border-radius: 15px; font-size: 18px; display: grid; grid-template-columns: auto 1fr; align-items: center; grid-gap: 10px; background: rgba(245, 247, 247, 1) url(/images/right-arrow.svg) calc(100% - 32px) center no-repeat;}
-    }
 }

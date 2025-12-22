@@ -9,6 +9,30 @@
         pointer-events: none;
     }
 
+    .search-field{
+        margin-right: 1rem; width: 400px; opacity: 0; transition: opacity 0.5s ease;
+
+        .form-control{height: 56px; padding-left: 74px; font-family: var(--font-light);}
+        .icon{left: 38px;}
+        .cross-icon{position: absolute; top: 50%; transform: translateY(-50%); inset-inline-end: 68px; cursor: pointer;}
+        .send-icon{position: absolute; top: 50%; transform: translateY(-50%); inset-inline-end: 30px; cursor: pointer;}
+    
+        input:not(:placeholder-shown) + .cross-icon {
+            display: block;
+        }
+    }
+
+    .search-opened & {
+        .search-field{opacity: 1;}
+    }
+
+    .book-now-dropdown{
+        .dropdown-item:focus,
+        .dropdown-item:hover{
+            background: transparent; color: var(--primary-color);
+        }
+    }
+
     .container{display: flex; min-height: 160px; position: relative; z-index: 2; align-items: center; justify-content: space-between;}
 
     .logo{display: block;}

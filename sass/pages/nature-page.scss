@@ -107,6 +107,24 @@
         .arrows .arrow{color: white; cursor: pointer;}
         .arrows .arrow:hover{color: var(--primary-color);}
     }
+    .echo-block1{
+        overflow: hidden;
+
+        .swiper-slide{overflow: hidden;}
+        .container{display: flex; align-items: center; justify-content: space-between;}
+        .text{max-width: 350px; position: relative; font-family: var(--font-thin); color: white; min-height: 100px; width: 100%;}
+        .text.empty:after{content: ""; height: 2px; background: rgba(158, 172, 170, 1); width: 100%; position: absolute; top: 50%; transform: translateY(-50%);}
+        .big-circle{
+            --size: 656px; margin: auto;
+            width: var(--size); height: var(--size); border-radius: var(--size);
+            overflow: hidden; position: relative;
+        
+            .icon{position: absolute; cursor: pointer; top: 50%; z-index: 11; left: 50%; transform: translate(-50%, -50%);}
+            .icon span{display: block; padding-top: 14px; text-transform: uppercase; font-size: 20px; line-height: 1; color: white; font-family: var(--font-medium); text-align: center;}
+            
+            &:after{content: ""; z-index: 0; pointer-events: none; background: rgba(black, 0.4); z-index: 1; position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+        }
+    }
     .echo-block3{
         backdrop-filter: blur(15.3px);
         box-shadow: inset 0 0 25.3px 4px rgba(255, 255, 255, 0.1);

@@ -18,14 +18,17 @@
                 </svg>
             </a>
             <div class="sub-menu collapse" id="collapseExample">
-                <a href="#" class="nav-item">Sub Menu Item 1</a>
-                <a href="#" class="nav-item">Sub Menu Item 2</a>
-                <a href="#" class="nav-item">Sub Menu Item 3</a>
+                <a href="our-echosystem.php" class="nav-item">Ecosystems</a>
+                <a href="our-earth.php" class="nav-item">our earth</a>
+                <a href="trans-n-robots.php" class="nav-item">transportation and robots</a>
+                <a href="human-body.php" class="nav-item">human body</a>
+                <a href="arabic-science.php" class="nav-item">arabic islamic science</a>
+                <a href="our-space.php" class="nav-item">space</a>
             </div>
         </li>
-        <li><a href="/finearts.php" class="nav-item">Fine Arts centre</a></li>
-        <li><a href="/education.php" class="nav-item">Education</a></li>
-        <li><a href="#" class="nav-item">Rentails</a></li>
+        <li><a href="finearts.php" class="nav-item">Fine Arts centre</a></li>
+        <li><a href="education.php" class="nav-item">Education</a></li>
+        <li><a href="rentals.php" class="nav-item">Rentails</a></li>
         <li><a href="/contact.php" class="nav-item">Contact Us</a></li>
     </ul>
 </div>

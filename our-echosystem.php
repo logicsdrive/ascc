@@ -17,6 +17,53 @@
                     <source src="images/echosystem-video.mp4" type="video/mp4">
                 </video>
                 <div class="sections-grid">
+                    <section class="echo-block1">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="container">
+                                        <div class="text">
+                                            Travel back in time to gain a unique insight into the natural world – both past and present, understand the importance of ecosystems and how they influenced the development of biodiversity of our planet over millions of years. Explore Southeast Asia’s rainforests and see how mangroves help the ecology.
+                                        </div>
+                                        <div class="big-circle">
+                                            <img src="images/echo-circle-past.jpg" class="object-fit-cover" alt="" />
+                                            <div class="icon next">
+                                                <img src="images/play_icon.png" alt="" />
+                                                <span>Past</span>
+                                            </div>
+                                        </div>
+                                        <div class="text empty"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="container">
+                                        <div class="text empty"></div>
+                                        <div class="big-circle">
+                                            <img src="images/echo-circle-past.jpg" class="object-fit-cover" alt="" />
+                                            <div class="icon next">
+                                                <img src="images/play_icon.png" alt="" />
+                                                <span>Present</span>
+                                            </div>
+                                        </div>
+                                        <div class="text empty"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="container">
+                                        <div class="text"></div>
+                                        <div class="big-circle">
+                                            <img src="images/echo-circle-past.jpg" class="object-fit-cover" alt="" />
+                                            <div class="icon">
+                                                <img src="images/play_icon.png" alt="" />
+                                                <span>Future</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">Dive into an underwater wonderland and go nose-to-nose with the wildlife in our pool! Get to know more about Kuwait’s extraordinary wildlife; how do creatures live in extreme environments? What is the link between trade and our natural habitat? Test your skills in our interactive displays and learn about how we can keep the coastal community alive and help sustain the planet.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <section class="explore-carousel">
                         <h2 class="section-title">Explore Ecosystems with us</h2>
                         <div class="swiper">
@@ -146,6 +193,14 @@
                 navigation: {
                     nextEl: ".explore-carousel .arrows .next",
                     prevEl: ".explore-carousel .arrows .prev",
+                }
+            });
+            const swiper2 = new Swiper(".echo-block1 .swiper", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                navigation: {
+                    nextEl: ".echo-block1 .next",
+                    // prevEl: ".explore-carousel .arrows .prev",
                 }
             });
             ascc_app.initMuseumsSlider();

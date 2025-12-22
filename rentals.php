@@ -167,6 +167,24 @@
                             </div>
                         </div>
                     </aside>
+                    <div class="right">
+                        <div class="link-bridge1">
+                            <div class="icon">
+                                <span>Link Bridge</span>
+                                <img src="images/bridge_icon1.png" alt="" />    
+                            </div>
+                            <img src="images/place1.png" width="305" height="170" alt="" />
+                            <img src="images/place2.png" width="346" height="186" alt="" />
+                        </div>
+                        <div class="link-bridge2">
+                            <div class="icon">
+                                <span>Link Bridge</span>
+                                <img src="images/bridge_icon2.png" alt="" />    
+                            </div>
+                            <img src="images/place3.png" width="343" height="198" alt="" />
+                            <img src="images/place4.png" width="307" height="172" alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

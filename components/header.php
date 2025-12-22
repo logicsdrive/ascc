@@ -1,5 +1,5 @@
 <div class="page-loader">
-    <img src="images/loader-logo.png" alt="" />
+    <img src="images/loader.gif" alt="" />
 </div>
 <header class="site-header">
     <div class="container">

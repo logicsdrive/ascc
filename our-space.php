@@ -102,16 +102,7 @@
         </main>
         <?php include 'components/footer.php';  ?>
         <script>
-            const swiper = new Swiper(".other-museums .swiper", {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                loop: true,
-
-                navigation: {
-                    nextEl: ".other-museums .arrows .next",
-                    prevEl: ".other-museums .arrows .prev",
-                }
-            });
+            ascc_app.initMuseumsSlider();
         </script>
     </body>
 </html>

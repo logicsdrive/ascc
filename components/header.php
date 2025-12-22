@@ -1,3 +1,6 @@
+<div class="page-loader">
+    <img src="images/loader-logo.png" alt="" />
+</div>
 <header class="site-header">
     <div class="container">
         <a href="/"><img src="images/header_logo.svg" alt="" /></a>

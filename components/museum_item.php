@@ -1,10 +1,10 @@
 <div class="museum-item <?= $category_type ?>">
-    <figure class="image">
+    <a href="#" class="image">
         <img src="images/echo-image1.jpg" alt="" />
-    </figure>
+    </a>
     <div class="content">
         <div class="info">
-            <h3>Our Earth</h3>
+            <a href="#" class="museum_item__title">Our Earth</a>
             <p>Enter the world of the dinosaurs! See the amazing reptiles and mammals that lived on Earth up.</p>
         </div>
         <div class="booking-information">

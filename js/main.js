@@ -108,6 +108,28 @@ const ascc_app = {
             document.body.classList.add('menu-opened')
             this.animateNavigation();
         });
+        document.body.addEventListener('click', async (e) => {
+            const trigger = e.target.closest("[data-toggle='content-modal']");
+            
+            if (trigger) {
+                e.preventDefault();
+        
+                const modal = new bootstrap.Modal(document.getElementById("content-modal"));
+                const dataURL = trigger.getAttribute("data-path");
+                modal.show();
+
+                try {
+                    const response = await fetch(dataURL);
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    const data = await response.text();
+
+                    document.getElementById("content-modal").querySelector(".modal-body").classList.remove("loading");
+                    document.getElementById("content-modal").querySelector(".modal-body").innerHTML = data;
+                } catch (error) {
+                    document.getElementById("content-modal").querySelector(".modal-body").innerHTML = "Error! Data Not Loaded";
+                }        
+            }
+        });
     },
     animateNavigation: function() {
         const navItems = document.querySelectorAll(".nav-list > li");

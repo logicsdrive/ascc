@@ -14,7 +14,7 @@
         <main class="main-content">
             <div class="video-area">
                 <video class="background-video" autoplay muted loop playsinline>
-                    <source src="images/arabic-science-video.mp4" type="video/mp4">
+                    <source src="images/arabic-science-section-video.mp4" type="video/mp4">
                 </video>
                 <div class="sections-grid">
                     <div class="arabic-science-block arabic-science-block1">

@@ -76,6 +76,8 @@ img{display: block; line-height: 0; font-size: 0; max-width: 100%;}
 figure{margin: 0;}
 
 p{font-family: var(--font-thin);}
+a{color: var(--primary-color); text-decoration: none;}
+a:hover{color: rgb(203, 138, 52);}
 
 .last-margin-0 > *:last-child{margin-bottom: 0 !important;}
 .cursor-pointer {
@@ -110,6 +112,15 @@ p{font-family: var(--font-thin);}
 
 .main-content{padding: 3rem 0 5rem; position: relative;}
 
+
+.content-modal{
+    --bs-modal-width: 800px;
+
+    .loading{min-height: 400px; display: flex; align-items: center; justify-content: center;}
+    .loading:after{content: "Loading..."; color: black; font-size: 1rem; font-family: var(--font-medium); text-transform: uppercase}
+}
+
+
 @import "components/page_title_banner";
 @import "components/navigation";
 @import "components/header";
@@ -141,6 +152,8 @@ p{font-family: var(--font-thin);}
     pointer-events: none; opacity: 1; transition: opacity 0.5s ease;
 
     img{max-width: 308px;}
+
+    display: none;
 }
 .page-loaded .page-loader{opacity: 0;}
 
@@ -317,4 +330,8 @@ strong{font-family: var(--font-medium); font-weight: normal;}
     .flatpickr-day.selected,
     .flatpickr-day.today:hover,
     .flatpickr-day.today{border: 0; background: var(--primary-color); color: white;}
+}
+
+.echo-modal-video{
+    video{height: 300px; width: 100%; border: 0; object-fit: cover;}
 }

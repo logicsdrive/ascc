@@ -14,7 +14,7 @@
         <main class="main-content">
             <div class="video-area">
                 <video class="background-video" autoplay muted loop playsinline>
-                    <source src="images/human-body.mp4" type="video/mp4">
+                    <source src="images/human-body-content.mp4" type="video/mp4">
                 </video>
                 <div class="sections-grid">
                     <div class="container">

@@ -8,13 +8,14 @@
             $title = "Natural History – Our Earth";
             $tagline = "See the world of geology and geography come alive as we delve below the earth’s crust to its fiery core";
             $image = "images/earth-banner-image.jpg";
+            $video = "images/our-earth-banner-video.mp4";
             $classes = "v2";
             include 'components/page-title-banner.php';
         ?>
         <main class="main-content">
             <div class="video-area">
                 <video class="background-video" autoplay muted loop playsinline>
-                    <source src="images/sunshine.mp4" type="video/mp4">
+                    <source src="images/our-earth-section-video.mp4" type="video/mp4">
                 </video>
                 <div class="sections-grid">
                     <div class="container">

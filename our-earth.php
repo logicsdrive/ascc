@@ -7,7 +7,6 @@
         <?php
             $title = "Natural History – Our Earth";
             $tagline = "See the world of geology and geography come alive as we delve below the earth’s crust to its fiery core";
-            $image = "images/earth-banner-image.jpg";
             $video = "images/our-earth-banner-video.mp4";
             $classes = "v2";
             include 'components/page-title-banner.php';

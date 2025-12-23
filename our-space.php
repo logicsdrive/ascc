@@ -7,14 +7,14 @@
         <?php
             $title = "Space";
             $tagline = "The study of space and the universe has always evoked mystery and inspiration.";
-            $image = "images/space-banner.jpg";
+            $video = "images/space-banner-video.mp4";
             $classes = "v2";
             include 'components/page-title-banner.php';
         ?>
         <main class="main-content">
             <div class="video-area">
                 <video class="background-video" autoplay muted loop playsinline>
-                    <source src="images/space.mp4" type="video/mp4">
+                    <source src="images/space-section-video.mp4" type="video/mp4">
                 </video>
                 <div class="container">
                     <div class="sections-grid">

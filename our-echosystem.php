@@ -7,14 +7,14 @@
         <?php
             $title = "Natural History – Our Earth";
             $tagline = "See the world of geology and geography come alive as we delve below the earth’s crust to its fiery core";
-            $image = "images/echosystem-banner.jpg";
+            $video = "images/echosystem-banner-video.mp4";
             $classes = "v2";
             include 'components/page-title-banner.php';
         ?>
         <main class="main-content">
             <div class="video-area">
                 <video class="background-video" autoplay muted loop playsinline>
-                    <source src="images/echosystem-video.mp4" type="video/mp4">
+                    <source src="images/echosystem-section-video.mp4" type="video/mp4">
                 </video>
                 <div class="sections-grid">
                     <section class="echo-block1">

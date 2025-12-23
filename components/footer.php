@@ -218,9 +218,9 @@
 
 <!-- scripts -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker/dist/js/datepicker-full.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <!-- Optional Custom JS -->
  
 <script src="js/main.js"></script>

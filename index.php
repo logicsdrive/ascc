@@ -7,7 +7,7 @@
         <div class="enter-the-center">
             <?php include 'components/header.php';  ?>
             <video class="background-video" autoplay muted loop playsinline>
-                <source src="images/space.mp4" type="video/mp4">
+                <source src="images/trans.mp4" type="video/mp4">
             </video>
             <h1 class="title">
                 <span class="ar wow animate__animated animate__fadeInLeft">مركز الشيخ عبد الله السالم الثقافي</span>
@@ -128,34 +128,52 @@
                     <div class="swiper events_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image1.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image1.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image2.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image2.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image3.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image3.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image4.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image4.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image5.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image5.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image1.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image1.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image2.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image2.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image3.jpg" alt="" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image4.jpg" alt="" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image5.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image3.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                         </div>
                         <div class="h-list arrows">
@@ -180,34 +198,52 @@
                     <div class="swiper events_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image1.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image1.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image2.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image2.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image3.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image3.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image4.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image4.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image5.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image5.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image1.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image1.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image2.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image2.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image3.jpg" alt="" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image4.jpg" alt="" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image5.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image3.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                         </div>
                         <div class="h-list arrows">
@@ -232,34 +268,52 @@
                     <div class="swiper events_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image1.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image1.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image2.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image2.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image3.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image3.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image4.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image4.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image5.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image5.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image1.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image1.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image2.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image2.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image3.jpg" alt="" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image4.jpg" alt="" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image5.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image3.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                         </div>
                         <div class="h-list arrows">
@@ -284,34 +338,52 @@
                     <div class="swiper events_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image1.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image1.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image2.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image2.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image3.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image3.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image4.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image4.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image5.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image5.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image1.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image1.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image2.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image2.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image3.jpg" alt="" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image4.jpg" alt="" /></div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="image-item"><img src="images/echo-image5.jpg" alt="" /></div>
+                                <div class="item">
+                                    <div class="image"><img src="images/echo-image3.jpg" alt="" /></div>
+                                    <label class="lbl">A journey under starts</label>
+                                </div>
                             </div>
                         </div>
                         <div class="h-list arrows">
@@ -406,9 +478,18 @@
         <?php include 'components/footer.php';  ?>
         <script>
             const swiperConfig = {
-                slidesPerView: 5,
-                spaceBetween: 0,
+                slidesPerView: "auto",
+                spaceBetween: 190,                
+                centeredSlides: true,
                 loop: true,
+                effect: "coverflow",
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 120,
+                    modifier: 1,
+                    slideShadows: false,
+                }
             };
             const swiperElements = document.querySelectorAll(".events_swiper");
             swiperElements.forEach((el) => {

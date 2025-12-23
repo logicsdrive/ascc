@@ -41,7 +41,7 @@
     .devider{width: 2px; height: 10px; display: block; background: white;}
 
     .right{color: white; font-size: px_rem(18px);}
-    .right .btn{min-height: 50px;}
+    .right .btn{min-height: 50px; --bs-btn-padding-x: 1.5rem; padding-top: 9px;}
     .list{gap: px_rem(40px);}
     .nav-icon span{padding-top: 4px;}
     .menu-list{gap: px_rem(14px);}

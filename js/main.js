@@ -8,16 +8,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const ascc_app = {
     init: function(){
-        document.querySelectorAll('.js-datepicker').forEach(input => {
-            const picker = new Datepicker(input, {
-                format: 'dd-mm-yyyy',
-                autohide: true
+        if (document.querySelector('.js-calendar')) {
+            flatpickr(".js-calendar", {
+                showMonths: 1,
+                dateFormat: "Y-m-d",
+                locale: {
+                    weekdays: {
+                        shorthand: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+                        longhand: [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday",
+                            "Sunday"
+                        ]
+                    }
+                }
             });
-            const icon = input.closest('.form-element').querySelector('.js-datepicker');
-            icon.addEventListener('click', () => {
-                picker.show();
-            });
-        });
+        }
     },
     initMuseumsSlider: function() {
         const museums_swiper = new Swiper(".other-museums .swiper", {

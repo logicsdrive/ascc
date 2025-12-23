@@ -27,40 +27,112 @@
                             </div>
                             <div class="rules">
                                 <div class="item dropdown">
-                                    <svg data-bs-toggle="dropdown" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13275 1.53366C3.74285 2.38098 2.01999 3.91116 1.30327 4.93505C-0.56794 7.60521 -0.394606 14.2459 1.63301 17.5707C5.57375 24.0349 16.1931 24.0349 20.1339 17.5707C22.3808 13.8864 22.3558 7.40285 20.0839 4.51421C16.5003 -0.0416702 9.88051 -1.36143 5.13275 1.53366ZM10.1893 6.19031C9.2815 7.0981 9.63703 8.04943 10.8834 8.04943C11.5485 8.04943 12.0927 7.7084 12.0927 7.29078C12.0927 6.27416 10.8334 5.54615 10.1893 6.19031ZM9.55077 12.8859C9.78618 16.2945 10.0804 16.9177 11.451 16.9177C12.5974 16.9177 12.928 16.5444 12.5821 15.6423C12.3128 14.9409 12.0927 13.1269 12.0927 11.6112C12.0927 9.52479 11.7501 8.85563 10.6819 8.85483C9.48869 8.85483 9.31455 9.47722 9.55077 12.8859Z" fill="#9EACAA"/>
-                                    </svg>
-                                    <span>Dress Policy</span>
-                                    <div class="dropdown-menu dropup">
-                                        ag
+                                    <div class="dropdown-menu rules-dropdown-menu">
+                                        <div class="data">
+                                            <img src="images/dress_icon.svg" alt="" />
+                                            <p>Smart casual attire. It is preferred to wear comfortable shoes. Short pants and revealing clothes are not allowed.</p>
+                                        </div>
+                                        <div class="dresses">
+                                            <div class="ele">
+                                                <figure class="image"><img src="images/dress.png" alt="" /></figure>
+                                                <label class="lbl">No Revealing Clothes</label>
+                                            </div>
+                                            <div class="ele">
+                                                <figure class="image"><img src="images/slippers.png" alt="" /></figure>
+                                                <label class="lbl">No Slippers</label>
+                                            </div>
+                                            <div class="ele">
+                                                <figure class="image"><img src="images/half_sleeve.png" alt="" /></figure>
+                                                <label class="lbl">No Sleeveless Shirts</label>
+                                            </div>
+                                            <div class="ele">
+                                                <figure class="image"><img src="images/shorts.png" alt="" /></figure>
+                                                <label class="lbl">No Shorts</label>
+                                            </div>
+                                            <div class="ele">
+                                                <figure class="image"><img src="images/shorts.png" alt="" /></figure>
+                                                <label class="lbl">No Shorts</label>
+                                            </div>
+                                            <div class="ele">
+                                                <figure class="image"><img src="images/sportswear.png" alt="" /></figure>
+                                                <label class="lbl">No Sportswear</label>
+                                            </div>
+                                            <div class="ele">
+                                                <figure class="image"><img src="images/jeans.png" alt="" /></figure>
+                                                <label class="lbl">No Jeans Or Clothes</label>
+                                            </div>
+                                            <div class="ele">
+                                                <figure class="image"><img src="images/hat.png" alt="" /></figure>
+                                                <label class="lbl">No Hats</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trigger" data-bs-toggle="dropdown" data-bs-offset="0, 30">
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13275 1.53366C3.74285 2.38098 2.01999 3.91116 1.30327 4.93505C-0.56794 7.60521 -0.394606 14.2459 1.63301 17.5707C5.57375 24.0349 16.1931 24.0349 20.1339 17.5707C22.3808 13.8864 22.3558 7.40285 20.0839 4.51421C16.5003 -0.0416702 9.88051 -1.36143 5.13275 1.53366ZM10.1893 6.19031C9.2815 7.0981 9.63703 8.04943 10.8834 8.04943C11.5485 8.04943 12.0927 7.7084 12.0927 7.29078C12.0927 6.27416 10.8334 5.54615 10.1893 6.19031ZM9.55077 12.8859C9.78618 16.2945 10.0804 16.9177 11.451 16.9177C12.5974 16.9177 12.928 16.5444 12.5821 15.6423C12.3128 14.9409 12.0927 13.1269 12.0927 11.6112C12.0927 9.52479 11.7501 8.85563 10.6819 8.85483C9.48869 8.85483 9.31455 9.47722 9.55077 12.8859Z" fill="#9EACAA"/>
+                                        </svg>
+                                        <span>Dress Policy</span>
                                     </div>
                                 </div>
                                 <div class="item dropdown">
-                                    <svg data-bs-toggle="dropdown" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13275 1.53366C3.74285 2.38098 2.01999 3.91116 1.30327 4.93505C-0.56794 7.60521 -0.394606 14.2459 1.63301 17.5707C5.57375 24.0349 16.1931 24.0349 20.1339 17.5707C22.3808 13.8864 22.3558 7.40285 20.0839 4.51421C16.5003 -0.0416702 9.88051 -1.36143 5.13275 1.53366ZM10.1893 6.19031C9.2815 7.0981 9.63703 8.04943 10.8834 8.04943C11.5485 8.04943 12.0927 7.7084 12.0927 7.29078C12.0927 6.27416 10.8334 5.54615 10.1893 6.19031ZM9.55077 12.8859C9.78618 16.2945 10.0804 16.9177 11.451 16.9177C12.5974 16.9177 12.928 16.5444 12.5821 15.6423C12.3128 14.9409 12.0927 13.1269 12.0927 11.6112C12.0927 9.52479 11.7501 8.85563 10.6819 8.85483C9.48869 8.85483 9.31455 9.47722 9.55077 12.8859Z" fill="#9EACAA"/>
-                                    </svg>
-                                    <span>Age Restrictions</span>
-                                    <div class="dropdown-menu dropup">
-                                        ag
+                                    <div class="dropdown-menu rules-dropdown-menu">
+                                        <div class="data">
+                                            <img src="images/kids_icon.svg" alt="" />
+                                            <p>Kids under the age of 12 are not allowed inside the Museum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="trigger" data-bs-toggle="dropdown" data-bs-offset="0, 30">
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13275 1.53366C3.74285 2.38098 2.01999 3.91116 1.30327 4.93505C-0.56794 7.60521 -0.394606 14.2459 1.63301 17.5707C5.57375 24.0349 16.1931 24.0349 20.1339 17.5707C22.3808 13.8864 22.3558 7.40285 20.0839 4.51421C16.5003 -0.0416702 9.88051 -1.36143 5.13275 1.53366ZM10.1893 6.19031C9.2815 7.0981 9.63703 8.04943 10.8834 8.04943C11.5485 8.04943 12.0927 7.7084 12.0927 7.29078C12.0927 6.27416 10.8334 5.54615 10.1893 6.19031ZM9.55077 12.8859C9.78618 16.2945 10.0804 16.9177 11.451 16.9177C12.5974 16.9177 12.928 16.5444 12.5821 15.6423C12.3128 14.9409 12.0927 13.1269 12.0927 11.6112C12.0927 9.52479 11.7501 8.85563 10.6819 8.85483C9.48869 8.85483 9.31455 9.47722 9.55077 12.8859Z" fill="#9EACAA"/>
+                                        </svg>
+                                        <span>Age Restrictions</span>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13275 1.53366C3.74285 2.38098 2.01999 3.91116 1.30327 4.93505C-0.56794 7.60521 -0.394606 14.2459 1.63301 17.5707C5.57375 24.0349 16.1931 24.0349 20.1339 17.5707C22.3808 13.8864 22.3558 7.40285 20.0839 4.51421C16.5003 -0.0416702 9.88051 -1.36143 5.13275 1.53366ZM10.1893 6.19031C9.2815 7.0981 9.63703 8.04943 10.8834 8.04943C11.5485 8.04943 12.0927 7.7084 12.0927 7.29078C12.0927 6.27416 10.8334 5.54615 10.1893 6.19031ZM9.55077 12.8859C9.78618 16.2945 10.0804 16.9177 11.451 16.9177C12.5974 16.9177 12.928 16.5444 12.5821 15.6423C12.3128 14.9409 12.0927 13.1269 12.0927 11.6112C12.0927 9.52479 11.7501 8.85563 10.6819 8.85483C9.48869 8.85483 9.31455 9.47722 9.55077 12.8859Z" fill="#9EACAA"/>
-                                    </svg>
-                                    <span>Parking</span>
+                                <div class="item dropdown">
+                                    <div class="dropdown-menu rules-dropdown-menu">
+                                        <div class="data">
+                                            <img src="images/parking_icon.svg" alt="" />
+                                            <p>There is a multi-story parking on the premises</p>
+                                        </div>
+                                    </div>
+                                    <div class="trigger" data-bs-toggle="dropdown" data-bs-offset="0, 30">
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13275 1.53366C3.74285 2.38098 2.01999 3.91116 1.30327 4.93505C-0.56794 7.60521 -0.394606 14.2459 1.63301 17.5707C5.57375 24.0349 16.1931 24.0349 20.1339 17.5707C22.3808 13.8864 22.3558 7.40285 20.0839 4.51421C16.5003 -0.0416702 9.88051 -1.36143 5.13275 1.53366ZM10.1893 6.19031C9.2815 7.0981 9.63703 8.04943 10.8834 8.04943C11.5485 8.04943 12.0927 7.7084 12.0927 7.29078C12.0927 6.27416 10.8334 5.54615 10.1893 6.19031ZM9.55077 12.8859C9.78618 16.2945 10.0804 16.9177 11.451 16.9177C12.5974 16.9177 12.928 16.5444 12.5821 15.6423C12.3128 14.9409 12.0927 13.1269 12.0927 11.6112C12.0927 9.52479 11.7501 8.85563 10.6819 8.85483C9.48869 8.85483 9.31455 9.47722 9.55077 12.8859Z" fill="#9EACAA"/>
+                                        </svg>
+                                        <span>Parking</span>
+                                    </div>
                                 </div>
-                                <div class="item">
-                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13275 1.53366C3.74285 2.38098 2.01999 3.91116 1.30327 4.93505C-0.56794 7.60521 -0.394606 14.2459 1.63301 17.5707C5.57375 24.0349 16.1931 24.0349 20.1339 17.5707C22.3808 13.8864 22.3558 7.40285 20.0839 4.51421C16.5003 -0.0416702 9.88051 -1.36143 5.13275 1.53366ZM10.1893 6.19031C9.2815 7.0981 9.63703 8.04943 10.8834 8.04943C11.5485 8.04943 12.0927 7.7084 12.0927 7.29078C12.0927 6.27416 10.8334 5.54615 10.1893 6.19031ZM9.55077 12.8859C9.78618 16.2945 10.0804 16.9177 11.451 16.9177C12.5974 16.9177 12.928 16.5444 12.5821 15.6423C12.3128 14.9409 12.0927 13.1269 12.0927 11.6112C12.0927 9.52479 11.7501 8.85563 10.6819 8.85483C9.48869 8.85483 9.31455 9.47722 9.55077 12.8859Z" fill="#9EACAA"/>
-                                    </svg>
-                                    <span>Food</span>
+                                <div class="item dropdown">
+                                    <div class="dropdown-menu rules-dropdown-menu">
+                                        <div class="data">
+                                            <img src="images/food_icon.svg" alt="" />
+                                            <p>It is prohibited to bring food and drink into the Museum There is a coffee shop at the main lobby</p>
+                                        </div>
+                                    </div>
+                                    <div class="trigger" data-bs-toggle="dropdown" data-bs-offset="0, 30">
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13275 1.53366C3.74285 2.38098 2.01999 3.91116 1.30327 4.93505C-0.56794 7.60521 -0.394606 14.2459 1.63301 17.5707C5.57375 24.0349 16.1931 24.0349 20.1339 17.5707C22.3808 13.8864 22.3558 7.40285 20.0839 4.51421C16.5003 -0.0416702 9.88051 -1.36143 5.13275 1.53366ZM10.1893 6.19031C9.2815 7.0981 9.63703 8.04943 10.8834 8.04943C11.5485 8.04943 12.0927 7.7084 12.0927 7.29078C12.0927 6.27416 10.8334 5.54615 10.1893 6.19031ZM9.55077 12.8859C9.78618 16.2945 10.0804 16.9177 11.451 16.9177C12.5974 16.9177 12.928 16.5444 12.5821 15.6423C12.3128 14.9409 12.0927 13.1269 12.0927 11.6112C12.0927 9.52479 11.7501 8.85563 10.6819 8.85483C9.48869 8.85483 9.31455 9.47722 9.55077 12.8859Z" fill="#9EACAA"/>
+                                        </svg>
+                                        <span>Food</span>
+                                    </div>
                                 </div>
-                                <div class="item">
-                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13275 1.53366C3.74285 2.38098 2.01999 3.91116 1.30327 4.93505C-0.56794 7.60521 -0.394606 14.2459 1.63301 17.5707C5.57375 24.0349 16.1931 24.0349 20.1339 17.5707C22.3808 13.8864 22.3558 7.40285 20.0839 4.51421C16.5003 -0.0416702 9.88051 -1.36143 5.13275 1.53366ZM10.1893 6.19031C9.2815 7.0981 9.63703 8.04943 10.8834 8.04943C11.5485 8.04943 12.0927 7.7084 12.0927 7.29078C12.0927 6.27416 10.8334 5.54615 10.1893 6.19031ZM9.55077 12.8859C9.78618 16.2945 10.0804 16.9177 11.451 16.9177C12.5974 16.9177 12.928 16.5444 12.5821 15.6423C12.3128 14.9409 12.0927 13.1269 12.0927 11.6112C12.0927 9.52479 11.7501 8.85563 10.6819 8.85483C9.48869 8.85483 9.31455 9.47722 9.55077 12.8859Z" fill="#9EACAA"/>
-                                    </svg>
-                                    <span>Opening Hours</span>
+                                <div class="item dropdown">
+                                    <div class="dropdown-menu rules-dropdown-menu">
+                                        <div class="data">
+                                            <img src="images/hours_icon.svg" alt="" />
+                                            <ul class="timing">
+                                                <li>Monday to Saturday<span>9:00 Am - 8:00 Pm</span></li>
+                                                <li>Friday<span>2:00 PM-8:00 PM</span></li>
+                                                <li>Sunday<span>CLOSED</span></li>
+                                            <ul>
+                                        </div>
+                                    </div>
+                                    <div class="trigger" data-bs-toggle="dropdown" data-bs-offset="0, 30">
+                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.13275 1.53366C3.74285 2.38098 2.01999 3.91116 1.30327 4.93505C-0.56794 7.60521 -0.394606 14.2459 1.63301 17.5707C5.57375 24.0349 16.1931 24.0349 20.1339 17.5707C22.3808 13.8864 22.3558 7.40285 20.0839 4.51421C16.5003 -0.0416702 9.88051 -1.36143 5.13275 1.53366ZM10.1893 6.19031C9.2815 7.0981 9.63703 8.04943 10.8834 8.04943C11.5485 8.04943 12.0927 7.7084 12.0927 7.29078C12.0927 6.27416 10.8334 5.54615 10.1893 6.19031ZM9.55077 12.8859C9.78618 16.2945 10.0804 16.9177 11.451 16.9177C12.5974 16.9177 12.928 16.5444 12.5821 15.6423C12.3128 14.9409 12.0927 13.1269 12.0927 11.6112C12.0927 9.52479 11.7501 8.85563 10.6819 8.85483C9.48869 8.85483 9.31455 9.47722 9.55077 12.8859Z" fill="#9EACAA"/>
+                                        </svg>
+                                        <span>Opening Hours</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -68,8 +140,8 @@
                             <h3 class="title">Set Your Time</h3>
                             <div class="form-element">
                                 <label class="control-label">Start Date</label>
-                                <input type="text" value="13-09-2025" readonly class="form-control js-datepicker" />
-                                <img class="icon js-datepicker-icon" src="images/calender_icon.svg" alt="" />
+                                <input type="text" value="13-09-2025" readonly class="form-control js-calendar" />
+                                <img class="icon pointer-events-none" src="images/calender_icon.svg" alt="" />
                             </div>
                             <div class="select-ticket-type">
                                 <h3 class="title">Select Ticket type</h3>

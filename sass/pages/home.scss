@@ -70,11 +70,29 @@
         .title-area{display: flex; margin-bottom: 34px; gap: 20px; flex-wrap: wrap; align-items: center; justify-content: space-between;}
     
     
-        .swiper-slide{width: 354px;}
+        .swiper-wrapper{align-items: center; min-height: 450px;}
+        .swiper-slide{width: 270px;}
 
-        .image-item{height: 490px; background: #EEE; position: relative;}
-        .image-item:after{content: ""; background: rgba(black, 0.50); position: absolute; z-index: 1; top: 0; right: 0; bottom: 0; left: 0;}
-        .image-item img{width: 100%; height: 100%; object-fit: cover;}
+        .item{
+            position: relative;
+            transition: all 0.5s ease 0.3s;
+            opacity: 0.6;
+            
+            .image{height: 328px; background: #EEE; position: relative;}
+            .image:after{content: ""; background: rgba(black, 0.50); position: absolute; z-index: 1; top: 0; right: 0; bottom: 0; left: 0;}
+            .image img{width: 100%; height: 100%; object-fit: cover;}
+        
+            .lbl{display: flex; text-transform: uppercase; transform: scale(1);  justify-content: center; font-size: px_rem(20px); margin-top: px_rem(20px); line-height: 1; text-align: center; color: rgba(0, 0, 0, 1); font-family: var(--font-medium);}
+        }
+
+        .swiper-slide-active .item{transform: scale(1.17, 1.22); opacity: 1;}
+        .swiper-slide-active .item .lbl{
+            /* 1 divided by 1.2 = 0.8333 */
+            transform: scale(0.8547, 0.8196); 
+            
+            /* Ensure the transform stays centered */
+            transform-origin: center;
+        }
 
         .arrows{justify-content: center; padding-top: 3rem; gap: 20px; position: relative; z-index: 11;}
         .arrows .arrow{color: rgba(169, 169, 169, 1); cursor: pointer;}
@@ -82,6 +100,6 @@
     }
 
     .contact{
-        background: #25262a;
+        background: #25262a url(/images/contact-top-pattern.jpg) center top repeat-x;
     }
 }

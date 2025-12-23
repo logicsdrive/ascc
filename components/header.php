@@ -3,7 +3,7 @@
 </div>
 <header class="site-header">
     <div class="container">
-        <a href="/"><img src="images/header_logo.svg" alt="" /></a>
+        <a href="/" class="logo"><img src="images/site_logo.png" alt="" /></a>
         <div class="right">
             <div class="h-list list">
                 <div class="h-list menu-list">
@@ -25,7 +25,7 @@
                     <span class="devider"></span>
                     <a href="#" class="lang-link">العربية</a>
                     <span class="devider"></span>
-                    <div class="h-list gap-2 nav-icon cursor-pointer" onclick="document.body.classList.add('menu-opened')">
+                    <div class="h-list gap-2 nav-icon cursor-pointer" id="nav-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 7H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                             <path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>

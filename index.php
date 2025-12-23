@@ -80,28 +80,28 @@
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="item wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                            <div class="item item1">
                                 <a href="#" class="btn btn-outline-primary">Courtyard</a>
                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
                                 <a href="#" class="read-more">Read more</a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="item wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                            <div class="item item2">
                                 <a href="#" class="btn btn-outline-primary">Opening Hours</a>
                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
                                 <a href="#" class="read-more">Read more</a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="item wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                            <div class="item item3">
                                 <a href="#" class="btn btn-outline-primary">Ticket Price</a>
                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
                                 <a href="#" class="read-more">Read more</a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="item wow animate__animated animate__fadeInUp">
+                            <div class="item">
                                 <a href="#" class="btn btn-outline-primary">Courtyard</a>
                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
                                 <a href="#" class="read-more">Read more</a>

@@ -28,7 +28,13 @@
 
     .container{display: flex; min-height: 160px; position: relative; z-index: 2; align-items: center; justify-content: space-between;}
 
+    @keyframes fadeOutIn {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.2; }
+    }
+
     .logo{display: block;}
+    .logo img{max-height: 101px; animation: fadeOutIn 4s infinite forwards 0.2s;}
     .lang-link{color: inherit; text-decoration: none;}
 
     .devider{width: 2px; height: 10px; display: block; background: white;}

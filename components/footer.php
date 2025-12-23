@@ -2,8 +2,7 @@
     <div class="container">
         <div class="grid">
             <div class="item logo-holder">
-                <!-- <img src="images/footer-logo.png" alt="" /> -->
-                <img src="images/loader.gif" alt="" />
+                <img src="images/site_logo.png" alt="" />
             </div>
             <div class="item quick-links last-margin-0">
                 <h4>Quick Links</h4>

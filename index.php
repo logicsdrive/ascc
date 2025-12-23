@@ -7,7 +7,7 @@
         <div class="enter-the-center">
             <?php include 'components/header.php';  ?>
             <video class="background-video" autoplay muted loop playsinline>
-                <source src="images/trans.mp4" type="video/mp4">
+                <source src="images/hero.mp4" type="video/mp4">
             </video>
             <h1 class="title">
                 <span class="ar wow animate__animated animate__fadeInLeft">مركز الشيخ عبد الله السالم الثقافي</span>

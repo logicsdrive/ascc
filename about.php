@@ -13,14 +13,14 @@
             <div class="about">
                 <div class="container">
                     <div class="h-list nav tabs-list">
-                        <a href="#tab1" data-bs-toggle="tab" class="btn btn-outline-dark">Sheikh Abdullah Al Salem</a>
-                        <a href="#tab2" data-bs-toggle="tab" class="btn btn-outline-dark active">The Centre</a>
+                        <a href="#tab1" data-bs-toggle="tab" class="btn btn-outline-dark active">Sheikh Abdullah Al Salem</a>
+                        <a href="#tab2" data-bs-toggle="tab" class="btn btn-outline-dark">The Centre</a>
                         <a href="#tab3" data-bs-toggle="tab" class="btn btn-outline-dark">Visit Us</a>
                         <a href="#tab4" data-bs-toggle="tab" class="btn btn-outline-dark">Facilities</a>
                     </div>
                 </div>
                 <div class="tab-content">
-                    <div class="tab-pane fade" id="tab1" role="tabpanel">
+                    <div class="tab-pane active" id="tab1" role="tabpanel">
                         <div class="container">
                             <div class="view1">
                                 <div class="text">
@@ -32,12 +32,12 @@
                                     </div>
                                 </div>
                                 <figure class="image">
-                                    <img src="images/education.jpg" alt="" />
+                                    <img src="images/sheikh_abdullah.jpg" alt="" />
                                 </figure>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane active" id="tab2" role="tabpanel">
+                    <div class="tab-pane fade" id="tab2" role="tabpanel">
                         <div class="view2">
                             <div class="container">
                                 <div class="image-text">

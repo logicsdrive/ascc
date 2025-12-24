@@ -7,19 +7,34 @@
         <?php
             $title = "Natural History – Our Earth";
             $tagline = "See the world of geology and geography come alive as we delve below the earth’s crust to its fiery core";
-            $image = "images/trans-robots-banner.jpg";
+            $video = "images/trans-banner-video.mp4";
             $classes = "v2";
             include 'components/page-title-banner.php';
         ?>
+        <svg width="0" height="0" style="position: absolute;">
+            <defs>
+                <clipPath id="museum-clip" clipPathUnits="objectBoundingBox">
+                <rect x="0" y="0.152" width="0.232" height="0.836" rx="0.02" />
+                
+                <rect x="0.256" y="0" width="0.232" height="0.836" rx="0.02" />
+                
+                <rect x="0.512" y="0.152" width="0.232" height="0.836" rx="0.02" />
+                
+                <rect x="0.768" y="0" width="0.232" height="0.836" rx="0.02" />
+                </clipPath>
+            </defs>
+        </svg>
         <main class="main-content">
             <div class="video-area">
                 <video class="background-video" autoplay muted loop playsinline>
-                    <source src="images/trans.mp4" type="video/mp4">
+                    <source src="images/trans-section-video.mp4" type="video/mp4">
                 </video>
                 <div class="sections-grid">
                     <div class="container">
                         <section class="trans-block1">
-                            <img src="images/trans-image1.png" alt="" />
+                            <figure class="image">
+                                <img class="masked-image" src="images/trans_block_1_image.jpg"  alt="" />
+                            </figure>
                             <div class="info last-margin-0">
                                 <h3 class="section-title">From Steam to Circuits Explore the Future of Innovation</h3>
                                 <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers. Learn about Kuwait’s maritime heritage and its long history of boat-building.</p>

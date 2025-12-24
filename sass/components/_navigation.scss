@@ -1,10 +1,17 @@
 .menu-opened{overflow: hidden;}
+.menu-opened .site-nav-overlay{display: block;}
+
+.site-nav-overlay{
+    width: calc(100% - var(--site-nav-width)); height: 100%;
+    position: fixed; top: 0; left: 0;
+    z-index: 111; display: none; cursor: pointer;
+}
 .site-nav{
     position: fixed; top: 0; right: -100%; bottom: 0; z-index: 111;
     padding: 32px 100px 40px; display: grid; gap: 38px; align-items: flex-start; transition: right 0.7s ease;
     overflow-y: auto; background: rgba(#202125, 0.75);
 
-    max-width: 800px; width: 100%;
+    max-width: var(--site-nav-width); width: 100%;
 
     .close-element{padding: 36px 0; cursor: pointer; color: white; font-size: 18px; display: flex; align-items: center; justify-content: flex-end; gap: 10px;}
 

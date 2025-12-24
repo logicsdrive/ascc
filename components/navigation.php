@@ -1,3 +1,4 @@
+<div class="site-nav-overlay" onclick="document.body.classList.remove('menu-opened')"></div>
 <div class="site-nav">
     <div class="close-element" onclick="document.body.classList.remove('menu-opened')">
         <span>Close</span>

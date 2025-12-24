@@ -72,11 +72,7 @@
                     </div>
                 </div>
                 <div class="block2">
-                    <iframe src="https://www.google.com/maps?output=embed&q=Karachi&z=13&hl=en&t=m&darkmode=1"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <img src="images/contact_map.jpg" alt="" />
                 </div>
             </div>
         </main>

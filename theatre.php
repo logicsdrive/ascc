@@ -11,6 +11,16 @@
         ?>
         <main class="main-content">
             <div class="theatre">
+                <svg width="0" height="0" style="position: absolute;">
+                    <defs>
+                        <clipPath id="museum-clip" clipPathUnits="objectBoundingBox">
+                            <rect x="0" y="0.152" width="0.224" height="0.836" rx="0.03" />
+                            <rect x="0.258" y="0" width="0.224" height="0.836" rx="0.03" />
+                            <rect x="0.516" y="0.152" width="0.224" height="0.836" rx="0.03" />
+                            <rect x="0.774" y="0" width="0.224" height="0.836" rx="0.03" />
+                        </clipPath>
+                    </defs>
+                </svg>
                 <div class="container">
                     <div class="grid">
                         <div class="text">
@@ -18,7 +28,9 @@
                             <p>With its state-of-the-art facilities the Theatre and exhibition spaces offer unique cultural programmes relating to the arts and sciences, including new works by emerging artists, actors, performers and art students. Whether watching local or international cultural events, or participating in academic conferences and corporate exhibitions, the Centre’s 282-seat venue provides visitors of all ages with an engaging theatre-going experience and a premier venue in which to nurture homegrown talent.</p>
                             <img class="theatre_icon" src="images/theatre_icon.png" alt="" />
                         </div>
-                        <img class="image" src="images/theatre-page-image.png" alt="" />
+                        <figure class="image">
+                            <img class="museum-clip" src="images/theatre_side_image.jpg" alt="" />
+                        </figure>
                     </div>
                 </div>
             </div>

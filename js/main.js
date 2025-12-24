@@ -51,8 +51,8 @@ window.addEventListener('load', (event) => {
     const plan_visit_timeline = gsap.timeline({
         scrollTrigger: {
           trigger: ".home-page .plan-visit",
-          start: "top 40%",
-          end: "bottom 120%",
+          start: "top 10%",
+          end: "bottom 100%",
           scrub: 1,
           markers: false
         }
@@ -72,8 +72,6 @@ window.addEventListener('load', (event) => {
         opacity: 0,
         duration: 2.5
     }, 0);
-    
-    new WOW().init();
 });
 document.addEventListener("DOMContentLoaded", function() {
     ascc_app.init();
@@ -175,5 +173,13 @@ const ascc_app = {
         }
 
         numEl.innerText = value;
+    },
+    scrollTo: function(section){
+        gsap.to(window, {
+            duration: 1,
+            scrollTo: document.getElementById(section), 
+            delay: 0,
+            ease: "power4.inOut"
+        });
     }
 };

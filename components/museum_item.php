@@ -1,10 +1,11 @@
-<div class="museum-item <?= $category_type ?>">
+<div class="museum-item">
     <a href="#" class="image">
-        <img src="images/echo-image1.jpg" alt="" />
+        <img src="images/trans_block_1_image.jpg" alt="" />
     </a>
+    <span class="border-line" <?= isset($color) ? 'style="background: ' . $color . ';"' : ''; ?>></span>
     <div class="content">
         <div class="info">
-            <a href="#" class="museum_item__title">Our Earth</a>
+            <a href="#" class="museum_item__title">Ecosystems</a>
             <p>Enter the world of the dinosaurs! See the amazing reptiles and mammals that lived on Earth up.</p>
         </div>
         <div class="booking-information">

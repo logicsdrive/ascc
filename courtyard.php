@@ -14,28 +14,28 @@
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                            <figure class="image"><img src="images/earth-story-image.jpg" alt="" /></figure>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                            <figure class="image"><img src="images/earth-story-image.jpg" alt="" /></figure>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                            <figure class="image"><img src="images/earth-story-image.jpg" alt="" /></figure>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                            <figure class="image"><img src="images/earth-story-image.jpg" alt="" /></figure>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                            <figure class="image"><img src="images/earth-story-image.jpg" alt="" /></figure>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                            <figure class="image"><img src="images/earth-story-image.jpg" alt="" /></figure>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                            <figure class="image"><img src="images/earth-story-image.jpg" alt="" /></figure>
                         </div>
                         <div class="swiper-slide">
-                            <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
+                            <figure class="image"><img src="images/earth-story-image.jpg" alt="" /></figure>
                         </div>
                     </div>
                 </div>

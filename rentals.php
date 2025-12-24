@@ -4,11 +4,11 @@
         <?php include 'components/head.php';  ?>
     </head>
     <body class="rentals-page">
-        <?php
+        <!-- <?php
             $title = "Rentals";
             $image = "images/rentals-page-banner.jpg";
             include 'components/page-title-banner.php';
-        ?>
+        ?> -->
         <main class="main-content">
             <video class="background-video" autoplay muted loop playsinline>
                 <source src="images/rentals.mp4" type="video/mp4">
@@ -284,21 +284,76 @@
             </div>
         </main>
         <?php include 'components/footer.php';  ?>
-        <div class="modal fade gallery-modal" id="gallery-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal fade gallery-modal" id="gallery-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="swiper main-preview">
+                    <svg class="cross-icon" data-bs-dismiss="modal" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.4164 22C20.2084 22.0004 20.0025 21.9596 19.8104 21.88C19.6183 21.8005 19.4438 21.6837 19.297 21.5364L0.444639 2.68433C0.156106 2.38559 -0.00354907 1.98549 5.9878e-05 1.57018C0.00366882 1.15488 0.170254 0.757603 0.463934 0.463927C0.757615 0.170251 1.15489 0.00366877 1.57021 5.98771e-05C1.98552 -0.00354901 2.38563 0.156104 2.68437 0.444632L21.5368 19.2967C21.7581 19.5183 21.9087 19.8005 21.9697 20.1077C22.0307 20.4149 21.9992 20.7332 21.8793 21.0225C21.7594 21.3118 21.5564 21.5591 21.296 21.733C21.0357 21.907 20.7295 21.9999 20.4164 22Z" fill="white"/>
+                        <path d="M1.58363 22C1.27047 21.9999 0.964345 21.907 0.703958 21.733C0.44357 21.5591 0.2406 21.3118 0.120697 21.0225C0.000794558 20.7332 -0.0306603 20.4149 0.0303085 20.1077C0.0912774 19.8005 0.241934 19.5183 0.463238 19.2967L19.3156 0.444632C19.6144 0.156104 20.0145 -0.00354901 20.4298 5.98771e-05C20.8451 0.00366877 21.2424 0.170251 21.5361 0.463927C21.8297 0.757603 21.9963 1.15488 21.9999 1.57018C22.0035 1.98549 21.8439 2.38559 21.5554 2.68433L2.70297 21.5364C2.55618 21.6837 2.38171 21.8005 2.18961 21.88C1.9975 21.9596 1.79156 22.0004 1.58363 22Z" fill="white"/>
+                    </svg>
+                    <div class="main-preview">
+                        <div class="h-list arrows">
+                            <svg class="prev arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_7059_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)" stroke="currentColor" stroke-width="2"/>
+                                <path d="M25.1992 17.25L19.8538 22.5L25.1992 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <clipPath id="bgblur_0_782_7059_clip_path" transform="translate(40 40)"><rect x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)"/></clipPath>
+                                </defs>
+                            </svg>
+                            <svg class="next arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_6833_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="1" y="1" width="43.8182" height="43" rx="21.5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20.6191 17.25L25.9646 22.5L20.6191 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <clipPath id="bgblur_0_782_6833_clip_path" transform="translate(40 40)"><rect x="1" y="1" width="43.8182" height="43" rx="21.5"/></clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/gallery_image1.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/gallery_image2.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/gallery_image1.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/gallery_image2.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/gallery_image1.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper thumbnails">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <figure class="image">
-
+                                <figure class="item">
+                                    <img src="images/gallery_image1.jpg" alt="" />
                                 </figure>
                             </div>
                             <div class="swiper-slide">
-                                2
+                                <figure class="item">
+                                    <img src="images/gallery_image2.jpg" alt="" />
+                                </figure>
                             </div>
                             <div class="swiper-slide">
-                                3
+                                <figure class="item">
+                                    <img src="images/gallery_image1.jpg" alt="" />
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="item">
+                                    <img src="images/gallery_image2.jpg" alt="" />
+                                </figure>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure class="item">
+                                    <img src="images/gallery_image1.jpg" alt="" />
+                                </figure>
                             </div>
                         </div>
                     </div>
@@ -307,9 +362,25 @@
         </div>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-                const swiperThumbs = new Swiper(".gallery-modal .main-preview", {
+                const gallery_thumbnails = new Swiper(".gallery-modal .thumbnails", {
+                    spaceBetween: 24,
+                    slidesPerView: 4,
+                    loop: true,
+                    freeMode: true,
+                    watchSlidesProgress: true,
+                });
+
+                const gallery_main_preview = new Swiper(".gallery-modal .main-preview .swiper", {
                     spaceBetween: 0,
                     slidesPerView: 1,
+                    loop: true,
+                    thumbs: {
+                        swiper: gallery_thumbnails
+                    },
+                    navigation: {
+                        nextEl: ".gallery-modal .arrows .next",
+                        prevEl: ".gallery-modal .arrows .prev",
+                    }
                 });
             });
         </script>

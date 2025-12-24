@@ -7,14 +7,14 @@
         <?php
             $title = "Natural History – Our Earth";
             $tagline = "See the world of geology and geography come alive as we delve below the earth’s crust to its fiery core";
-            $image = "images/echosystem-banner.jpg";
+            $video = "images/echosystem-banner-video.mp4";
             $classes = "v2";
             include 'components/page-title-banner.php';
         ?>
         <main class="main-content">
             <div class="video-area">
                 <video class="background-video" autoplay muted loop playsinline>
-                    <source src="images/echosystem-video.mp4" type="video/mp4">
+                    <source src="images/echosystem-section-video.mp4" type="video/mp4">
                 </video>
                 <div class="sections-grid">
                     <section class="echo-block1">
@@ -27,9 +27,9 @@
                                         </div>
                                         <div class="big-circle">
                                             <img src="images/echo-circle-past.jpg" class="object-fit-cover" alt="" />
-                                            <div class="icon next">
-                                                <img src="images/play_icon.png" alt="" />
-                                                <span>Past</span>
+                                            <div class="icon">
+                                                <img src="images/play_icon.png" width="89" height="89" data-toggle="content-modal" data-path="data/echo_video1.html" alt="" />
+                                                <span class="next">Past</span>
                                             </div>
                                         </div>
                                         <div class="text empty"></div>
@@ -40,9 +40,9 @@
                                         <div class="text empty"></div>
                                         <div class="big-circle">
                                             <img src="images/echo-circle-past.jpg" class="object-fit-cover" alt="" />
-                                            <div class="icon next">
-                                                <img src="images/play_icon.png" alt="" />
-                                                <span>Present</span>
+                                            <div class="icon">
+                                                <img src="images/play_icon.png" width="89" height="89" data-toggle="content-modal" data-path="data/echo_video1.html" alt="" />
+                                                <span class="next">Present</span>
                                             </div>
                                         </div>
                                         <div class="text empty"></div>
@@ -54,7 +54,7 @@
                                         <div class="big-circle">
                                             <img src="images/echo-circle-past.jpg" class="object-fit-cover" alt="" />
                                             <div class="icon">
-                                                <img src="images/play_icon.png" alt="" />
+                                                <img src="images/play_icon.png" width="89" height="89" data-toggle="content-modal" data-path="data/echo_video1.html"  alt="" />
                                                 <span>Future</span>
                                             </div>
                                         </div>

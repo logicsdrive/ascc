@@ -222,6 +222,14 @@
     </div>
 </div>
 
+<div class="modal fade content-modal" id="content-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body loading"></div>
+        </div>
+    </div>
+</div>
+
 
 <!-- scripts -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 

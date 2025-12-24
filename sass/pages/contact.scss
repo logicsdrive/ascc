@@ -23,7 +23,7 @@
     .action-button{max-width: 200px; width: 100%; display: flex; font-family: var(--font-medium);}
 
     .address{max-width: 460px; display: grid; grid-gap: 26px;}
-    .address .item{color: white;}
+    .address .item{color: white; font-family: var(--font-thin); line-height:22px;}
     .address .item label{display: block; color: var(--primary-color); margin-bottom: 4px; line-height: 20px; font-family: var(--font-medium);}
 
     .block2 img{display: block; width: 100%;}

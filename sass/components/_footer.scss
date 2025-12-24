@@ -1,5 +1,6 @@
 .site-footer{
-
+    position: relative;
+    z-index:1;
     background: #202125; color: white;
 
     .grid{display: flex; align-items: flex-start; padding: 64px 0 30px; flex-wrap: wrap; justify-content: space-between;}

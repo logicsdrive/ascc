@@ -105,6 +105,18 @@ gsap.to(".page-title-banner img", {
 });
 
 
+ gsap.from(".description p", {
+    opacity: 0,
+    y: 20,
+    duration: 1,
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".description",
+      start: "top 80%", 
+      toggleActions: "play none none none",
+    }
+  });
+
 
 
 
@@ -237,4 +249,26 @@ ScrollSmoother.create({
   smooth: 1.6,
 
   effects: true,
+});
+
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > 150) {
+    header.classList.add(toggleClass);
+  } else {
+    header.classList.remove(toggleClass);
+  }
+});
+
+const courtyardpageBlock1 = new Swiper(".block1 .swiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 60,
+    loop: true,
+    speed: 900,
+        autoplay: {
+        delay: 2000, 
+        disableOnInteraction: false,
+    },
 });

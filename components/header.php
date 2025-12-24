@@ -81,14 +81,11 @@
         </div>
     </div>
 </header>
-<script>
-    window.addEventListener("scroll", function () {
-  const header = document.querySelector(".site-header");
-  if (window.scrollY > 40) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-});
-</script>
+<div class="modal fade content-modal" id="content-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body loading"></div>
+        </div>
+    </div>
+</div>
 <?php include 'components/navigation.php';  ?>

@@ -72,8 +72,6 @@ window.addEventListener('load', (event) => {
         opacity: 0,
         duration: 2.5
     }, 0);
-    
-    new WOW().init();
 });
 document.addEventListener("DOMContentLoaded", function() {
     ascc_app.init();
@@ -175,6 +173,15 @@ const ascc_app = {
         }
 
         numEl.innerText = value;
+    },
+    togglePassword: function(element) {
+        const wrapper = element.closest('.password_wrapper');
+        const passwordField = wrapper.querySelector('input');
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+        } else {
+            passwordField.type = "password";
+        }
     }
 };
 
@@ -182,10 +189,10 @@ const header = document.querySelector(".site-header");
 const toggleClass = "is-sticky";
 
 window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll > 150) {
-    header.classList.add(toggleClass);
-  } else {
-    header.classList.remove(toggleClass);
-  }
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 150) {
+        header.classList.add(toggleClass);
+    } else {
+        header.classList.remove(toggleClass);
+    }
 });

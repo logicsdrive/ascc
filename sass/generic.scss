@@ -46,6 +46,10 @@
     --site-nav-width: 800px;
 }
 
+.font-thin{font-family: var(--font-thin);}
+.font-light{font-family: var(--font-light);}
+.font-medium{font-family: var(--font-medium);}
+
 @mixin object-fit($fit: cover) {
     object-fit: $fit;
     width: 100%;

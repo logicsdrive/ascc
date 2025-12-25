@@ -41,6 +41,6 @@
                 </main>
                 <?php include 'components/footer.php';  ?>
             </div>
-        </div
+        </div>
     </body>
 </html>

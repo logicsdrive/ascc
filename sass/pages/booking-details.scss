@@ -49,8 +49,8 @@
         .timing li span{display: block; color: black;}
 
         .dresses{display: flex; gap: 7px;}
-        .dresses .ele{display: flex; flex-direction: column;}
-        .dresses .image{width: 103px; background: rgba(207, 156, 90, 0.1); display: flex; align-items: center; justify-content: center; height: 116px; border-radius: 8px; border: solid 0.61px rgba(207, 156, 90, 1);}
+        .dresses .ele{display: flex; width: 103px; flex-direction: column;}
+        .dresses .image{background: rgba(207, 156, 90, 0.1); display: flex; align-items: center; justify-content: center; height: 116px; border-radius: 8px; border: solid 0.61px rgba(207, 156, 90, 1);}
         .dresses .lbl{display: block; flex-grow: 1; text-align: center; padding-top: 10px; font-size: 14px; line-height: 18px; color: rgba(32, 33, 37, 1); font-weight: normal; font-family: var(--font-light);}
 
         &.show[data-popper-placement="bottom-start"] + .trigger span:after{display: block;}

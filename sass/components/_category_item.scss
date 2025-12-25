@@ -1,7 +1,14 @@
 .category-item{
-    background: rgba(245, 245, 245, 1); padding: 20px 30px 0;
+    background: rgba(245, 245, 245, 1); 
+    padding: 20px 30px 0;
     border-radius: 22px; position: relative;
-
+    // background-image: url("data:image/svg+xml,%3Csvg width='480' height='352' viewBox='0 0 480 352' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 0C5.37258 0 0 5.37257 0 12V277.811C0 289.961 9.84974 299.811 22 299.811H57.68C69.8303 299.811 79.68 309.661 79.68 321.811V329.328C79.68 341.478 89.5297 351.328 101.68 351.328H468C474.627 351.328 480 345.955 480 339.328V12C480 5.37258 474.627 0 468 0H12Z' fill='%23F5F5F5'/%3E%3C/svg%3E%0A");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-color: transparent;
+    // .icon-bg{
+    //     background-color: transparent; 
+    // }
     .border-line{
         width: 1px; position: absolute; display: block;
         top: 22px; bottom: 70px; left: 0; background: var(--primary-color);
@@ -25,6 +32,10 @@
     .booking-information .item{display: flex; gap: 0.5rem; font-family: var(--font-medium); font-size: 1rem; line-height: 1; text-decoration: none; color: rgba(0, 0, 0, 1); align-items: center;}
     .booking-information .item:hover{color: var(--primary-color);}
 
-    .icon-bg{display: block; width: 100px; height: 69px; z-index: 0; position: absolute; left: 0; bottom: 0; background: #f5f5f5 url(/images/category-icon-bg.jpeg) 0 0 no-repeat;}
+    .icon-bg{display: block; width: 100px; height: 69px; z-index: 0; position: absolute; left: 0; bottom: 0; background: #f5f5f5 url(../images/category-icon-bg.jpeg) 0 0 no-repeat;}
     .icon-bg img{margin-top: 28px; margin-left: 22px;}
+
+    .icon-bg{
+        background-color: transparent; 
+    }
 }

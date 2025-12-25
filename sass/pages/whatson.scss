@@ -13,4 +13,14 @@
         }
     }
    .grid{display: grid; padding: 3rem 0; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;}
+
+//    .category-item{ 
+//         background-image: url("data:image/svg+xml,%3Csvg width='480' height='352' viewBox='0 0 480 352' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 0C5.37258 0 0 5.37257 0 12V277.811C0 289.961 9.84974 299.811 22 299.811H57.68C69.8303 299.811 79.68 309.661 79.68 321.811V329.328C79.68 341.478 89.5297 351.328 101.68 351.328H468C474.627 351.328 480 345.955 480 339.328V12C480 5.37258 474.627 0 468 0H12Z' fill='%23F5F5F5'/%3E%3C/svg%3E%0A");
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-color: transparent;
+//         .icon-bg{
+//             background-color: transparent; 
+//         }
+//    }
 }

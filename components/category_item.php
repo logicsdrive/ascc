@@ -1,4 +1,4 @@
-<div class="category-item">
+<div class="category-item animateCard">
     <?php if(isset($icon)) { ?>
         <span class="icon-bg">
             <img src="images/<?= $icon ?>_icon.svg" alt="" />

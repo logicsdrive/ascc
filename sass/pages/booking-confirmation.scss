@@ -4,7 +4,7 @@
     .message span{font-size: 20px; margin-top: -4px; line-height: 1; font-family: var(--font-medium);}
     .message span em{font-style: normal;}
 
-    .info{display: grid; margin-bottom: px_rem(32px); grid-template-columns: repeat(5, 1fr);}
+    .info{display: grid; margin-bottom: px_rem(45px); grid-template-columns: repeat(5, 1fr);}
     .info .item{border-right: solid 1px rgba(0, 0, 0, 0.24); font-family: var(--font-thin); padding: 0 80px;}
     .info .item h5{font-size: px_rem(20px); font-family: var(--font-medium); line-height: 1; margin-bottom: 0.5rem;}
     .info .item:first-child{padding-left: 0;}

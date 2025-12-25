@@ -31,3 +31,12 @@
         .ticket-card{width: calc(50% - (var(--gap) / 2));}
     }
 }
+
+input{
+    border:1px solid transparent !important;
+    box-shadow: none !important;
+    &:focus{
+        border-color:#cf9c5a !important;
+    }
+}
+

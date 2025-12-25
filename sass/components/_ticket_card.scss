@@ -11,9 +11,9 @@
     .text{
         width: 100%; flex-grow: 1;
 
-        .btn{min-width: 200px;}
+        .btn{min-width: 200px;} 
     }
-    .devider{width: 74px; position: relative; flex-shrink: 0; height: 90%; background: url(/images/ticket_devider.png) center top repeat-y;}
+    .devider{width: 74px; width:74px; position: relative; flex-shrink: 0; height: 90%; background: url(../images/ticket_devider.png) center top repeat-y;}
     .devider:before{
         content: ""; --size: 30px; width: var(--size); height: var(--size); border-radius: var(--size);
         background: white;
@@ -33,7 +33,7 @@
         .title .status{
             display: inline-flex; align-items: center; min-height: 30px; border: solid 1px rgba(39, 138, 113, 0.5);
             color: rgba(39, 138, 113, 1); font-size: 1rem; padding: 3px 15px 1px; line-height: 1;
-            font-family: var(--font-light); border-radius: 50px; text-transform: capitalize;
+            font-family: var(--font-light); border-radius: 50px; text-transform: capitalize;background: #278A711F;
         }
 
         .devider{width: 60px;}

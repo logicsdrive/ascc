@@ -71,7 +71,7 @@ Object.entries(animationMap).forEach(([type, fromVars]) => {
 });
 
 document.querySelectorAll(".animate-slider").forEach((sliderSection) => {
-  gsap.from(sliderSection.querySelectorAll(".swiper-slide"), {
+  gsap.from(sliderSection.querySelectorAll(".swiper-slide , .animate-slider>.item"), {
     x: "100vw",
 
     opacity: 0,
@@ -122,37 +122,76 @@ gsap.to(".page-title-banner img", {
 
 
 
-let revealContainers = document.querySelectorAll(".reveal");
+// let revealContainers = document.querySelectorAll(".reveal");
 
-revealContainers.forEach((container) => {
-  let image = container.querySelector("img");
+// revealContainers.forEach((container) => {
+//   let image = container.querySelector("img");
 
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: container,
+//   let tl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: container,
 
-      toggleActions: "restart none none none",
-    },
+//       toggleActions: "restart none none none",
+//     },
+//   });
+
+//   tl.set(container, { autoAlpha: 1 });
+
+//   tl.from(container, 1.5, {
+//     xPercent: -100,
+
+//     ease: Power2.out,
+//   });
+
+//   tl.from(image, 1.5, {
+//     xPercent: 100,
+
+//     scale: 1.3,
+
+//     delay: -1.5,
+
+//     ease: Power2.out,
+//   });
+// });
+function imageReveal() {
+  const revealContainers = document.querySelectorAll(".reveal");
+
+  revealContainers.forEach((container) => {
+    const image = container.querySelector("img");
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container, 
+        toggleActions: "restart none none none",
+        start: "top 85%",
+      }
+    });
+
+    tl.set(container, { autoAlpha: 1 });
+
+    tl.from(container, {
+      clipPath: "inset(0 100% 0 0)",
+      duration: 2,
+      ease: Power4.easeInOut
+    });
+
+    if (container.classList.contains("reveal--overlay")) {
+      tl.from(image, {
+        clipPath: "inset(0 0 100% 0)",
+        duration: 1,
+        ease: Power4.easeOut
+      });
+    }
+
+    tl.from(image, {
+      scale: 1.3,
+      duration: 1.2,
+      ease: Power2.easeOut
+    }, "-=1");
   });
+}
 
-  tl.set(container, { autoAlpha: 1 });
-
-  tl.from(container, 1.5, {
-    xPercent: -100,
-
-    ease: Power2.out,
-  });
-
-  tl.from(image, 1.5, {
-    xPercent: 100,
-
-    scale: 1.3,
-
-    delay: -1.5,
-
-    ease: Power2.out,
-  });
-});
+imageReveal();
 
 
 

@@ -14,11 +14,14 @@
                 ?>
                 <main class="main-content">
                     <div class="visitor-map">
+                        <div class="top-bg"></div>
                         <div class="container">
                             <div class="content">
-                                <h2 class="section-title">Explore Our Map</h2>
-                                <p>The Sheikh Abdullah Al Salem Cultural Centre is divided into 6 main buildings. They are the following: Ecosystems Museum, Our Earth Museum, Transportation and Robots Museum, Human Body Museum, Arabic Islamic Science Museum/Fine Arts Centre and Space Museum. There are other facilities like the Theatre, Guest Services building and different outdoor activities in the Courtyard.</p>
-                                <div class="info">
+                                <h2 class="section-title" data-animate="fade-up">Explore Our Map</h2>
+                                <div class="description">
+                                    <p>The Sheikh Abdullah Al Salem Cultural Centre is divided into 6 main buildings. They are the following: Ecosystems Museum, Our Earth Museum, Transportation and Robots Museum, Human Body Museum, Arabic Islamic Science Museum/Fine Arts Centre and Space Museum. There are other facilities like the Theatre, Guest Services building and different outdoor activities in the Courtyard.</p>
+                                </div>
+                                <div class="info" data-animate="fade-right">
                                     <h3>The Courtyard</h3>
                                     <div class="grid">
                                         <div class="item">
@@ -40,7 +43,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="image" src="images/visitor-map.jpg" alt="" />
+                            <div class="reveal">
+                                <img class="image" src="images/visitor-map.jpg" alt="" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </main>

@@ -22,13 +22,13 @@
                         <div class="container">
                             <div class="sections-grid">
                                 <section class="image-content">
-                                    <h2 class="section-title">Your Space Adventure Starts Here</h2>
+                                    <h2 class="section-title" data-animate="fade-up">Your Space Adventure Starts Here</h2>
                                     <div class="grid">
                                         <figure class="image reveal">
-                                            <img src="images/earth-story-image.jpg" class="object-fit-cover" alt="" />
+                                            <img src="images/earth-story-image.jpg" class="object-fit-cover" alt="" class="img-fluid">
                                         </figure>
                                         <div class="content">
-                                            <div class="inner">
+                                            <div class="inner description">
                                                 <p>The Centre’s Space exhibit gives audiences an unprecedented opportunity to explore the wonders of this unknown universe. Visitors can observe the galaxies and the vast cosmos and get a glimpse of some of the most important discoveries in the history of space exploration.</p>
                                                 <p>Some of the most important discoveries in particle physics are due to the work undertaken at the Large Hadron Collider, (LHC), a giant particle collider based near Geneva. It is considered the most complex experimental facility ever built. Visitors have a rare chance to see for themselves why this gargantuan scientific experiment is so important.</p>
                                                 <p>Experiment spaces are an important part of the Centre’s unique quest for innovation and intellectual growth in science, technology, geology, and the environment.</p>
@@ -38,21 +38,24 @@
                                     </div>
                                 </section>
                                 <section class="explore-spacestation" data-animate="fade-up">
-                                    <h2 class="section-title" data-tagline="Take a closer look inside the ISS and learn how astronauts live and work in orbit.">Explore the International Space Station</h2>
-                                    <div class="grid">
-                                        <figure class="item"><img src="images/earth-story-image.jpg" alt="" /></figure>
-                                        <figure class="item"><img src="images/earth-story-image.jpg" alt="" /></figure>
-                                        <figure class="item"><img src="images/earth-story-image.jpg" alt="" /></figure>
-                                        <figure class="item"><img src="images/earth-story-image.jpg" alt="" /></figure>
+                                    <h2 class="section-title" data-tagline="Take a closer look inside the ISS and learn how astronauts live and work in orbit." data-animate="fade-up">Explore the International Space Station</h2>
+                                    <div class="grid animate-slider">
+                                        <figure class="item"><img src="images/earth-story-image.jpg" alt="" class="img-fluid"></figure>
+                                        <figure class="item"><img src="images/earth-story-image.jpg" alt="" class="img-fluid"></figure>
+                                        <figure class="item"><img src="images/earth-story-image.jpg" alt="" class="img-fluid"></figure>
+                                        <figure class="item"><img src="images/earth-story-image.jpg" alt="" class="img-fluid"></figure>
                                     </div>
                                 </section>
                                 <section class="space-center">
-                                    <div class="info">
+                                    <div class="info description">
                                         <p>The Centre’s Space Exhibition offers visitors a unique opportunity to explore the wonders of the universe. Guests can observe distant galaxies, learn about the cosmos, and discover some of the most important milestones in the history of space exploration.</p>
                                         <p>Major breakthroughs in particle physics have been achieved through advanced research facilities, including giant particle accelerators. These complex scientific instruments give visitors an exceptional chance to understand the scale and significance of modern scientific experiments.</p>
                                         <p>Interactive experiment zones are a key part of the Centre’s mission to inspire innovation and support intellectual growth in science, technology, geology, and the environment.</p>
                                         <p>The museum also includes a dedicated learning area and a special exhibition space focused on intergalactic exploration</p>
-                                    </div>
+                                    </div> 
+                                    <figure class="image">
+                                        <img src="images/sun-image.png" alt="" class="img-fluid" data-animate="fade-left">
+                                    </figure>
                                 </section>
                             </div>
                         </div>

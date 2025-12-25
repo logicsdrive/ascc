@@ -18,8 +18,8 @@
                             <div class="left">
                                 <div class="nav tabs">
                                     <figure class="profile-image">
-                                        <input type="file" />
-                                        <img src="images/profile-image.jpg" alt="" />
+                                        <input type="file" accept="image/*" onchange="ascc_app.updateProfileImage(this);" />
+                                        <img id="profile_image" src="images/profile-image.jpg" alt="" />
                                         <div class="icon">
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M11.509 14.75C13.4889 14.75 14.278 13.567 14.3712 12.125L14.7443 6.343C14.8447 4.831 13.6108 3.55 12.0542 3.55C11.6166 3.55 11.2149 3.305 11.014 2.927L10.4975 1.912C10.1675 1.275 9.30667 0.75 8.57497 0.75H6.93221C6.19333 0.75 5.33249 1.275 5.0025 1.912L4.486 2.927C4.28514 3.305 3.88342 3.55 3.44583 3.55C1.88916 3.55 0.655294 4.831 0.755725 6.343L1.12875 12.125C1.21484 13.567 2.01111 14.75 3.99103 14.75H11.509Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

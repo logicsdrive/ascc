@@ -14,7 +14,7 @@
                 ?>
                 <main class="main-content">
                     <div class="education">
-                        <div class="h-list nav tabs-list">
+                        <div class="h-list nav tabs-list" data-animate="fade-up">
                             <a href="#tab1" data-bs-toggle="tab" class="btn btn-outline-dark active">The Academy</a>
                             <a href="#tab2" data-bs-toggle="tab" class="btn btn-outline-dark">School Education Services</a>
                         </div>

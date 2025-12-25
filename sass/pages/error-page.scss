@@ -1,5 +1,15 @@
 .error-page{
-    .main-content{padding-top: 200px;}
+    .main-content{padding-top: 200px; text-align: center;
+    
+        h1{
+            text-align: center;
+            color: #202125;
+            font-size:67px;
+            line-height: 67px;
+            font-family: var(--font-thin);
+            margin-bottom:1.25rem;
+        }
+    }
     .site-header{
         position: relative;
         background: url(/images/header_pattern2.png) center center repeat-x;

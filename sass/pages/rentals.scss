@@ -64,12 +64,13 @@
 
     .places-graph{position: relative;}
 
+    .show-zoomed-view & .places-area-wrapper{opacity: 0;}
     .show-zoomed-view & .places-area{
         opacity: 1; pointer-events: inherit;
     }
     .places-area{
         position: absolute; top: 0; left: 0; opacity: 0; min-height: 100%; pointer-events: none; transition: all 0.4s ease;
-        padding: 68px 0 30px; z-index: 1000; width: 100%; background: white;
+        padding: 68px 0 30px; z-index: 1000; width: 100%;
 
         .view{display: none;}
 

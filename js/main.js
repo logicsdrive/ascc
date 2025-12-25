@@ -129,6 +129,20 @@ const ascc_app = {
             }
         });
     },
+    updateProfileImage: function(input){
+        const preview = document.getElementById('profile_image');
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+    
+            reader.onload = function(e) {
+                preview.src = e.target.result;
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            preview.src = "#";
+        }
+    },
     animateNavigation: function() {
         const navItems = document.querySelectorAll(".nav-list > li");
         gsap.fromTo(navItems, 
@@ -154,7 +168,7 @@ const ascc_app = {
             slidesPerView: 3,
             spaceBetween: 30,
             loop: true,
-
+            speed:900,
             navigation: {
                 nextEl: ".other-museums .arrows .next",
                 prevEl: ".other-museums .arrows .prev",

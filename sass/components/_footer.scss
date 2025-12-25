@@ -64,8 +64,19 @@
     .image{width: 354px; border-radius: 14px; overflow: hidden; background: #CCC;}
     .image img{width: 100%; height: 100%; object-fit: cover;}
 
-    .forgot-link{display: block; font-family: var(--font-thin); text-align: right; font-size: px_rem(18px); line-height: px_rem(27px);}
-    .dont-have-account{text-align: center; font-family: var(--font-thin); font-size: px_rem(18px); line-height: px_rem(27px);}
+    .forgot-link{display: block; font-family: var(--font-thin); text-align: right; font-size: px_rem(18px); line-height: px_rem(27px); text-decoration: underline;
+    &:hover{
+        text-decoration: none;
+    }
+    }
+    .dont-have-account{text-align: center; font-family: var(--font-thin); font-size: px_rem(18px); line-height: px_rem(27px);
+        a {
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
 }
 .forgot-password-modal{
     --bs-modal-padding: 46px 56px;

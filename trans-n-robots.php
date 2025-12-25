@@ -29,25 +29,27 @@
                 </svg>
                 <main class="main-content">
                     <div class="video-area">
-                        <video class="background-video" autoplay muted loop playsinline>
+                        <video class="background-video" autoplay muted loop playsinline data-speed="0.5" data-lag="0.2">
                             <source src="images/trans-section-video.mp4" type="video/mp4">
                         </video>
                         <div class="sections-grid">
                             <div class="container">
                                 <section class="trans-block1">
-                                    <figure class="image">
+                                    <figure class="image reveal">
                                         <img class="masked-image" src="images/trans_block_1_image.jpg"  alt="" />
                                     </figure>
                                     <div class="info last-margin-0">
-                                        <h3 class="section-title">From Steam to Circuits Explore the Future of Innovation</h3>
-                                        <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers. Learn about Kuwait’s maritime heritage and its long history of boat-building.</p>
-                                        <p>Meet our Giant Robot and discover the latest ways robotic technology is assisting humans. Visit our Demo’ Area to learn about Artificial Intelligence (AI) and interact with robots or learn about basic scientific processes in the Experiment Gallery. Innovators will enjoy our Maker Space where creative ideas and scientific innovation is in your hands!</p>
+                                        <h3 class="section-title" data-animate="fade-up">From Steam to Circuits Explore the Future of Innovation</h3>
+                                        <div class="description">
+                                            <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers. Learn about Kuwait’s maritime heritage and its long history of boat-building.</p>
+                                            <p>Meet our Giant Robot and discover the latest ways robotic technology is assisting humans. Visit our Demo’ Area to learn about Artificial Intelligence (AI) and interact with robots or learn about basic scientific processes in the Experiment Gallery. Innovators will enjoy our Maker Space where creative ideas and scientific innovation is in your hands!</p>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
                             <section class="trans-block2">
-                                <h3 class="section-title">The Future is in Your Hands</h3>
-                                <div class="swiper">
+                                <h3 class="section-title" data-animate="fade-up">The Future is in Your Hands</h3>
+                                <div class="swiper animate-slider">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="item"><img src="images/future.jpg" alt="" /></div>
@@ -66,7 +68,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="h-list arrows">
+                                <div class="h-list arrows" data-animate="fade-up">
                                     <svg class="prev arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_7059_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)" stroke="currentColor" stroke-width="2"/>
                                         <path d="M25.1992 17.25L19.8538 22.5L25.1992 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -86,11 +88,13 @@
                             <div class="container">
                                 <section class="trans-block3">
                                     <div class="info">
-                                        <h3 class="section-title">Build, Discover, Imagine Technology Like Never Before</h3>
-                                        <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers. Learn about Kuwait’s maritime heritage and its long history of boat-building.</p>
+                                        <h3 class="section-title"  data-animate="fade-up">Build, Discover, Imagine Technology Like Never Before</h3>
+                                        <div class="description">
+                                            <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers. Learn about Kuwait’s maritime heritage and its long history of boat-building.</p>
                                         <p>Meet our Giant Robot and discover the latest ways robotic technology is assisting humans. Visit our Demo’ Area to learn about Artificial Intelligence (AI) and interact with robots or learn about basic scientific processes in the Experiment Gallery. Innovators will enjoy our Maker Space where creative ideas and scientific innovation is in your hands!</p>
+                                        </div>
                                     </div>
-                                    <figure class="image"><img src="images/robot.png" alt="" /></figure>
+                                    <figure class="image" data-animate="fade-left"><img src="images/robot.png" alt="" class="img-fluid"></figure>
                                 </section>
                             </div>
                         </div>
@@ -106,6 +110,7 @@
                 centeredSlides: true,
                 spaceBetween: 30,
                 loop: true,
+                speed:900,
                 effect: "coverflow",
                 coverflowEffect: {
                     rotate: 0,

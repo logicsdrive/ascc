@@ -15,7 +15,7 @@
                 <main class="main-content">
                     <div class="booking-confirmation">
                         <div class="container">
-                            <div class="message success">
+                            <div class="message success" data-animate="fade-up">
                                 <svg class="mx-auto" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_538_6152)">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M30 0C13.4531 0 0 13.4531 0 30C0 46.5469 13.4531 60 30 60C46.5469 60 60 46.5469 60 30C60 13.4531 46.5469 0 30 0Z" fill="#CF9C5A"/>
@@ -27,36 +27,36 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h2>Thank You</h2>
-                                <span>Your Order has Been <em class="text-success">Completed</em></span>
+                                <h2 data-animate="fade-up">Thank You</h2>
+                                <span data-animate="fade-up">Your Order has Been <em class="text-success">Completed</em></span>
                             </div>
                             <div class="info">
-                                <div class="item">
+                                <div class="item" data-animate="fade-up">
                                     <h5>Order Number</h5>
                                     <span>4584</span>
                                 </div>
-                                <div class="item">
+                                <div class="item" data-animate="fade-up">
                                     <h5>Date</h5>
                                     <span>May 15, 2025</span>
                                 </div>
-                                <div class="item">
+                                <div class="item" data-animate="fade-up">
                                     <h5>Email</h5>
                                     <span>email@gmail.com</span>
                                 </div>
-                                <div class="item">
+                                <div class="item" data-animate="fade-up">
                                     <h5>Total</h5>
                                     <span>50.00 KD</span>
                                 </div>
-                                <div class="item">
+                                <div class="item" data-animate="fade-up">
                                     <h5>Payment Method</h5>
                                     <span>KNET</span>
                                 </div>
                             </div>
-                            <div class="knet-seeklogo">
+                            <div class="knet-seeklogo" data-animate="fade-up">
                                 <img src="images/knet-seeklogo.jpg" alt="" />
                                 <span>Knet Details</span>
                             </div>
-                            <table class="table">
+                            <table class="table" data-animate="fade-up">
                                 <tr>
                                     <td>Result</td>
                                     <td class="text-success">Completed</td>
@@ -86,13 +86,13 @@
                                     <td>Aprill 16.2025</td>
                                 </tr>
                             </table>
-                            <div class="order-details">
+                            <div class="order-details" data-animate="fade-up">
                                 <h3>Order Details</h3>
                                 <div class="item">
                                     <span>Product</span>
                                     <span>Total</span>
                                 </div>
-                                <div class="item">
+                                <div class="item" data-animate="fade-up">
                                     <ul class="pro-info">
                                         <li>Standed Tour - Arabic *1</li>
                                         <li><strong>Booking Sumaary:</strong></li>
@@ -101,12 +101,12 @@
                                     </ul>
                                     <span>K.D8.000</span>
                                 </div>
-                                <div class="item total">
+                                <div class="item total" data-animate="fade-up">
                                     <span>Total</span>
                                     <span>K.D 8.000</span>
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-primary go-back-button">Back To Home</a>
+                            <a href="#" class="btn btn-primary go-back-button" data-animate="fade-up">Back To Home</a>
                         </div>
                     </div>
                 </main>

@@ -28,7 +28,8 @@
                 
                 .text{position: absolute; text-align: center; color: white; font-size: 14px; line-height: 20px; font-family: var(--font-medium); text-transform: uppercase; display: flex; flex-direction: column; z-index: 11; max-width: fit-content;}
             }
-            .item.finearts .text span{display: block; max-width: 150px;}
+            .item.no-area{pointer-events: none;}
+            .item.arabic-science .text span{display: block; max-width: 150px;}
         }
 
 
@@ -63,14 +64,21 @@
 
     .places-graph{position: relative;}
 
-    .show-zoomed-area & .places-area{
+    .show-zoomed-view & .places-area{
         opacity: 1; pointer-events: inherit;
     }
     .places-area{
         position: absolute; top: 0; left: 0; opacity: 0; min-height: 100%; pointer-events: none; transition: all 0.4s ease;
         padding: 68px 0 30px; z-index: 1000; width: 100%; background: white;
 
-        .grid{display: grid; grid-template-columns: auto 1fr;}
+        .view{display: none;}
+
+        &[data-view="arabic-science"] .view.arabic-science{display: block;}
+        &[data-view="earth"] .view.earth{display: block;}
+        &[data-view="theatre"] .view.theatre{display: block;}
+        &[data-view="trans"] .view.trans{display: block;}
+
+        .grid{display: grid; grid-template-columns: auto 1fr; align-items: flex-start;}
 
         .title-area{margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between;}
         .title-area .section-title{margin-bottom: 0.5rem;}
@@ -109,7 +117,7 @@
             position: relative; padding-top: 24px;
         
             .image{position: relative; max-width: fit-content; margin: auto;}
-            .image .point{position: absolute; cursor: pointer; display: flex; align-items: center; flex-direction: column; gap: 8px;}
+            .image .point{position: absolute; z-index: 111; cursor: pointer; display: flex; align-items: center; flex-direction: column; gap: 8px;}
             .image .point span{display: block; transform: rotate(7deg); transition: opacity 0.4s ease; opacity: 0; font-size: 18px; line-height: 20px; text-transform: uppercase; color: white; font-family: var(--font-medium);}
             .image .point:hover span{opacity: 1;}
             .image .text{

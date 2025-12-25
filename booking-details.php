@@ -16,11 +16,11 @@
                     <div class="booking-details">
                         <div class="container">
                             <div class="columns">
-                                <div class="left">
-                                    <h2 class="section-title mb-3">Camp / Trip Name</h2>
+                                <div class="left" data-animate="fade-up">
+                                    <h2 class="section-title mb-3" >Camp / Trip Name</h2>
                                     <p>Explore Kuwalt's rich history on an all-inclusive tour of Al Salam Palace Museum.</p>
                                     <div class="important-notes">
-                                        <h3 class="title">Important Notice</h3>
+                                        <h3 class="title" >Important Notice</h3>
                                         <ul>
                                             <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
                                             <li>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</li>
@@ -31,8 +31,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="middle">
-                                    <h3 class="title">Your Booking Details</h3>
+                                <div class="middle" data-animate="fade-up">
+                                    <h3 class="title" >Your Booking Details</h3>
                                     <div class="row gx-3">
                                         <div class="col-sm-6">
                                             <div class="form-element">
@@ -52,7 +52,7 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-6" >
                                             <div class="form-element">
                                                 <label class="control-label">Date</label>
                                                 <input type="text" value="13-09-2025" readonly class="form-control js-datepicker" />
@@ -117,7 +117,7 @@
                                     </div>
                                     <button class="btn btn-outline-primary w-100">Sign In / Register</button>
                                 </div>
-                                <div class="right">
+                                <div class="right" data-animate="fade-up">
                                     <div class="your-order">
                                         <h3 class="title">Your Order</h3>
                                         <div class="tdata">

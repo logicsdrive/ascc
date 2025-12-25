@@ -13,7 +13,7 @@
                     include 'components/page-title-banner.php';
                 ?>
                 <main class="main-content">
-                    <video class="background-video" autoplay muted loop playsinline>
+                    <video class="background-video" autoplay muted loop playsinline data-speed="0.5" data-lag="0.2">
                         <source src="images/rentals.mp4" type="video/mp4">
                     </video>
                     <div class="rentals">
@@ -21,8 +21,8 @@
                             <div class="container">
                                 <div class="title-area">
                                     <div class="last-margin-0">
-                                        <h2 class="section-title">Arabic Islamic science /fine arts centre</h2>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <h2 class="section-title" data-animate="fade-up">Arabic Islamic science /fine arts centre</h2>
+                                        <p data-animate="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                     </div>
                                     <div class="calendar js-calendar">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,13 +164,13 @@
                         </div>
                         <div class="container places-area-wrapper">
                             <aside class="left-bar">
-                                <h2 class="section-title">Available places</h2>
-                                <p>You can tap on any museum to explore it or use the tabs at the bottom to navigate</p>
-                                <div class="nav buttons">
+                                <h2 class="section-title" data-animate="fade-up">Available places</h2>
+                                <p data-animate="fade-up">You can tap on any museum to explore it or use the tabs at the bottom to navigate</p>
+                                <div class="nav buttons" data-animate="fade-up">
                                     <button class="btn btn-outline-dark active" data-bs-target="#indoor_tab" data-bs-toggle="tab">Indoor</button>
                                     <button class="btn btn-outline-dark" data-bs-target="#outdoor_tab" data-bs-toggle="tab">Outdoor</button>
                                 </div>
-                                <div class="tab-content">
+                                <div class="tab-content" data-animate="fade-up">
                                     <div class="tab-pane active" id="indoor_tab" role="tabpanel">
                                         <div class="nav-bar">
                                             <div class="item">
@@ -317,7 +317,7 @@
                             </aside>
                             <div class="right">
                                 <div class="places-graph">
-                                    <div class="link_bridge1">
+                                    <div class="link_bridge1" data-animate="fade-right">
                                         <div class="item echosystem" onclick="document.body.classList.add('show-zoomed-area')">
                                             <img src="images/place_echosystem.png" width="305" height="170" alt="" />
                                             <div class="text" style="top: 60px; right: 80px;">
@@ -338,7 +338,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="link_bridge2">
+                                    <div class="link_bridge2" data-animate="fade-left">
                                         <div>
                                             <div class="item trans" style="margin-bottom: 34px;" onclick="document.body.classList.add('show-zoomed-area')">
                                                 <img class="marker" style="top: 36px; right: 112px;" src="images/area_marker.png" alt="" />

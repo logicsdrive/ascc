@@ -154,7 +154,7 @@ const ascc_app = {
             slidesPerView: 3,
             spaceBetween: 30,
             loop: true,
-
+            speed:900,
             navigation: {
                 nextEl: ".other-museums .arrows .next",
                 prevEl: ".other-museums .arrows .prev",

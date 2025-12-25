@@ -15,7 +15,7 @@
                 <main class="main-content">
                     <div class="tickets">
                         <div class="container">
-                            <h2 class="section-title text-primary mb-4">Ticket Prices</h2>
+                            <h2 class="section-title text-primary mb-4" data-animate="fade-up">Ticket Prices</h2>
                             <div class="tickets-holder">
                                 <?php include 'components/ticket_card.php'; ?>
                                 <?php include 'components/ticket_card.php'; ?>

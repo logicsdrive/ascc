@@ -1,13 +1,13 @@
 <section class="other-museums">
     <div class="container">
         <div class="title-bar">
-            <h2 class="section-title">Other Museums</h2>
-            <div class="h-list arrows">
+            <h2 class="section-title" data-animate="fade-up">Other Museums</h2>
+            <div class="h-list arrows" data-animate="fade-left">
                 <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
                 <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
             </div>
         </div>
-        <div class="swiper">
+        <div class="swiper animate-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <?php $color = "red"; include 'components/museum_item.php'; ?>

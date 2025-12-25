@@ -12,7 +12,7 @@
                     $tagline = "See the world of geology and geography come alive as we delve below the earth’s crust to its fiery core";
                     $video = "images/our-earth-banner-video.mp4";
                     $classes = "v2";
-                    include 'components/page-title-banner.php';
+                    include 'components/page-title-banner.php'; 
                 ?>
                 <main class="main-content">
                     <div class="video-area" >
@@ -25,7 +25,7 @@
                                     <h2 class="section-title" data-animate="fade-up">When the Earth Was Different Stories</h2>
                                     <div class="grid">
                                         <figure class="image reveal">
-                                            <img src="images/earth-story-image.jpg" class="object-fit-cover" alt="" />
+                                            <img src="images/earth-story-image.jpg" class="object-fit-cover" alt="">
                                         </figure>
                                         <div class="content">
                                             <div class="inner description">
@@ -100,7 +100,7 @@
                                         </div>
                                     </div>
                                     <figure class="image" data-animate="fade-left">
-                                        <img src="images/human-brain.png" alt="" />
+                                        <img src="images/human-brain.png" alt="" class="img-fluid">
                                     </figure>
                                 </section>
                             </div>
@@ -118,6 +118,7 @@
                 centeredSlides: true,
                 loop: true,
                 effect: "coverflow",
+                speed:900,
                 coverflowEffect: {
                     rotate: 0,
                     stretch: 0,

@@ -7,13 +7,19 @@
         text-transform: uppercase;
     }
 
-    ul{padding: 0; margin: 0 0 1rem;}
-    ul li{list-style-type: none; padding-left: 30px; position: relative;}
-    ul li:after{
-        content: "";
-        --size: 5px; background: black; position: absolute; left: 12px; top: 7px;
-        width: var(--size);
-        height: var(--size);
-        border-radius: var(--size);
+    ul , ol{padding: 0; margin: 0 0 1rem;font-family: var(--font-thin); padding-inline-start: 35px;}
+    // ul li{list-style-type: none; padding-left: 30px; position: relative;}
+    // ul li:after{
+    //     content: "";
+    //     --size: 5px; background: black; position: absolute; left: 12px; top: 7px;
+    //     width: var(--size);
+    //     height: var(--size);
+    //     border-radius: var(--size);
+    li{
+        line-height: 22px;
+        &::marker{
+            font-size: 18px;
+        }
     }
+    // }
 }

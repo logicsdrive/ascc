@@ -187,6 +187,7 @@
                         spaceBetween: 40,
                         centeredSlides: true,
                         loop: true,
+                        speed:900,
                         effect: "coverflow",
                         coverflowEffect: {
                             rotate: 0,
@@ -203,6 +204,7 @@
                     const swiper2 = new Swiper(".echo-block1 .swiper", {
                         slidesPerView: 1,
                         spaceBetween: 0,
+                        speed:900,
                         navigation: {
                             nextEl: ".echo-block1 .next",
                             // prevEl: ".explore-carousel .arrows .prev",

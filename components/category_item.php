@@ -1,10 +1,13 @@
-<div class="category-item <?= $category_type ?>">
-    <span class="icon-bg">
-        <img src="images/<?= $category_type ?>_icon.svg" alt="" />
-    </span>
+<div class="category-item">
+    <?php if(isset($icon)) { ?>
+        <span class="icon-bg">
+            <img src="images/<?= $icon ?>_icon.svg" alt="" />
+        </span>
+    <?php } ?>
     <figure class="image">
         <img src="images/sea.jpg" alt="" />
     </figure>
+    <span class="border-line" <?= isset($color) ? 'style="background: ' . $color . ';"' : ''; ?>></span>
     <div class="content">
         <div class="info">
             <h3>diwan of beasts</h3>

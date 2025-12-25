@@ -16,7 +16,7 @@
                 ?>
                 <main class="main-content">
                     <div class="video-area">
-                        <video class="background-video" autoplay muted loop playsinline>
+                        <video class="background-video" autoplay muted loop playsinline data-speed="0.5" data-lag="0.2">
                             <source src="images/arabic-science-section-video.mp4" type="video/mp4">
                         </video>
                         <div class="sections-grid">
@@ -41,7 +41,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="arabic-science-block arabic-science-block2">
+                            <div class="arabic-science-block arabic-science-block2" data-animate="fade-up">
                                 <div class="container">
                                     <h2 class="section-title main-title">The Golden Age of Arabic Islamic Science</h2>
                                     <div class="text last-margin-0">

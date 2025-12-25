@@ -45,6 +45,7 @@
         <div class="copyright">© 2025 Sheikh Abdullah Al-Salem Cultural Centre All Rights Reserved.</div>
     </div>
 </footer>
+<?php include 'images/svg_assets.php';  ?>
 
 <!-- scripts -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 

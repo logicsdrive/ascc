@@ -5,11 +5,15 @@
     </head>
     <body class="error-page">
         <?php include 'components/header.php';  ?>
-        <main class="main-content">
-            <div class="container">
-                <img class="mx-auto" src="images/404.png" alt="" />
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <main class="main-content">
+                    <div class="container">
+                        <img class="mx-auto" src="images/404.png" alt="" />
+                    </div>
+                </main>
+                <?php include 'components/footer.php';  ?>
             </div>
-        </main>
-        <?php include 'components/footer.php';  ?>
+        </div>
     </body>
 </html>

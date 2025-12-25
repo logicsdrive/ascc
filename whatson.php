@@ -66,11 +66,11 @@
                                 </div>
                             </div>
                             <div class="grid">
-                                <?php $category_type = "property"; include 'components/category_item.php'; ?>
-                                <?php $category_type = "sea"; include 'components/category_item.php'; ?>
-                                <?php $category_type = "teck"; include 'components/category_item.php'; ?>
-                                <?php $category_type = "teck"; include 'components/category_item.php'; ?>
-                                <?php $category_type = "teck"; include 'components/category_item.php'; ?>
+                                <?php $color = "rgba(207, 156, 90, 1)"; $icon="property"; include 'components/category_item.php'; ?>
+                                <?php $color = "rgba(188, 173, 54, 1)"; $icon="sea"; include 'components/category_item.php'; ?>
+                                <?php $color = "rgba(21, 53, 126, 1)"; $icon="tech"; include 'components/category_item.php'; ?>
+                                <?php $color = "rgba(86, 152, 66, 1)"; $icon="property"; include 'components/category_item.php'; ?>
+                                <?php $color = "rgba(204, 38, 38, 1)"; $icon="property"; include 'components/category_item.php'; ?>
                             </div>
                             <div class="pagination">
                                 <svg class="arrow disabled" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">

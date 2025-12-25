@@ -6,7 +6,7 @@
     .video-area .background-video{position: absolute; z-index: 0; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
     .video-area .container{position: relative; z-index: 2;}
 
-    .other-museums{padding: 66px 0 94px; background-color: #fff; z-index:1;}
+    .other-museums{padding: 66px 0 94px; background-color: #fff; position: relative; z-index:1;}
 
     .image-content{
         .section-title{margin-bottom: 3rem; text-align: center; color: white;}

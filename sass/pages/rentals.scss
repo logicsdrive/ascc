@@ -2,10 +2,9 @@
     .background-video{position: absolute; z-index: -1; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 }
 .rentals{
-    // .container{
-    //     display: grid; grid-template-columns: auto 1fr;
-    // }
-
+    .places-area-wrapper{
+        display: grid; grid-template-columns: auto 1fr;
+    }
     .left-bar{
         width: 380px;
     
@@ -18,6 +17,17 @@
     }
     .right{
         padding-left: 122px; padding-top: 38px;
+
+        .places-graph{
+            .item{
+                cursor: pointer; position: relative; max-width: fit-content;
+                .marker{position: absolute; pointer-events: none;}
+                img{display: block;}
+                
+                .text{position: absolute; text-transform: uppercase; display: flex; flex-direction: column; z-index: 11; top: 0; left: 0; max-width: fit-content;}
+            }
+        }
+
 
         .link-bridge1{
             display: flex; position: relative; align-items: flex-end; gap: 42px; margin-bottom: 24px;
@@ -48,6 +58,8 @@
         }
     }
 
+    .places-graph{position: relative;}
+
     .places-area{
         // position: absolute; top: 0; left: 0;
         min-height: 100vh; z-index: 1000; width: 100%;
@@ -62,7 +74,7 @@
             font-size: px_rem(20px); line-height: 1; font-family: var(--font-thin); cursor: pointer;
         }
         .area-column{
-            padding: 24px; border-radius: 15px; background: white;
+            padding: 24px; width: 0; transition: all 0.4s ease; opacity: 0; transform: translateX(-200px); border-radius: 15px; background: white;
         
             .image{height: 132px; border-radius: 14px; overflow: hidden;}
             .image img{width: 100%; height: 100%; object-fit: cover;}
@@ -84,6 +96,13 @@
                 border-radius: var(--size);
             }
         }
+        .area-zoomed-view{
+            position: relative; padding-top: 24px;
+        
+            .image{position: relative; max-width: fit-content; margin: auto;}
+            .cross{position: absolute; top: 0; right: 0;}
+        }
+
     }
 }
 

@@ -134,10 +134,19 @@
                                             </svg>
                                         </footer>
                                     </div>
+                                    <div class="area-zoomed-view">
+                                        <div class="image">
+                                            <img src="images/zoomed_area_view.png" loading="lazy" alt="" />
+                                        </div>
+                                        <svg class="cross" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.4164 22C20.2084 22.0004 20.0025 21.9596 19.8104 21.88C19.6183 21.8005 19.4438 21.6837 19.297 21.5364L0.444639 2.68433C0.156106 2.38559 -0.00354907 1.98549 5.9878e-05 1.57018C0.00366882 1.15488 0.170254 0.757603 0.463934 0.463927C0.757615 0.170251 1.15489 0.00366877 1.57021 5.98771e-05C1.98552 -0.00354901 2.38563 0.156104 2.68437 0.444632L21.5368 19.2967C21.7581 19.5183 21.9087 19.8005 21.9697 20.1077C22.0307 20.4149 21.9992 20.7332 21.8793 21.0225C21.7594 21.3118 21.5564 21.5591 21.296 21.733C21.0357 21.907 20.7295 21.9999 20.4164 22Z" fill="black"/>
+                                            <path d="M1.58363 22C1.27047 21.9999 0.964345 21.907 0.703958 21.733C0.44357 21.5591 0.2406 21.3118 0.120697 21.0225C0.000794558 20.7332 -0.0306603 20.4149 0.0303085 20.1077C0.0912774 19.8005 0.241934 19.5183 0.463238 19.2967L19.3156 0.444632C19.6144 0.156104 20.0145 -0.00354901 20.4298 5.98771e-05C20.8451 0.00366877 21.2424 0.170251 21.5361 0.463927C21.8297 0.757603 21.9963 1.15488 21.9999 1.57018C22.0035 1.98549 21.8439 2.38559 21.5554 2.68433L2.70297 21.5364C2.55618 21.6837 2.38171 21.8005 2.18961 21.88C1.9975 21.9596 1.79156 22.0004 1.58363 22Z" fill="black"/>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
+                        <div class="container places-area-wrapper">
                             <aside class="left-bar">
                                 <h2 class="section-title">Available places</h2>
                                 <p>You can tap on any museum to explore it or use the tabs at the bottom to navigate</p>
@@ -291,7 +300,58 @@
                                 </div>
                             </aside>
                             <div class="right">
-                                <div class="link-bridge1">
+                                <div class="places-graph">
+                                    <div class="item echosystem">
+                                        <img src="images/place_echosystem.png" alt="" />
+                                        <div class="text">
+                                            <span>النظم البيئية</span>
+                                            <span>Ecosystems</span>
+                                        </div>
+                                    </div>
+                                    <div class="item earth">
+                                        <img src="images/place_echosystem.png" alt="" />
+                                        <img class="marker" style="bottom: 36px; left: 125px;" src="images/area_marker.png" alt="" />
+                                        <div class="text">
+                                            <span>الأرض كوكبنا</span>
+                                            <span>Our Earth</span>
+                                        </div>
+                                    </div>
+                                    <div class="item trans">
+                                        <img class="marker" style="top: 36px; right: 112px;" src="images/area_marker.png" alt="" />
+                                        <img class="marker" style="bottom: 34px; right: 100px;" src="images/area_marker.png" alt="" />
+                                        <img src="images/place_trans.png" alt="" />
+                                        <div class="text">
+                                            <span>النقل والربوتات</span>
+                                            <span>Transportation & Robots</span>
+                                        </div>
+                                    </div>
+                                    <div class="item human">
+                                        <img src="images/place_human.png" alt="" />
+                                        <div class="text">
+                                            <span>جسم الإنسان</span>
+                                            <span>Human Body</span>
+                                        </div>
+                                    </div>
+                                    <div class="item human">
+                                        <img class="marker" style="bottom: 38px; right: 44px;" src="images/area_marker.png" alt="" />
+                                        <img src="images/place_human.png" alt="" />
+                                        <div class="text">
+                                            <span>المسرح</span>
+                                            <span>Theatre</span>
+                                        </div>
+                                    </div>
+                                    <div class="item finearts">
+                                        <img class="marker" style="top: 25px; left: 125px;" src="images/area_marker.png" alt="" />
+                                        <img class="marker" style="top: 27px; right: 50px;" src="images/area_marker.png" alt="" />
+                                        <img class="marker" style="bottom: 15px; right: 110px;" src="images/area_marker.png" alt="" />
+                                        <img src="images/place_finearts.png" alt="" />
+                                        <div class="text">
+                                            <span>العلوم العربية الاسلامية /مركز الفنون الجميلة</span>
+                                            <span>Arabic Islamic science /fine arts centre</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="link-bridge1">
                                     <div class="icon">
                                         <span>Link Bridge</span>
                                         <img src="images/bridge_icon1.png" alt="" />    
@@ -306,7 +366,7 @@
                                     </div>
                                     <img src="images/place3.png" width="343" height="198" alt="" />
                                     <img src="images/place4.png" width="307" height="172" alt="" />
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

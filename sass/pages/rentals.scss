@@ -1,7 +1,9 @@
 .rentals-page{
+    .main-content{padding: 0;}
     .background-video{position: absolute; z-index: -1; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
 }
 .rentals{
+    overflow: hidden; padding: 3rem 0 5rem; position: relative;
     .places-area-wrapper{
         display: grid; grid-template-columns: auto 1fr;
     }
@@ -24,13 +26,14 @@
                 .marker{position: absolute; pointer-events: none;}
                 img{display: block;}
                 
-                .text{position: absolute; text-transform: uppercase; display: flex; flex-direction: column; z-index: 11; top: 0; left: 0; max-width: fit-content;}
+                .text{position: absolute; text-align: center; color: white; font-size: 14px; line-height: 20px; font-family: var(--font-medium); text-transform: uppercase; display: flex; flex-direction: column; z-index: 11; max-width: fit-content;}
             }
+            .item.finearts .text span{display: block; max-width: 150px;}
         }
 
 
-        .link-bridge1{
-            display: flex; position: relative; align-items: flex-end; gap: 42px; margin-bottom: 24px;
+        .link_bridge1{
+            display: flex; position: relative; align-items: flex-end; gap: 42px; margin-bottom: 22px;
             
             .icon{
                 position: absolute;
@@ -43,13 +46,13 @@
             .icon img{margin: auto;}
         }
 
-        .link-bridge2{
+        .link_bridge2{
             display: flex; position: relative; align-items: flex-start; gap: 50px;
             
             .icon{
                 position: absolute;
-                left: 284px;
-                bottom: 96px;
+                left: 325px;
+                top: 60px;
                 text-align: center;
                 display: grid; grid-gap: 7px;
             }
@@ -60,9 +63,12 @@
 
     .places-graph{position: relative;}
 
+    .show-zoomed-area & .places-area{
+        opacity: 1; pointer-events: inherit;
+    }
     .places-area{
-        // position: absolute; top: 0; left: 0;
-        min-height: 100vh; z-index: 1000; width: 100%;
+        position: absolute; top: 0; left: 0; opacity: 0; min-height: 100%; pointer-events: none; transition: all 0.4s ease;
+        padding: 68px 0 30px; z-index: 1000; width: 100%; background: white;
 
         .grid{display: grid; grid-template-columns: auto 1fr;}
 
@@ -74,7 +80,7 @@
             font-size: px_rem(20px); line-height: 1; font-family: var(--font-thin); cursor: pointer;
         }
         .area-column{
-            padding: 24px; width: 0; transition: all 0.4s ease; opacity: 0; transform: translateX(-200px); border-radius: 15px; background: white;
+            padding: 24px; width: 0; padding: 0; transition: all 0.4s ease; opacity: 0; transform: translateX(-200px); border-radius: 15px; background: white;
         
             .image{height: 132px; border-radius: 14px; overflow: hidden;}
             .image img{width: 100%; height: 100%; object-fit: cover;}
@@ -96,11 +102,23 @@
                 border-radius: var(--size);
             }
         }
+
+        &.show-left-col .area-column{width: 438px; padding: 24px; opacity: 1; transform: translateX(0);}
+
         .area-zoomed-view{
             position: relative; padding-top: 24px;
         
             .image{position: relative; max-width: fit-content; margin: auto;}
-            .cross{position: absolute; top: 0; right: 0;}
+            .image .point{position: absolute; cursor: pointer; display: flex; align-items: center; flex-direction: column; gap: 8px;}
+            .image .point span{display: block; transform: rotate(7deg); transition: opacity 0.4s ease; opacity: 0; font-size: 18px; line-height: 20px; text-transform: uppercase; color: white; font-family: var(--font-medium);}
+            .image .point:hover span{opacity: 1;}
+            .image .text{
+                position: absolute; max-width: 178px; display: flex; flex-direction: column; gap: 8px;
+                text-transform: uppercase; font-size: 18px; line-height: 20px; color: white; font-family: var(--font-medium);
+                text-align: center;
+            }
+
+            .cross{position: absolute; top: 0; right: 0; cursor: pointer;}
         }
 
     }

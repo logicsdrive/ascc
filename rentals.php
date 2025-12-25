@@ -24,7 +24,7 @@
                                         <h2 class="section-title">Arabic Islamic science /fine arts centre</h2>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                     </div>
-                                    <div class="calendar">
+                                    <div class="calendar js-calendar">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M3.53906 7.83789C3.63412 6.72879 3.9817 5.85166 4.57129 5.22559C5.1602 4.6004 6.03933 4.17404 7.2959 4.05762L7.75 4.01562V2C7.75 1.86622 7.86624 1.75013 8 1.75C8.13386 1.75 8.25 1.86614 8.25 2V4H15.75V2C15.75 1.86622 15.8662 1.75013 16 1.75C16.1339 1.75 16.25 1.86614 16.25 2V4.01562L16.7041 4.05762C17.9609 4.17399 18.8397 4.60034 19.4287 5.22559C20.0188 5.85204 20.3661 6.72971 20.4609 7.83984H3.54199C3.54119 7.83945 3.54011 7.83883 3.53906 7.83789Z" stroke="black"/>
                                             <path d="M4 10.34H20C20.2739 10.34 20.5 10.5661 20.5 10.84V17.0002C20.5 18.4232 20.144 19.5327 19.4463 20.2843C18.7545 21.0293 17.6547 21.5002 16 21.5002H8C6.3453 21.5002 5.24547 21.0293 4.55371 20.2843C3.85595 19.5327 3.50003 18.4232 3.5 17.0002V10.84C3.5 10.5661 3.72614 10.34 4 10.34ZM8.78125 16.0265C8.5279 15.9787 8.26786 15.9953 8.02344 16.0812L7.94043 16.1134C7.7375 16.1915 7.58577 16.3005 7.45508 16.4181L7.44043 16.4318L7.42676 16.4464C7.16492 16.723 7 17.1039 7 17.5002C7.00004 17.8964 7.16486 18.2774 7.42676 18.5539L7.44043 18.5685L7.45508 18.5812C7.58298 18.6963 7.73127 18.8033 7.92773 18.881V18.882C7.93191 18.8837 7.93622 18.8852 7.94043 18.8869V18.8859C8.10858 18.9543 8.29912 19.0002 8.5 19.0002C8.61382 19.0002 8.71509 18.9827 8.77051 18.9748L8.78223 18.9728C8.89608 18.9538 9.00354 18.9173 9.10352 18.8673L9.10254 18.8664C9.17782 18.8361 9.24928 18.8001 9.31641 18.757L9.31738 18.7589C9.32032 18.7572 9.32231 18.7539 9.3252 18.7521C9.32883 18.7497 9.3333 18.7487 9.33691 18.7462L9.33594 18.7443C9.38899 18.7103 9.43364 18.676 9.45898 18.6544C9.49949 18.62 9.5044 18.6152 9.52246 18.6007L9.54883 18.5793L9.57324 18.5539C9.83514 18.2774 9.99996 17.8964 10 17.5002C10 17.1039 9.83508 16.723 9.57324 16.4464L9.54883 16.4211L9.52246 16.3996L9.44727 16.34C9.42227 16.32 9.39707 16.2995 9.37207 16.2794L9.35547 16.2658L9.33691 16.2541L9.19336 16.1701C9.14357 16.1452 9.09177 16.1235 9.03809 16.1056C8.96118 16.0726 8.88142 16.0448 8.79688 16.0294H8.79785C8.79265 16.0284 8.78743 16.0275 8.78223 16.0265H8.78125ZM12 16.0128C11.6267 16.0128 11.2296 16.1436 10.9365 16.4367L10.9268 16.4464C10.6649 16.723 10.5 17.1039 10.5 17.5002C10.5 17.8964 10.6649 18.2773 10.9268 18.5539L10.9463 18.5734C11.2228 18.8352 11.6038 19.0002 12 19.0002C12.3962 19.0002 12.7772 18.8352 13.0537 18.5734L13.0732 18.5539C13.3351 18.2773 13.5 17.8964 13.5 17.5002C13.5 17.1039 13.3351 16.723 13.0732 16.4464L13.0635 16.4367L12.9492 16.3341C12.6717 16.1126 12.3267 16.0128 12 16.0128ZM15.5 16.0128C15.1267 16.0128 14.7296 16.1436 14.4365 16.4367L14.4268 16.4464C14.1649 16.723 14 17.1039 14 17.5002C14 17.8964 14.1649 18.2773 14.4268 18.5539L14.4463 18.5734C14.7228 18.8352 15.1038 19.0002 15.5 19.0002C15.8962 19.0002 16.2772 18.8352 16.5537 18.5734L16.5732 18.5539C16.8351 18.2774 17 17.8964 17 17.5002C17 17.1039 16.8351 16.723 16.5732 16.4464L16.5635 16.4367L16.4492 16.3341C16.1717 16.1126 15.8267 16.0128 15.5 16.0128ZM9.05859 12.6134C8.50106 12.382 7.85376 12.5194 7.43652 12.9367L7.42676 12.9464C7.16492 13.223 7 13.6039 7 14.0002C7.00004 14.3964 7.16486 14.7773 7.42676 15.0539L7.44629 15.0734C7.72283 15.3352 8.10377 15.5002 8.5 15.5002C8.89623 15.5002 9.27717 15.3352 9.55371 15.0734L9.57324 15.0539C9.83514 14.7773 9.99996 14.3964 10 14.0002C10 13.6039 9.83508 13.223 9.57324 12.9464L9.56348 12.9367L9.4502 12.8351C9.33761 12.7452 9.21193 12.6749 9.07715 12.6212H9.07812C9.07612 12.6204 9.07427 12.6192 9.07227 12.6183C9.06805 12.6167 9.0638 12.6151 9.05957 12.6134H9.05859ZM12.9814 12.8605C12.5875 12.5229 12.0292 12.4089 11.5283 12.5802L11.4404 12.6134C11.2514 12.6862 11.0805 12.7927 10.9365 12.9367L10.9268 12.9464C10.6649 13.223 10.5 13.6039 10.5 14.0002C10.5 14.3964 10.6649 14.7773 10.9268 15.0539L10.9463 15.0734C11.2228 15.3352 11.6038 15.5002 12 15.5002C12.1138 15.5002 12.2151 15.4827 12.2705 15.4748L12.2822 15.4728C12.3961 15.4538 12.5035 15.4173 12.6035 15.3673L12.6025 15.3664C12.6851 15.3331 12.7642 15.2947 12.8369 15.2462L12.8555 15.2336L12.8721 15.2209C12.8971 15.2009 12.9223 15.1803 12.9473 15.1603C12.9722 15.1403 12.9975 15.1207 13.0225 15.1007L13.0488 15.0793L13.0732 15.0539C13.3351 14.7773 13.5 14.3964 13.5 14.0002C13.5 13.6039 13.3351 13.223 13.0732 12.9464L13.0635 12.9367L12.9814 12.8605ZM15.7812 12.5265C15.5279 12.4787 15.2679 12.4953 15.0234 12.5812L14.9404 12.6134C14.7375 12.6915 14.5858 12.8005 14.4551 12.9181L14.4404 12.9318L14.4268 12.9464C14.1649 13.223 14 13.6039 14 14.0002C14 14.3964 14.1649 14.7773 14.4268 15.0539L14.4463 15.0734C14.7228 15.3352 15.1038 15.5002 15.5 15.5002C15.6027 15.5002 15.7107 15.4833 15.7705 15.4748L15.7822 15.4728C15.8961 15.4538 16.0035 15.4173 16.1035 15.3673L16.1025 15.3664C16.1851 15.3331 16.2642 15.2947 16.3369 15.2462L16.3555 15.2336L16.3721 15.2209C16.3971 15.2009 16.4223 15.1803 16.4473 15.1603C16.4722 15.1403 16.4975 15.1207 16.5225 15.1007L16.5488 15.0793L16.5732 15.0539C16.8351 14.7773 17 14.3964 17 14.0002C17 13.6039 16.8351 13.223 16.5732 12.9464L16.5488 12.9211L16.5225 12.8996L16.4473 12.84C16.4223 12.82 16.3971 12.7995 16.3721 12.7794L16.3555 12.7658L16.3369 12.7541L16.1934 12.6701C16.1436 12.6452 16.0918 12.6235 16.0381 12.6056C15.9612 12.5726 15.8814 12.5448 15.7969 12.5294H15.7979C15.7927 12.5284 15.7874 12.5275 15.7822 12.5265H15.7812Z" stroke="black"/>
@@ -136,9 +136,25 @@
                                     </div>
                                     <div class="area-zoomed-view">
                                         <div class="image">
-                                            <img src="images/zoomed_area_view.png" loading="lazy" alt="" />
+                                            <div class="point" style="top: 70px; left: 420px;">
+                                                <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
+                                                <span>Lecture Hall</span>
+                                            </div>
+                                            <div class="point" style="top: 80px; right: 190px;">
+                                                <div><img src="images/marker_large.png" alt="" /></div>
+                                                <span>Workshops</span>
+                                            </div>
+                                            <div class="point" style="bottom: 100px; right: 300px;">
+                                                <div><img src="images/marker_large.png" alt="" /></div>
+                                                <span>The Wing</span>
+                                            </div>
+                                            <img src="images/place_finearts_zoomed.png" width="927" height="502" loading="lazy" alt="" />
+                                            <div class="text" style="top: 186px; right: 232px;">
+                                                <span>العلوم العربية الاسلامية /مركز الفنون الجميلة</span>
+                                                <span>Arabic Islamic science /fine arts centre</span>
+                                            </div>
                                         </div>
-                                        <svg class="cross" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="cross" onclick="closeZoomedView();" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M20.4164 22C20.2084 22.0004 20.0025 21.9596 19.8104 21.88C19.6183 21.8005 19.4438 21.6837 19.297 21.5364L0.444639 2.68433C0.156106 2.38559 -0.00354907 1.98549 5.9878e-05 1.57018C0.00366882 1.15488 0.170254 0.757603 0.463934 0.463927C0.757615 0.170251 1.15489 0.00366877 1.57021 5.98771e-05C1.98552 -0.00354901 2.38563 0.156104 2.68437 0.444632L21.5368 19.2967C21.7581 19.5183 21.9087 19.8005 21.9697 20.1077C22.0307 20.4149 21.9992 20.7332 21.8793 21.0225C21.7594 21.3118 21.5564 21.5591 21.296 21.733C21.0357 21.907 20.7295 21.9999 20.4164 22Z" fill="black"/>
                                             <path d="M1.58363 22C1.27047 21.9999 0.964345 21.907 0.703958 21.733C0.44357 21.5591 0.2406 21.3118 0.120697 21.0225C0.000794558 20.7332 -0.0306603 20.4149 0.0303085 20.1077C0.0912774 19.8005 0.241934 19.5183 0.463238 19.2967L19.3156 0.444632C19.6144 0.156104 20.0145 -0.00354901 20.4298 5.98771e-05C20.8451 0.00366877 21.2424 0.170251 21.5361 0.463927C21.8297 0.757603 21.9963 1.15488 21.9999 1.57018C22.0035 1.98549 21.8439 2.38559 21.5554 2.68433L2.70297 21.5364C2.55618 21.6837 2.38171 21.8005 2.18961 21.88C1.9975 21.9596 1.79156 22.0004 1.58363 22Z" fill="black"/>
                                         </svg>
@@ -301,72 +317,79 @@
                             </aside>
                             <div class="right">
                                 <div class="places-graph">
-                                    <div class="item echosystem">
-                                        <img src="images/place_echosystem.png" alt="" />
-                                        <div class="text">
-                                            <span>النظم البيئية</span>
-                                            <span>Ecosystems</span>
+                                    <div class="link_bridge1">
+                                        <div class="item echosystem" onclick="document.body.classList.add('show-zoomed-area')">
+                                            <img src="images/place_echosystem.png" width="305" height="170" alt="" />
+                                            <div class="text" style="top: 60px; right: 80px;">
+                                                <span>النظم البيئية</span>
+                                                <span>Ecosystems</span>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            <span>Link Bridge</span>
+                                            <img src="images/bridge_icon1.png" alt="" />    
+                                        </div>
+                                        <div class="item earth" onclick="document.body.classList.add('show-zoomed-area')">
+                                            <img src="images/place_earth.png" width="346" height="186" alt="" />
+                                            <span class="marker" style="bottom: 36px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
+                                            <div class="text" style="top: 66px; left: 83px;">
+                                                <span>الأرض كوكبنا</span>
+                                                <span>Our Earth</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="item earth">
-                                        <img src="images/place_echosystem.png" alt="" />
-                                        <img class="marker" style="bottom: 36px; left: 125px;" src="images/area_marker.png" alt="" />
-                                        <div class="text">
-                                            <span>الأرض كوكبنا</span>
-                                            <span>Our Earth</span>
+                                    <div class="link_bridge2">
+                                        <div>
+                                            <div class="item trans" style="margin-bottom: 34px;" onclick="document.body.classList.add('show-zoomed-area')">
+                                                <img class="marker" style="top: 36px; right: 112px;" src="images/area_marker.png" alt="" />
+                                                <img class="marker" style="bottom: 34px; right: 100px;" src="images/area_marker.png" alt="" />
+                                                <img src="images/place_trans.png" width="343" height="198" alt="" />
+                                                <div class="text" style="top: 66px; left: 164px;">
+                                                    <span>النقل والربوتات</span>
+                                                    <span>Transportation &<br/> Robots</span>
+                                                </div>
+                                            </div>
+                                            <div class="icon">
+                                                <span>Link Bridge</span>
+                                                <img src="images/bridge_icon2.png" alt="" />    
+                                            </div>
+                                            <div class="item finearts" onclick="document.body.classList.add('show-zoomed-area')">
+                                                <img class="marker" style="top: 25px; left: 125px;" src="images/area_marker.png" alt="" />
+                                                <img class="marker" style="top: 27px; right: 50px;" src="images/area_marker.png" alt="" />
+                                                <img class="marker" style="bottom: 15px; right: 110px;" src="images/area_marker.png" alt="" />
+                                                <img src="images/place_finearts.png" width="333" height="181" alt="" />
+                                                <div class="text" style="top: 44px; right: 40px;">
+                                                    <span>العلوم العربية الاسلامية /مركز الفنون الجميلة</span>
+                                                    <span>Arabic Islamic science /fine arts centre</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item trans">
-                                        <img class="marker" style="top: 36px; right: 112px;" src="images/area_marker.png" alt="" />
-                                        <img class="marker" style="bottom: 34px; right: 100px;" src="images/area_marker.png" alt="" />
-                                        <img src="images/place_trans.png" alt="" />
-                                        <div class="text">
-                                            <span>النقل والربوتات</span>
-                                            <span>Transportation & Robots</span>
-                                        </div>
-                                    </div>
-                                    <div class="item human">
-                                        <img src="images/place_human.png" alt="" />
-                                        <div class="text">
-                                            <span>جسم الإنسان</span>
-                                            <span>Human Body</span>
-                                        </div>
-                                    </div>
-                                    <div class="item human">
-                                        <img class="marker" style="bottom: 38px; right: 44px;" src="images/area_marker.png" alt="" />
-                                        <img src="images/place_human.png" alt="" />
-                                        <div class="text">
-                                            <span>المسرح</span>
-                                            <span>Theatre</span>
-                                        </div>
-                                    </div>
-                                    <div class="item finearts">
-                                        <img class="marker" style="top: 25px; left: 125px;" src="images/area_marker.png" alt="" />
-                                        <img class="marker" style="top: 27px; right: 50px;" src="images/area_marker.png" alt="" />
-                                        <img class="marker" style="bottom: 15px; right: 110px;" src="images/area_marker.png" alt="" />
-                                        <img src="images/place_finearts.png" alt="" />
-                                        <div class="text">
-                                            <span>العلوم العربية الاسلامية /مركز الفنون الجميلة</span>
-                                            <span>Arabic Islamic science /fine arts centre</span>
+                                        <div>
+                                            <div class="item human" style="margin-bottom: 16px;" onclick="document.body.classList.add('show-zoomed-area')">
+                                                <img src="images/place_human.png" width="307" height="172" alt="" />
+                                                <div class="text" style="top: 66px; left: 83px;">
+                                                    <span>جسم الإنسان</span>
+                                                    <span>Human Body</span>
+                                                </div>
+                                            </div>
+                                            <div class="item theatre" style="margin-bottom: 8px;" onclick="document.body.classList.add('show-zoomed-area')">
+                                                <img class="marker" style="bottom: 38px; right: 44px;" src="images/area_marker.png" alt="" />
+                                                <img src="images/place_theatre.png" alt="" />
+                                                <div class="text" style="top: 40px; right: 100px;">
+                                                    <span>المسرح</span>
+                                                    <span>Theatre</span>
+                                                </div>
+                                            </div>
+                                            <div class="item space" onclick="document.body.classList.add('show-zoomed-area')">
+                                                <img src="images/place_space.png" width="311" height="174" alt="" />
+                                                <div class="text" style="top: 66px; left: 96px;">
+                                                    <span>الفضاء</span>
+                                                    <span>Space</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="link-bridge1">
-                                    <div class="icon">
-                                        <span>Link Bridge</span>
-                                        <img src="images/bridge_icon1.png" alt="" />    
-                                    </div>
-                                    <img src="images/place1.png" width="305" height="170" alt="" />
-                                    <img src="images/place2.png" width="346" height="186" alt="" />
-                                </div>
-                                <div class="link-bridge2">
-                                    <div class="icon">
-                                        <span>Link Bridge</span>
-                                        <img src="images/bridge_icon2.png" alt="" />    
-                                    </div>
-                                    <img src="images/place3.png" width="343" height="198" alt="" />
-                                    <img src="images/place4.png" width="307" height="172" alt="" />
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -451,6 +474,10 @@
             </div>
         </div>
         <script>
+            function closeZoomedView() {
+                document.body.classList.remove("show-zoomed-area");
+                document.querySelector('.places-area').classList.remove('show-left-col')
+            }
             document.addEventListener("DOMContentLoaded", function() {
                 const gallery_thumbnails = new Swiper(".gallery-modal .thumbnails", {
                     spaceBetween: 24,

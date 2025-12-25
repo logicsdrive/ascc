@@ -286,17 +286,7 @@
                                             </div>
                                             <div class="form-element phone-field dropdown">
                                                 <label class="control-label">Phone</label>
-                                                <input type="tel" placeholder="Enter Phone" value="+965 22222211" class="form-control" />
-                                                <div class="country-selector" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img width="21" height="14" src="images/kuwait_flag.jpg" alt="" />
-                                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.445738 0.448722C0.644223 0.25041 0.966029 0.25041 1.16451 0.448722L4.51175 3.79306C4.71023 3.99137 5.03204 3.99137 5.23052 3.79306L8.57775 0.448723C8.77624 0.250411 9.09804 0.250411 9.29653 0.448723C9.49501 0.647036 9.49501 0.968564 9.29653 1.16688L5.9493 4.51121C5.35384 5.10615 4.38842 5.10615 3.79297 4.51121L0.445738 1.16688C0.247254 0.968563 0.247254 0.647035 0.445738 0.448722Z" fill="black" stroke="black" stroke-width="0.6" stroke-linecap="round"/>
-                                                    </svg>
-                                                </div>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li class="dropdown-item"><img src="images/kuwait_flag.jpg" alt="" />Kuwait</li>
-                                                    <li class="dropdown-item"><img src="images/kuwait_flag.jpg" alt="" />Kuwait</li>
-                                                </ul>
+                                                <input type="tel" id="phone" class="form-control phone-input">
                                             </div>
                                             <div class="form-element full">
                                                 <label class="control-label">Country</label>

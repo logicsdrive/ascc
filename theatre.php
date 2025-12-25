@@ -3,7 +3,7 @@
     <head>
         <?php include 'components/head.php';  ?>
     </head> 
-    <body>
+    <body class="theatre-page">
         <?php include 'components/header.php';  ?>
         <div id="smooth-wrapper">
             <div id="smooth-content">
@@ -12,7 +12,7 @@
                     $image = "images/inner-banner-about.jpg";
                     include 'components/page-title-banner.php';
                 ?>
-                <main class="main-content theatre">
+                <main class="main-content">
                     <div class="top-bg"></div>
                     <svg width="0" height="0" style="position: absolute;">
                         <defs>

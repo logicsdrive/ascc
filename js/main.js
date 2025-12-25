@@ -100,6 +100,23 @@ const ascc_app = {
                 }
             });
         }
+
+        // 1. Select all elements with the class ".phone-input"
+        const phoneFields = document.querySelectorAll(".phone-input");
+
+        // 2. Loop through each field
+        phoneFields.forEach((field) => {
+            window.intlTelInput(field, {
+                initialCountry: "kw",
+                geoIpLookup: callback => {
+                fetch("https://ipapi.co/json")
+                    .then(res => res.json())
+                    .then(data => callback(data.country_code))
+                    .catch(() => callback("kw")); // Default to Kuwait on error
+                },
+                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/utils.js"
+            });
+        });
     },
     eventBindings: function() {
         document.getElementById("nav-icon").addEventListener("click", () => {
@@ -193,8 +210,10 @@ const ascc_app = {
         const passwordField = wrapper.querySelector('input');
         if (passwordField.type === "password") {
             passwordField.type = "text";
+            passwordField.placeholder = "Enter Password";
         } else {
             passwordField.type = "password";
+            // passwordField.placeholder = "Enter Password";
         }
     }
 };
@@ -210,3 +229,15 @@ window.addEventListener("scroll", () => {
         header.classList.remove(toggleClass);
     }
 });
+
+// const input = document.querySelector("#phone");
+// const iti = window.intlTelInput(input, {
+//   initialCountry: "kw",
+//   geoIpLookup: callback => {
+//     fetch("https://ipapi.co/json")
+//       .then(res => res.json())
+//       .then(data => callback(data.country_code))
+//       .catch(() => callback("us"));
+//   },
+//   utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/utils.js" 
+// });

@@ -1,14 +1,9 @@
 const animationMap = {
   "fade-up": { y: 60 },
-
   "fade-down": { y: -60 },
-
   "fade-left": { x: 60 },
-
   "fade-right": { x: -60 },
-
   "zoom-in": { scale: 0.7 },
-
   "zoom-out": { scale: 1.3 },
 };
 
@@ -224,7 +219,7 @@ gsap.utils.toArray(".animateCard").forEach((card) => {
 });
 
 
-gsap.from(".title .ar", {
+gsap.from(".enter-the-center .title .ar", {
   x: "100vw", 
   opacity: 0,
   duration: 3,
@@ -236,7 +231,7 @@ gsap.from(".title .ar", {
   },
 });
 
-gsap.from(".title .en", {
+gsap.from(".enter-the-center .title .en", {
   x: "-100vw",
   opacity: 0,
   duration: 3,
@@ -280,16 +275,16 @@ document.querySelectorAll(".plan-visit .item").forEach((item, index) => {
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-ScrollSmoother.create({
+const smoother = ScrollSmoother.create({
   wrapper: "#smooth-wrapper",
-
   content: "#smooth-content",
-
   smooth: 1.6,
-
   effects: true,
 });
 
+document.querySelector(".center-button").addEventListener("click", () => {
+  smoother.scrollTo("#camera-view", true, "top top");
+});
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;

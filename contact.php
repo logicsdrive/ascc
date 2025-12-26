@@ -76,9 +76,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="block2">
+                        <figure class="block2">
                             <img src="images/contact_map.jpg" alt="" />
-                        </div>
+                        </figure>
                     </div>
                 </main>
                 <?php include 'components/footer.php';  ?>

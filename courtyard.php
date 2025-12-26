@@ -47,7 +47,6 @@
                             <div class="container">
                                  <div class="description">
                                     <p>Public art, focusing on local and international artists can be enjoyed by visitors. Using a mixture of sculpture, landscape, and high and low tech exhibits, the courtyard will offer a varied experience for visitors of all ages. Outdoor Activities:</p>
-                                    
                                 </div>
                                 <div class="grid">
                                     <div class="courtyard-card animateCard">

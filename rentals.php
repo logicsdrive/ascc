@@ -506,6 +506,10 @@
 
                     // Create a GSAP Timeline for perfect sequencing
                     const tl = gsap.timeline();
+
+                    gsap.to(".places-graph .item:not(.zoomed)", { 
+                        opacity: 0.3,
+                    });
                     // 2. Zoom the image
                     tl.to(element, {
                         scale: 2.5,
@@ -515,11 +519,15 @@
                     })
                     .add(() => {
                         document.body.classList.add('show-zoomed-view');
+                        element.classList.remove("zoomed");
                     }).to(element, {
                         scale: 1,
                         transformOrigin: "center center",
                         duration: 0.4,
                         ease: "power2.out",
+                    })
+                    .to(".places-graph .item", { 
+                        opacity: 1, 
                     });
                 },
             };

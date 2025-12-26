@@ -161,3 +161,11 @@
     .thumbnails .item img{width: 100%; height: 100%; object-fit: cover;}
     .thumbnails .swiper-slide-thumb-active .item:after{content: ""; background: rgba(black, 0.6); position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 }
+
+.zoomed{
+    -webkit-backface-visibility: hidden; /* Prevents flickering in Safari */
+    backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent; /* Removes the blue box on click in mobile Chrome */
+    touch-action: none; /* Prevents browser from taking over the click/zoom */
+    user-select: none; /* Prevents text selection while clicking the map */
+}

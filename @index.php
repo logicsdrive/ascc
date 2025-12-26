@@ -9,14 +9,13 @@
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <div class="contentWrapper">
-                        <div class="enter-the-center" >
-                        
+                        <div class="enter-the-center">
                             <video class="background-video" autoplay muted loop playsinline>
                                 <source src="images/hero.mp4" type="video/mp4">
                             </video>
                             <h1 class="title">
-                                <span class="ar wow animate__animated animate__fadeInLeft">مركز الشيخ عبد الله السالم الثقافي</span>
-                                <span class="en wow animate__animated animate__fadeInRight">Sheikh Abdullah AlSalem Cultural Centre</span>
+                                <span class="ar">مركز الشيخ عبد الله السالم الثقافي</span>
+                                <span class="en">Sheikh Abdullah AlSalem Cultural Centre</span>
                             </h1>
                             <a href="#camera-view" class="btn btn-primary center-button">Enter The Centre</a>
                         </div>
@@ -476,11 +475,7 @@
                                 </div>
                             </div>
                             <div class="block2">
-                                <iframe src="https://www.google.com/maps?output=embed&q=Karachi&z=13&hl=en&t=m&darkmode=1"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                </iframe>
+                                <img src="images/contact_map.jpg" alt="" />
                             </div>
                         </div>
                     </div>

@@ -81,10 +81,21 @@
 .forgot-password-modal{
     --bs-modal-padding: 46px 56px;
     --bs-modal-width: 528px;
+
+    .content{max-width: 412px; margin: auto;}
 }
 .change-password-modal{
     --bs-modal-width: 530px;
     --bs-modal-padding: 58px 48px;
 
-    .title{font-size: 24px; font-family: var(--font-medium); line-height: 1; margin-bottom: 20px;}
+    .content{max-width: 412px; margin: auto;}
+    .title{font-size: 24px; text-transform: uppercase; font-family: var(--font-medium); line-height: 1; margin-bottom: 20px;}
+}
+
+.task-finished-modal{
+    --bs-modal-width: 650px;
+
+    .content{max-width: 412px; margin: auto;}
+    .modal-body{text-align: center;}
+    .title{margin-bottom: 12px;}
 }

@@ -18,6 +18,9 @@
                     </video>
                     <div class="rentals">
                         <div class="places-area" data-view="">
+                            <video class="background-video" autoplay muted loop playsinline data-speed="0.5" data-lag="0.2">
+                                <source src="images/rentals.mp4" type="video/mp4">
+                            </video>
                             <div class="view arabic-science">
                                 <div class="container">
                                     <div class="title-area" data-animate="fade-up">
@@ -121,12 +124,12 @@
                                         <?php include 'components/rentals_details.php';  ?>
                                         <div class="area-zoomed-view">
                                             <div class="image">
-                                                <div class="point" data-area-view="data/lecture_hall.html" style="top: 300px; right: 60px;">
+                                                <div class="point" data-area-view="data/lecture_hall.html" style="top: 160px; right: 60px;">
                                                     <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
                                                     <span>Lecture Hall</span>
                                                 </div>
                                                 <img src="images/place_theatre_zoomed.png" width="900" height="344" loading="lazy" alt="" />
-                                                <div class="text" style="top: 262px; right: 334px;">
+                                                <div class="text" style="top: 162px; right: 334px;">
                                                     <span>العلوم العربية الاسلامية /مركز الفنون الجميلة</span>
                                                     <span>Arabic Islamic science /fine arts centre</span>
                                                 </div>
@@ -348,7 +351,7 @@
                                             <span>Link Bridge</span>
                                             <img src="images/bridge_icon1.png" alt="" />    
                                         </div>
-                                        <div class="item earth" onclick="activeZoomedView('earth');">
+                                        <div class="item earth zoom-image" id="earth" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('earth');">
                                             <img src="images/place_earth.png" width="346" height="186" alt="" />
                                             <span class="marker" style="bottom: 36px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
                                             <div class="text" style="top: 66px; left: 83px;">
@@ -359,7 +362,7 @@
                                     </div>
                                     <div class="link_bridge2" data-animate="fade-left">
                                         <div>
-                                            <div class="item trans" style="margin-bottom: 34px;" onclick="activeZoomedView('trans');">
+                                            <div class="item trans" style="margin-bottom: 34px;" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('trans');">
                                                 <img class="marker" style="top: 36px; right: 112px;" src="images/area_marker.png" alt="" />
                                                 <img class="marker" style="bottom: 34px; right: 100px;" src="images/area_marker.png" alt="" />
                                                 <img src="images/place_trans.png" width="343" height="198" alt="" />
@@ -372,7 +375,7 @@
                                                 <span>Link Bridge</span>
                                                 <img src="images/bridge_icon2.png" alt="" />    
                                             </div>
-                                            <div class="item arabic-science" onclick="activeZoomedView('arabic-science');">
+                                            <div class="item arabic-science" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('arabic-science');">
                                                 <span class="marker" style="top: 25px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
                                                 <span class="marker" style="top: 27px; right: 50px;"><img src="images/area_marker.png" alt="" /></span>
                                                 <span class="marker" style="bottom: 15px; right: 110px;"><img src="images/area_marker.png" alt="" /></span>
@@ -391,7 +394,7 @@
                                                     <span>Human Body</span>
                                                 </div>
                                             </div>
-                                            <div class="item theatre" style="margin-bottom: 8px;" onclick="activeZoomedView('theatre');">
+                                            <div class="item theatre" style="margin-bottom: 8px;" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('theatre');">
                                                 <img class="marker" style="bottom: 38px; right: 44px;" src="images/area_marker.png" alt="" />
                                                 <img src="images/place_theatre.png" alt="" />
                                                 <div class="text" style="top: 40px; right: 100px;">
@@ -493,6 +496,33 @@
             </div>
         </div>
         <script>
+            const uiActions = {
+                zoomAndOpen: function(element) {
+                    element.classList.add("zoomed");
+                    // 1. Calculate the click position for a natural zoom
+                    const rect = element.getBoundingClientRect();
+                    const xPct = ((event.clientX - rect.left) / rect.width) * 100;
+                    const yPct = ((event.clientY - rect.top) / rect.height) * 100;
+
+                    // Create a GSAP Timeline for perfect sequencing
+                    const tl = gsap.timeline();
+                    // 2. Zoom the image
+                    tl.to(element, {
+                        scale: 2.5,
+                        transformOrigin: `${xPct}% ${yPct}%`,
+                        duration: 1,
+                        ease: "power2.inOut"
+                    })
+                    .add(() => {
+                        document.body.classList.add('show-zoomed-view');
+                    }).to(element, {
+                        scale: 1,
+                        transformOrigin: "center center",
+                        duration: 0.4,
+                        ease: "power2.out",
+                    });
+                },
+            };
             document.body.addEventListener('click', async (e) => {
                 const trigger = e.target.closest("[data-area-view]");
                 if (trigger) {
@@ -510,10 +540,15 @@
                 }
             });
             function activeZoomedView(view) {
-                document.body.classList.add('show-zoomed-view')
-                document.querySelector(".places-area").setAttribute("data-view", view);
+                setTimeout(function(){
+                    document.body.classList.add('show-zoomed-view');
+                    document.querySelector(".places-area").setAttribute("data-view", view);
+                }, 800);
             }
             function closeZoomedView() {
+                document.querySelectorAll(".zoom-image").forEach(item => {
+                    item.classList.remove("zoomed");
+                });
                 document.body.classList.remove("show-zoomed-view");
                 document.querySelector('.places-area').classList.remove('show-left-col')
             }

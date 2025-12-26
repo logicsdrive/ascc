@@ -213,7 +213,7 @@ const ascc_app = {
             passwordField.placeholder = "Enter Password";
         } else {
             passwordField.type = "password";
-            // passwordField.placeholder = "Enter Password";
+            passwordField.placeholder = "************";
         }
     }
 };

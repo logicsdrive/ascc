@@ -1,6 +1,6 @@
-<div class="page-loader">
+<!-- <div class="page-loader">
     <img src="images/loader.gif" alt="" />
-</div>
+</div> -->
 <header class="site-header">
     <div class="container">
         <a href="/" class="logo"><img src="images/site_logo.png" alt="" /></a>
@@ -31,7 +31,7 @@
                             <path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                             <path d="M3 17H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
-                        <span>Menu</span>
+                        <span class="d-none d-md-block">Menu</span>
                     </div>
                 </div>
                 <div class="h-list sign-list">
@@ -40,7 +40,7 @@
                             <path d="M17.8917 20V18.581C17.8917 14.9351 15.1515 11.9791 11.7714 11.9791H7.08121C3.7011 11.9791 0.960938 14.9346 0.960938 18.581V20" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
                             <path d="M9.42679 9.93023C11.904 9.93023 13.9122 7.92206 13.9122 5.44485C13.9122 2.96765 11.904 0.959473 9.42679 0.959473C6.94958 0.959473 4.94141 2.96765 4.94141 5.44485C4.94141 7.92206 6.94958 9.93023 9.42679 9.93023Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
                         </svg>
-                        <span>Sign In</span>
+                        <span class="d-none d-md-block">Sign In</span>
                     </div>
                     <div class="dropdown">
                         <a href="javascript: void(0);" class="btn btn-primary" data-bs-offset="0,10" data-bs-toggle="dropdown">Book Now</a>

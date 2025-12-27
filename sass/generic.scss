@@ -44,6 +44,13 @@
     --content-color: rgba(0, 0, 0, 1);
 
     --site-nav-width: 800px;
+
+    // responsive breakpoints
+    --breakpoint-sm: 540px,
+    --breakpoint-md: 720px,
+    --breakpoint-lg: 960px,
+    --breakpoint-xl: 1200px,
+    --breakpoint-xxl: 1524px
 }
 
 .font-thin{font-family: var(--font-thin);}
@@ -103,6 +110,7 @@ a:hover{color: var(--primary-color);}
     font-family: var(--font-light);
     min-height: var(--button-height);
     display: inline-flex; align-items: center; justify-content: center;
+    white-space: nowrap;
 }
 .btn-primary{
     --bs-btn-color: white;

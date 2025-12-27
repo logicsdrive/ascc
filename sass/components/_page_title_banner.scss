@@ -4,8 +4,7 @@
 
     &:after{
         content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
-        background: #202125;
- opacity: 65%; z-index: 1; pointer-events: none;
+        background: #202125; opacity: 65%; z-index: 1; pointer-events: none;
     }
 
     .video,
@@ -25,4 +24,8 @@
     .content{padding: 0 0 84px; width: 100%; position: relative; z-index: 2;}
 
     &.v2{min-height: 100vh;}
+
+    @media (max-width: 540px) {
+        .content{padding-bottom: 40px;}
+    }
 }

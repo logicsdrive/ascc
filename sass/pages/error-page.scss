@@ -1,14 +1,14 @@
 .error-page{
-    .main-content{padding-top: 200px; text-align: center;
-    
-        h1{
-            text-align: center;
-            color: #202125;
-            font-size:67px;
-            line-height: 67px;
-            font-family: var(--font-thin);
-            margin-bottom:1.25rem;
-        }
+    .main-content{
+        padding-top: 200px; text-align: center;
+    }
+    h1{
+        text-align: center;
+        color: #202125;
+        font-size:67px;
+        line-height: 67px;
+        font-family: var(--font-thin);
+        margin-bottom:1.25rem;
     }
     .site-header{
         position: relative;
@@ -19,4 +19,8 @@
     .site-header .list{gap: 20px;}
     .site-header .sign-list{gap: 20px;}
     .site-header .signin-link span{display: none;}
+
+    @media (max-width: 767px) {
+        h1{font-size: 40px;}
+    }
 }

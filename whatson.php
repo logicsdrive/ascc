@@ -23,7 +23,7 @@
                                     <input type="search" placeholder="Search" class="form-control" />
                                 </div>
                                 <div class="filters" data-animate="fade-left">
-                                    <div class="dropdown">
+                                    <div class="dropdown flex-grow-1">
                                         <div class="item" data-bs-toggle="dropdown" data-bs-offset="0,10">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M16.77 2.5H18.6704C19.6763 2.50008 20.3628 2.76461 20.7993 3.20117C21.2358 3.63781 21.4995 4.32415 21.4995 5.33008V7.23047C21.4994 8.23635 21.2359 8.92282 20.7993 9.35938C20.3628 9.79593 19.6763 10.0595 18.6704 10.0596H16.77C15.7641 10.0596 15.0778 9.79584 14.6411 9.35938C14.2046 8.92282 13.94 8.23635 13.9399 7.23047V5.33008C13.9399 4.32394 14.2045 3.6378 14.6411 3.20117C15.0777 2.76455 15.7639 2.5 16.77 2.5Z" stroke="black"/>

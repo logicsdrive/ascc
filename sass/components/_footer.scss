@@ -1,4 +1,3 @@
-.main-content{display: none;}
 .site-footer{
     position: relative;
     z-index:1;
@@ -56,8 +55,8 @@
     @media (max-width: 960px) {
         .grid{display: grid; grid-gap: 30px; grid-template-columns: repeat(2, 1fr);}
     }
-    @media (max-width: var(--breakpoint-sm)) {
-        .grid{grid-template-columns: 1fr;}
+    @media (max-width: 540px) {
+        .grid{grid-template-columns: 1fr; padding: 30px 0;}
     }
 }
 .modal{
@@ -73,12 +72,13 @@
     .image{width: 354px; border-radius: 14px; overflow: hidden; background: #CCC;}
     .image img{width: 100%; height: 100%; object-fit: cover;}
 
-    .forgot-link{display: block; font-family: var(--font-thin); text-align: right; font-size: px_rem(18px); line-height: px_rem(27px); text-decoration: underline;
-    &:hover{
-        text-decoration: none;
+    .forgot-link{
+        display: block; font-family: var(--font-thin); text-align: right; font-size: px_rem(18px); line-height: px_rem(27px); text-decoration: underline;
+        &:hover{text-decoration: none;}
     }
-    }
-    .dont-have-account{text-align: center; font-family: var(--font-thin); font-size: px_rem(18px); line-height: px_rem(27px);
+    .dont-have-account{
+        
+        text-align: center; font-family: var(--font-thin); font-size: px_rem(18px); line-height: px_rem(27px);
         a {
             text-decoration: underline;
             &:hover{
@@ -86,12 +86,19 @@
             }
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        .modal-body{flex-direction: column;}
+        .image{display: none;}
+    }
 }
 .forgot-password-modal{
-    --bs-modal-padding: 46px 56px;
-    --bs-modal-width: 528px;
-
-    .content{max-width: 412px; margin: auto;}
+    @include media-breakpoint-up(lg) {
+        --bs-modal-padding: 46px 56px;
+        --bs-modal-width: 528px;
+        
+        .content{max-width: 412px; margin: auto;}
+    }
 }
 .change-password-modal{
     --bs-modal-width: 530px;

@@ -19,9 +19,6 @@
 @import "pages/courtyard";
 @import "pages/rentals";
 
-.education-page{
-    .content_row_holder{display: grid; grid-gap: 80px;}
-}
 
 .tickets{
     .title-1{margin-bottom: px_rem(28px);}
@@ -30,16 +27,10 @@
         
         .ticket-card{width: calc(50% - (var(--gap) / 2));}
     }
-}
-
-input{
-    border:1px solid transparent !important;
-    box-shadow: none !important;
-    &:focus{
-        border-color:#cf9c5a !important;
+    @media (max-width: 1400px) {
+        .tickets-holder .ticket-card{width: 100%;}
     }
 }
-
 
 @media (max-width: 540px) {
     html{font-size: 14px;}

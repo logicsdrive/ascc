@@ -1,12 +1,12 @@
 .ticket-card{
-    background: rgba(245, 245, 245, 1); padding: 20px 20px 20px 30px; border-radius: 12px;
+    background: rgba(245, 245, 245, 1); padding: 20px; border-radius: 12px;
     display: flex;
     align-items: center;
     overflow: hidden;
 
     .title{font-size: px_rem(32px); display: flex; justify-content: space-between; align-items: center; line-height: px_rem(44px); margin-bottom: 10px; text-transform: uppercase;}
     .icon-list{gap: px_rem(35px); margin: px_rem(22px) 0;}
-    .icon-list .item{font-size: 14px;}
+    .icon-list .item{font-size: 14px; white-space: nowrap;}
     .icon-list .item span{display: block; line-height: 1; padding-top: 2px;}
     .text{
         width: 100%; flex-grow: 1;
@@ -45,5 +45,11 @@
         .icon-list{margin: 16px 0 0; gap: 10px; flex-direction: column; align-items: flex-start;}
         .icon-list .item{font-size: 18px;}
         .icon-list .item span{line-height: 27px;}
+    }
+
+    @media (max-width: 767px) {
+        gap: 20px; flex-direction: column;
+        .devider{display: none;}
+        .image{width: 100%; height: 200px; order: -1;}
     }
 }

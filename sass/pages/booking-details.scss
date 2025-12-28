@@ -85,7 +85,7 @@
     .middle .title{color: black; margin-bottom: 14px;}
 
     .your-information{margin: 32px 0;}
-    .your-information .grid{display: grid; grid-gap: 14px; grid-template-columns: repeat(2, 1fr);}
+    .your-information .grid{display: grid; grid-gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
 
     .select-ticket-type{margin: 32px 0;}
     .select-ticket-type .grid{display: grid; grid-gap: 16px; grid-template-columns: repeat(2, 1fr);}
@@ -105,4 +105,22 @@
     .full{grid-column: 1 / -1;}
 
     .checkfiels{display: grid; grid-gap: 4px;}
+
+    @include media-breakpoint-down(xxl) {
+        
+        .left{padding-right: 0; width: 350px;}
+        .left:after{content: none;}
+        .middle{padding: 70px 40px;}
+    }
+    @include media-breakpoint-down(xl) {
+        .columns{grid-template-columns: 1fr;}
+        .left{width: 100%;}
+        .middle{padding: 0;}
+        .right{width: 100%;}
+
+        .your-information .grid{grid-template-columns: repeat(2, 1fr);}
+    }
+    @include media-breakpoint-down(md) {
+        .your-information .grid{grid-template-columns: 1fr;}
+    }
 }

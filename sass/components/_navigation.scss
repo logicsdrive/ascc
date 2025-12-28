@@ -30,4 +30,8 @@
     .menu-opened & {
         right: 0;
     }
+
+    @media (max-width: 720px) {
+        padding: 40px; gap: 0; align-content: flex-start;
+    }
 }

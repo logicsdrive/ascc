@@ -33,8 +33,8 @@
                                 </div>
                                 <div class="middle" data-animate="fade-up">
                                     <h3 class="title" >Your Booking Details</h3>
-                                    <div class="row gx-3">
-                                        <div class="col-sm-6">
+                                    <div class="row gx-3 gy-3">
+                                        <div class="col-xl-6">
                                             <div class="form-element">
                                                 <label class="control-label">No Tickets</label>
                                                 <input type="text" readonly value="3 Tickets" class="form-control" />
@@ -52,7 +52,7 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6" >
+                                        <div class="col-xl-6" >
                                             <div class="form-element">
                                                 <label class="control-label">Date</label>
                                                 <input type="text" value="13-09-2025" readonly class="form-control js-calendar" />

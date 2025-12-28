@@ -68,20 +68,13 @@ Object.entries(animationMap).forEach(([type, fromVars]) => {
 document.querySelectorAll(".animate-slider").forEach((sliderSection) => {
   gsap.from(sliderSection.querySelectorAll(".swiper-slide , .animate-slider>.item"), {
     x: "100vw",
-
     opacity: 0,
-
     duration: 4.5,
-
     ease: "power2.out",
-
     stagger: 0.15,
-
     scrollTrigger: {
       trigger: sliderSection,
-
       start: "top 80%",
-
       toggleActions: "play none none none",
     },
   });
@@ -282,9 +275,9 @@ const smoother = ScrollSmoother.create({
   effects: true,
 });
 
-document.querySelector(".center-button").addEventListener("click", () => {
-  smoother.scrollTo("#camera-view", true, "top top");
-});
+// document.querySelector(".center-button").addEventListener("click", () => {
+//   smoother.scrollTo("#camera-view", true, "top top");
+// });
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;

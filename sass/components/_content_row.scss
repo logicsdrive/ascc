@@ -18,5 +18,16 @@
 
     &:nth-child(even) .image{right: 0; left: auto;}
     &:nth-child(even) .container{justify-content: flex-start;}
+
+    @include media-breakpoint-down(lg) {
+
+        padding: 0;
+
+        .image{position: relative; width: 100%;}
+        .content{max-width: 100%;}
+    }
+    @include media-breakpoint-down(md) {
+        .content{padding: 40px;}
+    }
 }
 

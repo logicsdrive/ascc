@@ -4,12 +4,12 @@
             <source src="<?= $video ?>" type="video/mp4">
         </video>
     <?php } else { ?>
-        <img class="image" src="<?= $image ?>" alt=""  class="img-fluid" loading="lazy">
+        <img class="back-image" src="<?= $image ?>" alt=""  class="img-fluid" loading="lazy">
     <?php } ?>
     <div class="content">
         <div class="container">
             <div class="page-banner-desc">
-                <h1><?= $title ?></h1>
+                <h1 class="section-title text-light"><?= $title ?></h1>
                 <?php if(isset($tagline)) { ?>
                     <div class="desc"><?= $tagline ?></div>
                 <?php } ?>

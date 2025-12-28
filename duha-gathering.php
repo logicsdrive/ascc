@@ -22,15 +22,15 @@
                                     <div class="dropdown-menu book-now-dropdown dropdown-menu-end">
                                         <a href="#" class="dropdown-item">
                                             <svg class="icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_1572_40038)">
-                                            <path d="M12.3735 0C11.4139 0.066375 10.2923 0.680625 9.63866 1.4805C9.04241 2.20613 8.55191 3.28388 8.74316 4.33125C9.79166 4.36388 10.875 3.735 11.5028 2.92163C12.09 2.1645 12.5344 1.0935 12.3735 0Z" fill="currentColor"/>
-                                            <path d="M16.1665 6.039C15.2451 4.88363 13.9503 4.21313 12.7274 4.21313C11.113 4.21313 10.4302 4.98601 9.30853 4.98601C8.15204 4.98601 7.27342 4.21538 5.8773 4.21538C4.50593 4.21538 3.04569 5.0535 2.11982 6.48675C0.818206 8.50498 1.04095 12.2996 3.15032 15.5317C3.90519 16.6882 4.91318 17.9887 6.23167 17.9999C7.40504 18.0112 7.73579 17.2473 9.32541 17.2394C10.915 17.2304 11.2165 18.0101 12.3876 17.9977C13.7073 17.9876 14.7704 16.5464 15.5252 15.3899C16.0664 14.5608 16.2677 14.1435 16.6874 13.2075C13.6353 12.0453 13.1459 7.70511 16.1665 6.039Z" fill="currentColor"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_1572_40038">
-                                            <rect width="18" height="18" fill="white"/>
-                                            </clipPath>
-                                            </defs>
+                                                <g clip-path="url(#clip0_1572_40038)">
+                                                    <path d="M12.3735 0C11.4139 0.066375 10.2923 0.680625 9.63866 1.4805C9.04241 2.20613 8.55191 3.28388 8.74316 4.33125C9.79166 4.36388 10.875 3.735 11.5028 2.92163C12.09 2.1645 12.5344 1.0935 12.3735 0Z" fill="currentColor"/>
+                                                    <path d="M16.1665 6.039C15.2451 4.88363 13.9503 4.21313 12.7274 4.21313C11.113 4.21313 10.4302 4.98601 9.30853 4.98601C8.15204 4.98601 7.27342 4.21538 5.8773 4.21538C4.50593 4.21538 3.04569 5.0535 2.11982 6.48675C0.818206 8.50498 1.04095 12.2996 3.15032 15.5317C3.90519 16.6882 4.91318 17.9887 6.23167 17.9999C7.40504 18.0112 7.73579 17.2473 9.32541 17.2394C10.915 17.2304 11.2165 18.0101 12.3876 17.9977C13.7073 17.9876 14.7704 16.5464 15.5252 15.3899C16.0664 14.5608 16.2677 14.1435 16.6874 13.2075C13.6353 12.0453 13.1459 7.70511 16.1665 6.039Z" fill="currentColor"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1572_40038">
+                                                        <rect width="18" height="18" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
                                             </svg>
                                             <span>Apple Calendar</span>
                                         </a>
@@ -69,7 +69,7 @@
                             <div class="last-margin-0 description">
                                 <p>Sheikh Abdullah Al-Salem Cultural Centre is one of the world’s largest cultural projects of its kind. Specialist exhibitions and world-class cultural programs have been created with the aim to facilitate learning and promote museums culture in Kuwait and the region, housing more than 22 galleries with over 3000 exhibits.</p>
                                 <p>The project was developed through a remarkable global collaboration among 13 countries involving nearly 96 specialist organizations, covering a total of 127 thousand square meters and a total construction area of 130 thousand square meters, The Centre is home not just to the various museums and Fine Arts Centre, but also a Theatre, Guest Services Centre, and Cafes. The Centre’s umbrella is inspired by the sea and wild environments from Maidan Hawalli to the Gulf Street which represents the interconnection of the Kuwaiti community</p>
-                                <div class="row justify-content-center">
+                                <div class="row justify-content-center my-5">
                                     <div class="col-md-9">
                                         <div class="reveal image">
                                             <img src="images/duha-gathering.jpg" alt="" class="img-fluid">

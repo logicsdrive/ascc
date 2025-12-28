@@ -1,23 +1,16 @@
 .page-title-banner{
     min-height: 380px; display: flex; align-items: flex-end; background: black; position: relative; overflow: hidden;
     
-
     &:after{
         content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0;
         background: #202125; opacity: 65%; z-index: 1; pointer-events: none;
     }
 
     .video,
-    .image{
+    .back-image{
         position: absolute; width: 100%; height: 100%; z-index: 1; top: 0; right: 0; bottom: 0; left: 0; object-fit: cover;
     }
     
-
-    h1{
-        color: white; text-transform: uppercase; margin: 0; font-size: px_rem(44px); line-height: 1;
-        font-family: var(--font-light); position: relative;
-    }
-
     .page-banner-desc{position: relative; display: block; opacity: 0; transform: translateY(-50px); will-change: transform, opacity;}
     .page-banner-desc .desc{padding-top: 1rem; color: white; max-width: 642px; font-family: var(--font-thin);}
 
@@ -25,7 +18,9 @@
 
     &.v2{min-height: 100vh;}
 
-    @media (max-width: 540px) {
+    @media (max-width: 720px) {
+        min-height: 300px;
+        
         .content{padding-bottom: 40px;}
     }
 }

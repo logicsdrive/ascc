@@ -27,4 +27,11 @@
     .address .item label{display: block; color: var(--primary-color); margin-bottom: 4px; line-height: 20px; font-family: var(--font-medium);}
 
     .block2 img{display: block; width: 100%;}
+
+    @media (max-width: 991px) {
+        .columns{gap: 40px;}
+    }
+    @media (max-width: 767px) {
+        .block1{padding: 40px 0;}
+    }
 }

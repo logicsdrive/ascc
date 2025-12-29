@@ -55,7 +55,7 @@
                             <div class="right">
                                 <div class="tab-content">
                                     <div class="tab-pane show active" id="my_profile_tab" role="tabpanel">
-                                        <h2 class="section-title mb-4">My profile</h2>
+                                        <h2 class="section-title mb-2 mb-md-4">My profile</h2>
                                         <form class="profile-data">
                                             <div class="grid">
                                                 <div class="form-element">
@@ -92,7 +92,7 @@
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="my_booking_tab" role="tabpanel">
-                                        <h2 class="section-title mb-4">My Bookings</h2>
+                                        <h2 class="section-title mb-2 mb-md-4">My Bookings</h2>
                                         <div class="nav tickets-tabs">
                                             <div class="item active" data-bs-toggle="tab" data-bs-target="#current_tickets">Current Tickets</div>
                                             <div class="item" data-bs-toggle="tab" data-bs-target="#expired_tickets">Expired tickets</div>

@@ -17,16 +17,13 @@
         border-radius: 10px 0 0 10px; position: relative; cursor: pointer; font-size: px_rem(20px); line-height: 1;
     }
     .tabs .item span{padding-top: 2px;}
-    .tabs .item:after{content: ""; width: 2px; height: 100%; background: rgba(207, 156, 90, 1); position: absolute; top: 0; right: 0; opacity: 0; pointer-events: none;}
-    .tabs .item.active{background: rgba(207, 156, 90, 0.2); color: rgba(207, 156, 90, 1);}
-    .tabs .item.active::after{opacity: 1;}
+    .tabs .item.active{background: rgba(207, 156, 90, 0.2); border-right: solid 2px var(--primary-color); color: rgba(207, 156, 90, 1);}
 
-
-    .tickets-tabs{display: grid; padding: 10px; margin-bottom: 30px; background: rgba(245, 245, 245, 0.6); grid-template-columns: repeat(2, 1fr); grid-gap: 24px;}
+    .tickets-tabs{display: grid; padding: 10px; margin-bottom: 30px; background: rgba(245, 245, 245, 0.6); grid-template-columns: repeat(2, 1fr); grid-gap: px_rem(24px);}
     .tickets-tabs .item{background: rgba(181, 181, 181, 0.2); font-size: px_rem(18px); cursor: pointer; border-radius: 10px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 6px 15px 4px; color: black; font-family: var(--font-medium);}
     .tickets-tabs .item.active{background: rgba(207, 156, 90, 0.2); color: rgba(207, 156, 90, 1);}
 
-    .tickets-grid{display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 36px;}
+    .tickets-grid{display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); grid-gap: 36px;}
 
     .profile-data{background: rgba(249, 249, 249, 1); padding: 34px 20px 48px;}
     .profile-data .form-element .form-control{background: white;}
@@ -44,5 +41,19 @@
         color: var(--primary-color); font-size: 1rem; font-family: var(--font-medium);
         position: absolute; top: 50%; transform: translateY(-50%); inset-inline-end: 36px;
         display: block; cursor: pointer;
+    }
+
+    
+    @media (max-width: 991px) {
+        grid-template-columns: 1fr;
+
+        .tabs .item{border-radius: 10px; overflow: hidden;}
+        .tabs .item.active{border: 0; border-left: solid 2px var(--primary-color);}
+
+        .left{width: 100%;}
+        .right{padding-top: 0;}
+    }
+    @media (max-width: 767px) {
+        .tickets-grid{grid-template-columns: 1fr;}
     }
 }

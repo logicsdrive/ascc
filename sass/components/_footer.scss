@@ -61,6 +61,7 @@
 }
 .modal{
     --bs-modal-padding: 30px;
+    --bs-modal-zindex: 10551;
 
     .modal-content{border-radius: px_rem(10px);}
 }
@@ -101,8 +102,10 @@
     }
 }
 .change-password-modal{
-    --bs-modal-width: 530px;
-    --bs-modal-padding: 58px 48px;
+    @include media-breakpoint-up(lg) {
+        --bs-modal-width: 530px;
+        --bs-modal-padding: 58px 48px;
+    }
 
     .content{max-width: 412px; margin: auto;}
     .title{font-size: 24px; text-transform: uppercase; font-family: var(--font-medium); line-height: 1; margin-bottom: 20px;}

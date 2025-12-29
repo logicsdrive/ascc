@@ -130,7 +130,7 @@ a:hover{color: var(--primary-color);}
 .h-list{display: flex; align-items: center;}
 
 .title-1{font-size: px_rem(44px); margin: 0; line-height: 1; text-transform: uppercase;}
-.section-title{font-size: px_rem(44px); position: relative; line-height: 1; font-family: var(--font-light); margin: 0; text-transform: uppercase;}
+.section-title{font-size: px_rem(44px); line-height: 1; position: relative; font-family: var(--font-light); margin: 0; text-transform: uppercase;}
 
 .pointer-events-none{pointer-events: none !important;}
 
@@ -424,11 +424,16 @@ strong{font-family: var(--font-medium); font-weight: normal;}
     }
 
     .iti__arrow{width: 10px; height: 6px; background: url(/images/dd_arrow.png) center center no-repeat; border: 0;}
-    .iti__search-input{padding: 10px; border-radius: 0;}
+    .iti__search-input{padding: 10px; border-radius: 0; border-bottom: solid 1px #EEE;}
     .iti__selected-country-primary{gap: 6px;}
     .iti__arrow{margin: 0;}
 }
+.iti--fullscreen-popup.iti--container{
+    z-index: 11111;
+}
+
 
 @media (max-width: 720px) {
+    .section-title{font-size: 36px;}
     .main-content{padding: 30px 0;}
 }

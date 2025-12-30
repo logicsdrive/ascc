@@ -20,7 +20,47 @@
                             <a href="javascript: void(0);" class="btn btn-primary center-button">Enter The Centre</a>
                         </div>
                         <div class="camera-view" id="camera-view" data-speed="0.7">
-                            <img src="images/camera-view.jpg" alt="" />
+                            <div class="surface">
+                                <img src="images/surface.png" alt="" />
+                            </div>
+                            <div class="group">
+                                <div class="set set4">
+                                    <div class="object">
+                                        <img src="images/camera_object1.png" alt="" />
+                                    </div>
+                                    <div class="object">
+                                        <img src="images/camera_object2.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="set set3">
+                                    <div class="object">
+                                        <img src="images/camera_object1.png" alt="" />
+                                    </div>
+                                    <div class="object">
+                                        <img src="images/camera_object2.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="set set2">
+                                    <div class="object">
+                                        <img src="images/camera_object1.png" alt="" />
+                                    </div>
+                                    <div class="object">
+                                        <img src="images/camera_object2.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="set set1">
+                                    <div class="object">
+                                        <img src="images/camera_object1.png" alt="" />
+                                    </div>
+                                    <div class="object">
+                                        <img src="images/camera_object2.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mouse-pointer">
+                                <span>To look around, hold and hold left mouse button</span>
+                                <img class="mx-auto" src="images/mouse.png" loading="lazy" alt="" />
+                            </div>                 
                         </div>
                         <div class="home-block1" data-speed="1.6">
                             <div class="container">

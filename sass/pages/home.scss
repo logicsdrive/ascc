@@ -1,3 +1,4 @@
+
 .home-page{
 
     .main-content{padding: 0;}
@@ -14,30 +15,151 @@
         .center-button{position: absolute; left: 50%; transform: translateX(-50%); bottom: px_rem(96px); z-index: 1;}
     }
     .camera-view{
-        min-height: 100vh; display: flex; align-items: flex-end; position: relative; background: url(/images/camera_background.jpg) center center no-repeat; background-size: cover;
+        min-height: 100vh; display: flex; align-items: flex-end; background: url(/images/camera_background.jpg) center center no-repeat; background-size: cover;
+        position: relative; overflow: hidden;
+        // position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 11112;
+
+        .reveal-camera-image {
+            overflow: hidden;
+        }
+        
+        .reveal-camera-image img {
+            width: 100%;
+            transform-origin: left center;
+        }
     
-        .surface img{min-width: 100%; object-fit: contain;}
         .mouse-pointer{
             position: absolute; left: 50%; transform: translateX(-50%);
             bottom: px_rem(90px); display: grid; grid-gap: px_rem(14px);
             font-family: var(--font-thin); text-align: center; color: black;
-            cursor: pointer;
+            cursor: pointer; z-index: 1111;
         }
         .mouse-pointer span{display: block; max-width: 258px;}
         
-        .set{position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between;}
-        .set.set2{
+        .group{
+            position: absolute; left: 0; transition: all 0.4s ease; width: 100%; bottom: 0; 
+        }
+
+        &.move-left{
+            .group{left: 300px;}   
+        }
+        .surface{transition: all 0.4s ease; transform: translateY(0);}
+        .surface img{min-width: 100%; object-fit: contain;}
+        .set{
+            position: absolute; left: 0; transition: all 0.5s ease; bottom: 65px; width: 100%; display: flex; align-items: center; justify-content: space-between;
+            pointer-events: none;
+
+            .object{position: relative; cursor: pointer;}
+            .object[data-click-count]:after{
+                content: attr(data-click-count);
+                position: absolute;
+                top: 40%;
+                left: 40%;
+                z-index: 111;
+                font-size: 30px;
+                width: 94px;
+                height: 50px;
+                background: #ff0000;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .set1{
+            z-index: 111; pointer-events: inherit;
+
+            left: 50%; transform: translateX(-50%) scaleX(0);
+        
+            
+
+            .object1{width: 720px; height: 410px;}
+            .object2{width: 714px; height: 404px;}
+        }
+        .set2{
             transform: scale(0.5);
-            bottom: 100px;
+            bottom: 140px;
+            z-index: 0;
         }
-        .set.set3{
+        .set3{
             transform: scale(0.2);
-            bottom: 130px;
+            bottom: 158px;
+            z-index: 0;
         }
-        .set.set4{
+        .set4{
             transform: scale(0.1);
-            bottom: 150px;
+            bottom: 190px;
+            z-index: 0;
         }
+
+        &.move_step1{
+            .set1{
+
+                transform: translateX(0) !important;
+
+                --offset: 900px;
+                width: calc(100% + var(--offset)); left: calc((var(--offset) / 2) * -1); z-index: 0;
+            }
+            .set2{transform: scale(0.7); bottom: 60px; z-index: 111;}
+            .set3{transform: scale(0.4);}
+            .set4{transform: scale(0.2);}
+
+            .surface{
+                transform: translateY(10px);
+            }
+        }
+        &.move_step2{
+            .set1{--offset: 1500px; pointer-events: none;}
+            .set2{transform: scale(1); z-index: 111; bottom: 60px; pointer-events: inherit;}
+            .set3{transform: scale(0.6);}
+            .set4{transform: scale(0.3);}
+
+            .surface{
+                transform: translateY(20px);
+            }
+        }
+        &.move_step3{
+            .set2{
+                --offset: 900px;
+                width: calc(100% + var(--offset)); left: calc((var(--offset) / 2) * -1); z-index: 0;
+            }
+            .set3{transform: scale(0.7);}
+            .set4{transform: scale(0.4);}
+
+            .surface{
+                transform: translateY(30px);
+            }
+        }
+        &.move_step4{
+            .set2{--offset: 1500px; pointer-events: none;}
+            .set3{transform: scale(1); z-index: 111; bottom: 60px; pointer-events: inherit;}
+            .set4{transform: scale(0.6);}
+
+            .surface{
+                transform: translateY(40px);
+            }
+        }
+        &.move_step5{
+            .set2{pointer-events: none;}
+            .set3{
+                --offset: 900px;
+                width: calc(100% + var(--offset)); left: calc((var(--offset) / 2) * -1); z-index: 0;
+            }
+            .set4{transform: scale(0.7);}
+
+            .surface{
+                transform: translateY(50px);
+            }
+        }
+        &.move_step6{
+            .set3{--offset: 1500px; pointer-events: none;}
+            .set4{transform: scale(1); z-index: 111; bottom: 60px; pointer-events: inherit;}
+
+            .surface{
+                transform: translateY(150px);
+            }
+        }
+        
     }
 
     .home-block1{

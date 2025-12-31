@@ -26,38 +26,38 @@
                             <div class="group">
                                 <div class="set set4">
                                     <div class="object">
-                                        <img src="images/camera_object1.png" alt="" />
+                                        <img src="images/set1_object1.png" alt="" />
                                     </div>
                                     <div class="object">
-                                        <img src="images/camera_object2.png" alt="" />
+                                        <img src="images/set1_object2.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="set set3">
-                                    <div class="object">
-                                        <img src="images/camera_object1.png" alt="" />
+                                    <div class="object" data-click-count="click 5" onclick="document.getElementById('camera-view').classList.add('move_step5');">
+                                        <img src="images/set1_object1.png" alt="" />
                                     </div>
-                                    <div class="object">
-                                        <img src="images/camera_object2.png" alt="" />
+                                    <div class="object" data-click-count="click 6" onclick="document.getElementById('camera-view').classList.add('move_step6');">
+                                        <img src="images/set1_object2.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="set set2">
-                                    <div class="object">
-                                        <img src="images/camera_object1.png" alt="" />
+                                    <div class="object" data-click-count="click 3" onclick="document.getElementById('camera-view').classList.add('move_step3');">
+                                        <img src="images/set1_object1.png" alt="" />
                                     </div>
-                                    <div class="object">
-                                        <img src="images/camera_object2.png" alt="" />
+                                    <div class="object" data-click-count="click 4" onclick="document.getElementById('camera-view').classList.add('move_step4');">
+                                        <img src="images/set1_object2.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="set set1">
-                                    <div class="object">
-                                        <img src="images/camera_object1.png" alt="" />
+                                    <div class="object object1" data-click-count="click 1" onclick="document.getElementById('camera-view').classList.add('move_step1')">
+                                        <img src="images/set1_object1.png" alt="" />
                                     </div>
-                                    <div class="object">
-                                        <img src="images/camera_object2.png" alt="" />
+                                    <div class="object object2" data-click-count="click 2" onclick="document.getElementById('camera-view').classList.add('move_step2')">
+                                        <img src="images/set1_object2.png" alt="" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="mouse-pointer">
+                            <div class="mouse-pointer" onclick="document.getElementById('camera-view').classList.add('move-left');">
                                 <span>To look around, hold and hold left mouse button</span>
                                 <img class="mx-auto" src="images/mouse.png" loading="lazy" alt="" />
                             </div>                 

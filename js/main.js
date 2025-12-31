@@ -47,7 +47,6 @@ window.addEventListener('load', (event) => {
         duration: 1
     }, 0);
 
-
     const plan_visit_timeline = gsap.timeline({
         scrollTrigger: {
           trigger: ".home-page .plan-visit",
@@ -72,7 +71,22 @@ window.addEventListener('load', (event) => {
         opacity: 0,
         duration: 2.5
     }, 0);
+
+    
+    gsap.to(".camera-view .set1", {
+        scaleX: 1,
+        duration: 1,
+        ease: "power3.out",
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: ".camera-view",
+          start: "bottom 40%",
+          markers: true,
+          toggleActions: "play none none none"
+        }
+    });
 });
+
 document.addEventListener("DOMContentLoaded", function() {
     ascc_app.init();
 });

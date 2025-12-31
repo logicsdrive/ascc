@@ -3,7 +3,7 @@
 </div> -->
 <header class="site-header">
     <div class="container">
-        <a href="/" class="logo"><img src="images/site_logo.png" alt="" /></a>
+        <a href="@index.php" class="logo"><img src="images/site_logo.png" alt="" /></a>
         <div class="right">
             <div class="h-list list">
                 <div class="h-list menu-list">

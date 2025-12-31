@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mouse-pointer" onclick="document.getElementById('camera-view').classList.add('move-left');">
+                            <div class="mouse-pointer">
                                 <span>To look around, hold and hold left mouse button</span>
                                 <img class="mx-auto" src="images/mouse.png" loading="lazy" alt="" />
                             </div>                 

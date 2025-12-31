@@ -87,6 +87,49 @@ window.addEventListener('load', (event) => {
     });
 });
 
+
+const cameraView = document.getElementById('camera-view');
+let isHolding = false;
+
+// 1. Start tracking on Left Click
+window.addEventListener('mousedown', (e) => {
+    if (e.button === 0) isHolding = true;
+});
+
+// 2. Stop tracking when mouse is released
+window.addEventListener('mouseup', () => {
+    isHolding = false;
+    // Optional: Reset position when let go
+    cameraView.classList.remove('move-left', 'move-right');
+});
+
+// 3. Handle the movement logic
+window.addEventListener('mousemove', (e) => {
+    if (!isHolding) return;
+
+    const screenWidth = window.innerWidth;
+    const mouseX = e.clientX;
+
+    // Adjust these percentages if you want the "active" area to be larger or smaller
+    const leftBoundary = screenWidth * 0.35;  // Left 35% of screen
+    const rightBoundary = screenWidth * 0.65; // Right 35% of screen
+
+    if (mouseX < leftBoundary) {
+        // MOUSE IS ON THE LEFT
+        cameraView.classList.add('move-left');
+        cameraView.classList.remove('move-right');
+    } 
+    else if (mouseX > rightBoundary) {
+        // MOUSE IS ON THE RIGHT
+        cameraView.classList.add('move-right');
+        cameraView.classList.remove('move-left');
+    } 
+    else {
+        // MOUSE IS IN THE MIDDLE
+        cameraView.classList.remove('move-left', 'move-right');
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     ascc_app.init();
 });

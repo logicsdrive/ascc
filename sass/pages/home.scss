@@ -15,18 +15,20 @@
         .center-button{position: absolute; left: 50%; transform: translateX(-50%); bottom: px_rem(96px); z-index: 1;}
     }
     .camera-view{
-        min-height: 100vh; display: flex; align-items: flex-end; background: url(/images/camera_background.jpg) center center no-repeat; background-size: cover;
+        min-height: 100vh; display: flex; align-items: flex-end;
         position: relative; overflow: hidden;
 
-        .reveal-camera-image {
-            overflow: hidden;
+        &:after{
+            content: ""; position: absolute; top: 0; left: -50px; width: calc(100% + 100px); height: 100%; pointer-events: none;
+            z-index: -1;
+
+            background-image: url('/images/camera_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-position-x: calc(50% + var(--bg-shift, 0px));
+            transition: background-position-x 0.8s ease-out; /* Match your GSAP duration */
         }
-        
-        .reveal-camera-image img {
-            width: 100%;
-            transform-origin: left center;
-        }
-    
+
         .mouse-pointer{
             position: absolute; left: 50%; transform: translateX(-50%);
             bottom: px_rem(90px); display: grid; grid-gap: px_rem(14px);
@@ -40,7 +42,7 @@
         }
 
         &.move-left{
-            .group{left: 300px;}   
+            .group{left: 300px;}
         }
         &.move-right{
             .group{left: -300px;}   

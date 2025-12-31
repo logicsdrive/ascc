@@ -80,8 +80,7 @@ window.addEventListener('load', (event) => {
         immediateRender: false,
         scrollTrigger: {
           trigger: ".camera-view",
-          start: "bottom 40%",
-          markers: true,
+          start: "bottom 60%",
           toggleActions: "play none none none"
         }
     });
@@ -91,9 +90,13 @@ window.addEventListener('load', (event) => {
 const cameraView = document.getElementById('camera-view');
 let isHolding = false;
 
-// 1. Start tracking on Left Click
-window.addEventListener('mousedown', (e) => {
-    if (e.button === 0) isHolding = true;
+// 1. Only start if the click begins ON the cameraView element
+cameraView.addEventListener('mousedown', (e) => {
+    if (e.button === 0) { // Check for left click
+        isHolding = true;
+        // Optional: prevent text selection while dragging
+        e.preventDefault(); 
+    }
 });
 
 // 2. Stop tracking when mouse is released
@@ -101,6 +104,7 @@ window.addEventListener('mouseup', () => {
     isHolding = false;
     // Optional: Reset position when let go
     cameraView.classList.remove('move-left', 'move-right');
+    cameraView.style.setProperty('--bg-shift', '0px');
 });
 
 // 3. Handle the movement logic
@@ -118,15 +122,18 @@ window.addEventListener('mousemove', (e) => {
         // MOUSE IS ON THE LEFT
         cameraView.classList.add('move-left');
         cameraView.classList.remove('move-right');
+        cameraView.style.setProperty('--bg-shift', '50px');
     } 
     else if (mouseX > rightBoundary) {
         // MOUSE IS ON THE RIGHT
         cameraView.classList.add('move-right');
         cameraView.classList.remove('move-left');
+        cameraView.style.setProperty('--bg-shift', '-50px');
     } 
     else {
         // MOUSE IS IN THE MIDDLE
         cameraView.classList.remove('move-left', 'move-right');
+        cameraView.style.setProperty('--bg-shift', '0');
     }
 });
 

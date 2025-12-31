@@ -95,7 +95,7 @@
                                 <section class="earth-block3">
                                     <div class="text">
                                         <h3 class="section-title"  data-animate="fade-up">Secrets from Before Humanity</h3>
-                                        <div class="description">
+                                        <div class="description last-margin-0">
                                             <p>Travel through millions of years of natural history and discover the incredible creatures that once shared our planet — and the mysteries they left behind. Here you’ll encounter the towering Titanosaurus, the gentle giant of the dinosaur era, and the curious Dodo, a bird that lived without fear until humans changed its fate forever. From icy ages to lush rainforests, this exhibition explores the fragile relationship between life, nature, and extinction. Learn how climate shifts, evolution, and human influence shaped — and sometimes ended — entire species.</br>Through immersive visuals and scientific storytelling, “When the Earth Was Different” brings lost worlds to life, reminding us that the story of extinction is also a lesson in responsibility, resilience, and the beauty of existence itself.</p>
                                         </div>
                                     </div>

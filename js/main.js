@@ -91,13 +91,15 @@ const cameraView = document.getElementById('camera-view');
 let isHolding = false;
 
 // 1. Only start if the click begins ON the cameraView element
-cameraView.addEventListener('mousedown', (e) => {
-    if (e.button === 0) { // Check for left click
-        isHolding = true;
-        // Optional: prevent text selection while dragging
-        e.preventDefault(); 
-    }
-});
+if(cameraView) {
+    cameraView.addEventListener('mousedown', (e) => {
+        if (e.button === 0) { // Check for left click
+            isHolding = true;
+            // Optional: prevent text selection while dragging
+            e.preventDefault(); 
+        }
+    });
+}
 
 // 2. Stop tracking when mouse is released
 window.addEventListener('mouseup', () => {
@@ -246,13 +248,21 @@ const ascc_app = {
     },
     initMuseumsSlider: function() {
         const museums_swiper = new Swiper(".other-museums .swiper", {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
             speed:900,
             navigation: {
                 nextEl: ".other-museums .arrows .next",
                 prevEl: ".other-museums .arrows .prev",
+            },
+            breakpoints: {
+                992: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
             }
         });
     },

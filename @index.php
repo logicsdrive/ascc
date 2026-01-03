@@ -19,43 +19,99 @@
                             </h1>
                             <a href="javascript: void(0);" class="btn btn-primary center-button">Enter The Centre</a>
                         </div>
-                        <div class="camera-view" id="camera-view" data-speed="0.7">
-                            <div class="surface">
-                                <img src="images/surface.png" alt="" />
-                            </div>
+                        <div class="camera-view" id="camera_view">
                             <div class="group">
                                 <div class="set set4">
-                                    <div class="object">
-                                        <img src="images/set1_object1.png" alt="" />
+                                    <div class="object object1">
+                                        <img src="images/home_banner/banner_block7.png" alt="" />
+                                        <img class="tree" src="images/home_banner/banner_block7_tree.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block7_vector.png" alt="" />
+                                        <div class="text">
+                                            <h5>Ecosystems</h5>
+                                            <p>Travel back in time to gain a unique insight into the natural world – both past and present, understand the importance of ecosystems.</p>
+                                        </div>
                                     </div>
-                                    <div class="object">
-                                        <img src="images/set1_object2.png" alt="" />
+                                    <div class="object object2">
+                                        <img src="images/home_banner/banner_block8.png" alt="" />
+                                        <img class="tree" src="images/home_banner/banner_block8_tree.png" alt="" />   
+                                        <img class="animated_object" src="images/home_banner/banner_block8_vector.png" alt="" />
+                                        <div class="text">
+                                            <h5>Natural History – Our Earth</h5>
+                                            <p>Enter the world of the dinosaurs! See the amazing reptiles and mammals that lived on Earth up to 65 million years ago.</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="set set3">
-                                    <div class="object" data-click-count="click 5" onclick="document.getElementById('camera-view').classList.add('move_step5');">
-                                        <img src="images/set1_object1.png" alt="" />
+                                    <div class="object object1">
+                                        <img src="images/home_banner/banner_block5.png" alt="" />
+                                        <img class="tree" src="images/home_banner/banner_block5_tree.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block5_vector.png" alt="" />
+                                        <div class="text">
+                                            <h5>Transportation & Robots</h5>
+                                            <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers.</p>
+                                        </div>
                                     </div>
-                                    <div class="object" data-click-count="click 6" onclick="document.getElementById('camera-view').classList.add('move_step6');">
-                                        <img src="images/set1_object2.png" alt="" />
+                                    <div class="object object2">
+                                        <img src="images/home_banner/banner_block6.png" alt="" />
+                                        <img class="tree" src="images/home_banner/banner_block6_tree.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block6_vector.png" alt="" />
+                                        <div class="text">
+                                            <h5>Science & Technology – Human Body</h5>
+                                            <p>There is nothing more exciting and intricate than the workings of the human body and mind. Its secrets are revealed as we journey through.</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="set set2">
-                                    <div class="object" data-click-count="click 3" onclick="document.getElementById('camera-view').classList.add('move_step3');">
-                                        <img src="images/set1_object1.png" alt="" />
+                                    <div class="object object1">
+                                        <img src="images/home_banner/banner_block3.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block3_vector.png" alt="" />
+                                        <div class="text">
+                                            <h5>guest relation</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                        </div>
                                     </div>
-                                    <div class="object" data-click-count="click 4" onclick="document.getElementById('camera-view').classList.add('move_step4');">
-                                        <img src="images/set1_object2.png" alt="" />
+                                    <div class="object object2">
+                                        <img src="images/home_banner/banner_block4.png" alt="" />
+                                        <img class="tree" src="images/home_banner/banner_block4_tree.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block4_vector.png" alt="" />
+                                        <div class="text">
+                                            <h5>Theater</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="set set1">
-                                    <div class="object object1" data-click-count="click 1" onclick="document.getElementById('camera-view').classList.add('move_step1')">
-                                        <img src="images/set1_object1.png" alt="" />
+                                    <div class="object object1">
+                                        <img class="tree" src="images/home_banner/banner_block1_tree.png" alt="" />
+                                        <img src="images/home_banner/banner_block1.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block1_vector.png" alt="" />
+                                        <div class="text">
+                                            <h5>Arabic Islamic Science</h5>
+                                            <p>With its focus on the Golden Age of Islam and the innumerable scientific, cultural and artistic contributions of Muslims and Arabs to modern day science</p>
+                                        </div>
                                     </div>
-                                    <div class="object object2" data-click-count="click 2" onclick="document.getElementById('camera-view').classList.add('move_step2')">
-                                        <img src="images/set1_object2.png" alt="" />
+                                    <div class="object object2">
+                                        <img class="tree" src="images/home_banner/banner_block2_tree.png" alt="" />
+                                        <img src="images/home_banner/banner_block2.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block2_vector.png" alt="" />
+                                        <div class="text">
+                                            <h5>Space</h5>
+                                            <p>he study of space and the universe has always evoked mystery and inspiration. The Centre’s Space exhibit gives audiences an unprecedented opportunity to explore the wonders of this unknown universe.</p>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="arrows">
+                                <span class="arrow prev" id="camera_view_prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14" role="img" aria-label="caret">
+                                        <path d="M1,14c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L5.6,7L0.3,1.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6 c0.4,0.4,0.4,1,0,1.4l-6,6C1.5,13.9,1.3,14,1,14z"></path>
+                                    </svg>
+                                </span>
+                                <span class="arrow next" id="camera_view_next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 14" role="img" aria-label="caret">
+                                        <path d="M1,14c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L5.6,7L0.3,1.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6 c0.4,0.4,0.4,1,0,1.4l-6,6C1.5,13.9,1.3,14,1,14z"></path>
+                                    </svg>
+                                </span>
                             </div>
                             <div class="mouse-pointer">
                                 <span>To look around, hold and hold left mouse button</span>

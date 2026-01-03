@@ -1,3 +1,8 @@
+const cameraView = document.getElementById('camera_view');
+const maxSteps = 6;
+let isHolding = false;
+let currentStep = 0;
+
 window.addEventListener('load', (event) => {
     document.body.classList.add("page-loaded");
     gsap.registerPlugin(ScrollTrigger);
@@ -73,41 +78,78 @@ window.addEventListener('load', (event) => {
     }, 0);
 
     
-    gsap.to(".camera-view .set1", {
-        scaleX: 1,
-        duration: 1,
-        ease: "power3.out",
-        immediateRender: false,
-        scrollTrigger: {
-          trigger: ".camera-view",
-          start: "bottom 60%",
-          toggleActions: "play none none none"
+    // gsap.to(".camera-view .set1", {
+    //     scaleX: 1,
+    //     duration: 1,
+    //     ease: "power3.out",
+    //     immediateRender: false,
+    //     scrollTrigger: {
+    //       trigger: ".camera-view",
+    //       start: "bottom 60%",
+    //       toggleActions: "play none none none"
+    //     }
+    // });
+
+
+    
+
+    // Function to update classes (Shared by Arrows and Scroll)
+    function goToStep(step) {
+        // Clean up old classes and add the new ones
+        for (let i = 1; i <= maxSteps; i++) {
+            document.getElementById('camera_view').classList.toggle(`move_step${i}`, i <= step);
         }
+        
+        currentStep = step;
+    }
+
+    // Create the ScrollTrigger that "Locks" the page
+    ScrollTrigger.create({
+        trigger: cameraView, // The section shown in your image
+        start: "top top",
+        end: `+=${maxSteps * 500}`,    // Distance user must scroll to finish all steps
+        pin: true,                     // Pins the section in place
+        scrub: true,
+        onUpdate: (self) => {
+            // Calculate which step we should be on based on scroll progress (0 to 1)
+            const progressStep = Math.round(self.progress * maxSteps);
+            if (progressStep !== currentStep) {
+                goToStep(progressStep);
+            }
+        }
+    });
+
+    // Update your Arrow Event Listeners to use the same goToStep function
+    document.getElementById('camera_view_next').addEventListener('click', () => {
+        if (currentStep < maxSteps) goToStep(currentStep + 1);
+    });
+
+    document.getElementById('camera_view_prev').addEventListener('click', () => {
+        if (currentStep > 0) goToStep(currentStep - 1);
+    });
+
+    // 1. Only start if the click begins ON the cameraView element
+    if(cameraView) {
+        cameraView.addEventListener('mousedown', (e) => {
+            if (e.button === 0) { // Check for left click
+                isHolding = true;
+                // Optional: prevent text selection while dragging
+                e.preventDefault(); 
+            }
+        });
+    }
+
+    // 2. Stop tracking when mouse is released
+    window.addEventListener('mouseup', () => {
+        isHolding = false;
+        // Optional: Reset position when let go
+        cameraView.classList.remove('move-left', 'move-right');
+        cameraView.style.setProperty('--bg-shift', '0px');
     });
 });
 
 
-const cameraView = document.getElementById('camera-view');
-let isHolding = false;
 
-// 1. Only start if the click begins ON the cameraView element
-if(cameraView) {
-    cameraView.addEventListener('mousedown', (e) => {
-        if (e.button === 0) { // Check for left click
-            isHolding = true;
-            // Optional: prevent text selection while dragging
-            e.preventDefault(); 
-        }
-    });
-}
-
-// 2. Stop tracking when mouse is released
-window.addEventListener('mouseup', () => {
-    isHolding = false;
-    // Optional: Reset position when let go
-    cameraView.classList.remove('move-left', 'move-right');
-    cameraView.style.setProperty('--bg-shift', '0px');
-});
 
 // 3. Handle the movement logic
 window.addEventListener('mousemove', (e) => {

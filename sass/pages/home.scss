@@ -1,4 +1,3 @@
-
 .home-page{
 
     .main-content{padding: 0;}
@@ -15,14 +14,14 @@
         .center-button{position: absolute; left: 50%; transform: translateX(-50%); bottom: px_rem(96px); z-index: 1;}
     }
     .camera-view{
-        min-height: 100vh; display: flex; align-items: flex-end;
+        min-height: 1000px; display: flex; align-items: flex-end;
         position: relative; overflow: hidden;
 
         &:after{
             content: ""; position: absolute; top: 0; left: -50px; width: calc(100% + 100px); height: 100%; pointer-events: none;
             z-index: -1;
 
-            background-image: url('/images/camera_background.jpg');
+            background-image: url('/images/track_background.jpg');
             background-size: cover;
             background-position: center;
             background-position-x: calc(50% + var(--bg-shift, 0px));
@@ -31,7 +30,7 @@
 
         .mouse-pointer{
             position: absolute; left: 50%; transform: translateX(-50%);
-            bottom: px_rem(90px); display: grid; grid-gap: px_rem(14px);
+            bottom: 60px; display: grid; grid-gap: px_rem(14px);
             font-family: var(--font-thin); text-align: center; color: black;
             z-index: 1111; pointer-events: none;
         }
@@ -47,53 +46,90 @@
         &.move-right{
             .group{left: -300px;}   
         }
-        .surface{transition: all 0.4s ease; transform: translateY(0);}
-        .surface img{min-width: 100%; object-fit: contain;}
+
+        .arrows{
+            position: absolute; z-index: 111121; left: 50%; transform: translateX(-50%); bottom: 180px; display: grid; grid-gap: 10px;
+
+            .arrow{width: 50px; height: 50px; box-shadow: 0 .4rem .4rem rgba(0,0,0,.05),0 .2rem .4rem .3rem rgba(0,0,0,.05); border-radius: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; background: white;}
+            .arrow svg{width: 15px; height: 9px; pointer-events: none; transform: rotate(90deg);}
+
+            .arrow.up svg{transform: rotate(-90deg);}
+        }
+
         .set{
             position: absolute; left: 0; transition: all 0.5s ease; bottom: 65px; width: 100%; display: flex; align-items: center; justify-content: space-between;
             pointer-events: none;
 
-            .object{position: relative; cursor: pointer;}
-            .object[data-click-count]:after{
-                content: attr(data-click-count);
-                position: absolute;
-                top: 40%;
-                left: 40%;
-                z-index: 111;
-                font-size: 30px;
-                width: 94px;
-                height: 50px;
-                background: #ff0000;
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            .tree{position: absolute;}
+
+            .object{position: relative; pointer-events: none; cursor: pointer; width: 715px; height: 410px;}
+            .animated_object{position: absolute; bottom: 0; max-width: 225px; right: -10px;}
+
+
+            .text{
+                position: absolute; top: 174px; left: 256px;
+            
+                h5{margin: 0 0 10px; max-width: 258px; font-family: var(--font-medium); font-size: 18px; text-transform: uppercase; color: black;}
+                p{font-size: 14px; margin: 0; max-width: 210px; line-height: 20px; font-family: var(--font-thin);}
             }
         }
         .set1{
             z-index: 111; pointer-events: inherit;
 
-            left: 50%; transform: translateX(-50%) scaleX(0);
+            // left: 50%; transform: translateX(-50%) scaleX(0);
         
-            
-
-            .object1{width: 720px; height: 410px;}
-            .object2{width: 714px; height: 404px;}
+            .object1{
+                .tree{left: 126px; bottom: 118px; z-index: -1;}
+                .animated_object{bottom: 20px; max-width: inherit;}
+            }
+            .object2{
+                .tree{left: 240px; bottom: 118px; z-index: -1;}
+                .animated_object{left: 0; bottom: 40px; right: auto;}
+            }
         }
         .set2{
-            transform: scale(0.5);
-            bottom: 140px;
-            z-index: 0;
+            transform: scale(0.56); bottom: 140px; z-index: 0;
+
+            .object1{
+                .tree{left: 126px; bottom: 118px; z-index: -1;}
+                .animated_object{bottom: 20px;}
+            }
+            .object2{
+                .tree{left: 240px; bottom: 118px; z-index: -1;}
+                .animated_object{left: 17px; bottom: 40px; right: auto;}
+
+                .text{left: 290px;}
+            }
         }
         .set3{
             transform: scale(0.2);
             bottom: 158px;
             z-index: 0;
+
+            .object1{
+                .tree{left: 0; bottom: 93px; z-index: -1;}
+            }
+            .object2{
+                .tree{left: 240px; max-width: 440px; bottom: 140px; z-index: -1;}
+                .animated_object{left: 17px; bottom: 40px; right: auto;}
+
+                .text{left: 290px;}
+            }
         }
         .set4{
             transform: scale(0.1);
             bottom: 190px;
             z-index: 0;
+
+            .object1{
+                .tree{left: 126px; bottom: 118px; z-index: -1;}
+            }
+            .object2{
+                .tree{left: 240px; max-width: 440px; bottom: 140px; z-index: -1;}
+                .animated_object{left: 17px; bottom: 40px; right: auto;}
+
+                .text{left: 290px;}
+            }
         }
 
         &.move_step1{

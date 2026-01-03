@@ -60,13 +60,13 @@
                                         </div>
                                     </form>
                                     <aside class="address">
-                                        <div class="item" data-animate="fade-up">
+                                        <div class="item">
                                             <label>E-mail</label>
-                                            info@ascckw.com
+                                            <a href="mailto: info@ascckw.com">info@ascckw.com</a>
                                         </div>
-                                        <div class="item" data-animate="fade-up">
+                                        <div class="item">
                                             <label>Mobile Number</label>
-                                            +965 22222211
+                                            <a href="tel: +965 22222211">+965 22222211</a>
                                         </div>
                                         <div class="item" data-animate="fade-up">
                                             <label>Address</label>

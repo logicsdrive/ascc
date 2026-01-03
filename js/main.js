@@ -84,14 +84,11 @@ window.addEventListener('load', (event) => {
     //     ease: "power3.out",
     //     immediateRender: false,
     //     scrollTrigger: {
-    //       trigger: ".camera-view",
-    //       start: "bottom 60%",
+    //       trigger: cameraView,
+    //       start: "top 0%",
     //       toggleActions: "play none none none"
     //     }
-    // });
-
-
-    
+    // });    
 
     // Function to update classes (Shared by Arrows and Scroll)
     function goToStep(step) {
@@ -119,17 +116,18 @@ window.addEventListener('load', (event) => {
         }
     });
 
-    // Update your Arrow Event Listeners to use the same goToStep function
-    document.getElementById('camera_view_next').addEventListener('click', () => {
-        if (currentStep < maxSteps) goToStep(currentStep + 1);
-    });
-
-    document.getElementById('camera_view_prev').addEventListener('click', () => {
-        if (currentStep > 0) goToStep(currentStep - 1);
-    });
 
     // 1. Only start if the click begins ON the cameraView element
     if(cameraView) {
+        // Update your Arrow Event Listeners to use the same goToStep function
+        document.getElementById('camera_view_next').addEventListener('click', () => {
+            if (currentStep < maxSteps) goToStep(currentStep + 1);
+        });
+
+        document.getElementById('camera_view_prev').addEventListener('click', () => {
+            if (currentStep > 0) goToStep(currentStep - 1);
+        });
+
         cameraView.addEventListener('mousedown', (e) => {
             if (e.button === 0) { // Check for left click
                 isHolding = true;
@@ -231,6 +229,11 @@ const ascc_app = {
             document.body.classList.add('menu-opened')
             this.animateNavigation();
         });
+        document.addEventListener("click", function(e) {
+            if(!e.target.closest(".search-icon") && !e.target.closest(".search-field")) {
+                document.body.classList.remove("search-opened");
+            }
+        });
         document.body.addEventListener('click', async (e) => {
             const trigger = e.target.closest("[data-toggle='content-modal']");
             
@@ -293,6 +296,7 @@ const ascc_app = {
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
+            slideToClickedSlide: true,
             speed:900,
             navigation: {
                 nextEl: ".other-museums .arrows .next",

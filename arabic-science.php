@@ -99,8 +99,7 @@
                 spaceBetween: 28,
                 loop: true,
                 speed: 1000,
-                allowTouchMove: false,
-                simulateTouch: false,
+                slideToClickedSlide: true,
                 preventInteractionOnTransition: true,
                 touchMoveStopPropagation: true,
                 on: {

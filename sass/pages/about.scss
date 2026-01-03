@@ -118,12 +118,13 @@
             .content .list li:first-child{border-top: 0;}
             .content .list li.title{font-family: var(--font-medium); flex-direction: row; justify-content: center; align-items: center; gap: 7px; font-size: px_rem(18px); line-height: px_rem(20px);}
             .content .list li.title span{display: block; padding-top: 4px; line-height: 1;}
-            .content .list li.title:before{
+            .content .list li.title .availaility-status{
                 content: "";
                 @extend .icon-rounded;
                 --size: 10px;
                 background: rgba(72, 130, 126, 1);
             }
+            .content .list li.title .status.close{background: red;}
 
             .slot{display: flex; justify-content: center; gap: 18px; align-items: center; font-size: px_rem(20px); line-height: 1; font-family: var(--font-medium);}
             .day{font-size: px_rem(18px); display: block; padding-top: px_rem(12px);}
@@ -131,7 +132,7 @@
         .block2{
             margin-bottom: 130px;
             
-            .note{font-size: 1rem; padding: 30px 0 80px;}
+            .note{font-size: 1rem; padding: 30px 0 80px; font-family: var(--font-thin);}
             .tickets-holder{
                 --gap: 32px; display: flex; flex-wrap: wrap; gap: var(--gap); justify-content: center;
                 

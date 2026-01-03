@@ -556,11 +556,11 @@
                                         <aside class="address">
                                             <div class="item">
                                                 <label>E-mail</label>
-                                                info@ascckw.com
+                                                <a href="mailto: info@ascckw.com">info@ascckw.com</a>
                                             </div>
                                             <div class="item">
                                                 <label>Mobile Number</label>
-                                                +965 22222211
+                                                <a href="tel: +965 22222211">+965 22222211</a>
                                             </div>
                                             <div class="item">
                                                 <label>Address</label>
@@ -579,7 +579,7 @@
                     <script>
                         const swiperConfig = {
                             slidesPerView: "auto",
-                            spaceBetween: 190,                
+                            spaceBetween: 190,            
                             centeredSlides: true,
                             loop: true,
                             effect: "coverflow",
@@ -608,7 +608,8 @@
                         const plan_visit_swiper = new Swiper(".plan-visit .swiper", {
                             slidesPerView: 3,
                             spaceBetween: 60,
-                             speed: 900,
+                            slideToClickedSlide: true,
+                            speed: 900,
                             loop: true,
                             navigation: {
                                 nextEl: ".plan-visit .arrows .next",

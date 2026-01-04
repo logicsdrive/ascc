@@ -177,58 +177,68 @@ gsap.utils.toArray(".animateCard").forEach((card) => {
 });
 
 
-gsap.from(".enter-the-center .title .ar", {
-  x: "100vw", 
-  opacity: 0,
-  duration: 3,
-  ease: "power2.out",
+const timeline = gsap.timeline({
   scrollTrigger: {
     trigger: ".title",
     start: "top 80%",
     toggleActions: "play none none none",
-  },
+  }
 });
 
-gsap.from(".enter-the-center .title .en", {
-  x: "-100vw",
-  opacity: 0,
-  duration: 3,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".title",
-    start: "top 80%",
-    toggleActions: "play none none none",
-  },
-});
-
-gsap.from(".enter-the-center .center-button", {
-  y: -400,  
-  opacity: 0, 
-  duration: 3, 
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".enter-the-center", 
-    start: "top 80%",
-    toggleActions: "play none none none",
-  },
-});
-
-
-// Select all swiper slides
-document.querySelectorAll(".plan-visit .item").forEach((item, index) => {
-  gsap.from(item, {
-    y: 150,                  // start 100px below
+if(document.body.classList.contains("home-page")) {
+  // ENTER animations
+  timeline.from(".enter-the-center .title .ar", {
+    x: "100vw",
     opacity: 0,
-    duration: 1.5,
+    duration: 3,
+    ease: "power2.out",
+  })
+  .from(".enter-the-center .title .en", {
+    x: "-100vw",
+    opacity: 0,
+    duration: 3,
+    ease: "power2.out",
+  }, "<"); // start at same time
+  
+  // WAIT 2 SECONDS
+  timeline.to({}, { duration: 2 });
+  
+  // FADE OUT
+  timeline.to(".enter-the-center .title .ar, .enter-the-center .title .en", {
+    opacity: 0,
+    duration: 1.2,
+    ease: "power2.out",
+  });
+  
+  gsap.from(".enter-the-center .center-button", {
+    y: -400,  
+    opacity: 0, 
+    duration: 3, 
     ease: "power2.out",
     scrollTrigger: {
-      trigger: item,
-      start: "top 80%",       // when item comes into view
+      trigger: ".enter-the-center", 
+      start: "top 80%",
       toggleActions: "play none none none",
     },
-    delay: index * 0.3        // stagger effect
   });
-});
+  
+  
+  // Select all swiper slides
+  document.querySelectorAll(".plan-visit .item").forEach((item, index) => {
+    gsap.from(item, {
+      y: 150,                  // start 100px below
+      opacity: 0,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: item,
+        start: "top 80%",       // when item comes into view
+        toggleActions: "play none none none",
+      },
+      delay: index * 0.3        // stagger effect
+    });
+  });
+}
 
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);

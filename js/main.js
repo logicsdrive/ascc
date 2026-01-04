@@ -7,75 +7,80 @@ window.addEventListener('load', (event) => {
     document.body.classList.add("page-loaded");
     gsap.registerPlugin(ScrollTrigger);
     
-    gsap.to(".page-title-banner .page-banner-desc", {
-        y: 0,
-        opacity: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        onComplete: () => {
-            gsap.to(".page-title-banner .page-banner-desc", {
-                scrollTrigger: {
-                    trigger: ".page-title-banner",
-                    start: "top top",
-                    end: "bottom 20%",
-                    scrub: 1,
-                },
-                y: -150,
-                opacity: 0,
-                ease: "none"
-            });
-        }
-    });
+    const banner_title = document.querySelector(".page-title-banner .page-banner-desc");
+    if (banner_title) {
+        gsap.to(banner_title, {
+            y: 0,
+            opacity: 1,
+            duration: 1.2,
+            ease: "power3.out",
+            onComplete: () => {
+                gsap.to(banner_title, {
+                    scrollTrigger: {
+                        trigger: ".page-title-banner",
+                        start: "top top",
+                        end: "bottom 20%",
+                        scrub: 1,
+                    },
+                    y: -150,
+                    opacity: 0,
+                    ease: "none"
+                });
+            }
+        });
+    }
 
-    const contact_view_timeline = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".home-page .contact .columns",
-          start: "top 80%",
-          end: "top 30%",
-          scrub: 1,
-          markers: false
-        }
-    });
-    contact_view_timeline.from(".home-page .contact .form", {
-        x: -200,
-        opacity: 0,
-        duration: 1
-    }, 0);
-    contact_view_timeline.from(".home-page .contact .address", {
-        x: 200,
-        opacity: 0,
-        duration: 1
-    }, 0);
-    contact_view_timeline.from(".home-page .contact .block2", {
-        y: 200,
-        opacity: 0,
-        duration: 1
-    }, 0);
-
-    const plan_visit_timeline = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".home-page .plan-visit",
-          start: "top 40%",
-          end: "bottom 120%",
-          scrub: 1,
-          markers: false
-        }
-    });
-    plan_visit_timeline.from(".home-page .plan-visit .item1", {
-        y: 50,
-        opacity: 0,
-        duration: 1.5
-    }, 0);
-    plan_visit_timeline.from(".home-page .plan-visit .item2", {
-        y: 100,
-        opacity: 0,
-        duration: 2
-    }, 0);
-    plan_visit_timeline.from(".home-page .plan-visit .item3", {
-        y: 200,
-        opacity: 0,
-        duration: 2.5
-    }, 0);
+    if(document.body.classList.contains("home-page")) {
+        const contact_view_timeline = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".home-page .contact .columns",
+              start: "top 80%",
+              end: "top 30%",
+              scrub: 1,
+              markers: false
+            }
+        });
+        contact_view_timeline.from(".home-page .contact .form", {
+            x: -200,
+            opacity: 0,
+            duration: 1
+        }, 0);
+        contact_view_timeline.from(".home-page .contact .address", {
+            x: 200,
+            opacity: 0,
+            duration: 1
+        }, 0);
+        contact_view_timeline.from(".home-page .contact .block2", {
+            y: 200,
+            opacity: 0,
+            duration: 1
+        }, 0);
+    
+        const plan_visit_timeline = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".home-page .plan-visit",
+              start: "top 40%",
+              end: "bottom 120%",
+              scrub: 1,
+              markers: false
+            }
+        });
+        plan_visit_timeline.from(".home-page .plan-visit .item1", {
+            y: 50,
+            opacity: 0,
+            duration: 1.5
+        }, 0);
+        plan_visit_timeline.from(".home-page .plan-visit .item2", {
+            y: 100,
+            opacity: 0,
+            duration: 2
+        }, 0);
+        plan_visit_timeline.from(".home-page .plan-visit .item3", {
+            y: 200,
+            opacity: 0,
+            duration: 2.5
+        }, 0);
+    }
 
     
     // gsap.to(".camera-view .set1", {
@@ -100,25 +105,26 @@ window.addEventListener('load', (event) => {
         currentStep = step;
     }
 
-    // Create the ScrollTrigger that "Locks" the page
-    ScrollTrigger.create({
-        trigger: cameraView, // The section shown in your image
-        start: "top top",
-        end: `+=${maxSteps * 500}`,    // Distance user must scroll to finish all steps
-        pin: true,                     // Pins the section in place
-        scrub: true,
-        onUpdate: (self) => {
-            // Calculate which step we should be on based on scroll progress (0 to 1)
-            const progressStep = Math.round(self.progress * maxSteps);
-            if (progressStep !== currentStep) {
-                goToStep(progressStep);
-            }
-        }
-    });
-
-
+    
+    
     // 1. Only start if the click begins ON the cameraView element
     if(cameraView) {
+        // Create the ScrollTrigger that "Locks" the page
+        ScrollTrigger.create({
+            trigger: cameraView, // The section shown in your image
+            start: "top top",
+            end: `+=${maxSteps * 500}`,    // Distance user must scroll to finish all steps
+            pin: true,                     // Pins the section in place
+            scrub: true,
+            onUpdate: (self) => {
+                // Calculate which step we should be on based on scroll progress (0 to 1)
+                const progressStep = Math.round(self.progress * maxSteps);
+                if (progressStep !== currentStep) {
+                    goToStep(progressStep);
+                }
+            }
+        });
+
         // Update your Arrow Event Listeners to use the same goToStep function
         document.getElementById('camera_view_next').addEventListener('click', () => {
             if (currentStep < maxSteps) goToStep(currentStep + 1);
@@ -135,19 +141,15 @@ window.addEventListener('load', (event) => {
                 e.preventDefault(); 
             }
         });
+        // 2. Stop tracking when mouse is released
+        window.addEventListener('mouseup', () => {
+            isHolding = false;
+            // Optional: Reset position when let go
+            cameraView.classList.remove('move-left', 'move-right');
+            cameraView.style.setProperty('--bg-shift', '0px');
+        });
     }
-
-    // 2. Stop tracking when mouse is released
-    window.addEventListener('mouseup', () => {
-        isHolding = false;
-        // Optional: Reset position when let go
-        cameraView.classList.remove('move-left', 'move-right');
-        cameraView.style.setProperty('--bg-shift', '0px');
-    });
 });
-
-
-
 
 // 3. Handle the movement logic
 window.addEventListener('mousemove', (e) => {
@@ -334,6 +336,13 @@ const ascc_app = {
         } else {
             passwordField.type = "password";
             passwordField.placeholder = "************";
+        }
+    },
+    homeSectionVisible: function() {
+        window.scrollTo(0, 0);
+        document.documentElement.classList.add('home-loaded');
+        if(cameraView) {
+            cameraView.classList.remove('move_step1', 'move_step2', 'move_step3', 'move_step4', 'move_step5', 'move_step6');
         }
     }
 };

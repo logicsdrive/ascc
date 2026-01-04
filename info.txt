@@ -7,6 +7,9 @@ https://www.figma.com/proto/uDBYYSoSu9YdGxMSzjAiLK/ASCC-innerpages?node-id=47-64
 figma
 https://www.figma.com/design/uDBYYSoSu9YdGxMSzjAiLK/ASCC-innerpages?node-id=573-5991&t=TiCM1lTBGOl3LjTT-0
 
+figma responsive
+https://www.figma.com/proto/Ljani4P5qJObkCtCGtgUsj/ascc-mobile?page-id=0%3A1&node-id=4-326&viewport=322%2C249%2C0.46&t=Np1GbE1P3kRJdDvs-1&scaling=scale-down&content-scaling=fixed&fuid=1463137827143714917
+
 copy
 https://www.figma.com/design/ZiPkr5BxrNmg9TTMvBa9oe/ASCC-innerpages--1---Copy-?node-id=0-1&p=f&t=G5yjAFbrXzG4hmJF-0
 

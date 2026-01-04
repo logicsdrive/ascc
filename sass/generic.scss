@@ -196,8 +196,8 @@ a:hover{color: var(--primary-color);}
 .flip{transform: scale(-1);}
 
 .page-loader{
-    position: fixed; display: flex; align-items: center; justify-content: center; top: 0; left: 0; width: 100%; height: 100%; background: rgba(37, 38, 42, 1); z-index: 1000;
-    pointer-events: none; opacity: 1; transition: opacity 0.5s ease;
+    position: fixed; display: flex; align-items: center; justify-content: center; top: 0; left: 0; width: 100%; height: 100%; background: rgba(37, 38, 42, 1);
+    z-index: 144444456; pointer-events: none; opacity: 1; transition: opacity 0.5s ease;
 
     img{max-width: 308px;}
 }

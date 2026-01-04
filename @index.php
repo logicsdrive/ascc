@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="home-loading">
     <head>
         <?php include 'components/head.php';  ?>
     </head>
     <body class="home-page">
+        <div class="enter-the-center">
+            <video class="background-video" autoplay muted loop playsinline>
+                <source src="images/hero.mp4" type="video/mp4">
+            </video>
+            <h1 class="title">
+                <span class="ar">مركز الشيخ عبد الله السالم الثقافي</span>
+                <span class="en">Sheikh Abdullah AlSalem Cultural Centre</span>
+            </h1>
+            <a href="javascript: void(0);" class="btn btn-primary center-button" onclick="document.documentElement.classList.add('home-loaded')">Enter The Centre</a>
+        </div>
         <?php include 'components/header.php';  ?>
         <main>
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <div class="contentWrapper">
-                        <div class="enter-the-center">
-                            <video class="background-video" autoplay muted loop playsinline>
-                                <source src="images/hero.mp4" type="video/mp4">
-                            </video>
-                            <h1 class="title">
-                                <span class="ar">مركز الشيخ عبد الله السالم الثقافي</span>
-                                <span class="en">Sheikh Abdullah AlSalem Cultural Centre</span>
-                            </h1>
-                            <a href="javascript: void(0);" class="btn btn-primary center-button">Enter The Centre</a>
-                        </div>
                         <div class="camera-view" id="camera_view">
                             <div class="group">
                                 <div class="set set4">

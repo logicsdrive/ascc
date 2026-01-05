@@ -105,8 +105,6 @@ window.addEventListener('load', (event) => {
         currentStep = step;
     }
 
-    
-    
     // 1. Only start if the click begins ON the cameraView element
     if(cameraView) {
         // Create the ScrollTrigger that "Locks" the page
@@ -227,7 +225,7 @@ const ascc_app = {
         });
     },
     eventBindings: function() {
-        document.getElementById("nav-icon").addEventListener("click", () => {
+        document.getElementById("nav-icon")?.addEventListener("click", () => {
             document.body.classList.add('menu-opened')
             this.animateNavigation();
         });

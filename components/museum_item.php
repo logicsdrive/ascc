@@ -1,6 +1,6 @@
 <div class="museum-item">
     <a href="#" class="image">
-        <img src="images/trans_block_1_image.jpg" alt="" />
+        <img src="images/trans_block_1_image.webp" alt="" />
     </a>
     <span class="border-line" <?= isset($color) ? 'style="background: ' . $color . ';"' : ''; ?>></span>
     <div class="content">

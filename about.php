@@ -34,7 +34,7 @@
                                         </div>
                                     </div>
                                     <figure class="image reveal">
-                                        <img src="images/img1.jpg" alt="" class="img-fluid" loading="lazy">
+                                        <img src="images/sheikh_abdullah.jpg" alt="" class="img-fluid" loading="lazy">
                                     </figure>
                                 </div>
                             </div>

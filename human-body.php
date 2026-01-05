@@ -29,47 +29,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <section class="explore-carousel">
-                                <h2 class="section-title" data-animate="fade-up">Explore the Human body with us</h2>
-                                <div class="swiper animate-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <figure class="image"><img src="images/echo-image1.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <figure class="image"><img src="images/echo-image2.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <figure class="image"><img src="images/echo-image3.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <figure class="image"><img src="images/echo-image4.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <figure class="image"><img src="images/echo-image5.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <figure class="image"><img src="images/echo-image1.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <figure class="image"><img src="images/echo-image2.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <figure class="image"><img src="images/echo-image3.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <figure class="image"><img src="images/echo-image4.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <figure class="image"><img src="images/echo-image5.jpg" alt=""></figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="h-list arrows" data-animate="fade-up">
-                                    <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
-                                    <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
-                                </div>
-                            </section>
+                            <?php
+                                $title = "Explore the Human body with us";
+                                include 'components/explore_carousel.php';
+                            ?>
                             <div class="container">
                                 <section class="human-body-block3">
                                     <div class="text last-margin-0">
@@ -93,25 +56,5 @@
                 <?php include 'components/footer.php';  ?>
             </div>
         </div>
-        <script>
-            const swiper1 = new Swiper(".explore-carousel .swiper", {
-                slidesPerView: "auto",
-                spaceBetween: 40,
-                centeredSlides: true,
-                loop: true,
-                effect: "coverflow",
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 120,
-                    modifier: 1,
-                    slideShadows: false,
-                },
-                navigation: {
-                    nextEl: ".explore-carousel .arrows .next",
-                    prevEl: ".explore-carousel .arrows .prev",
-                }
-            });
-        </script>
     </body>
 </html>

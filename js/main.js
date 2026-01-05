@@ -293,8 +293,29 @@ const ascc_app = {
             }
         );
     },
+    initExploreSlider: function() {
+        new Swiper(".explore-carousel .swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 40,
+            centeredSlides: true,
+            loop: true,
+            effect: "coverflow",
+            slideToClickedSlide: true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 120,
+                modifier: 1,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: ".explore-carousel .arrows .next",
+                prevEl: ".explore-carousel .arrows .prev",
+            }
+        });
+    },
     initMuseumsSlider: function() {
-        const museums_swiper = new Swiper(".other-museums .swiper", {
+        new Swiper(".other-museums .swiper", {
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,

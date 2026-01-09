@@ -1,6 +1,8 @@
 .finearts{
 
     .content_row_holder{margin-bottom: px_rem(155px);}
+    .content-row .content p{margin: 0;}
+    .content-row .content .btn{display: none;}
 
     .selection-process{
         position: relative; margin-bottom: px_rem(155px);
@@ -48,7 +50,7 @@
         .item{display: flex; cursor: pointer; align-items: center; gap: 1rem; font-weight: 200;}
         .item h5{font-size: px_rem(20px); font-family: var(--font-medium); margin-bottom: 0.25rem; line-height: 1; font-weight: 500;}
         .item .icon{flex-shrink: 0;} 
-        .item a{color: black;}
+        .item a{color: black; font-family: var(--font-thin);}
         .item:hover a{color: var(--primary-color);}
     }
 }

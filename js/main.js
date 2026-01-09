@@ -232,6 +232,8 @@ const ascc_app = {
         document.addEventListener("click", function(e) {
             if(!e.target.closest(".search-icon") && !e.target.closest(".search-field")) {
                 document.body.classList.remove("search-opened");
+            } else {
+                document.getElementById("header_search").focus();
             }
         });
         document.body.addEventListener('click', async (e) => {

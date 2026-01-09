@@ -59,7 +59,7 @@
                                         </div>
                                     </div>
                                     <div class="leading-with-innovation">
-                                        <h2 class="section-title text-primary mb-5" data-animate="fade-up">Leading with innovation, delivering value</h2>
+                                        <h2 class="section-title text-primary mb-4 mb-md-5" data-animate="fade-up">Leading with innovation, delivering value</h2>
                                         <div class="grid">
                                             <div class="item animateCard">
                                                 <figure class="image"><img src="images/our-mission-image.jpg" alt="" /></figure>
@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="awards">
                                     <div class="container">
-                                        <h2 class="section-title text-primary mb-5" data-animate="fade-up">Awards & Recognisions</h2>
+                                        <h2 class="section-title text-primary mb-4 mb-md-5" data-animate="fade-up">Awards & Recognisions</h2>
                                         <div class="grid">
                                             <div class="item animateCard" >
                                                 <figure class="image"><img src="images/our-mission-image.jpg" alt="" /></figure>
@@ -113,7 +113,7 @@
                         <div class="tab-pane fade" id="tab3" role="tabpanel">
                             <div class="container">
                                 <div class="view3">
-                                    <h2 class="section-title text-primary mb-5">Opening Hours</h2>
+                                    <h2 class="section-title text-primary mb-4 mb-md-5">Opening Hours</h2>
                                     <div class="block1">
                                         <div class="inner">
                                             <figure class="image">

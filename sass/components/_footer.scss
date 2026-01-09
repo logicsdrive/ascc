@@ -56,7 +56,8 @@
         .grid{display: grid; grid-gap: 30px; grid-template-columns: repeat(2, 1fr);}
     }
     @media (max-width: 540px) {
-        .grid{grid-template-columns: 1fr; padding: 30px 0;}
+        .grid{grid-template-columns: 1fr; padding: 30px 0; justify-items: center;}
+        .quick-links{text-align: center;}
     }
 }
 .modal{

@@ -2,13 +2,9 @@
     .main-content{
         padding-top: 200px; text-align: center;
     }
-    h1{
-        text-align: center;
-        color: #202125;
-        font-size:67px;
-        line-height: 67px;
-        font-family: var(--font-thin);
-        margin-bottom:1.25rem;
+    .section-title{margin-bottom: px_rem(22px);}
+    @media (min-width: 767px) {
+        .section-title{font-size: 67px; line-height: 1;}
     }
     .site-header{
         position: relative;
@@ -22,5 +18,7 @@
 
     @media (max-width: 767px) {
         h1{font-size: 40px;}
+
+        .main-content{padding-top: 70px;}
     }
 }

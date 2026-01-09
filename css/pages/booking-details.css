@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'media-breakpoint-down'.
-        on line 109 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss, in `media-breakpoint-down'
-        from line 109 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss
+        on line 118 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss, in `media-breakpoint-down'
+        from line 118 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss
 
-104: 
-105:     .full{grid-column: 1 / -1;}
-106: 
-107:     .checkfiels{display: grid; grid-gap: 4px;}
-108: 
-109:     @include media-breakpoint-down(xxl) {
-110:         
-111:         .left{padding-right: 0; width: 350px;}
-112:         .left:after{content: none;}
-113:         .middle{padding: 70px 40px;}
-114:     }
+113: 
+114:     .full{grid-column: 1 / -1;}
+115: 
+116:     .checkfiels{display: grid; grid-gap: 4px;}
+117: 
+118:     @include media-breakpoint-down(xxl) {
+119:         
+120:         .left{padding-right: 0; width: 350px;}
+121:         .left:after{content: none;}
+122:         .middle{padding: 70px 40px;}
+123:     }
 
 Backtrace:
-C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss:109:in `media-breakpoint-down'
-C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss:109
+C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss:118:in `media-breakpoint-down'
+C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss:118
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media-breakpoint-down'.\A         on line 109 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss, in `media-breakpoint-down'\A         from line 109 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss\A \A 104: \A 105:     .full{grid-column: 1 / -1;}\A 106: \A 107:     .checkfiels{display: grid; grid-gap: 4px;}\A 108: \A 109:     @include media-breakpoint-down(xxl) {\A 110:         \A 111:         .left{padding-right: 0; width: 350px;}\A 112:         .left:after{content: none;}\A 113:         .middle{padding: 70px 40px;}\A 114:     }"; }
+  content: "Error: Undefined mixin 'media-breakpoint-down'.\A         on line 118 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss, in `media-breakpoint-down'\A         from line 118 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\booking-details.scss\A \A 113: \A 114:     .full{grid-column: 1 / -1;}\A 115: \A 116:     .checkfiels{display: grid; grid-gap: 4px;}\A 117: \A 118:     @include media-breakpoint-down(xxl) {\A 119:         \A 120:         .left{padding-right: 0; width: 350px;}\A 121:         .left:after{content: none;}\A 122:         .middle{padding: 70px 40px;}\A 123:     }"; }

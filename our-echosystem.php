@@ -53,7 +53,7 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="container">
-                                                <div class="text"></div>
+                                                <div class="text empty"></div>
                                                 <div class="big-circle">
                                                     <img src="images/echo-circle-past.jpg" class="object-fit-cover" alt="" />
                                                     <div class="icon">
@@ -93,6 +93,7 @@
                         slidesPerView: 1,
                         spaceBetween: 0,
                         speed:900,
+                        autoHeight: true,
                         navigation: {
                             nextEl: ".echo-block1 .next",
                         }

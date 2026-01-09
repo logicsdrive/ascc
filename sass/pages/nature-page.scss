@@ -1,9 +1,9 @@
 .nature-page{
-    .main-content{padding: 0;}
+    .main-content{padding: 0; overflow: hidden;}
     
     .video-area{padding: 80px 0 128px; position: relative;}
     .video-area:after{content: ""; pointer-events: none; background: rgba(#48827E, 0.2); z-index: 1; position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
-    .video-area .background-video{position: absolute; z-index: 0; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+    .video-area .background-video{position: absolute; pointer-events: none; z-index: 0; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
     .video-area .container{position: relative; z-index: 2;}
 
     .other-museums{padding: 66px 0 94px; background-color: #fff; position: relative; z-index:1;}
@@ -12,7 +12,7 @@
         .section-title{margin-bottom: 3rem; text-align: center; color: white;}
 
         .grid{display: grid; grid-gap: 34px;}
-        @media (min-width: 992px) {
+        @media (min-width: 1200px) {
             .grid{grid-template-columns: repeat(2, 1fr);}
         }
 
@@ -28,6 +28,7 @@
 
         @media (max-width: 991px) {
             .image{height: 350px;}
+            .content{padding: 30px;}
         }
     }
 
@@ -38,6 +39,10 @@
         .grid{display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 36px;}
         .grid .item{border-radius: 10px; height: 316px; overflow: hidden;}
         .grid .item img{width: 100%; height: 100%; object-fit: cover;}
+
+        @media (max-width: 991px) {
+            
+        }
     }
 
     .page-title-banner .page-banner-desc{padding-left: 1rem;}
@@ -51,16 +56,19 @@
         height: 100%;
         display: block;
         clip-path: url(#museum-clip);
-        // transition: transform 0.3s ease;
     }
     .trans-block1{
-        display: flex; align-items: center; gap: px_rem(60px);
+        display: flex; align-items: center; gap: px_rem(60px); overflow: hidden;
 
-        .image{width: 920px; flex-shrink: 0;}
+        .image{max-width: 920px; flex-shrink: 0;}
     
         .info{color: white;}
         .info .section-title{margin-bottom: 2rem;}
         .info p{margin-bottom: 1.5rem;}
+
+        @media (max-width: 1399px) {
+            flex-direction: column;
+        }
     }
     .trans-block2{
         overflow: hidden;
@@ -90,6 +98,14 @@
         .info > *:last-child{margin-bottom: 0;}
 
         .image{padding: 20px;}
+        
+        @media (max-width: 1399px) {
+            .info{padding: 30px;}
+
+            flex-direction: column;
+
+            .image{order: -1;}
+        }
     }
 
     .space-center{
@@ -97,10 +113,35 @@
         box-shadow: inset 0 0 25.3px 4px rgba(255, 255, 255, 0.1);
         border-radius: 15px;
         padding: px_rem(94px) 0 px_rem(94px) px_rem(76px); min-height: 562px; display: flex; align-items: center;
+        overflow: hidden;
 
         .info{max-width: 664px; color: white;}
         .info p{margin-bottom: 1.5rem;}
         .info > *:last-child{margin-bottom: 0;}
+
+        .image{
+            position: absolute;
+            max-width: 650px;
+            bottom:-40%;
+            inset-inline-end: -8%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                animation: sunRotate 90s linear infinite;
+                transform-origin: center center;
+            }
+        }
+    
+        @media (max-width: 1399px) {
+            .image{max-width: 500px;}
+        }
+        @media (max-width: 1199px) {
+            padding: 40px 40px 200px;
+
+            .info{max-width: 100%;}
+            .image{max-width: 400px;}
+        }
     }
 
     .explore-carousel{
@@ -128,7 +169,9 @@
         .swiper-slide{overflow: hidden;}
         .container{display: flex; align-items: center; justify-content: space-between;}
         .text{max-width: 350px; position: relative; font-family: var(--font-thin); color: white; min-height: 100px; width: 100%;}
-        .text.empty:after{content: ""; height: 2px; background: rgba(158, 172, 170, 1); width: 100%; position: absolute; top: 50%; transform: translateY(-50%);}
+        @media (min-width: 1200px) {
+            .text.empty:after{content: ""; height: 2px; background: rgba(158, 172, 170, 1); width: 100%; position: absolute; top: 50%; transform: translateY(-50%);}
+        }
         .big-circle{
             --size: 656px; margin: auto;
             width: var(--size); height: var(--size); border-radius: var(--size);
@@ -138,6 +181,18 @@
             .icon span{display: block; padding-top: 14px; text-transform: uppercase; font-size: 20px; line-height: 1; color: white; font-family: var(--font-medium); text-align: center;}
             
             &:after{content: ""; z-index: 0; pointer-events: none; background: rgba(black, 0.4); z-index: 1; position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+        }
+
+        @media (max-width: 1600px) {
+            .big-circle{--size: 450px;}
+        }
+        @media (max-width: 1199px) {
+            .text{max-width: 100%; order: -1; text-align: center;}
+            .empty{display: none;}
+            .container{flex-direction: column; gap: 40px;}
+        }
+        @media (max-width: 767px) {
+            .big-circle{--size: 300px;}
         }
     }
     .echo-block3{
@@ -153,6 +208,12 @@
         .text > *:last-child{margin-bottom: 0;}
 
         .image{flex-shrink: 0;}
+
+        @media (max-width: 1199px) {
+            grid-template-columns: 1fr; gap: 20px; padding: 40px;
+
+            .image{order: -1;}
+        }
     }
 
     .earth-block3{
@@ -175,6 +236,9 @@
             .text{width: 100%;}
             .image{width: 100%;}
         }
+        @media (max-width: 991px) {
+            padding: 30px;
+        }
     }
 
     .opacity-box{
@@ -189,17 +253,34 @@
     .arabic-science-block1{
         .opacity-box{
             display: flex; align-items: center; justify-content: space-between;
-            padding: 70px 42px 70px 74px;
+            padding: 70px 42px 70px 74px; gap: 20px;
 
             .text{max-width: 616px;}
             .images{display: flex; align-items: flex-end; gap: 18px;}
             .images .image{height: 366px; width: 350px; background: #EEE; border-radius: 18px; overflow: hidden;}
-            .images .image.small{width: 268px; height: 282px;}
+            @media (min-width: 991px) {
+                .images .image.small{width: 268px; height: 282px;}
+            }
             .images .image img{width: 100%; height: 100%; object-fit: cover;}
+
+            @media (max-width: 1199px) {
+                flex-direction: column;
+
+                .text{max-width: 100%;}
+            }
+            @media (max-width: 991px) {
+                .images{width: 100%;}
+                .images .image{width: 100%;} 
+            }
+            @media (max-width: 767px) {
+                padding: 30px;
+
+                .images{flex-direction: column;}
+            }
         }
     }
     .arabic-science-block2{
-        position: relative;
+        position: relative; overflow: hidden;
 
         .image{
             height: 290px; border-radius: 18px; overflow: hidden;
@@ -212,23 +293,35 @@
             position: absolute; top: 130px; left: 587px;
         }
 
-        .swiper-wrapper{min-height: 530px; align-items: flex-end;}
-        .swiper-slide{width: 290px; transition: none; will-change: width, transform;}
-        .swiper-slide-active{width: 545px;}
-        .swiper-slide-active .image{height: 530px;}
+        @media (min-width: 1400px) {
+            .swiper-wrapper{min-height: 530px; align-items: flex-end;}
+            .swiper-slide{width: 290px; transition: none; will-change: width, transform;}
+            .swiper-slide-active{width: 545px;}
+            .swiper-slide-active .image{height: 530px;}
+        }
 
         .arrows{justify-content: center; margin-top: 3rem; gap: 20px; position: relative; z-index: 11;}
         .arrows .arrow{color: white; cursor: pointer;}
         .arrows .arrow:hover{color: var(--primary-color);}
+
+        @media (max-width: 1399px) {
+            .text{position: relative; width: 100%; left: 0; top: 0; margin-bottom: 40px;}
+        }
     }
     .arabic-science-block3{
         .opacity-box{
             display: flex; align-items: center; justify-content: space-between;
-            padding: 70px 32px 70px 77px;
+            padding: 70px 32px 70px 77px; overflow: hidden;
 
             .text{max-width: 674px;}
             .text .section-title{max-width: 535px; margin-bottom: px_rem(32px);}
             .text > *:last-child{margin-bottom: 0;}
+
+            @media (max-width: 1199px) {
+                flex-direction: column; gap: 40px; padding: 30px;
+
+                .text{max-width: 100%;}
+            }
         }
     }
 
@@ -250,6 +343,14 @@
             position: absolute; right: 0; top: 50%; transform: translateY(-50%);
             mix-blend-mode: lighten; opacity: 0.8;
         }
+
+        @media (max-width: 1199px) {
+            .text{padding: 300px 40px 40px 40px;}
+
+            .image{right: auto; top: 40px; left: 50%; transform: translateX(-50%);}
+            .image img{height: 200px;}
+        }
+
     }
 
     &.our-echosystem{
@@ -281,22 +382,6 @@
     &.our-space-page{
         .page-title-banner .page-banner-desc:after{background: rgba(89, 39, 111, 1);}
         .video-area:after{background: rgba(138, 56, 245, 0.15);}
-
-        .space-center{
-            overflow: hidden;
-            .image{
-                position: absolute;
-                max-width: 650px;
-                bottom:-40%;
-                inset-inline-end: -8%;
-                img{
-                     width: 100%;
-                    height: 100%;
-                   animation: sunRotate 90s linear infinite;
-                transform-origin: center center;
-                }
-            }
-        }
     }
     &.arabic-science-page{
         .page-title-banner .page-banner-desc:after{background: rgba(207, 156, 90, 1);}
@@ -310,6 +395,7 @@
 
     @media (max-width: 991px) {
         .sections-grid{grid-gap: 60px;}
+        .other-museums{padding-bottom: 60px;}
     }
 }
 

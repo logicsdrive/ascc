@@ -95,8 +95,8 @@
         </div>
         <script>
             const swiper1 = new Swiper(".arabic-science-block2 .swiper", {
-                slidesPerView: "auto",
-                spaceBetween: 28,
+                // slidesPerView: 1,
+                // spaceBetween: 28,
                 loop: true,
                 speed: 1000,
                 slideToClickedSlide: true,
@@ -104,35 +104,52 @@
                 touchMoveStopPropagation: true,
                 on: {
                     init: function () {
-                        const initialActive = this.slides[this.activeIndex];
-                        gsap.set(initialActive, { width: "545px" });
-                        this.update();
+                        if(window.innerwidth > 1199) {
+                            const initialActive = this.slides[this.activeIndex];
+                            gsap.set(initialActive, { width: "545px" });
+                            this.update();
+                        }
                     },
                     slideChangeTransitionStart: function () {
-                        const allSlides = this.wrapperEl.querySelectorAll('.swiper-slide');
-                        const activeSlide = this.slides[this.activeIndex];
-                        gsap.to(activeSlide, {
-                            width: "545px",
-                            duration: 1,
-                            ease: "power2.inOut",
-                            onUpdate: () => {
-                                this.update();
-                            }
-                        });
-                        this.slides.forEach((slide) => {
-                            if (slide !== activeSlide) {
-                                gsap.to(slide, {
-                                    width: "290px",
-                                    duration: 1,
-                                    ease: "power2.inOut"
-                                });
-                            }
-                        });
+                        if(window.innerwidth > 1199) {
+                            const allSlides = this.wrapperEl.querySelectorAll('.swiper-slide');
+                            const activeSlide = this.slides[this.activeIndex];
+                            gsap.to(activeSlide, {
+                                width: "545px",
+                                duration: 1,
+                                ease: "power2.inOut",
+                                onUpdate: () => {
+                                    this.update();
+                                }
+                            });
+                            this.slides.forEach((slide) => {
+                                if (slide !== activeSlide) {
+                                    gsap.to(slide, {
+                                        width: "290px",
+                                        duration: 1,
+                                        ease: "power2.inOut"
+                                    });
+                                }
+                            });
+                        }
                     }
                 },
                 navigation: {
                     nextEl: ".arabic-science-block2 .arrows .next",
                     prevEl: ".arabic-science-block2 .arrows .prev",
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        spaceBetween: 24,
+                    },
+                    1399: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 28,
+                    },
                 }
             });
         </script>

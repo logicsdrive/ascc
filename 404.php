@@ -10,7 +10,7 @@
             <div id="smooth-content">
                 <main class="main-content">
                     <div class="container">
-                        <h1>PAGE NOT FOUND</h1>
+                        <h1 class="section-title">PAGE NOT FOUND</h1>
                         <img class="mx-auto" src="images/404.png" alt="" class="img-fluid">
                     </div>
                 </main>

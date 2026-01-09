@@ -53,6 +53,8 @@
     --breakpoint-xxl: 1524px;
 }
 
+.container{max-width: 1524px;}
+
 @mixin media-breakpoint-down($name) {
     $max: map-get($grid-breakpoints, $name);
   
@@ -434,7 +436,6 @@ strong{font-family: var(--font-medium); font-weight: normal;}
 .iti--fullscreen-popup.iti--container{
     z-index: 11111;
 }
-
 
 @media (max-width: 767px) {
     .section-title{font-size: 36px;}

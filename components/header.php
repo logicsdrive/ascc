@@ -80,7 +80,7 @@
                     <h2 class="section-title mb-4">Sign in</h2>
                     <div class="form-element mb-3">
                         <label class="control-label">Email</label>
-                        <input type="text" placeholder="Muradmohamed5@gmail.com" class="form-control" />
+                        <input type="text" placeholder="Enter your email" class="form-control" />
                     </div>
                     <div class="form-element mb-3 password_wrapper">
                         <svg class="icon" onclick="ascc_app.togglePassword(this);" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,19 +113,19 @@
                         <div class="col-sm-6 mb-3">
                             <div class="form-element">
                                 <label class="control-label">First Name</label>
-                                <input type="text" placeholder="Enter Name" value="Murad" class="form-control" />
+                                <input type="text" placeholder="Enter Name" class="form-control" />
                             </div>
                         </div>
                         <div class="col-sm-6 mb-3">
                             <div class="form-element">
                                 <label class="control-label">Last Name</label>
-                                <input type="text" placeholder="Enter Last Name" value="Mohamed" class="form-control" />
+                                <input type="text" placeholder="Enter Last Name" class="form-control" />
                             </div>
                         </div>
                     </div>
                     <div class="form-element mb-3">
                         <label class="control-label">Email</label>
-                        <input type="text" placeholder="Muradmohamed5@gmail.com" class="form-control" />
+                        <input type="text" placeholder="Enter your email" class="form-control" />
                     </div>
                     <div class="form-element password_wrapper">
                         <svg class="icon" onclick="ascc_app.togglePassword(this);" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +155,7 @@
                     <h2 class="section-title mb-4">Forgot Passward</h2>
                     <div class="form-element mb-4">
                         <label class="control-label">Email</label>
-                        <input type="text" placeholder="Enter Email" value="Muradmohamed5@gmail.com" class="form-control" />
+                        <input type="text" placeholder="Enter your email" class="form-control" />
                     </div>
                     <div class="h-list gap-3">
                         <a href="#signin-modal" class="btn btn-outline-dark" data-bs-toggle="modal">Back</a>

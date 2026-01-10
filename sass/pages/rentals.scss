@@ -143,10 +143,13 @@
             }
         }
 
-        &.show-left-col .area-column{width: 438px; pointer-events: inherit; padding: 24px; opacity: 1; transform: translateX(0);}
-
+        &.show-left-col .area-column{pointer-events: inherit; padding: 24px; opacity: 1; transform: translateX(0);}
+        @media (min-width: 1200px) {
+            &.show-left-col .area-column{width: 438px;}
+        }
+        
         .area-zoomed-view{
-            position: relative; padding-top: 24px;
+            position: relative; padding-top: 80px;
         
             .image{position: relative; max-width: fit-content; margin: auto;}
             .image .point{position: absolute; z-index: 111; cursor: pointer; display: flex; align-items: center; flex-direction: column; gap: 8px;}
@@ -163,6 +166,10 @@
             @media (max-width: 1199px) {
                 .image text{max-width: 100%; height: auto;}
             }
+            @media (max-width: 991px) {
+                .image{transform: scale(0.5);}
+                .image img{max-width: inherit;}
+            }
         }
 
         .area-column-close-icon{display: none;}
@@ -171,7 +178,6 @@
             .area-column{
                 width: 340px;
                 position: fixed;
-                width: auto;
                 top: 0;
                 left: 0;
                 right: 0;
@@ -181,6 +187,7 @@
                 border-radius: 0;
             }
             .area-column:after{content: ""; background: rgba(black, 0.6); width: calc(100vw - 340px); height: 100%; position: fixed; top: 0; left: 100%;}
+            
             .grid{grid-template-columns: 1fr;}
 
             &.show-left-col{
@@ -210,11 +217,7 @@
         .left-bar{width: 100%;}
         .right{padding: 30px 0 0; display: flex; justify-content: center;}
 
-        .places-area { 
-            .title-area {flex-direction: column; text-align: center; gap:  20px;}
-            .area-column{width: 100%;}
-            .image{order: -1;}
-        }
+        .title-area{flex-direction: column; gap: 20px;}
     }
 }
 

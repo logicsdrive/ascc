@@ -355,7 +355,14 @@ const ascc_app = {
         }
     },
     homeSectionVisible: function() {
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
+        gsap.to(window, {
+            scrollTo: 0, 
+            duration: 1,
+            onComplete: () => {
+                ScrollTrigger.refresh();
+            }
+        });
         document.documentElement.classList.add('home-loaded');
         if(cameraView) {
             cameraView.classList.remove('move_step1', 'move_step2', 'move_step3', 'move_step4', 'move_step5', 'move_step6');

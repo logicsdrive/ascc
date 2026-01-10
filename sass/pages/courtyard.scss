@@ -12,7 +12,16 @@ $grid-breakpoints: (
 
         .swiper-slide{width: 370px;}
         .image{height: 320px; background: #EEE; border-radius: 20px; overflow: hidden;}
-        .image img{width: 100%; height: 100%; object-fit: cover;}    
+        .image img{width: 100%; height: 100%; object-fit: cover;}
+        
+        @media (max-width: 800px) {
+            .swiper-slide{width: 100%;}
+
+            padding: 0 15px;
+        }
+        @media (max-width: 600px) {
+            .image{height: 280px;}
+        }
     }
 
     .block2{

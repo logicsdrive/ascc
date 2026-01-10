@@ -355,10 +355,9 @@ const ascc_app = {
         }
     },
     homeSectionVisible: function() {
-        // window.scrollTo(0, 0);
         gsap.to(window, {
             scrollTo: 0, 
-            duration: 1,
+            duration: 2,
             onComplete: () => {
                 ScrollTrigger.refresh();
             }

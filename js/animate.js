@@ -250,10 +250,6 @@ const smoother = ScrollSmoother.create({
   effects: true,
 });
 
-// document.querySelector(".center-button").addEventListener("click", () => {
-//   smoother.scrollTo("#camera-view", true, "top top");
-// });
-
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
   if (currentScroll > 150) {
@@ -264,13 +260,24 @@ window.addEventListener("scroll", () => {
 });
 
 const courtyardpageBlock1 = new Swiper(".block1 .swiper", {
-    slidesPerView: "auto",
-    centeredSlides: true,
-    spaceBetween: 60,
+    slidesPerView: 1,
+    centeredSlides: false,
+    spaceBetween: 0,
     loop: true,
     speed: 900,
         autoplay: {
         delay: 2000, 
         disableOnInteraction: false,
     },
+    breakpoints: {
+      600: {
+          spaceBetween: 40,
+          slidesPerView: 2,
+      },
+      900: {
+        spaceBetween: 60,
+        centeredSlides: true,
+        slidesPerView: "auto",
+      },
+    }
 });

@@ -140,12 +140,14 @@
                             </div>
                         </div>
                         <div class="camera-view" id="camera_view">
+                            <div class="overlay"></div>
                             <div class="group">
                                 <div class="set set4">
                                     <div class="object object1">
                                         <img src="images/home_banner/banner_block7.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block7_tree.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block7_vector.gif" alt="" />
+                                        <img class="animated_object static" src="images/home_banner/banner_block7_vector.png" alt="" />
+                                        <img class="animated_object gif" src="images/home_banner/banner_block7_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Ecosystems</h5>
                                             <p>Travel back in time to gain a unique insight into the natural world – both past and present, understand the importance of ecosystems.</p>
@@ -154,7 +156,8 @@
                                     <div class="object object2">
                                         <img src="images/home_banner/banner_block8.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block8_tree.png" alt="" />   
-                                        <img class="animated_object" src="images/home_banner/banner_block8_vector.gif" alt="" />
+                                        <img class="animated_object static" src="images/home_banner/banner_block8_vector.png" alt="" />
+                                        <img class="animated_object gif" src="images/home_banner/banner_block8_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Natural History – Our Earth</h5>
                                             <p>Enter the world of the dinosaurs! See the amazing reptiles and mammals that lived on Earth up to 65 million years ago.</p>
@@ -165,7 +168,8 @@
                                     <div class="object object1">
                                         <img src="images/home_banner/banner_block5.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block5_tree.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block5_vector.gif" alt="" />
+                                        <img class="animated_object static" src="images/home_banner/banner_block5_vector.png" alt="" />
+                                        <img class="animated_object gif" src="images/home_banner/banner_block5_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Transportation & Robots</h5>
                                             <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers.</p>
@@ -174,7 +178,8 @@
                                     <div class="object object2">
                                         <img src="images/home_banner/banner_block6.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block6_tree.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block6_vector.gif" alt="" />
+                                        <img class="animated_object static" src="images/home_banner/banner_block6_vector.png" alt="" />
+                                        <img class="animated_object gif" src="images/home_banner/banner_block6_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Science & Technology – Human Body</h5>
                                             <p>There is nothing more exciting and intricate than the workings of the human body and mind. Its secrets are revealed as we journey through.</p>
@@ -184,7 +189,8 @@
                                 <div class="set set2">
                                     <div class="object object1">
                                         <img src="images/home_banner/banner_block3.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block3_vector.gif" alt="" />
+                                        <img class="animated_object static" src="images/home_banner/banner_block3_vector.png" alt="" />
+                                        <img class="animated_object gif" src="images/home_banner/banner_block3_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>guest relation</h5>
                                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
@@ -193,7 +199,8 @@
                                     <div class="object object2">
                                         <img src="images/home_banner/banner_block4.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block4_tree.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block4_vector.gif" alt="" />
+                                        <img class="animated_object static" src="images/home_banner/banner_block4_vector.png" alt="" />
+                                        <img class="animated_object gif" src="images/home_banner/banner_block4_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Theater</h5>
                                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
@@ -284,20 +291,8 @@
                                 <div class="title-area">
                                     <h2 class="section-title" data-animate="fade-up">Plan your visit</h2>
                                     <div class="h-list arrows" data-animate="fade-left">
-                                        <svg class="prev arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_7059_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)" stroke="currentColor" stroke-width="2"/>
-                                            <path d="M25.1992 17.25L19.8538 22.5L25.1992 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                                <clipPath id="bgblur_0_782_7059_clip_path" transform="translate(40 40)"><rect x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)"/></clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg class="next arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_6833_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="1" y="1" width="43.8182" height="43" rx="21.5" stroke="currentColor" stroke-width="2"/>
-                                            <path d="M20.6191 17.25L25.9646 22.5L20.6191 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <defs>
-                                                <clipPath id="bgblur_0_782_6833_clip_path" transform="translate(40 40)"><rect x="1" y="1" width="43.8182" height="43" rx="21.5"/></clipPath>
-                                            </defs>
-                                        </svg>
+                                        <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                        <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
                                     </div>
                                 </div>
                                 <div class="swiper">
@@ -306,28 +301,48 @@
                                             <div class="item item1">
                                                 <a href="#" class="btn btn-outline-primary">Courtyard</a>
                                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
-                                                <a href="#" class="read-more">Read more</a>
+                                                <a href="#" class="read-more">
+                                                    Read more
+                                                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="item item2">
                                                 <a href="#" class="btn btn-outline-primary">Opening Hours</a>
                                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
-                                                <a href="#" class="read-more">Read more</a>
+                                                <a href="#" class="read-more">
+                                                    Read more
+                                                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="item item3">
                                                 <a href="#" class="btn btn-outline-primary">Ticket Price</a>
                                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
-                                                <a href="#" class="read-more">Read more</a>
+                                                <a href="#" class="read-more">
+                                                    Read more
+                                                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="item">
                                                 <a href="#" class="btn btn-outline-primary">Courtyard</a>
                                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
-                                                <a href="#" class="read-more">Read more</a>
+                                                <a href="#" class="read-more">
+                                                    Read more
+                                                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -400,20 +415,8 @@
                                             </div>
                                         </div>
                                         <div class="h-list arrows">
-                                            <svg class="prev arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_7059_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)" stroke="currentColor" stroke-width="2"/>
-                                                <path d="M25.1992 17.25L19.8538 22.5L25.1992 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <defs>
-                                                    <clipPath id="bgblur_0_782_7059_clip_path" transform="translate(40 40)"><rect x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)"/></clipPath>
-                                                </defs>
-                                            </svg>
-                                            <svg class="next arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_6833_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="1" y="1" width="43.8182" height="43" rx="21.5" stroke="currentColor" stroke-width="2"/>
-                                                <path d="M20.6191 17.25L25.9646 22.5L20.6191 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <defs>
-                                                    <clipPath id="bgblur_0_782_6833_clip_path" transform="translate(40 40)"><rect x="1" y="1" width="43.8182" height="43" rx="21.5"/></clipPath>
-                                                </defs>
-                                            </svg>
+                                            <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                            <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
                                         </div>
                                     </div>
                                 </div>
@@ -470,20 +473,8 @@
                                             </div>
                                         </div>
                                         <div class="h-list arrows">
-                                            <svg class="prev arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_7059_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)" stroke="currentColor" stroke-width="2"/>
-                                                <path d="M25.1992 17.25L19.8538 22.5L25.1992 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <defs>
-                                                    <clipPath id="bgblur_0_782_7059_clip_path" transform="translate(40 40)"><rect x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)"/></clipPath>
-                                                </defs>
-                                            </svg>
-                                            <svg class="next arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_6833_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="1" y="1" width="43.8182" height="43" rx="21.5" stroke="currentColor" stroke-width="2"/>
-                                                <path d="M20.6191 17.25L25.9646 22.5L20.6191 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <defs>
-                                                    <clipPath id="bgblur_0_782_6833_clip_path" transform="translate(40 40)"><rect x="1" y="1" width="43.8182" height="43" rx="21.5"/></clipPath>
-                                                </defs>
-                                            </svg>
+                                            <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                            <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
                                         </div>
                                     </div>
                                 </div>
@@ -540,20 +531,8 @@
                                             </div>
                                         </div>
                                         <div class="h-list arrows">
-                                            <svg class="prev arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_7059_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)" stroke="currentColor" stroke-width="2"/>
-                                                <path d="M25.1992 17.25L19.8538 22.5L25.1992 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <defs>
-                                                    <clipPath id="bgblur_0_782_7059_clip_path" transform="translate(40 40)"><rect x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)"/></clipPath>
-                                                </defs>
-                                            </svg>
-                                            <svg class="next arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_6833_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="1" y="1" width="43.8182" height="43" rx="21.5" stroke="currentColor" stroke-width="2"/>
-                                                <path d="M20.6191 17.25L25.9646 22.5L20.6191 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <defs>
-                                                    <clipPath id="bgblur_0_782_6833_clip_path" transform="translate(40 40)"><rect x="1" y="1" width="43.8182" height="43" rx="21.5"/></clipPath>
-                                                </defs>
-                                            </svg>
+                                            <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                            <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
                                         </div>
                                     </div>
                                 </div>
@@ -610,20 +589,8 @@
                                             </div>
                                         </div>
                                         <div class="h-list arrows">
-                                            <svg class="prev arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_7059_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)" stroke="currentColor" stroke-width="2"/>
-                                                <path d="M25.1992 17.25L19.8538 22.5L25.1992 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <defs>
-                                                    <clipPath id="bgblur_0_782_7059_clip_path" transform="translate(40 40)"><rect x="-1" y="1" width="43.8182" height="43" rx="21.5" transform="matrix(-1 0 0 1 43.8184 0)"/></clipPath>
-                                                </defs>
-                                            </svg>
-                                            <svg class="next arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <foreignObject x="-40" y="-40" width="125.818" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_782_6833_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="1" y="1" width="43.8182" height="43" rx="21.5" stroke="currentColor" stroke-width="2"/>
-                                                <path d="M20.6191 17.25L25.9646 22.5L20.6191 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <defs>
-                                                    <clipPath id="bgblur_0_782_6833_clip_path" transform="translate(40 40)"><rect x="1" y="1" width="43.8182" height="43" rx="21.5"/></clipPath>
-                                                </defs>
-                                            </svg>
+                                            <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                            <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
                                         </div>
                                     </div>
                                 </div>

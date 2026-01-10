@@ -4,7 +4,7 @@
 .booking-details{
     .columns{display: grid; grid-template-columns: auto 1fr auto;}
 
-    .left{padding: 60px 90px 70px 0; position: relative; width: 462px;}
+    .left{padding: 60px 90px 60px 0; position: relative; width: 462px;}
     .left:after{
         content: ""; position: absolute; top: 0; right: 0; width: 200%; height: 100%; background: url(/images/column-background.png) top right no-repeat;
         background-size: cover; pointer-events: none; z-index: -1;
@@ -35,6 +35,10 @@
             content: ""; width: 34px; height: 24px; background: url(/images/dd_tip.png) center center no-repeat;
             position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%) rotate(180deg); z-index: 2;
             display: none;
+        }
+
+        @media (max-width: 991px) {
+            padding-top: px_rem(40px);
         }
     }
     .rules-dropdown-menu{
@@ -116,7 +120,6 @@
     .checkfiels{display: grid; grid-gap: 4px;}
 
     @include media-breakpoint-down(xxl) {
-        
         .left{padding-right: 0; width: 350px;}
         .left:after{content: none;}
         .middle{padding: 70px 40px;}
@@ -128,8 +131,16 @@
         .right{width: 100%;}
 
         .your-information .grid{grid-template-columns: repeat(2, 1fr);}
+    
+        .important-notes{margin-top: px_rem(50px);}
+        .left{padding-top: px_rem(50px);}
+        .right{padding: px_rem(50px) 0;}
     }
-    @include media-breakpoint-down(md) {
+    @media (max-width: 767) {
         .your-information .grid{grid-template-columns: 1fr;}
+    }
+    @media (max-width: 575px) {
+        .your-information .grid{grid-template-columns: 1fr;}
+        .select-ticket-type .grid{grid-template-columns: 1fr;}
     }
 }

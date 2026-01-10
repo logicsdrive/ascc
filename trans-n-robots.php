@@ -40,7 +40,7 @@
                                     </figure>
                                     <div class="info last-margin-0">
                                         <h3 class="section-title" data-animate="fade-up">From Steam to Circuits Explore the Future of Innovation</h3>
-                                        <div class="description">
+                                        <div class="description last-margin-0">
                                             <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers. Learn about Kuwait’s maritime heritage and its long history of boat-building.</p>
                                             <p>Meet our Giant Robot and discover the latest ways robotic technology is assisting humans. Visit our Demo’ Area to learn about Artificial Intelligence (AI) and interact with robots or learn about basic scientific processes in the Experiment Gallery. Innovators will enjoy our Maker Space where creative ideas and scientific innovation is in your hands!</p>
                                         </div>
@@ -89,7 +89,7 @@
                                 <section class="trans-block3">
                                     <div class="info">
                                         <h3 class="section-title"  data-animate="fade-up">Build, Discover, Imagine Technology Like Never Before</h3>
-                                        <div class="description">
+                                        <div class="description last-margin-0">
                                             <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers. Learn about Kuwait’s maritime heritage and its long history of boat-building.</p>
                                         <p>Meet our Giant Robot and discover the latest ways robotic technology is assisting humans. Visit our Demo’ Area to learn about Artificial Intelligence (AI) and interact with robots or learn about basic scientific processes in the Experiment Gallery. Innovators will enjoy our Maker Space where creative ideas and scientific innovation is in your hands!</p>
                                         </div>
@@ -106,9 +106,9 @@
         </div>
         <script>
             const swiper2 = new Swiper(".trans-block2 .swiper", {
-                slidesPerView: "auto",
-                centeredSlides: true,
-                spaceBetween: 30,
+                slidesPerView: 1,
+                centeredSlides: false,
+                spaceBetween: 20,
                 loop: true,
                 speed:900,
                 effect: "coverflow",
@@ -122,6 +122,17 @@
                 navigation: {
                     nextEl: ".trans-block2 .arrows .next",
                     prevEl: ".trans-block2 .arrows .prev",
+                },
+                breakpoints: {
+                    992: {
+                        slidesPerView: 2,
+                    },
+                    1200: {
+                        slidesPerView: "auto",
+                        centeredSlides: true,
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
                 }
             });
         </script>

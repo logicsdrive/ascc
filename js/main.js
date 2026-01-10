@@ -80,20 +80,7 @@ window.addEventListener('load', (event) => {
             opacity: 0,
             duration: 2.5
         }, 0);
-    }
-
-    
-    // gsap.to(".camera-view .set1", {
-    //     scaleX: 1,
-    //     duration: 1,
-    //     ease: "power3.out",
-    //     immediateRender: false,
-    //     scrollTrigger: {
-    //       trigger: cameraView,
-    //       start: "top 0%",
-    //       toggleActions: "play none none none"
-    //     }
-    // });    
+    }    
 
     // Function to update classes (Shared by Arrows and Scroll)
     function goToStep(step) {
@@ -106,7 +93,7 @@ window.addEventListener('load', (event) => {
     }
 
     // 1. Only start if the click begins ON the cameraView element
-    if(cameraView) {
+    if(cameraView && window.innerWidth > 991) {
         // Create the ScrollTrigger that "Locks" the page
         ScrollTrigger.create({
             trigger: cameraView, // The section shown in your image
@@ -295,9 +282,9 @@ const ascc_app = {
     },
     initExploreSlider: function() {
         new Swiper(".explore-carousel .swiper", {
-            slidesPerView: "auto",
-            spaceBetween: 40,
-            centeredSlides: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            centeredSlides: false,
             loop: true,
             effect: "coverflow",
             slideToClickedSlide: true,
@@ -311,6 +298,14 @@ const ascc_app = {
             navigation: {
                 nextEl: ".explore-carousel .arrows .next",
                 prevEl: ".explore-carousel .arrows .prev",
+            },
+            breakpoints: {
+                768: {
+                    centeredSlides: true,
+                    spaceBetween: 40,
+                    slidesPerView: "auto",
+                    slidesPerView: 3,
+                },
             }
         });
     },
@@ -326,7 +321,7 @@ const ascc_app = {
                 prevEl: ".other-museums .arrows .prev",
             },
             breakpoints: {
-                992: {
+                700: {
                     slidesPerView: 2,
                 },
                 1200: {

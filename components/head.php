@@ -16,7 +16,6 @@
 <!-- Bootstrap 5 CSS -->
 <link href="./css/custom-bootstrap.css" rel="stylesheet" />
 <link rel="stylesheet" href="./css/flatpickr.min.css" />
-<!-- <link rel="stylesheet" href="./css/intlTelInput.css"> -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.1/build/css/intlTelInput.css">
 
 <!-- Custom CSS -->

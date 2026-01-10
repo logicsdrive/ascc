@@ -19,13 +19,133 @@
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <div class="contentWrapper">
+                        <div class="camera-mobile-view">
+                            <h4 class="title">explore Our museums</h4>
+                            <div class="container">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block1_tree.png" alt="" />
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block1.png" alt="" />
+                                                    <img class="animated_object" src="images/home_banner/banner_block1_vector.gif" alt="" />
+                                                    <div class="text">
+                                                        <h5>Arabic Islamic Science</h5>
+                                                        <p>With its focus on the Golden Age of Islam and the innumerable scientific, cultural and artistic contributions of Muslims and Arabs to modern day science</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block2_tree.png" alt="" />
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" />
+                                                    <img class="animated_object" src="images/home_banner/banner_block2_vector.gif" alt="" />
+                                                    <div class="text">
+                                                        <h5>Space</h5>
+                                                        <p>he study of space & the universe has always evoked mystery & inspiration. The Centre’s Space exhibit gives audiences an unprecedented opportunity..</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block4_tree.png" alt="" />
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" />
+                                                    <img class="animated_object" src="images/home_banner/banner_block3_vector.gif" alt="" />
+                                                    <div class="text">
+                                                        <h5>guest relation</h5>
+                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block4_tree.png" alt="" />
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" />
+                                                    <img class="animated_object" src="images/home_banner/banner_block4_vector.gif" alt="" />
+                                                    <div class="text">
+                                                        <h5>Theater</h5>
+                                                        <p>he study of space & the universe has always evoked mystery & inspiration. The Centre’s Space exhibit gives audiences an unprecedented opportunity..</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block5_tree.png" alt="" />
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" />
+                                                    <img class="animated_object" src="images/home_banner/banner_block5_vector.gif" alt="" />
+                                                    <div class="text">
+                                                        <h5>Transportation & Robots</h5>
+                                                        <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block6_tree.png" alt="" />
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" />
+                                                    <img class="animated_object" src="images/home_banner/banner_block6_vector.gif" alt="" />
+                                                    <div class="text">
+                                                        <h5>Science & Technology – Human Body</h5>
+                                                        <p>There is nothing more exciting and intricate than the workings of the human body and mind. Its secrets are revealed as we journey through.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block7_tree.png" alt="" />
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" />
+                                                    <img class="animated_object" src="images/home_banner/banner_block7_vector.gif" alt="" />
+                                                    <div class="text">
+                                                        <h5>Ecosystems</h5>
+                                                        <p>Travel back in time to gain a unique insight into the natural world – both past and present, understand the importance of ecosystems.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block8_tree.png" alt="" />
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" />
+                                                    <img class="animated_object" src="images/home_banner/banner_block8_vector.gif" alt="" />
+                                                    <div class="text">
+                                                        <h5>Natural History – Our Earth</h5>
+                                                        <p>Enter the world of the dinosaurs! See the amazing reptiles and mammals that lived on Earth up to 65 million years ago.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrows-holder">
+                                <span>Click the arrow to view the remaining museums</span>
+                                <div class="h-list arrows">
+                                    <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                    <svg class="next arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                </div>
+                            </div>
+                        </div>
                         <div class="camera-view" id="camera_view">
                             <div class="group">
                                 <div class="set set4">
                                     <div class="object object1">
                                         <img src="images/home_banner/banner_block7.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block7_tree.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block7_vector.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block7_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Ecosystems</h5>
                                             <p>Travel back in time to gain a unique insight into the natural world – both past and present, understand the importance of ecosystems.</p>
@@ -34,7 +154,7 @@
                                     <div class="object object2">
                                         <img src="images/home_banner/banner_block8.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block8_tree.png" alt="" />   
-                                        <img class="animated_object" src="images/home_banner/banner_block8_vector.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block8_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Natural History – Our Earth</h5>
                                             <p>Enter the world of the dinosaurs! See the amazing reptiles and mammals that lived on Earth up to 65 million years ago.</p>
@@ -45,7 +165,7 @@
                                     <div class="object object1">
                                         <img src="images/home_banner/banner_block5.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block5_tree.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block5_vector.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block5_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Transportation & Robots</h5>
                                             <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers.</p>
@@ -54,7 +174,7 @@
                                     <div class="object object2">
                                         <img src="images/home_banner/banner_block6.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block6_tree.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block6_vector.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block6_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Science & Technology – Human Body</h5>
                                             <p>There is nothing more exciting and intricate than the workings of the human body and mind. Its secrets are revealed as we journey through.</p>
@@ -64,7 +184,7 @@
                                 <div class="set set2">
                                     <div class="object object1">
                                         <img src="images/home_banner/banner_block3.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block3_vector.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block3_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>guest relation</h5>
                                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
@@ -73,7 +193,7 @@
                                     <div class="object object2">
                                         <img src="images/home_banner/banner_block4.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block4_tree.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block4_vector.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block4_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Theater</h5>
                                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
@@ -84,7 +204,7 @@
                                     <div class="object object1">
                                         <img class="tree" src="images/home_banner/banner_block1_tree.png" alt="" />
                                         <img src="images/home_banner/banner_block1.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block1_vector.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block1_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Arabic Islamic Science</h5>
                                             <p>With its focus on the Golden Age of Islam and the innumerable scientific, cultural and artistic contributions of Muslims and Arabs to modern day science</p>
@@ -93,7 +213,7 @@
                                     <div class="object object2">
                                         <img class="tree" src="images/home_banner/banner_block2_tree.png" alt="" />
                                         <img src="images/home_banner/banner_block2.png" alt="" />
-                                        <img class="animated_object" src="images/home_banner/banner_block2_vector.png" alt="" />
+                                        <img class="animated_object" src="images/home_banner/banner_block2_vector.gif" alt="" />
                                         <div class="text">
                                             <h5>Space</h5>
                                             <p>he study of space and the universe has always evoked mystery and inspiration. The Centre’s Space exhibit gives audiences an unprecedented opportunity to explore the wonders of this unknown universe.</p>
@@ -578,9 +698,9 @@
                     <?php include 'components/footer.php';  ?>
                     <script>
                         const swiperConfig = {
-                            slidesPerView: "auto",
-                            spaceBetween: 190,            
-                            centeredSlides: true,
+                            slidesPerView: 1,
+                            spaceBetween: 30,            
+                            centeredSlides: false,
                             loop: true,
                             effect: "coverflow",
                              speed: 900,
@@ -590,12 +710,19 @@
                                 depth: 120,
                                 modifier: 1,
                                 slideShadows: false,
-                            } 
+                            },
+                            breakpoints: {
+                                768: {
+                                    centeredSlides: true,
+                                    spaceBetween: 190,
+                                    slidesPerView: "auto",
+                                    slidesPerView: 'auto',
+                                },
+                            }
                         };
                         const swiperElements = document.querySelectorAll(".events_swiper");
                         swiperElements.forEach((el) => {
                             new Swiper(el, {
-
                                 ...swiperConfig, // Spread the shared config here
                                 navigation: {
                                     // This ensures each slider uses its own specific arrows
@@ -606,15 +733,34 @@
                             });
                         });
                         const plan_visit_swiper = new Swiper(".plan-visit .swiper", {
-                            slidesPerView: 3,
-                            spaceBetween: 60,
+                            slidesPerView: 1,
+                            spaceBetween: 30,
                             slideToClickedSlide: true,
                             speed: 900,
                             loop: true,
                             navigation: {
                                 nextEl: ".plan-visit .arrows .next",
                                 prevEl: ".plan-visit .arrows .prev",
+                            },
+                            breakpoints: {
+                                768: {
+                                    spaceBetween: 40,
+                                    slidesPerView: 2,
+                                },
+                                1200: {
+                                    spaceBetween: 60,
+                                    slidesPerView: 3,
+                                },
                             }
+                        });
+                        const camera_mobile_view = new Swiper(".camera-mobile-view .swiper", {
+                            slidesPerView: 1,
+                            speed: 900,
+                            loop: true,
+                            navigation: {
+                                nextEl: ".camera-mobile-view .arrows .next",
+                                prevEl: ".camera-mobile-view .arrows .prev",
+                            },
                         });
                     </script>
                 </div>

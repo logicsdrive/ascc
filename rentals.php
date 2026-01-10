@@ -18,6 +18,12 @@
                     </video>
                     <div class="rentals">
                         <div class="places-area" data-view="">
+                            <span class="area-column-close-icon" onclick="closeZoomedView();" >
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.4164 22C20.2084 22.0004 20.0025 21.9596 19.8104 21.88C19.6183 21.8005 19.4438 21.6837 19.297 21.5364L0.444639 2.68433C0.156106 2.38559 -0.00354907 1.98549 5.9878e-05 1.57018C0.00366882 1.15488 0.170254 0.757603 0.463934 0.463927C0.757615 0.170251 1.15489 0.00366877 1.57021 5.98771e-05C1.98552 -0.00354901 2.38563 0.156104 2.68437 0.444632L21.5368 19.2967C21.7581 19.5183 21.9087 19.8005 21.9697 20.1077C22.0307 20.4149 21.9992 20.7332 21.8793 21.0225C21.7594 21.3118 21.5564 21.5591 21.296 21.733C21.0357 21.907 20.7295 21.9999 20.4164 22Z" fill="black"></path>
+                                    <path d="M1.58363 22C1.27047 21.9999 0.964345 21.907 0.703958 21.733C0.44357 21.5591 0.2406 21.3118 0.120697 21.0225C0.000794558 20.7332 -0.0306603 20.4149 0.0303085 20.1077C0.0912774 19.8005 0.241934 19.5183 0.463238 19.2967L19.3156 0.444632C19.6144 0.156104 20.0145 -0.00354901 20.4298 5.98771e-05C20.8451 0.00366877 21.2424 0.170251 21.5361 0.463927C21.8297 0.757603 21.9963 1.15488 21.9999 1.57018C22.0035 1.98549 21.8439 2.38559 21.5554 2.68433L2.70297 21.5364C2.55618 21.6837 2.38171 21.8005 2.18961 21.88C1.9975 21.9596 1.79156 22.0004 1.58363 22Z" fill="black"></path>
+                                </svg>
+                            </span>
                             <video class="background-video" autoplay muted loop playsinline data-speed="0.5" data-lag="0.2">
                                 <source src="images/rentals.mp4" type="video/mp4">
                             </video>
@@ -277,74 +283,76 @@
                             </aside>
                             <div class="right">
                                 <div class="places-graph">
-                                    <div class="link_bridge1" data-animate="fade-right">
-                                        <div class="item echosystem no-area">
-                                            <img src="images/place_echosystem.png" width="305" height="170" alt="" />
-                                            <div class="text" style="top: 60px; right: 80px;">
-                                                <span>النظم البيئية</span>
-                                                <span>Ecosystems</span>
-                                            </div>
-                                        </div>
-                                        <div class="icon">
-                                            <span>Link Bridge</span>
-                                            <img src="images/bridge_icon1.png" alt="" />    
-                                        </div>
-                                        <div class="item earth zoom-image" id="earth" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('earth');">
-                                            <img src="images/place_earth.png" width="346" height="186" alt="" />
-                                            <span class="marker" style="bottom: 36px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
-                                            <div class="text" style="top: 66px; left: 83px;">
-                                                <span>الأرض كوكبنا</span>
-                                                <span>Our Earth</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="link_bridge2" data-animate="fade-left">
-                                        <div>
-                                            <div class="item trans" style="margin-bottom: 34px;" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('trans');">
-                                                <img class="marker" style="top: 36px; right: 112px;" src="images/area_marker.png" alt="" />
-                                                <img class="marker" style="bottom: 34px; right: 100px;" src="images/area_marker.png" alt="" />
-                                                <img src="images/place_trans.png" width="343" height="198" alt="" />
-                                                <div class="text" style="top: 66px; left: 164px;">
-                                                    <span>النقل والربوتات</span>
-                                                    <span>Transportation &<br/> Robots</span>
+                                    <div class="scroll">
+                                        <div class="link_bridge1" data-animate="fade-right">
+                                            <div class="item echosystem no-area">
+                                                <img src="images/place_echosystem.png" width="305" height="170" alt="" />
+                                                <div class="text" style="top: 60px; right: 80px;">
+                                                    <span>النظم البيئية</span>
+                                                    <span>Ecosystems</span>
                                                 </div>
                                             </div>
                                             <div class="icon">
                                                 <span>Link Bridge</span>
-                                                <img src="images/bridge_icon2.png" alt="" />    
+                                                <img src="images/bridge_icon1.png" alt="" />    
                                             </div>
-                                            <div class="item arabic-science" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('arabic-science');">
-                                                <span class="marker" style="top: 25px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
-                                                <span class="marker" style="top: 27px; right: 50px;"><img src="images/area_marker.png" alt="" /></span>
-                                                <span class="marker" style="bottom: 15px; right: 110px;"><img src="images/area_marker.png" alt="" /></span>
-                                                <img src="images/place_arabic_science.png" width="333" height="181" alt="" />
-                                                <div class="text" style="top: 44px; right: 40px;">
-                                                    <span>العلوم العربية الاسلامية /مركز الفنون الجميلة</span>
-                                                    <span>Arabic Islamic science /fine arts centre</span>
+                                            <div class="item earth zoom-image" id="earth" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('earth');">
+                                                <img src="images/place_earth.png" width="346" height="186" alt="" />
+                                                <span class="marker" style="bottom: 36px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
+                                                <div class="text" style="top: 66px; left: 83px;">
+                                                    <span>الأرض كوكبنا</span>
+                                                    <span>Our Earth</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="item human-body no-area" style="margin-bottom: 16px;">
-                                                <img src="images/place_human.png" width="307" height="172" alt="" />
-                                                <div class="text" style="top: 66px; left: 83px;">
-                                                    <span>جسم الإنسان</span>
-                                                    <span>Human Body</span>
+                                        <div class="link_bridge2" data-animate="fade-left">
+                                            <div>
+                                                <div class="item trans" style="margin-bottom: 34px;" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('trans');">
+                                                    <img class="marker marker1" style="top: 36px; right: 112px;" src="images/area_marker.png" alt="" />
+                                                    <img class="marker marker2" style="bottom: 34px; right: 100px;" src="images/area_marker.png" alt="" />
+                                                    <img src="images/place_trans.png" width="343" height="198" alt="" />
+                                                    <div class="text" style="top: 66px; left: 164px;">
+                                                        <span>النقل والربوتات</span>
+                                                        <span>Transportation &<br/> Robots</span>
+                                                    </div>
+                                                </div>
+                                                <div class="icon">
+                                                    <span>Link Bridge</span>
+                                                    <img src="images/bridge_icon2.png" alt="" />    
+                                                </div>
+                                                <div class="item arabic-science" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('arabic-science');">
+                                                    <span class="marker" style="top: 25px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
+                                                    <span class="marker" style="top: 27px; right: 50px;"><img src="images/area_marker.png" alt="" /></span>
+                                                    <span class="marker" style="bottom: 15px; right: 110px;"><img src="images/area_marker.png" alt="" /></span>
+                                                    <img src="images/place_arabic_science.png" width="333" height="181" alt="" />
+                                                    <div class="text" style="top: 44px; right: 40px;">
+                                                        <span>العلوم العربية الاسلامية /مركز الفنون الجميلة</span>
+                                                        <span>Arabic Islamic science /fine arts centre</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="item theatre" style="margin-bottom: 8px;" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('theatre');">
-                                                <img class="marker" style="bottom: 38px; right: 44px;" src="images/area_marker.png" alt="" />
-                                                <img src="images/place_theatre.png" alt="" />
-                                                <div class="text" style="top: 40px; right: 100px;">
-                                                    <span>المسرح</span>
-                                                    <span>Theatre</span>
+                                            <div>
+                                                <div class="item human-body no-area" style="margin-bottom: 16px;">
+                                                    <img src="images/place_human.png" width="307" height="172" alt="" />
+                                                    <div class="text" style="top: 66px; left: 83px;">
+                                                        <span>جسم الإنسان</span>
+                                                        <span>Human Body</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="item space no-area">
-                                                <img src="images/place_space.png" width="311" height="174" alt="" />
-                                                <div class="text" style="top: 66px; left: 96px;">
-                                                    <span>الفضاء</span>
-                                                    <span>Space</span>
+                                                <div class="item theatre" style="margin-bottom: 8px;" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('theatre');">
+                                                    <img class="marker" style="bottom: 38px; right: 44px;" src="images/area_marker.png" alt="" />
+                                                    <img src="images/place_theatre.png" alt="" />
+                                                    <div class="text" style="top: 40px; right: 100px;">
+                                                        <span>المسرح</span>
+                                                        <span>Theatre</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item space no-area">
+                                                    <img src="images/place_space.png" width="311" height="174" alt="" />
+                                                    <div class="text" style="top: 66px; left: 96px;">
+                                                        <span>الفضاء</span>
+                                                        <span>Space</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -360,10 +368,12 @@
         <div class="modal fade gallery-modal" id="gallery-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <svg class="cross-icon" data-bs-dismiss="modal" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.4164 22C20.2084 22.0004 20.0025 21.9596 19.8104 21.88C19.6183 21.8005 19.4438 21.6837 19.297 21.5364L0.444639 2.68433C0.156106 2.38559 -0.00354907 1.98549 5.9878e-05 1.57018C0.00366882 1.15488 0.170254 0.757603 0.463934 0.463927C0.757615 0.170251 1.15489 0.00366877 1.57021 5.98771e-05C1.98552 -0.00354901 2.38563 0.156104 2.68437 0.444632L21.5368 19.2967C21.7581 19.5183 21.9087 19.8005 21.9697 20.1077C22.0307 20.4149 21.9992 20.7332 21.8793 21.0225C21.7594 21.3118 21.5564 21.5591 21.296 21.733C21.0357 21.907 20.7295 21.9999 20.4164 22Z" fill="white"/>
-                        <path d="M1.58363 22C1.27047 21.9999 0.964345 21.907 0.703958 21.733C0.44357 21.5591 0.2406 21.3118 0.120697 21.0225C0.000794558 20.7332 -0.0306603 20.4149 0.0303085 20.1077C0.0912774 19.8005 0.241934 19.5183 0.463238 19.2967L19.3156 0.444632C19.6144 0.156104 20.0145 -0.00354901 20.4298 5.98771e-05C20.8451 0.00366877 21.2424 0.170251 21.5361 0.463927C21.8297 0.757603 21.9963 1.15488 21.9999 1.57018C22.0035 1.98549 21.8439 2.38559 21.5554 2.68433L2.70297 21.5364C2.55618 21.6837 2.38171 21.8005 2.18961 21.88C1.9975 21.9596 1.79156 22.0004 1.58363 22Z" fill="white"/>
-                    </svg>
+                    <div class="cross-icon" data-bs-dismiss="modal">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.4164 22C20.2084 22.0004 20.0025 21.9596 19.8104 21.88C19.6183 21.8005 19.4438 21.6837 19.297 21.5364L0.444639 2.68433C0.156106 2.38559 -0.00354907 1.98549 5.9878e-05 1.57018C0.00366882 1.15488 0.170254 0.757603 0.463934 0.463927C0.757615 0.170251 1.15489 0.00366877 1.57021 5.98771e-05C1.98552 -0.00354901 2.38563 0.156104 2.68437 0.444632L21.5368 19.2967C21.7581 19.5183 21.9087 19.8005 21.9697 20.1077C22.0307 20.4149 21.9992 20.7332 21.8793 21.0225C21.7594 21.3118 21.5564 21.5591 21.296 21.733C21.0357 21.907 20.7295 21.9999 20.4164 22Z" fill="white"/>
+                            <path d="M1.58363 22C1.27047 21.9999 0.964345 21.907 0.703958 21.733C0.44357 21.5591 0.2406 21.3118 0.120697 21.0225C0.000794558 20.7332 -0.0306603 20.4149 0.0303085 20.1077C0.0912774 19.8005 0.241934 19.5183 0.463238 19.2967L19.3156 0.444632C19.6144 0.156104 20.0145 -0.00354901 20.4298 5.98771e-05C20.8451 0.00366877 21.2424 0.170251 21.5361 0.463927C21.8297 0.757603 21.9963 1.15488 21.9999 1.57018C22.0035 1.98549 21.8439 2.38559 21.5554 2.68433L2.70297 21.5364C2.55618 21.6837 2.38171 21.8005 2.18961 21.88C1.9975 21.9596 1.79156 22.0004 1.58363 22Z" fill="white"/>
+                        </svg>
+                    </div>
                     <div class="main-preview">
                         <div class="h-list arrows">
                             <svg class="prev arrow" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -500,11 +510,20 @@
             }
             document.addEventListener("DOMContentLoaded", function() {
                 const gallery_thumbnails = new Swiper(".gallery-modal .thumbnails", {
-                    spaceBetween: 24,
-                    slidesPerView: 4,
+                    spaceBetween: 12,
+                    slidesPerView: 2,
                     loop: true,
                     freeMode: true,
                     watchSlidesProgress: true,
+                    breakpoints: {
+                        992: {
+                            slidesPerView: 3,
+                        },
+                        1200: {
+                            slidesPerView: 4,
+                            spaceBetween: 24,
+                        },
+                    }
                 });
 
                 const gallery_main_preview = new Swiper(".gallery-modal .main-preview .swiper", {

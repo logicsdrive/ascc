@@ -30,4 +30,22 @@
     }
 
     .image{width: 644px; border-radius: 24px; overflow: hidden;}
+
+    @media (max-width: 1399px) {
+        .content{padding-inline-end: 40px;}
+        .info{margin-top: px_rem(40px);}
+        .info .grid{grid-gap: 20px;}
+    }
+    @media (max-width: 1199px) {
+        .image{width: 444px;}
+        .info{padding: 30px;}   
+    }
+    @media (max-width: 991px) {
+        .image{width: 100%; max-width: 390px;}
+        .info .grid{grid-template-columns: 1fr;}
+    }
+    @media (max-width: 880px) {
+        .content{padding-right: 0;}
+        .container{grid-template-columns: 1fr; gap: 40px;}
+    }
 }

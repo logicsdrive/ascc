@@ -22,16 +22,17 @@
 
 .tickets{
     .title-1{margin-bottom: px_rem(28px);}
-    .tickets-holder{
-        --gap: 32px; display: flex; flex-wrap: wrap; gap: var(--gap); justify-content: center;
-        
-        .ticket-card{width: calc(50% - (var(--gap) / 2));}
-    }
-    @media (max-width: 1400px) {
-        .tickets-holder .ticket-card{width: 100%;}
-    }
 }
 
-@media (max-width: 540px) {
-    html{font-size: 14px;}
+.tickets-holder{
+    --gap: 32px; display: flex; flex-wrap: wrap; gap: var(--gap); justify-content: center;
+    
+    .ticket-card{width: calc(50% - (var(--gap) / 2));}
+}
+@media (max-width: 1199px) {
+    .tickets-holder .ticket-card{width: 100%;}
+}
+
+@media (max-width: 991px) {
+    html{font-size: px_rem(14px);}
 }

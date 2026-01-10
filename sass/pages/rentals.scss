@@ -4,8 +4,11 @@
 }
 .rentals{
     overflow: hidden; padding: 3rem 0 5rem; position: relative;
-    .places-area-wrapper{
-        display: grid; grid-template-columns: auto 1fr;
+
+    @media (min-width: 1071px) {
+        .places-area-wrapper{
+            display: grid; grid-template-columns: auto 1fr;
+        }
     }
     
     .left-bar{
@@ -16,24 +19,27 @@
         .buttons .btn.active{background: var(--primary-color); border-color: var(--primary-color);}
 
         .nav-bar{background: white; display: grid; grid-gap: 10px; border-radius: 15px; padding: 15px;}
-        .item{min-height: 54px; cursor: pointer; padding: 5px 20px 5px 24px; border-radius: 15px; font-size: 18px; display: grid; grid-template-columns: 24px 1fr; align-items: center; grid-gap: 10px; background: rgba(245, 247, 247, 1) url(../images/right-arrow.svg) calc(100% - 32px) center no-repeat;}
+        .item{min-height: 54px; cursor: pointer; padding: 5px 52px 5px 24px; border-radius: 15px; font-size: 18px; display: grid; grid-template-columns: 24px 1fr; align-items: center; grid-gap: 10px; background: rgba(245, 247, 247, 1) url(../images/right-arrow.svg) calc(100% - 32px) center no-repeat;}
+        .item:hover{background-color: #e2e2e2;}
     }
-    .right{
-        padding-left: 122px; padding-top: 38px;
 
-        .places-graph{
-            .item{
-                cursor: pointer; position: relative; max-width: fit-content;
-                .marker{position: absolute; pointer-events: none;}
-                img{display: block;}
-                
-                .text{position: absolute; text-align: center; color: white; font-size: 14px; line-height: 20px; font-family: var(--font-medium); text-transform: uppercase; display: flex; flex-direction: column; z-index: 11; max-width: fit-content;}
-            }
-            .item.no-area{pointer-events: none;}
-            .item.arabic-science .text span{display: block; max-width: 150px;}
+    
+    .right{padding-left: 122px; padding-top: 38px;}
+
+    .places-graph{
+        position: relative;
+
+        .item{
+            cursor: pointer; position: relative; max-width: fit-content;
+            .marker{position: absolute; pointer-events: none;}
+
+            img{display: block;}
+            
+            .text{position: absolute; text-align: center; color: white; font-size: 14px; line-height: 20px; font-family: var(--font-medium); text-transform: uppercase; display: flex; flex-direction: column; z-index: 11; max-width: fit-content;}
         }
-
-
+        .item.no-area{pointer-events: none;}
+        .item.arabic-science .text span{display: block; max-width: 150px;}
+        
         .link_bridge1{
             display: flex; position: relative; align-items: flex-end; gap: 42px; margin-bottom: 22px;
             
@@ -63,9 +69,31 @@
             .icon span{display: block; text-transform: uppercase; font-size: 14px; line-height: 20px; font-family: var(--font-medium);}
             .icon img{margin: auto;}
         }
-    }
 
-    .places-graph{position: relative;}
+        @media (max-width: 700px) {
+            overflow-x: auto; width: 100vw;
+
+            .scroll{width: 550px;}
+            
+            .echosystem .text{right: 50px !important;}
+            .earth .text{left: 60px !important;}
+            .earth .marker{left: 90px !important;}
+
+            .trans .text{left: 116px !important;}
+            .trans .marker1{right: 80px !important;}
+            .trans .marker2{right: 75px !important;}
+
+            .human-body .text{left: 46px !important;}
+            .arabic-science .text{right: 15px !important;}
+            .theatre .text{top: 32px !important;}
+            .space .text{left: 70px !important;}
+
+            .link_bridge1 .icon{left: 224px;}
+            .link_bridge1 .icon span{font-size: 12px;}
+
+            .link_bridge2 .icon{left: 242px;}
+        }
+    }
 
     .show-zoomed-view & .places-area-wrapper{opacity: 0;}
     .show-zoomed-view & .places-area{
@@ -92,7 +120,7 @@
             font-size: px_rem(20px); line-height: 1; font-family: var(--font-thin); cursor: pointer;
         }
         .area-column{
-            padding: 24px; width: 0; padding: 0; transition: all 0.4s ease; opacity: 0; transform: translateX(-200px); border-radius: 15px; background: white;
+            padding: 24px; width: 0; pointer-events: none; opacity: 0; transform: translateX(-200px); padding: 0; transition: all 0.4s ease; border-radius: 15px; background: white;
         
             .image{height: 132px; border-radius: 14px; overflow: hidden;}
             .image img{width: 100%; height: 100%; object-fit: cover;}
@@ -115,7 +143,7 @@
             }
         }
 
-        &.show-left-col .area-column{width: 438px; padding: 24px; opacity: 1; transform: translateX(0);}
+        &.show-left-col .area-column{width: 438px; pointer-events: inherit; padding: 24px; opacity: 1; transform: translateX(0);}
 
         .area-zoomed-view{
             position: relative; padding-top: 24px;
@@ -131,22 +159,59 @@
             }
 
             .cross{position: absolute; top: 0; right: 0; cursor: pointer;}
+
+            @media (max-width: 1199px) {
+                .image text{max-width: 100%; height: auto;}
+            }
         }
 
+        .area-column-close-icon{display: none;}
+
+        @media (max-width: 1199px) {
+            .area-column{
+                width: 340px;
+                position: fixed;
+                width: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 111;
+                height: auto;
+                bottom: 0;
+                border-radius: 0;
+            }
+            .area-column:after{content: ""; background: rgba(black, 0.6); width: calc(100vw - 340px); height: 100%; position: fixed; top: 0; left: 100%;}
+            .grid{grid-template-columns: 1fr;}
+
+            &.show-left-col{
+                .area-column-close-icon{
+                    position: fixed;
+                    display: block;
+                    top: 0;
+                    right: 0;
+                    z-index: 1000;
+                    cursor: pointer;
+                    color: white;
+                    padding: 15px;
+                    background: white;
+                }
+            }
+        }
     }
 
+    @media (max-width: 1399px) {
+        .right{padding-left: 60px;}
+    }
     @media (max-width: 1199px) {
-        .places-area-wrapper{grid-template-columns: 1fr;}
+        .left-bar{width: 320px;}
+        .right{padding-left: 30px;}
+    }
+    @media (max-width: 1070px) {
         .left-bar{width: 100%;}
+        .right{padding: 30px 0 0; display: flex; justify-content: center;}
 
-        .places-area {
-            
-            &.show-left-col .area-column{width: 100%;}
-            
-            .grid{
-                grid-template-columns: 1fr; gap: 40px;
-            }
-            .title-area {flex-direction: column; text-align: center; gap:  0px;}
+        .places-area { 
+            .title-area {flex-direction: column; text-align: center; gap:  20px;}
             .area-column{width: 100%;}
             .image{order: -1;}
         }
@@ -188,12 +253,26 @@
     .thumbnails .item{height: var(--thumbnail-height); border-radius: 7px; overflow: hidden; position: relative; cursor: pointer;}
     .thumbnails .item img{width: 100%; height: 100%; object-fit: cover;}
     .thumbnails .swiper-slide-thumb-active .item:after{content: ""; background: rgba(black, 0.6); position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+    @media (max-width: 1199px) {
+        --thumbnail-height: 140px;
+        --bs-modal-width: calc(100% - 20px);
+
+        .arrow{--offset: -30px;}
+
+        .cross-icon{
+            padding: 6px;
+            background: black;
+            top: 0;
+            inset-inline-end: 0;
+        }
+    }
 }
 
 .zoomed{
-    -webkit-backface-visibility: hidden; /* Prevents flickering in Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-tap-highlight-color: transparent; /* Removes the blue box on click in mobile Chrome */
-    touch-action: none; /* Prevents browser from taking over the click/zoom */
-    user-select: none; /* Prevents text selection while clicking the map */
+    -webkit-tap-highlight-color: transparent;
+    touch-action: none;
+    user-select: none;
 }

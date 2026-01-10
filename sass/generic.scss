@@ -53,7 +53,10 @@
     --breakpoint-xxl: 1524px;
 }
 
-.container{max-width: 1524px;}
+.container{max-width: 1530px; --bs-gutter-x: 30px;}
+@media (min-width: 1200px) {
+    .container{max-width: 1560px; --bs-gutter-x: 60px;}
+}
 
 @mixin media-breakpoint-down($name) {
     $max: map-get($grid-breakpoints, $name);
@@ -177,6 +180,12 @@ a:hover{color: var(--primary-color);}
 @import "components/content_row";
 
 .content_row_holder{display: grid; grid-gap: 80px;}
+@media (max-width: 991px) {
+    .content_row_holder{gap: 60px;}
+}
+@media (max-width: 767px) {
+    .content_row_holder{gap: 40px;}
+}
 
 .pagination{
     display: flex; justify-content: center; align-items: center; gap: px_rem(20px);
@@ -225,13 +234,16 @@ strong{font-family: var(--font-medium); font-weight: normal;}
 }
 
 .tabs-list{gap: 14px; margin-bottom: 3rem; justify-content: center; flex-wrap: nowrap; overflow-x: auto;}
-.tabs-list .btn{--bs-btn-padding-x: 30px; padding-top: 10px;}
+.tabs-list .btn{--bs-btn-padding-x: 30px;}
 .tabs-list .btn.active,
 .tabs-list .btn:hover{
     background: var(--primary-color); border-color: var(--primary-color);
 }
 @media (max-width: 1199px) {
     .tabs-list{justify-content: flex-start;}
+}
+@media (max-width: 991px) {
+    .tabs-list{margin-bottom: 2rem;}
 }
 
 .faqs{
@@ -265,6 +277,10 @@ strong{font-family: var(--font-medium); font-weight: normal;}
 
     .category-item .content time{display: none;}
     .category-item .icon-bg{display: none;}
+
+    @media (max-width: 767px) {
+        .arrows{gap: 10px;}
+    }
 }
 
 .form-element{
@@ -428,16 +444,21 @@ strong{font-family: var(--font-medium); font-weight: normal;}
         right: 0; left: auto; z-index: 100;
     }
 
-    .iti__arrow{width: 10px; height: 6px; background: url(/images/dd_arrow.png) center center no-repeat; border: 0;}
+    .iti__arrow{width: 10px; height: 6px; background: url(../images/dd_arrow.png) center center no-repeat; border: 0;}
     .iti__search-input{padding: 10px; border-radius: 0; border-bottom: solid 1px #EEE;}
     .iti__selected-country-primary{gap: 6px;}
     .iti__arrow{margin: 0;}
+
+    .iti__country:hover{background: #EEE;}
 }
 .iti--fullscreen-popup.iti--container{
     z-index: 11111;
 }
 
+@media (max-width: 991px) {
+    .section-title{font-size: px_rem(30px);}
+}
 @media (max-width: 767px) {
-    .section-title{font-size: 36px;}
-    .main-content{padding: 30px 0;}
+    .btn{min-height: 46px; padding-top: 6px;}
+    .main-content{padding: px_rem(50px) 0;}
 }

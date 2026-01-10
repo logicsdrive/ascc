@@ -43,8 +43,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="reveal">
-                                <img class="image" src="images/visitor-map.jpg" alt="" class="img-fluid">
+                            <div class="reveal image">
+                                <img src="images/visitor-map.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>

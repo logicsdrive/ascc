@@ -27,7 +27,7 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <h2 data-animate="fade-up">Thank You</h2>
+                                <h2 class="section-title" data-animate="fade-up">Thank You</h2>
                                 <span data-animate="fade-up">Your Order has Been <em class="text-success">Completed</em></span>
                             </div>
                             <div class="info">

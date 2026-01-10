@@ -13,11 +13,13 @@
                     include 'components/page-title-banner.php';
                 ?>
                 <main class="main-content">
-                    <div class="education">
+                    <div class="container">
                         <div class="h-list nav tabs-list" data-animate="fade-up">
                             <a href="#tab1" data-bs-toggle="tab" class="btn btn-outline-dark active">The Academy</a>
                             <a href="#tab2" data-bs-toggle="tab" class="btn btn-outline-dark">School Education Services</a>
                         </div>
+                    </div>
+                    <div class="education">
                         <div class="tab-content">
                             <div class="tab-pane last-margin-0 tab1 show active" id="tab1" role="tabpanel">
                                 <div class="content_row_holder">

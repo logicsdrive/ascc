@@ -185,7 +185,7 @@ const timeline = gsap.timeline({
   }
 });
 
-window.addEventListener('load', (event) => {
+setTimeout(function() {
   if(document.body.classList.contains("home-page")) {
     // ENTER animations
     timeline.from(".enter-the-center .title .ar", {
@@ -240,7 +240,7 @@ window.addEventListener('load', (event) => {
       });
     });
   }
-});
+}, 3000);
 
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);

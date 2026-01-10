@@ -4,7 +4,6 @@ let isHolding = false;
 let currentStep = 0;
 
 window.addEventListener('load', (event) => {
-    document.body.classList.add("page-loaded");
     gsap.registerPlugin(ScrollTrigger);
     
     const banner_title = document.querySelector(".page-title-banner .page-banner-desc");
@@ -169,6 +168,10 @@ window.addEventListener('mousemove', (e) => {
 document.addEventListener("DOMContentLoaded", function() {
     ascc_app.init();
 });
+
+setTimeout(function() {
+    document.body.classList.add("page-loaded");
+}, 3000);
 
 const ascc_app = {
     init: function(){

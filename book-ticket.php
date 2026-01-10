@@ -274,15 +274,15 @@
                                         <div class="grid">
                                             <div class="form-element">
                                                 <label class="control-label">First Name</label>
-                                                <input type="text" placeholder="Enter First Name" value="Murad" class="form-control" />
+                                                <input type="text" placeholder="Enter First Name" class="form-control" />
                                             </div>
                                             <div class="form-element">
                                                 <label class="control-label">Last Name</label>
-                                                <input type="text" placeholder="Enter Last Name" value="Mohamed" class="form-control" />
+                                                <input type="text" placeholder="Enter Last Name" class="form-control" />
                                             </div>
                                             <div class="form-element">
                                                 <label class="control-label">Email</label>
-                                                <input type="email" placeholder="Enter Email" value="Mohamednagy@gmail.com" class="form-control" />
+                                                <input type="email" placeholder="Enter Email" class="form-control" />
                                             </div>
                                             <div class="form-element phone-field dropdown">
                                                 <label class="control-label">Phone</label>
@@ -290,7 +290,7 @@
                                             </div>
                                             <div class="form-element full">
                                                 <label class="control-label">Country</label>
-                                                <input type="text" placeholder="Enter Conutry" value="Kuwait" class="form-control" />
+                                                <input type="text" placeholder="Enter Conutry" class="form-control" />
                                             </div>
                                             <div class="d-grid gap-1 full">
                                                 <div class="custom-checkbox">

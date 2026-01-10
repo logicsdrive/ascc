@@ -204,6 +204,7 @@ const ascc_app = {
         phoneFields.forEach((field) => {
             window.intlTelInput(field, {
                 initialCountry: "kw",
+                excludeCountries: ["il"],
                 geoIpLookup: callback => {
                 fetch("https://ipapi.co/json")
                     .then(res => res.json())

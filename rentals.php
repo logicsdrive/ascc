@@ -455,7 +455,7 @@
                     // Create a GSAP Timeline for perfect sequencing
                     const tl = gsap.timeline();
 
-                    gsap.to(".places-graph .item:not(.zoomed)", { 
+                    gsap.to(".places-graph .item:not(.zoomed)", {
                         opacity: 0.3,
                     });
                     // 2. Zoom the image
@@ -506,7 +506,7 @@
                     item.classList.remove("zoomed");
                 });
                 document.body.classList.remove("show-zoomed-view");
-                document.querySelector('.places-area').classList.remove('show-left-col')
+                document.querySelector('.places-area').classList.remove('show-left-col');
             }
             document.addEventListener("DOMContentLoaded", function() {
                 const gallery_thumbnails = new Swiper(".gallery-modal .thumbnails", {

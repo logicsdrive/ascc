@@ -152,7 +152,7 @@
                                 <div class="container">
                                     <div class="title-area">
                                         <div class="last-margin-0">
-                                            <h2 class="section-title">Transportation & Robots</h2>
+                                            <h2 class="section-title mb-2">Transportation & Robots</h2>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                         </div>
                                         <div class="calendar js-calendar">

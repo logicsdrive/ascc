@@ -109,14 +109,18 @@
             <div class="modal-body">
                 <form action="" class="content">
                     <h2 class="section-title mb-4">Register</h2>
-                    <div class="h-list gap-3 mb-3">
-                        <div class="form-element">
-                            <label class="control-label">First Name</label>
-                            <input type="text" placeholder="Enter Name" value="Murad" class="form-control" />
+                    <div class="row g-3">
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-element">
+                                <label class="control-label">First Name</label>
+                                <input type="text" placeholder="Enter Name" value="Murad" class="form-control" />
+                            </div>
                         </div>
-                        <div class="form-element">
-                            <label class="control-label">Last Name</label>
-                            <input type="text" placeholder="Enter Last Name" value="Mohamed" class="form-control" />
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-element">
+                                <label class="control-label">Last Name</label>
+                                <input type="text" placeholder="Enter Last Name" value="Mohamed" class="form-control" />
+                            </div>
                         </div>
                     </div>
                     <div class="form-element mb-3">

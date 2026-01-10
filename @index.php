@@ -141,6 +141,7 @@
                         </div>
                         <div class="camera-view" id="camera_view">
                             <div class="overlay"></div>
+                            <h1 class="section-title">explore Our museums</h1>
                             <div class="group">
                                 <div class="set set4">
                                     <div class="object object1">

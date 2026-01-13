@@ -323,12 +323,6 @@
             .set4{bottom: 162px;}
         }
         @media screen and (max-width: 1450px) {
-            .set1{bottom: 100px;}
-            .set2{bottom: 190px;}
-            .set3{bottom: 200px;}
-            .set4{bottom: 230px;}
-        }
-        @media screen and (max-width: 1450px) and (max-height: 900px) {
             .set{                
                 .object{
                     width: 460px;
@@ -342,9 +336,14 @@
                 .object2 .text{left: 108px;}
             }
 
-            .set2{bottom: 145px; transform: scale(0.50);}
-            .set3{bottom: 154px;}
-            .set4{bottom: 180px;}
+            .set2{bottom: 180px;}
+            .set3{bottom: 200px;}
+            .set4{bottom: 230px;}
+        }
+        @media screen and (max-width: 1450px) and (max-height: 900px) {
+            .set2{bottom: 126px; transform: scale(0.50);}
+            .set3{bottom: 150px;}
+            .set4{bottom: 172px;}
         }
         @media screen and (max-width: 1366px) {
             .set2{bottom: 124px; transform: scale(0.50);}

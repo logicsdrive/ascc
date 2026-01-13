@@ -73,7 +73,7 @@
             .arrows{gap: 20px; color: var(--primary-color);}
         }
 
-        @media (max-width: 991px) {
+        @media (max-width: 1199px) {
             display: block;
         }
     }
@@ -84,7 +84,7 @@
         .overlay{position: absolute; pointer-events: none; top: 0; z-index: 111122; left: 0; width: 100%; height: 100%; background: white; opacity: 1; transition: opacity 1s ease 0.5s;}
         .section-title{color: black; top: px_rem(233px); position: absolute; left: 50%; transform: translateX(-50%);}
 
-        @media (max-width: 991px) {
+        @media (max-width: 1199px) {
             display: none;
         }
 
@@ -134,7 +134,7 @@
 
             .tree{position: absolute;}
 
-            .object{position: relative; pointer-events: none; cursor: pointer; width: 715px; height: 410px;}
+            .object{position: relative; pointer-events: none; cursor: pointer; width: 715px;}
             .animated_object{position: absolute; --size: 210px; width: var(--size); height: var(--size); bottom: 0; right: -10px;}
             .animated_object.gif{display: none;}
 
@@ -296,6 +296,46 @@
             }
         }
         
+        @media (max-width: 1800px) {
+            .set{
+                
+                .object{
+                    width: 620px;
+                }
+                .animated_object{--size: 140px;}
+                .text{top: 156px;}
+
+                .object2 .text{left: 160px;}
+            }
+        }
+        @media (max-width: 1600px) {
+            .set{
+                .object{
+                    width: 520px;
+                }
+                .animated_object{--size: 110px;}
+                .tree{max-width: 50%; max-height: 110%; left: 50% !important; transform: translateX(-50%);}
+                .text{top: 120px; left: 208px;}
+
+                .object2 .text{left: 120px;}
+            }
+            .set4{bottom: 180px;}
+        }
+        @media (max-width: 1340px) {
+            .set{
+                
+                .object{
+                    width: 460px;
+                }
+                .animated_object{--size: 90px;}
+                .tree{max-width: 50%;}
+                .text{top: 100px; left: 170px;}
+                .text h5{margin: 0 0 4px;}
+                .text p{font-size: 12px;}
+
+                .object2 .text{left: 108px;}
+            }
+        }
     }
 
     .home-block1{

@@ -4,9 +4,9 @@
         <?php include 'components/head.php';  ?>
     </head>
     <body class="home-page">
-        <div class="page-loader">
+        <!-- <div class="page-loader">
             <img src="images/loader.gif" alt="" />
-        </div>
+        </div> -->
         <div class="enter-the-center">
             <video class="background-video" autoplay muted loop playsinline>
                 <source src="images/hero.mp4" type="video/mp4">
@@ -732,6 +732,11 @@
                                 nextEl: ".camera-mobile-view .arrows .next",
                                 prevEl: ".camera-mobile-view .arrows .prev",
                             },
+                            breakpoints: {
+                                900: {
+                                    slidesPerView: 2,
+                                },
+                            }
                         });
                     </script>
                 </div>

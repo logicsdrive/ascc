@@ -19,3 +19,7 @@ php -S 127.0.0.1:8000
 
 command to compile custom-bootstrap file
 sass custom-bootstrap.scss custom-bootstrap.css --style=compressed --no-source-map
+
+
+feedback doc
+https://docs.google.com/document/d/1SceH6LsI58h-RPAFr9sdZe6mgjvkUQsvLcnkaK4_kMk/edit?tab=t.0

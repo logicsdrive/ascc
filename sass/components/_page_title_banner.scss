@@ -16,13 +16,13 @@
 
     .content{padding: 0 0 84px; width: 100%; position: relative; z-index: 2;}
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         &.v2{min-height: 100vh;}
     }
 
-    @media (max-width: 767px) {
-        min-height: 300px;
+    @media (max-width: 991px) {
+        min-height: 350px;
         
-        .content{padding-bottom: 40px;}
+        .content{padding-bottom: 30px;}
     }
 }

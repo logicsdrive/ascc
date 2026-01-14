@@ -29,7 +29,7 @@
     .address .item a{display: block; color: white;}
     .address .item a:hover{color: var(--primary-color);}
 
-    .block2 img{display: block; width: 100%;}
+    .block2 img{display: block; width: 100%; height:100%; object-fit: cover; min-height:250px;}
 
     @media (max-width: 991px) {
         .columns{gap: 40px;}
@@ -37,6 +37,10 @@
     @media (max-width: 767px) {
         .columns{flex-wrap: wrap;}
         .block1{padding: 40px 0;}
+        .action-button{
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
     @media (max-width: 575px) {
         .form .grid{grid-template-columns: 1fr;}

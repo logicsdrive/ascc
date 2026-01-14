@@ -9,6 +9,9 @@ $grid-breakpoints: (
 .courtyard-page{
     .block1{
         margin-bottom: px_rem(90px);
+        @media screen and (max-width:991px){
+            margin-bottom: px_rem(40px);
+        }
 
         .swiper-slide{width: 370px;}
         .image{height: 320px; background: #EEE; border-radius: 20px; overflow: hidden;}

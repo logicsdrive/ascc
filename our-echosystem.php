@@ -80,7 +80,9 @@
                                         <p>Dive into the wonders of the underwater world in our Deep Sea Aquarium. Explore the beauty and diversity of marine life — from colorful coral reefs and graceful rays to the majestic sharks that rule the deep. Learn how these fascinating creatures survive, hunt, and play a vital role in keeping our oceans balanced</p>
                                         </div>
                                     </div>
-                                    <img class="image" data-animate="zoom-out" src="images/shark.png" alt="" />
+                                    <div class="imageWrapper" data-animate="zoom-out">
+                                        <img class="image mx-auto" src="images/home_banner/banner_block7_vector.gif" alt="" class="img-fluid">
+                                    </div>
                                 </section>
                             </div>
                         </div>

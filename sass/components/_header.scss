@@ -1,6 +1,6 @@
 .site-header{
     position: absolute; 
-    width:100%; top: 0; left: 0; right: 0; z-index: 10; background: url(../images/header_pattern.png) center center no-repeat;
+    width:100%; top: 0; left: 0; right: 0; z-index: 999; background: url(../images/header_pattern.png) center center no-repeat;
     padding: 32px 0;
     transition: .6s ease all;
     max-width: 100%;
@@ -17,7 +17,7 @@
     }
 
     .search-field{
-        margin-right: 1rem; pointer-events: none; width: 400px; opacity: 0; transition: opacity 0.5s ease;
+        margin-right: 1rem; pointer-events: none; width: 400px; opacity: 0; transition: .6s ease all; transform: translateX(-20px);
 
         .form-control{height: 56px; border: 0; padding-left: 74px; font-family: var(--font-light);}
         .icon{left: 38px;}
@@ -30,13 +30,15 @@
     }
 
     .search-opened & {
-        .search-field{opacity: 1; pointer-events: inherit;}
+        .search-field{opacity: 1; pointer-events: inherit; transform: translateX(0); transition: .7s ease all;}
     }
 
     .container{display: flex; position: relative; z-index: 2; align-items: center; justify-content: space-between;}
 
     .logo{display: block; flex-shrink: 0;}
-    .logo img{max-height: 101px; animation: fadeOutIn 4s infinite forwards 0.2s; transition:  .5s ease all;}
+    .logo img{max-height: 101px; @media screen and (min-width:992px){
+        animation: fadeOutIn 4s infinite forwards 0.2s;
+    } transition:  .5s ease all;}
     .lang-link{color: inherit; text-decoration: none;}
 
     .devider{width: 2px; height: 10px; display: block; background: white;}
@@ -75,7 +77,7 @@
     }
 
     @media (max-width: 1200px) {
-        .search-field{position: absolute; margin: 0; z-index: 11; width: 100%; right: 0;}
+        .search-field{position: absolute; margin: 0; z-index: 11; right: 0; top:50px;}
         .right .btn{min-height: 40px; --bs-btn-padding-x: 1.3rem; padding-top: 8px;}
     }
     @media (max-width: 767px) {
@@ -85,6 +87,11 @@
         .devider{display: none;}
         .list{gap: 20px;}
         .sign-list{gap: 20px;}
+    }
+    @media screen and (max-width:450px){
+        .search-field{
+            max-width: 350px;
+        }
     }
 }
 

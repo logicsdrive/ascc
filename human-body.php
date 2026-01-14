@@ -45,7 +45,7 @@
                                         </div>
                                     </div>
                                     <figure class="image">
-                                        <img src="images/humanbody.png" alt="" class="img-fluid" data-animate="fade-left">
+                                        <img src="images/home_banner/banner_block6_vector.gif" alt="" class="img-fluid" data-animate="fade-left">
                                     </figure>
                                 </section>
                             </div>

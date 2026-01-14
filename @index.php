@@ -4,9 +4,9 @@
         <?php include 'components/head.php';  ?>
     </head>
     <body class="home-page">
-        <div class="page-loader">
+        <!-- <div class="page-loader">
             <img src="images/loader.gif" alt="" />
-        </div>
+        </div> -->
         <div class="enter-the-center">
             <video class="background-video" autoplay muted loop playsinline>
                 <source src="images/hero.mp4" type="video/mp4">
@@ -249,10 +249,10 @@
                                 <img class="mx-auto" src="images/mouse.png" loading="lazy" alt="" />
                             </div>                 
                         </div>
-                        <div class="home-block1" data-speed="1.6">
+                        <div class="home-block1" data-speed="1">
                             <div class="container">
                                 <div class="grid">
-                                    <div class="item">
+                                    <div class="item position-relative">
                                         <figure class="image"><img src="images/our-mission-image.jpg" alt="" /></figure>
                                         <div class="inner">
                                             <div class="title-holder">
@@ -267,8 +267,9 @@
                                             </div>
                                             <p>You can discover and see everything new inside the museum and follow our news.</p>
                                         </div>
+                                        <a href="#" class="abs-link"></a>
                                     </div>
-                                    <div class="item">
+                                    <div class="item position-relative">
                                         <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
                                         <div class="inner">
                                             <div class="title-holder">
@@ -283,6 +284,7 @@
                                             </div>
                                             <p>Sheikh Abdullah Al Salem Cultural Centre is one of the world’s largest cultural complexes housing.</p>
                                         </div>
+                                        <a href="#" class="abs-link"></a>
                                     </div>
                                 </div>
                             </div>
@@ -642,7 +644,9 @@
                                                     <input type="text" class="form-control" required placeholder="Message *" />
                                                 </div>
                                             </div>
-                                            <button class="btn btn-primary action-button">Send</button>
+                                            <div class="button-row text-md-start text-center">
+                                                <button class="btn btn-primary action-button">Send</button>
+                                            </div>
                                         </form>
                                         <aside class="address">
                                             <div class="item">

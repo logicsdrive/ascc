@@ -207,6 +207,15 @@
                 .content{padding: 20px;}
                 .content .list li.title{min-height: auto;}
             }
+            @media screen and (max-width:767px){
+                .content {
+                    .list {
+                        li{
+                            min-height:85px;
+                        }
+                    }
+                }
+            }
         }
         .block2{
             margin-bottom: 130px;
@@ -257,7 +266,7 @@
             .list{display: grid; grid-gap: 2rem;}
             .list .item{display: grid; gap: 22px; align-items: center; grid-template-columns: auto 1fr;}
             .list .item .icon-rounded{background: rgba(245, 245, 245, 1); --size: 78px;}
-            .list .item h4{margin: 0; font-family: var(--font-medium); font-size: 20px; line-height: 1;}
+            .list .item h4{margin: 0; font-family: var(--font-medium); font-size: px_rem(20px); line-height: 1;}
             .list .item h4:before{content: attr(data-gate); line-height: px_rem(22px); font-family: var(--font-thin); display: block; padding-bottom: 0.25rem;}
         
             &.map .read-more{min-width: 200px;}

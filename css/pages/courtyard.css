@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'media-breakpoint-up'.
-        on line 49 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss, in `media-breakpoint-up'
-        from line 49 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss
+        on line 56 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss, in `media-breakpoint-up'
+        from line 56 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss
 
-44:                     left:0;
-45:                     top:0;
-46:                     box-shadow: inset 0 0 51px #fff, inset 0 0 25px #fff, inset 0 0 50px #fff;
-47:                 }
-48:             }
-49:             @include media-breakpoint-up(xl) {
-50:                 &:nth-child(even){
-51:                     .image{order: -1;}
-52:                 }
-53:             }
-54:         }
+51:                     left:0;
+52:                     top:0;
+53:                     box-shadow: inset 0 0 51px #fff, inset 0 0 25px #fff, inset 0 0 50px #fff;
+54:                 }
+55:             }
+56:             @include media-breakpoint-up(md) {
+57:                 &:nth-child(even){
+58:                     .image{order: -1;}
+59:                 }
+60:             }
+61:         }
 
 Backtrace:
-C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss:49:in `media-breakpoint-up'
-C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss:49
+C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss:56:in `media-breakpoint-up'
+C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss:56
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -87,4 +87,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media-breakpoint-up'.\A         on line 49 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss, in `media-breakpoint-up'\A         from line 49 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss\A \A 44:                     left:0;\A 45:                     top:0;\A 46:                     box-shadow: inset 0 0 51px #fff, inset 0 0 25px #fff, inset 0 0 50px #fff;\A 47:                 }\A 48:             }\A 49:             @include media-breakpoint-up(xl) {\A 50:                 &:nth-child(even){\A 51:                     .image{order: -1;}\A 52:                 }\A 53:             }\A 54:         }"; }
+  content: "Error: Undefined mixin 'media-breakpoint-up'.\A         on line 56 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss, in `media-breakpoint-up'\A         from line 56 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\courtyard.scss\A \A 51:                     left:0;\A 52:                     top:0;\A 53:                     box-shadow: inset 0 0 51px #fff, inset 0 0 25px #fff, inset 0 0 50px #fff;\A 54:                 }\A 55:             }\A 56:             @include media-breakpoint-up(md) {\A 57:                 &:nth-child(even){\A 58:                     .image{order: -1;}\A 59:                 }\A 60:             }\A 61:         }"; }

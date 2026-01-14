@@ -54,15 +54,12 @@
             }
         }
     }
-    .sign-list{gap: px_rem(30px);transition: .5s ease all;
-        &:hover{
-                color: #CF9C5A;
-
-            }
-    }
+    .sign-list{gap: px_rem(30px); transition: .5s ease all;}
     .sign-list span{padding-top: 4px;}
 
-    .signin-link{cursor: pointer; white-space: nowrap; font-family: var(--font-medium);}
+    .signin-link{cursor: pointer; white-space: nowrap; font-family: var(--font-medium); transition: .5s ease all;}
+    .signin-link:hover{color: var(--primary-color);}
+
     &.is-sticky{
         position: fixed;
         box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);

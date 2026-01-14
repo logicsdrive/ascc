@@ -41,7 +41,7 @@
         .info{padding: 30px;}   
     }
     @media (max-width: 991px) {
-        .image{width: 100%; max-width: 390px;}
+        .image{width: 100%; max-width: 390px; margin: auto;}
         .info .grid{grid-template-columns: 1fr;}
     }
     @media (max-width: 880px) {

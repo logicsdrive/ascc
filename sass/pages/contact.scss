@@ -38,4 +38,7 @@
         .columns{flex-wrap: wrap;}
         .block1{padding: 40px 0;}
     }
+    @media (max-width: 575px) {
+        .form .grid{grid-template-columns: 1fr;}
+    }
 }

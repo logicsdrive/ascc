@@ -221,9 +221,10 @@ const ascc_app = {
             this.animateNavigation();
         });
         document.addEventListener("click", function(e) {
-            if(!e.target.closest(".search-icon") && !e.target.closest(".search-field")) {
+            if(!e.target.closest(".search-icon") && !e.target.closest("#header_search")) {
                 document.body.classList.remove("search-opened");
-            } else {
+            }
+            if(e.target.closest(".search-icon")) {
                 document.getElementById("header_search").focus();
             }
         });

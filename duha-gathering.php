@@ -15,7 +15,7 @@
                 <main class="main-content">
                     <div class="duha-gathering">
                         <div class="container">
-                            <div class="title-holder d-flex align-items-center justify-content-between">
+                            <div class="title-holder">
                                 <h2 class="section-title" date="16 Sep 2025" data-animate="fade-up">Duha Gathering</h2>
                                 <div class="dropdown" data-animate="fade-left">
                                     <a href="javascript: void(0);" data-bs-offset="0,10" data-bs-toggle="dropdown" class="btn btn-primary">Add to Calendar</a>

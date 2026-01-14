@@ -238,7 +238,7 @@
         .image{flex-shrink: 0;}
 
         @media (max-width: 1199px) {
-            grid-template-columns: 1fr; gap: 20px; padding: 40px;
+            grid-template-columns: 1fr; gap: 20px; padding: 30px;
 
             .image{order: -1;}
         }
@@ -277,6 +277,10 @@
 
     .arabic-science-block{
         .main-title{margin-bottom: px_rem(58px); text-align: center; color: white;}
+
+        @media (max-width: 767px) {
+            .main-title{margin-bottom: px_rem(30px);}
+        }
     }
     .arabic-science-block1{
         .opacity-box{
@@ -378,15 +382,22 @@
         .text .section-title{margin-bottom: 2rem; max-width: 535px;}
 
         .image{
-            position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+            position: absolute; right: 250px; top: 50%; transform: translateY(-50%);
             mix-blend-mode: lighten; opacity: 0.8;
         }
 
-        @media (max-width: 1199px) {
-            .text{padding: 300px 40px 40px 40px;}
+        @media (max-width: 1366px) {
+            .image{right: 150px;}
+        }
+        @media (max-width: 991px) {
+            .text{padding: 300px 30px 30px 30px; max-width: 100%;}
+            .text .section-title{max-width: 100%;}
 
-            .image{right: auto; top: 40px; left: 50%; transform: translateX(-50%);}
-            .image img{height: 200px;}
+            .image{right: auto; top: 20px; left: 50%; transform: translateX(-50%); width: 100%;}
+            .image img{height: 250px; margin: auto; object-fit: contain;}
+        }
+        @media (max-width: 767px) {
+            .text{padding: 300px 20px 30px 20px;}
         }
 
     }

@@ -28,6 +28,13 @@ $grid-breakpoints: (
         margin-bottom: px_rem(64px);
 
         .grid{display: grid; margin-top: px_rem(55px); grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); grid-gap: 40px;}
+
+        @media (max-width: 991px) {
+            .grid{grid-template-columns: 1fr;}
+
+            .courtyard-card {align-items: center;}
+            .courtyard-card .image{height: 196px;}
+        }
     }
 
     .block3{
@@ -46,7 +53,7 @@ $grid-breakpoints: (
                     box-shadow: inset 0 0 51px #fff, inset 0 0 25px #fff, inset 0 0 50px #fff;
                 }
             }
-            @include media-breakpoint-up(xl) {
+            @include media-breakpoint-up(md) {
                 &:nth-child(even){
                     .image{order: -1;}
                 }

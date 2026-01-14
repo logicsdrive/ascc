@@ -316,6 +316,8 @@
     .arabic-science-block2{
         position: relative; overflow: hidden;
 
+        .swiper{position: relative;}
+
         .image{
             height: 290px; border-radius: 18px; overflow: hidden;
             transition: all 0.5s ease;
@@ -323,8 +325,8 @@
         .image img{width: 100%; height: 100%; object-fit: cover;}
         
         .text{
-            width: calc(100% - 575px); color: white;
-            position: absolute; top: 130px; left: 587px;
+            width: calc(100% - 575px); color: white; padding-inline-end: 70px;
+            position: absolute; top: 24px; left: 573px;
         }
 
         @media (min-width: 1400px) {
@@ -339,7 +341,7 @@
         .arrows .arrow:hover{color: var(--primary-color);}
 
         @media (max-width: 1399px) {
-            .text{position: relative; width: 100%; left: 0; top: 0; margin-bottom: 40px;}
+            .text{position: relative; width: 100%; padding-inline-end: 0; left: 0; top: 0; margin-bottom: 40px;}
         }
     }
     .arabic-science-block3{

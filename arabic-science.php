@@ -44,11 +44,11 @@
                             <div class="arabic-science-block arabic-science-block2">
                                 <div class="container">
                                     <h2 class="section-title main-title" data-animate="fade-up">The Golden Age of Arabic Islamic Science</h2>
-                                    <div class="text last-margin-0" data-animate="fade-up">
-                                        <p>Journey through the stars as you learn how Arabic astronomers mapped the heavens and guided travelers across land and sea. See astrolabes, celestial charts, and models that reveal how their discoveries shaped our understanding of the universe.</p>
-                                        <p>Step into a gallery that celebrates the scientific achievements of the Islamic world. See authentic instruments, manuscripts, and models that reveal how curiosity and knowledge flourished across centuries — inspiring generations of scientists around the globe.</p>
-                                    </div>
                                     <div class="swiper animate-slider">
+                                        <div class="text last-margin-0" data-animate="fade-up">
+                                            <p>Journey through the stars as you learn how Arabic astronomers mapped the heavens and guided travelers across land and sea. See astrolabes, celestial charts, and models that reveal how their discoveries shaped our understanding of the universe.</p>
+                                            <p>Step into a gallery that celebrates the scientific achievements of the Islamic world. See authentic instruments, manuscripts, and models that reveal how curiosity and knowledge flourished across centuries — inspiring generations of scientists around the globe.</p>
+                                        </div>
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <figure class="image"><img src="images/echo-image1.webp" alt=""></figure>

@@ -469,11 +469,18 @@ strong{font-family: var(--font-medium); font-weight: normal;}
     }
 
     .iti__arrow{width: 10px; height: 6px; background: url(../images/dd_arrow.png) center center no-repeat; border: 0;}
-    .iti__search-input{padding: 10px; border-radius: 0; border-bottom: solid 1px #EEE;}
+    .iti__search-input{padding: 10px; border-radius: 0; border-bottom: solid 1px #EEE; font-size:1rem; outline: none !important;}
     .iti__selected-country-primary{gap: 6px;}
     .iti__arrow{margin: 0;}
 
     .iti__country:hover{background: #EEE;}
+    .iti__country-list .iti__flag, .iti__country-name{
+        font-size: 1rem;
+    }
+    .iti__dial-code{
+        font-weight: 700;
+        font-size: .9rem;
+    }
 }
 .iti--fullscreen-popup.iti--container{
     z-index: 11111;

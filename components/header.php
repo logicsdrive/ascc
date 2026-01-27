@@ -1,3 +1,6 @@
+<div id="custom-cursor">
+    <span id="cursor-text"></span>
+</div>
 <header class="site-header">
     <div class="container">
         <a href="@index.php" class="logo"><img src="images/site_logo.png" alt="" /></a>

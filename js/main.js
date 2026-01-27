@@ -214,6 +214,24 @@ const ascc_app = {
                 utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/utils.js"
             });
         });
+
+        const cursor = document.querySelector('#custom-cursor');
+        const cursorText = document.querySelector('#cursor-text');
+
+        window.addEventListener('mousemove', (e) => {
+            // Use transform for better performance than top/left
+            cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+          
+            // Check if we are hovering over a custom-cursor element
+            const target = e.target.closest('[data-custom-cursor]');
+          
+            if (target) {
+              cursor.classList.add('active');
+              cursorText.innerText = target.getAttribute('data-custom-cursor');
+            } else {
+              cursor.classList.remove('active');
+            }
+        });
     },
     eventBindings: function() {
         document.getElementById("nav-icon")?.addEventListener("click", () => {

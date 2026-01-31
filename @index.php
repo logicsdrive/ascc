@@ -147,7 +147,7 @@
                             <h1 class="section-title">explore Our museums</h1>
                             <div class="group">
                                 <div class="set set4">
-                                    <div class="object object1">
+                                    <a href="#" data-custom-cursor="Explore More" class="object object1">
                                         <img src="images/home_banner/banner_block7.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block7_tree.png" alt="" />
                                         <img class="animated_object static" src="images/home_banner/banner_block7_vector.png" alt="" />
@@ -156,8 +156,8 @@
                                             <h5>Ecosystems</h5>
                                             <p>Travel back in time to gain a unique insight into the natural world – both past and present, understand the importance of ecosystems.</p>
                                         </div>
-                                    </div>
-                                    <div class="object object2">
+                                    </a>
+                                    <a data-custom-cursor="Explore More" class="object object2">
                                         <img src="images/home_banner/banner_block8.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block8_tree.png" alt="" />   
                                         <img class="animated_object static" src="images/home_banner/banner_block8_vector.png" alt="" />
@@ -166,10 +166,10 @@
                                             <h5>Natural History – Our Earth</h5>
                                             <p>Enter the world of the dinosaurs! See the amazing reptiles and mammals that lived on Earth up to 65 million years ago.</p>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="set set3">
-                                    <div class="object object1">
+                                    <a href="#" data-custom-cursor="Explore More" class="object object1">
                                         <img src="images/home_banner/banner_block5.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block5_tree.png" alt="" />
                                         <img class="animated_object static" src="images/home_banner/banner_block5_vector.png" alt="" />
@@ -178,8 +178,8 @@
                                             <h5>Transportation & Robots</h5>
                                             <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers.</p>
                                         </div>
-                                    </div>
-                                    <div class="object object2">
+                                    </a>
+                                    <a href="#" data-custom-cursor="Explore More" class="object object2">
                                         <img src="images/home_banner/banner_block6.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block6_tree.png" alt="" />
                                         <img class="animated_object static" src="images/home_banner/banner_block6_vector.png" alt="" />
@@ -188,10 +188,10 @@
                                             <h5>Science & Technology – Human Body</h5>
                                             <p>There is nothing more exciting and intricate than the workings of the human body and mind. Its secrets are revealed as we journey through.</p>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="set set2">
-                                    <div class="object object1">
+                                    <a href="#" data-custom-cursor="Explore More" class="object object1">
                                         <img src="images/home_banner/banner_block3.png" alt="" />
                                         <img class="animated_object static" src="images/home_banner/banner_block3_vector.png" alt="" />
                                         <img class="animated_object gif" src="images/home_banner/banner_block3_vector.gif" alt="" />
@@ -199,8 +199,8 @@
                                             <h5>guest relation</h5>
                                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                                         </div>
-                                    </div>
-                                    <div class="object object2">
+                                    </a>
+                                    <a href="#" data-custom-cursor="Explore More" class="object object2">
                                         <img src="images/home_banner/banner_block4.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block4_tree.png" alt="" />
                                         <img class="animated_object static" src="images/home_banner/banner_block4_vector.png" alt="" />
@@ -209,10 +209,10 @@
                                             <h5>Theater</h5>
                                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="set set1">
-                                    <div class="object object1">
+                                    <a href="#" data-custom-cursor="Explore More" class="object object1">
                                         <img class="tree" src="images/home_banner/banner_block1_tree.png" alt="" />
                                         <img src="images/home_banner/banner_block1.png" alt="" />
                                         <img class="animated_object" src="images/home_banner/banner_block1_vector.gif" alt="" />
@@ -220,8 +220,8 @@
                                             <h5>Arabic Islamic Science</h5>
                                             <p>With its focus on the Golden Age of Islam and the innumerable scientific, cultural and artistic contributions of Muslims and Arabs to modern day science</p>
                                         </div>
-                                    </div>
-                                    <div class="object object2">
+                                    </a>
+                                    <a href="#" data-custom-cursor="Explore More" class="object object2">
                                         <img class="tree" src="images/home_banner/banner_block2_tree.png" alt="" />
                                         <img src="images/home_banner/banner_block2.png" alt="" />
                                         <img class="animated_object" src="images/home_banner/banner_block2_vector.gif" alt="" />
@@ -229,7 +229,7 @@
                                             <h5>Space</h5>
                                             <p>he study of space and the universe has always evoked mystery and inspiration. The Centre’s Space exhibit gives audiences an unprecedented opportunity to explore the wonders of this unknown universe.</p>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="arrows">

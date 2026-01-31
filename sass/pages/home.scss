@@ -137,7 +137,7 @@
 
             .tree{position: absolute;}
 
-            .object{position: relative; pointer-events: none; cursor: pointer; width: 715px;}
+            .object{position: relative; color: var(--content-color); cursor: pointer; width: 715px;}
             .animated_object{position: absolute; --size: 210px; width: var(--size); height: var(--size); bottom: 0; right: -10px;}
             .animated_object.gif{display: none;}
 

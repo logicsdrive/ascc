@@ -13,7 +13,6 @@
                     include 'components/page-title-banner.php';
                 ?>
                 <main class="main-content">
-                    
                     <div class="search-results">
                            <div class="top-bg"></div>
                         <div class="container">

@@ -267,7 +267,7 @@
                                             </div>
                                             <p>You can discover and see everything new inside the museum and follow our news.</p>
                                         </div>
-                                        <a href="#" class="abs-link"></a>
+                                        <a href="whatson.php" data-custom-cursor="Read More" class="abs-link"></a>
                                     </div>
                                     <div class="item position-relative">
                                         <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
@@ -284,7 +284,7 @@
                                             </div>
                                             <p>Sheikh Abdullah Al Salem Cultural Centre is one of the world’s largest cultural complexes housing.</p>
                                         </div>
-                                        <a href="#" class="abs-link"></a>
+                                        <a href="about.php" data-custom-cursor="Read More" class="abs-link"></a>
                                     </div>
                                 </div>
                             </div>

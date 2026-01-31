@@ -67,6 +67,7 @@
                                                     <h4 class="section-title">Our Mission</h4>
                                                     <p>To instill passion for arts, sciences, culture, and entertainment through the establishment of world class museums, a fine arts centre, and a theatre to promote Kuwait as a cultural destination</p>
                                                 </div>
+                                                <a href="#" data-custom-cursor="Read More" class="abs-link"></a>
                                             </div>
                                             <div class="item animateCard">
                                                 <figure class="image"><img src="images/our-vision-image.jpg" alt="" /></figure>
@@ -74,6 +75,7 @@
                                                     <h4 class="section-title">Our Vision</h4>
                                                     <p>The Centre aims at embracing and showcasing a diversity of the world’s finest cultural achievements and manifestations through maintaining a state of museums complex.</p>
                                                 </div>
+                                                <a href="#" data-custom-cursor="Read More" class="abs-link"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -88,6 +90,7 @@
                                                     <h4 class="section-title">Sheikh Abdullah Al-Salem Cultural Centre has won several awards</h4>
                                                     <p>The LEAF Award for the best building in 2017, which is considered one of the most prestigious architectural awards.</p>
                                                 </div>
+                                                <a href="#" data-custom-cursor="Read More" class="abs-link"></a>
                                             </div>
                                             <div class="devider"></div>
                                             <div class="item animateCard">
@@ -96,6 +99,7 @@
                                                     <h4 class="section-title">The International Buildings Foundation award</h4>
                                                     <p>the best engineering project in the category of public facilities in the Middle East and North Africa for the year 2018.</p>
                                                 </div>
+                                                <a href="#" data-custom-cursor="Read More" class="abs-link"></a>
                                             </div>
                                             <div class="devider"></div>
                                             <div class="item animateCard">
@@ -104,6 +108,7 @@
                                                     <h4 class="section-title">The International “Oscar of Museums” award</h4>
                                                     <p>the year 2021 under the category of Best Cultural Destination in the Middle East and North Africa.</p>
                                                 </div>
+                                                <a href="#" data-custom-cursor="Read More" class="abs-link"></a>
                                             </div>
                                         </div>
                                     </div>

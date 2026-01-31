@@ -297,8 +297,8 @@
                                 <div class="title-area">
                                     <h2 class="section-title" data-animate="fade-up">Plan your visit</h2>
                                     <div class="h-list arrows" data-animate="fade-left">
-                                        <svg class="prev arrow" data-custom-cursor="Prev" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
-                                        <svg class="next arrow flip" data-custom-cursor="Next" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                        <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                        <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
                                     </div>
                                 </div>
                                 <div class="swiper">

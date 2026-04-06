@@ -801,6 +801,9 @@ a:hover {
   border-radius: 22px;
   position: relative;
   color: var(--content-color); }
+  @media screen and (max-width: 575px) {
+    .category-item {
+      padding: 1.25rem; } }
   .category-item:hover {
     color: var(--content-color); }
     .category-item:hover .booking-information .item {
@@ -1280,6 +1283,9 @@ strong {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px; }
+@media screen and (max-width: 575px) {
+  .search-results .grid {
+    grid-template-columns: 1fr; } }
 
 .datepicker-cell.selected, .datepicker-cell.selected:hover {
   background: var(--primary-color); }

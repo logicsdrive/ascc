@@ -3,6 +3,9 @@
     padding: 20px 30px 0;
     border-radius: 22px; position: relative;
     color: var(--content-color);
+    @media screen and (max-width:575px){
+        padding:1.25rem;
+    }
     
     &:hover {
         color: var(--content-color);

@@ -42,7 +42,11 @@
     }
     @media (max-width: 991px) {
         .image{width: 100%; max-width: 390px; margin: auto;}
+         .info{padding: 30px 20px;} 
         .info .grid{grid-template-columns: 1fr;}
+        .info .grid .item{
+            font-size:1.125rem;
+        }
     }
     @media (max-width: 880px) {
         .content{padding-right: 0;}

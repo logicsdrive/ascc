@@ -801,6 +801,9 @@ a:hover {
   border-radius: 22px;
   position: relative;
   color: var(--content-color); }
+  @media screen and (max-width: 575px) {
+    .category-item {
+      padding: 1.25rem; } }
   .category-item:hover {
     color: var(--content-color); }
     .category-item:hover .booking-information .item {
@@ -1280,6 +1283,9 @@ strong {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px; }
+@media screen and (max-width: 575px) {
+  .search-results .grid {
+    grid-template-columns: 1fr; } }
 
 .datepicker-cell.selected, .datepicker-cell.selected:hover {
   background: var(--primary-color); }
@@ -3556,8 +3562,12 @@ strong {
     width: 100%;
     max-width: 390px;
     margin: auto; }
+  .visitor-map .info {
+    padding: 30px 20px; }
   .visitor-map .info .grid {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .visitor-map .info .grid .item {
+    font-size: 1.125rem; } }
 @media (max-width: 880px) {
   .visitor-map .content {
     padding-right: 0; }
@@ -3919,7 +3929,16 @@ strong {
   .booking-details .your-information .grid {
     grid-template-columns: 1fr; }
   .booking-details .select-ticket-type .grid {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .booking-details .rules-dropdown-menu {
+    max-width: 350px; }
+    .booking-details .rules-dropdown-menu .data {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: start; }
+      .booking-details .rules-dropdown-menu .data img {
+        max-width: 50px; } }
 
 .nature-page .main-content {
   padding: 0;

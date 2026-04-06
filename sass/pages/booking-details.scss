@@ -145,5 +145,17 @@
     @media (max-width: 575px) {
         .your-information .grid{grid-template-columns: 1fr;}
         .select-ticket-type .grid{grid-template-columns: 1fr;}
+         .rules-dropdown-menu {
+            max-width:350px;
+            .data{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                        align-items: start;
+                img{
+                    max-width:50px;
+                }
+            }
+         }
     }
 }

@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'media-breakpoint-down'.
-        on line 31 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\finearts.scss, in `media-breakpoint-down'
-        from line 31 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\finearts.scss
+        on line 43 of D:\Projects\xampp\htdocs\kuwaitnet\ascc-html\sass\pages\finearts.scss, in `media-breakpoint-down'
+        from line 43 of D:\Projects\xampp\htdocs\kuwaitnet\ascc-html\sass\pages\finearts.scss
 
-26:                 .inner .section-title{color: white;}
-27:                 .inner p{color: white; padding-top: 20px; max-height: 500px;}
-28:                 .image{width: 100%;}
-29:             }
-30:         }
-31:         @include media-breakpoint-down(xxl) {
-32:             .devider{margin: 0 20px;}
-33:         }
-34:         @include media-breakpoint-down(xl) {
-35:             margin-bottom: 100px;
-36:             
+38:                 .inner .section-title{color: white;}
+39:                 .inner p{color: white; padding-top: 20px; max-height: 500px;}
+40:                 .image{width: 100%;}
+41:             }
+42:         }
+43:         @include media-breakpoint-down(xxl) {
+44:             .devider{margin: 0 20px;}
+45:         }
+46:         @include media-breakpoint-down(xl) {
+47:             margin-bottom: 100px;
+48:             
 
 Backtrace:
-C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\finearts.scss:31:in `media-breakpoint-down'
-C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\finearts.scss:31
+D:\Projects\xampp\htdocs\kuwaitnet\ascc-html\sass\pages\finearts.scss:43:in `media-breakpoint-down'
+D:\Projects\xampp\htdocs\kuwaitnet\ascc-html\sass\pages\finearts.scss:43
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -63,9 +63,10 @@ C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/bas
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
@@ -76,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'media-breakpoint-down'.\A         on line 31 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\finearts.scss, in `media-breakpoint-down'\A         from line 31 of C:\Users\company\Desktop\personal\atif.arif\ascc\sass\pages\finearts.scss\A \A 26:                 .inner .section-title{color: white;}\A 27:                 .inner p{color: white; padding-top: 20px; max-height: 500px;}\A 28:                 .image{width: 100%;}\A 29:             }\A 30:         }\A 31:         @include media-breakpoint-down(xxl) {\A 32:             .devider{margin: 0 20px;}\A 33:         }\A 34:         @include media-breakpoint-down(xl) {\A 35:             margin-bottom: 100px;\A 36:             "; }
+  content: "Error: Undefined mixin 'media-breakpoint-down'.\A         on line 43 of D:\Projects\xampp\htdocs\kuwaitnet\ascc-html\sass\pages\finearts.scss, in `media-breakpoint-down'\A         from line 43 of D:\Projects\xampp\htdocs\kuwaitnet\ascc-html\sass\pages\finearts.scss\A \A 38:                 .inner .section-title{color: white;}\A 39:                 .inner p{color: white; padding-top: 20px; max-height: 500px;}\A 40:                 .image{width: 100%;}\A 41:             }\A 42:         }\A 43:         @include media-breakpoint-down(xxl) {\A 44:             .devider{margin: 0 20px;}\A 45:         }\A 46:         @include media-breakpoint-down(xl) {\A 47:             margin-bottom: 100px;\A 48:             "; }

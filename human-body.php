@@ -1,3 +1,7 @@
+<?php
+$pageTitle = "ASCC - Natural History – Our Earth";
+$pageDescription = "ASCC";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

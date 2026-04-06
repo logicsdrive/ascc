@@ -1,3 +1,7 @@
+<?php
+$pageTitle = "ASCC - PAGE NOT FOUND";
+$pageDescription = "ASCC";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

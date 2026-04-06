@@ -64,21 +64,21 @@ window.addEventListener('load', (event) => {
               markers: false
             }
         });
-        plan_visit_timeline.from(".home-page .plan-visit .item1", {
-            y: 50,
-            opacity: 0,
-            duration: 1.5
-        }, 0);
-        plan_visit_timeline.from(".home-page .plan-visit .item2", {
-            y: 100,
-            opacity: 0,
-            duration: 2
-        }, 0);
-        plan_visit_timeline.from(".home-page .plan-visit .item3", {
-            y: 200,
-            opacity: 0,
-            duration: 2.5
-        }, 0);
+        // plan_visit_timeline.from(".home-page .plan-visit .item1", { 
+        //     y: 50,
+        //     opacity: 0,
+        //     duration: 1.5
+        // }, 0);
+        // plan_visit_timeline.from(".home-page .plan-visit .item2", { 
+        //     y: 100,
+        //     opacity: 0,
+        //     duration: 2
+        // }, 0);
+        // plan_visit_timeline.from(".home-page .plan-visit .item3", {
+        //     y: 200,
+        //     opacity: 0,
+        //     duration: 2.5
+        // }, 0);
     }    
 
     // Function to update classes (Shared by Arrows and Scroll)
@@ -174,10 +174,12 @@ setTimeout(function() {
 }, 3000);
 
 const ascc_app = {
+     isAnimating: false,
     init: function(){
         this.eventBindings();
         if (document.querySelector('.js-calendar')) {
             flatpickr(".js-calendar", {
+                disableMobile: true,
                 showMonths: 1,
                 dateFormat: "Y-m-d",
                 locale: {
@@ -377,20 +379,35 @@ const ascc_app = {
             passwordField.placeholder = "************";
         }
     },
-    homeSectionVisible: function() {
+    homeSectionVisible: function () {
+        if (this.isAnimating) return; // prevent double trigger
+        this.isAnimating = true;
+
         gsap.to(window, {
-            scrollTo: 0, 
+            scrollTo: 0,
             duration: 2,
+            ease: "power2.out",
             onComplete: () => {
                 ScrollTrigger.refresh();
+                this.isAnimating = false;
             }
         });
+
         document.documentElement.classList.add('home-loaded');
-        if(cameraView) {
-            cameraView.classList.remove('move_step1', 'move_step2', 'move_step3', 'move_step4', 'move_step5', 'move_step6');
+
+        if (typeof cameraView !== "undefined" && cameraView) {
+            cameraView.classList.remove(
+                'move_step1',
+                'move_step2',
+                'move_step3',
+                'move_step4',
+                'move_step5',
+                'move_step6'
+            );
         }
     }
 };
+
 
 const header = document.querySelector(".site-header");
 const toggleClass = "is-sticky";

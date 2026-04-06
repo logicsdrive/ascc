@@ -5,7 +5,11 @@
 .home-loaded .home-page .contentWrapper{padding-top: 0;}
 
 .home-page{
-    .contentWrapper{overflow: hidden; padding-top: 100vh; transition: all 1.5s ease;}
+    .contentWrapper{overflow: hidden; padding-top: 100vh; transition: all 1.5s ease;
+        @media screen and (max-width:767px){
+            margin-top:-16px;
+        }
+    }
     .main-content{padding: 0;}
     .enter-the-center{
         z-index: 122111; position: fixed; top: 0; left: 0; width: 100%; min-height: 100vh;

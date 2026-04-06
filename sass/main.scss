@@ -32,7 +32,11 @@
 @media (max-width: 1199px) {
     .tickets-holder .ticket-card{width: 100%;}
 }
-
+@media screen and (max-width:1024px){
+    #custom-cursor{
+        display:none !important;
+    }
+}
 @media (max-width: 991px) {
     html{font-size: px_rem(14px);}
 }

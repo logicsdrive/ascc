@@ -1,6 +1,10 @@
 .finearts{
 
-    .content_row_holder{margin-bottom: px_rem(155px);}
+    .content_row_holder{margin-bottom: px_rem(155px);
+        @media screen and (max-width:991px){
+            margin-bottom: px_rem(65px)
+        }
+    }
     .content-row .content p{margin: 0;}
     .content-row .content .btn{display: none;}
 
@@ -12,6 +16,7 @@
         
         .item{
             position: relative; border-radius: 10px; cursor: pointer; overflow: hidden; height: 450px; display: flex; align-items: center;
+
             
             .image{position: absolute; top: 0; z-index: 0; left: 0; width: 0; transition: all 0.7s ease; height: 100%;}
             .image:after{content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(black, 0.7);}
@@ -22,6 +27,13 @@
             .inner > *:last-child{margin-bottom: 0;}
             
             &:hover{
+                .inner{transform: translateY(0);}
+                .inner .section-title{color: white;}
+                .inner p{color: white; padding-top: 20px; max-height: 500px;}
+                .image{width: 100%;}
+            }
+            @media screen and (max-width:1024px){
+                height: 350px;
                 .inner{transform: translateY(0);}
                 .inner .section-title{color: white;}
                 .inner p{color: white; padding-top: 20px; max-height: 500px;}

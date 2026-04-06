@@ -1,3 +1,7 @@
+<?php
+$pageTitle = "ASCC - Profile";
+$pageDescription = "ASCC";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

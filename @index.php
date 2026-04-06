@@ -15,7 +15,7 @@
                 <span class="ar">مركز الشيخ عبد الله السالم الثقافي</span>
                 <span class="en">Sheikh Abdullah AlSalem Cultural Centre</span>
             </h1>
-            <a href="javascript: void(0);" data-custom-cursor="Enter" class="btn btn-primary center-button" onclick="ascc_app.homeSectionVisible()">Enter The Centre</a>
+            <button type="button" data-custom-cursor="Enter" class="btn btn-primary center-button" onclick="ascc_app.homeSectionVisible()">Enter The Centre</button>
         </div>
         <?php include 'components/header.php';  ?>
         <main>
@@ -138,7 +138,7 @@
                                 <span>Click the arrow to view the remaining museums</span>
                                 <div class="h-list arrows">
                                     <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
-                                    <svg class="next arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                    <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
                                 </div>
                             </div>
                         </div>

@@ -1,3 +1,7 @@
+<?php
+$pageTitle = "ASCC - Terms and Conditions";
+$pageDescription = "ASCC";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

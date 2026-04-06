@@ -1,3 +1,7 @@
+<?php
+$pageTitle = "ASCC - Fine Arts Centre";
+$pageDescription = "ASCC";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

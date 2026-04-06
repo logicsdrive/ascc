@@ -1,3 +1,7 @@
+<?php
+$pageTitle = "ASCC - Booking Confirmation";
+$pageDescription = "ASCC";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

@@ -1,3 +1,7 @@
+<?php
+$pageTitle = "ASCC - Arabic Islamic Science";
+$pageDescription = "ASCC";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

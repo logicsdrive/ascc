@@ -29,7 +29,11 @@
         .content{max-width: 100%;}
     }
     @media (max-width: 767px) {
-        .content{padding: 25px;}
+        .content{padding: 25px;
+            .btn{
+                min-width:170px;
+            }
+        }
     }
 }
 

@@ -69,7 +69,7 @@ document.querySelectorAll(".animate-slider").forEach((sliderSection) => {
   gsap.from(sliderSection.querySelectorAll(".swiper-slide , .animate-slider>.item"), {
     x: "100vw",
     opacity: 0,
-    duration: 4.5,
+    duration: 3,
     ease: "power2.out",
     stagger: 0.15,
     scrollTrigger: {

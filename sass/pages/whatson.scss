@@ -18,6 +18,14 @@
 
    @media (max-width: 991px) {
         .filters-area{flex-direction: column; gap: 20px;}
-        .filters{width: 100%; gap: 20px;}
+        .filters{width: 100%; gap: 20px;
+            .item{
+                padding: 6px 20px;
+            }
+        
+        }
+        .grid{
+            grid-template-columns:1fr;
+        }
    }
 }

@@ -166,8 +166,8 @@
                 .image text{max-width: 100%; height: auto;}
             }
             @media (max-width: 991px) {
-                .image{transform: scale(0.5);}
-                .image img{max-width: inherit;}
+                // .image{transform: scale(0.5);}
+                // .image img{max-width: inherit;}
             }
         }
 
@@ -277,4 +277,29 @@
     -webkit-tap-highlight-color: transparent;
     touch-action: none;
     user-select: none;
+}
+
+@media (max-width: 767px) {
+    .rentals .places-area .area-zoomed-view .image img{height: auto !important;}
+    .rentals .places-area .area-zoomed-view .image .text{
+        font-size: 12px;
+        gap: 2px;
+        position: relative !important;
+        top: auto;
+        background: black;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+        top: auto !important;
+        right: auto !important;
+        left: auto !important;
+        bottom: auto !important;
+        margin-top: 20px;
+    }
+    .rentals .places-area .area-zoomed-view{padding-top: 40px;}
+    .rentals .places-area[data-view="trans"] .view.trans .image .point{right: 100px !important; left: auto !important;}
+    .rentals .places-area[data-view="theatre"] .view.theatre .image .point{top: 50px !important; right: 0 !important}
+    .rentals .places-area[data-view="earth"] .view.earth .image .point{left: 100px !important; bottom: 150px !important;}
 }

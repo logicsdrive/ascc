@@ -17,7 +17,7 @@ $pageDescription = "ASCC";
                     include 'components/page-title-banner.php';
                 ?>
                 <main class="main-content">
-                    <video class="background-video" autoplay muted loop playsinline data-speed="0.5" data-lag="0.2">
+                    <video class="background-video" autoplay muted loop playsinline>
                         <source src="images/rentals.mp4" type="video/mp4">
                     </video>
                     <div class="rentals">
@@ -28,7 +28,7 @@ $pageDescription = "ASCC";
                                     <path d="M1.58363 22C1.27047 21.9999 0.964345 21.907 0.703958 21.733C0.44357 21.5591 0.2406 21.3118 0.120697 21.0225C0.000794558 20.7332 -0.0306603 20.4149 0.0303085 20.1077C0.0912774 19.8005 0.241934 19.5183 0.463238 19.2967L19.3156 0.444632C19.6144 0.156104 20.0145 -0.00354901 20.4298 5.98771e-05C20.8451 0.00366877 21.2424 0.170251 21.5361 0.463927C21.8297 0.757603 21.9963 1.15488 21.9999 1.57018C22.0035 1.98549 21.8439 2.38559 21.5554 2.68433L2.70297 21.5364C2.55618 21.6837 2.38171 21.8005 2.18961 21.88C1.9975 21.9596 1.79156 22.0004 1.58363 22Z" fill="black"></path>
                                 </svg>
                             </span>
-                            <video class="background-video" autoplay muted loop playsinline data-speed="0.5" data-lag="0.2">
+                            <video class="background-video" autoplay muted loop playsinline>
                                 <source src="images/rentals.mp4" type="video/mp4">
                             </video>
                             <div class="view arabic-science">

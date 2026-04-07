@@ -146,7 +146,7 @@
                             <div class="overlay"></div>
                             <h1 class="section-title">explore Our museums</h1>
                             <div class="group">
-                                <div class="set set4">
+                                <div class="set set4" id="step4">
                                     <a href="#" data-custom-cursor="Explore More" class="object object1">
                                         <img src="images/home_banner/banner_block7.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block7_tree.png" alt="" />
@@ -168,7 +168,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="set set3">
+                                <div class="set set3" id="step3">
                                     <a href="#" data-custom-cursor="Explore More" class="object object1">
                                         <img src="images/home_banner/banner_block5.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block5_tree.png" alt="" />
@@ -190,7 +190,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="set set2">
+                                <div class="set set2" id="step2">
                                     <a href="#" data-custom-cursor="Explore More" class="object object1">
                                         <img src="images/home_banner/banner_block3.png" alt="" />
                                         <img class="animated_object static" src="images/home_banner/banner_block3_vector.png" alt="" />
@@ -211,7 +211,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="set set1">
+                                <div class="set set1" id="step1">
                                     <a href="#" data-custom-cursor="Explore More" class="object object1">
                                         <img class="tree" src="images/home_banner/banner_block1_tree.png" alt="" />
                                         <img src="images/home_banner/banner_block1.png" alt="" />

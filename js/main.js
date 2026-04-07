@@ -93,21 +93,21 @@ window.addEventListener('load', (event) => {
 
     // 1. Only start if the click begins ON the cameraView element
     if(cameraView && window.innerWidth > 991) {
-        // Create the ScrollTrigger that "Locks" the page
-        ScrollTrigger.create({
-            trigger: cameraView, // The section shown in your image
-            start: "top top",
-            end: `+=${maxSteps * 500}`,    // Distance user must scroll to finish all steps
-            pin: true,                     // Pins the section in place
-            scrub: true,
-            onUpdate: (self) => {
-                // Calculate which step we should be on based on scroll progress (0 to 1)
-                const progressStep = Math.round(self.progress * maxSteps);
-                if (progressStep !== currentStep) {
-                    goToStep(progressStep);
-                }
-            }
-        });
+    //     // Create the ScrollTrigger that "Locks" the page
+    //     ScrollTrigger.create({
+    //         trigger: cameraView, // The section shown in your image
+    //         start: "top top",
+    //         end: `+=${maxSteps * 500}`,    // Distance user must scroll to finish all steps
+    //         pin: true,                     // Pins the section in place
+    //         scrub: true,
+    //         onUpdate: (self) => {
+    //             // Calculate which step we should be on based on scroll progress (0 to 1)
+    //             const progressStep = Math.round(self.progress * maxSteps);
+    //             if (progressStep !== currentStep) {
+    //                 goToStep(progressStep);
+    //             }
+    //         }
+    //     });
 
         // Update your Arrow Event Listeners to use the same goToStep function
         document.getElementById('camera_view_next').addEventListener('click', () => {
@@ -118,20 +118,26 @@ window.addEventListener('load', (event) => {
             if (currentStep > 0) goToStep(currentStep - 1);
         });
 
-        cameraView.addEventListener('mousedown', (e) => {
-            if (e.button === 0) { // Check for left click
-                isHolding = true;
-                // Optional: prevent text selection while dragging
-                e.preventDefault(); 
-            }
+        document.getElementById('step2').addEventListener('click', () => {
+            // alert("sf");
+            goToStep(2);
         });
-        // 2. Stop tracking when mouse is released
-        window.addEventListener('mouseup', () => {
-            isHolding = false;
-            // Optional: Reset position when let go
-            cameraView.classList.remove('move-left', 'move-right');
-            cameraView.style.setProperty('--bg-shift', '0px');
-        });
+        
+
+    //     cameraView.addEventListener('mousedown', (e) => {
+    //         if (e.button === 0) { // Check for left click
+    //             isHolding = true;
+    //             // Optional: prevent text selection while dragging
+    //             e.preventDefault(); 
+    //         }
+    //     });
+    //     // 2. Stop tracking when mouse is released
+    //     window.addEventListener('mouseup', () => {
+    //         isHolding = false;
+    //         // Optional: Reset position when let go
+    //         cameraView.classList.remove('move-left', 'move-right');
+    //         cameraView.style.setProperty('--bg-shift', '0px');
+    //     });
     }
 });
 

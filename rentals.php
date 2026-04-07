@@ -52,15 +52,15 @@ $pageDescription = "ASCC";
                                         </div>
                                         <div class="area-zoomed-view">
                                             <div class="image">
-                                                <div class="point" data-area-view="data/lecture_hall.html" style="top: 70px; left: 420px;">
+                                                <div class="point point1" data-area-view="data/lecture_hall.html" style="top: 70px; left: 420px;">
                                                     <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
                                                     <span>Lecture Hall</span>
                                                 </div>
-                                                <div class="point" data-area-view="data/workshops.html" style="top: 80px; right: 190px;">
+                                                <div class="point point2" data-area-view="data/workshops.html" style="top: 80px; right: 190px;">
                                                     <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
                                                     <span>Workshops</span>
                                                 </div>
-                                                <div class="point" data-area-view="data/wings.html" style="bottom: 100px; right: 300px;">
+                                                <div class="point point3" data-area-view="data/wings.html" style="bottom: 100px; right: 300px;">
                                                     <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
                                                     <span>The Wing</span>
                                                 </div>

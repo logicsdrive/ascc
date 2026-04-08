@@ -129,9 +129,15 @@
         }
 
         .arrows{
-            position: absolute; z-index: 111121; left: calc(50% + 110px); transform: translateX(-50%); bottom: 42px; display: grid; grid-gap: 10px;
+            position: absolute; z-index: 111121; left: 50%; transform: translateX(-50%); bottom: 42px; display: flex; align-items: center; gap:18px;
 
-            .arrow{width: 30px; height: 30px; border-radius: 50px; transform: rotate(90deg); display: flex; align-items: center; justify-content: center; cursor: pointer;}
+            .arrow{width: 30px; height: 30px; border-radius: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer;
+                svg{
+                    width:20px;
+                    height:20px;
+                    transform: scale(-1);
+                }
+            }
             .arrow:hover{background: white;}
         }
 

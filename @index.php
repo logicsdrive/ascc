@@ -306,9 +306,9 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="item item1">
-                                                <a href="#" class="btn btn-outline-primary">Courtyard</a>
+                                                <a href="courtyard.php" class="btn btn-outline-primary">Courtyard</a>
                                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
-                                                <a href="#" class="read-more">
+                                                <a href="courtyard.php" class="read-more">
                                                     Read more
                                                     <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -330,9 +330,9 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="item item3">
-                                                <a href="#" class="btn btn-outline-primary">Ticket Price</a>
+                                                <a href="tickets.php" class="btn btn-outline-primary">Ticket Price</a>
                                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
-                                                <a href="#" class="read-more">
+                                                <a href="tickets.php" class="read-more">
                                                     Read more
                                                     <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -342,9 +342,9 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="item">
-                                                <a href="#" class="btn btn-outline-primary">Courtyard</a>
+                                                <a href="courtyard.php" class="btn btn-outline-primary">Courtyard</a>
                                                 <p>Surrounding the centre is an open space where visitors can relax, explore, and enjoy our interactive outdoor exhibits</p>
-                                                <a href="#" class="read-more">
+                                                <a href="courtyard.php" class="read-more">
                                                     Read more
                                                     <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

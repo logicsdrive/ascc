@@ -38,6 +38,7 @@
                                                         <p>With its focus on the Golden Age of Islam and the innumerable scientific, cultural and artistic contributions of Muslims and Arabs to modern day science</p>
                                                     </div>
                                                 </div>
+                                                <a href="arabic-science.php" class="abs-link"></a>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -51,6 +52,7 @@
                                                         <p>he study of space & the universe has always evoked mystery & inspiration. The Centre’s Space exhibit gives audiences an unprecedented opportunity..</p>
                                                     </div>
                                                 </div>
+                                                <a href="our-space.php" class="abs-link"></a>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -77,6 +79,7 @@
                                                         <p>he study of space & the universe has always evoked mystery & inspiration. The Centre’s Space exhibit gives audiences an unprecedented opportunity..</p>
                                                     </div>
                                                 </div>
+                                                <a href="theatre.php" class="abs-link"></a>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -90,6 +93,7 @@
                                                         <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers.</p>
                                                     </div>
                                                 </div>
+                                                <a href="trans-n-robots.php" class="abs-link"></a>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -103,6 +107,7 @@
                                                         <p>There is nothing more exciting and intricate than the workings of the human body and mind. Its secrets are revealed as we journey through.</p>
                                                     </div>
                                                 </div>
+                                                 <a href="human-body.php" class="abs-link"></a>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -116,6 +121,7 @@
                                                         <p>Travel back in time to gain a unique insight into the natural world – both past and present, understand the importance of ecosystems.</p>
                                                     </div>
                                                 </div>
+                                                <a href="our-echosystem.php" class="abs-link"></a>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
@@ -129,6 +135,7 @@
                                                         <p>Enter the world of the dinosaurs! See the amazing reptiles and mammals that lived on Earth up to 65 million years ago.</p>
                                                     </div>
                                                 </div>
+                                                <a href="our-earth.php" class="abs-link"></a>
                                             </div>
                                         </div>
                                     </div>

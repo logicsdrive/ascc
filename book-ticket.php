@@ -294,7 +294,7 @@ $pageDescription = "ASCC";
                                             </div>
                                             <div class="form-element full">
                                                 <label class="control-label">Country</label>
-                                                <input type="text" placeholder="Enter Conutry" class="form-control" />
+                                                <input type="text" placeholder="Enter Country" class="form-control" />
                                             </div>
                                             <div class="d-grid gap-1 full">
                                                 <div class="custom-checkbox">
@@ -358,7 +358,7 @@ $pageDescription = "ASCC";
                                                 <p>Your personal data will be used to process your order, support your experience through out this website, and for other purposes described in our privacy policy.</p>
                                             </div>
                                         </div>
-                                        <button class="btn btn-primary w-100">Place Order</button>
+                                        <a href="booking-confirmation-success.php" class="btn btn-primary w-100">Place Order</a>
                                     </div>
                                 </div>
                             </div>

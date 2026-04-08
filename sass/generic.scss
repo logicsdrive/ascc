@@ -513,8 +513,16 @@ strong{font-family: var(--font-medium); font-weight: normal;}
     // --iti-flag-height: 14px;
     --iti-arrow-padding: 28px;
 
-    .iti__tel-input{padding-left: 1.5rem !important;}
-    .iti__country-container{left: auto !important; right: 0;}
+    .iti__tel-input{ padding-left: 0 !important;
+    padding-inline-start: 68px !important;}
+    .iti__country-container{
+        // left: auto !important; 
+        // right: 0;
+        inset-inline-start: 15px !important;
+        inset-inline-end: auto;
+        top: auto;
+        bottom: 19px;
+    }
 
     .iti__dropdown-content{
         right: 0; left: auto; z-index: 100;

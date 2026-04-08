@@ -147,7 +147,7 @@
                             <h1 class="section-title">explore Our museums</h1>
                             <div class="group">
                                 <div class="set set4" id="step4">
-                                    <a href="#" data-custom-cursor="Explore More" class="object object1">
+                                    <a href="our-echosystem.php" data-custom-cursor="Explore More" class="object object1">
                                         <img src="images/home_banner/banner_block7.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block7_tree.png" alt="" />
                                         <img class="animated_object static" src="images/home_banner/banner_block7_vector.png" alt="" />
@@ -157,7 +157,7 @@
                                             <p>Travel back in time to gain a unique insight into the natural world – both past and present, understand the importance of ecosystems.</p>
                                         </div>
                                     </a>
-                                    <a data-custom-cursor="Explore More" class="object object2">
+                                    <a href="our-earth.php" data-custom-cursor="Explore More" class="object object2">
                                         <img src="images/home_banner/banner_block8.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block8_tree.png" alt="" />   
                                         <img class="animated_object static" src="images/home_banner/banner_block8_vector.png" alt="" />
@@ -169,7 +169,7 @@
                                     </a>
                                 </div>
                                 <div class="set set3" id="step3">
-                                    <a href="#" data-custom-cursor="Explore More" class="object object1">
+                                    <a href="trans-n-robots.php" data-custom-cursor="Explore More" class="object object1">
                                         <img src="images/home_banner/banner_block5.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block5_tree.png" alt="" />
                                         <img class="animated_object static" src="images/home_banner/banner_block5_vector.png" alt="" />
@@ -179,7 +179,7 @@
                                             <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers.</p>
                                         </div>
                                     </a>
-                                    <a href="#" data-custom-cursor="Explore More" class="object object2">
+                                    <a href="human-body.php" data-custom-cursor="Explore More" class="object object2">
                                         <img src="images/home_banner/banner_block6.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block6_tree.png" alt="" />
                                         <img class="animated_object static" src="images/home_banner/banner_block6_vector.png" alt="" />
@@ -200,7 +200,7 @@
                                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                                         </div>
                                     </a>
-                                    <a href="#" data-custom-cursor="Explore More" class="object object2">
+                                    <a href="theatre.php" data-custom-cursor="Explore More" class="object object2">
                                         <img src="images/home_banner/banner_block4.png" alt="" />
                                         <img class="tree" src="images/home_banner/banner_block4_tree.png" alt="" />
                                         <img class="animated_object static" src="images/home_banner/banner_block4_vector.png" alt="" />
@@ -212,7 +212,7 @@
                                     </a>
                                 </div>
                                 <div class="set set1" id="step1">
-                                    <a href="#" data-custom-cursor="Explore More" class="object object1">
+                                    <a href="arabic-science.php" data-custom-cursor="Explore More" class="object object1">
                                         <img class="tree" src="images/home_banner/banner_block1_tree.png" alt="" />
                                         <img src="images/home_banner/banner_block1.png" alt="" />
                                         <img class="animated_object" src="images/home_banner/banner_block1_vector.gif" alt="" />
@@ -221,7 +221,7 @@
                                             <p>With its focus on the Golden Age of Islam and the innumerable scientific, cultural and artistic contributions of Muslims and Arabs to modern day science</p>
                                         </div>
                                     </a>
-                                    <a href="#" data-custom-cursor="Explore More" class="object object2">
+                                    <a href="our-space.php" data-custom-cursor="Explore More" class="object object2">
                                         <img class="tree" src="images/home_banner/banner_block2_tree.png" alt="" />
                                         <img src="images/home_banner/banner_block2.png" alt="" />
                                         <img class="animated_object" src="images/home_banner/banner_block2_vector.gif" alt="" />
@@ -646,7 +646,7 @@
                                                 </div>
                                             </div>
                                             <div class="button-row text-md-start text-center">
-                                                <button class="btn btn-primary action-button">Send</button>
+                                                <a class="btn btn-primary action-button" href="#thankyou-modal" data-bs-toggle="modal">Send</a>
                                             </div>
                                         </form>
                                         <aside class="address">

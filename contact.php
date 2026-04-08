@@ -60,7 +60,7 @@ $pageDescription = "ASCC";
                                             </div>
                                         </div>
                                         <div class="button-row" data-animate="fade-down">
-                                            <button class="btn btn-primary action-button">Send</button>
+                                            <a href="#thankyou-modal" data-bs-toggle="modal" class="btn btn-primary action-button">Send</a>
                                         </div>
                                     </form>
                                     <aside class="address">

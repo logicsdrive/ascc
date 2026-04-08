@@ -1483,10 +1483,13 @@ strong {
   --iti-hover-color: tranparent;
   --iti-arrow-padding: 28px; }
   .iti .iti__tel-input {
-    padding-left: 1.5rem !important; }
+    padding-left: 0 !important;
+    padding-inline-start: 68px !important; }
   .iti .iti__country-container {
-    left: auto !important;
-    right: 0; }
+    inset-inline-start: 15px !important;
+    inset-inline-end: auto;
+    top: auto;
+    bottom: 19px; }
   .iti .iti__dropdown-content {
     right: 0;
     left: auto;

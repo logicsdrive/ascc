@@ -54,7 +54,7 @@
                                 <svg class="icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <use href="#venue_icon"></use>
                                 </svg>
-                                <span>Venu Higher</span>
+                                <span>Venue Higher</span>
                             </a>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                     <a href="#forgot-password-modal" data-bs-toggle="modal"  class="forgot-link">Forgot Password</a>
                     <div class="h-list gap-3 py-4">
                         <a href="javascript: void(0);" class="btn btn-outline-dark" data-bs-dismiss="modal">Back</a>
-                        <button class="btn btn-primary flex-grow-1">Sign In</button>
+                        <a href="profile.php" class="btn btn-primary flex-grow-1">Sign In</a>
                     </div>
                     <div class="dont-have-account">Don’t have an account <a href="#signup-modal" data-bs-toggle="modal">Register Now</a></div>
                 </form>
@@ -136,7 +136,7 @@
                     </div>
                     <div class="h-list gap-3 py-4">
                         <a href="#signin-modal" class="btn btn-outline-dark" data-bs-toggle="modal">Back</a>
-                        <button class="btn btn-primary flex-grow-1">Sign In</button>
+                        <a href="profile.php" class="btn btn-primary flex-grow-1">Sign In</a>
                     </div>
                     <div class="dont-have-account">Already have an account <a href="#signin-modal" data-bs-toggle="modal">Sign In</a></div>
                 </form>
@@ -216,6 +216,32 @@
                     <div class="h-list gap-3 pt-1">
                         <button class="btn btn-outline-dark" data-bs-dismiss="modal">Back</button>
                         <button class="btn btn-primary flex-grow-1">Done</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade task-finished-modal" id="thankyou-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form action="javascript: avoid(0)" class="content">
+                    <svg class="mb-4 mx-auto" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_562_7423)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M30 0C13.4531 0 0 13.4531 0 30C0 46.5469 13.4531 60 30 60C46.5469 60 60 46.5469 60 30C60 13.4531 46.5469 0 30 0Z" fill="#CF9C5A"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M44.5059 19.8867C45.2324 20.6133 45.2324 21.8086 44.5059 22.5352L26.9277 40.1133C26.5645 40.4766 26.084 40.6641 25.6035 40.6641C25.123 40.6641 24.6426 40.4766 24.2793 40.1133L15.4902 31.3242C14.7637 30.5977 14.7637 29.4023 15.4902 28.6758C16.2168 27.9492 17.4121 27.9492 18.1387 28.6758L25.6035 36.1406L41.8574 19.8867C42.584 19.1484 43.7793 19.1484 44.5059 19.8867Z" fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_562_7423">
+                                <rect width="60" height="60" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <h2 class="title mb-2">Done</h2>
+                    <p>Your message has been sent successfully Thank you for reaching out!</p>
+                    <div class="h-list gap-3 pt-1">
+                        <button class="btn btn-primary flex-grow-1" data-bs-dismiss="modal">Done</button>
                     </div>
                 </form>
             </div>

@@ -86,7 +86,7 @@ $pageDescription = "ASCC";
                                                 </div>
                                                 <div class="form-element">
                                                     <label class="control-label">Country</label>
-                                                    <input type="text" placeholder="Enter Conutry" value="Kuwait" class="form-control" />
+                                                    <input type="text" placeholder="Enter Country" value="Kuwait" class="form-control" />
                                                 </div>
                                                 <div class="form-element pass-field">
                                                     <label class="control-label">Password</label>

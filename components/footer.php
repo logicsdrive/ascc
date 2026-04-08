@@ -8,7 +8,7 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li>
-                        <a href="/terms.php">Terms and Conditions</a>
+                        <a href="terms.php">Terms and Conditions</a>
                 
                     </li>
                     <li>

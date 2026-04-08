@@ -103,7 +103,7 @@ $pageDescription = "ASCC";
                                     <span>K.D 8.000</span>
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-primary go-back-button" data-animate="fade-up">Back To Home</a>
+                            <a href="@index.php" class="btn btn-primary go-back-button" data-animate="fade-up">Back To Home</a>
                         </div>
                     </div>
                 </main>

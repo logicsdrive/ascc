@@ -3,6 +3,36 @@ const maxSteps = 6;
 let isHolding = false;
 let currentStep = 0;
 
+// --- Auto-scroll Logic ---
+let autoScrollInterval;
+const scrollDelay = 3000; // Time in milliseconds (3 seconds)
+
+// Function to update classes (Shared by Arrows and Scroll)
+function goToStep(step) {
+    // Clean up old classes and add the new ones
+    for (let i = 1; i <= maxSteps; i++) {
+        document.getElementById('camera_view').classList.toggle(`move_step${i}`, i <= step);
+    }
+    
+    currentStep = step;
+}
+function startAutoScroll() {
+    autoScrollInterval = setInterval(() => {
+        let nextStep = currentStep + 2;
+        
+        // If we exceed max steps, reset to 0
+        if (nextStep > maxSteps) {
+            nextStep = 0;
+        }
+        
+        goToStep(nextStep);
+    }, scrollDelay);
+}
+
+function stopAutoScroll() {
+    clearInterval(autoScrollInterval);
+}
+
 window.addEventListener('load', (event) => {
     gsap.registerPlugin(ScrollTrigger);
     
@@ -64,80 +94,30 @@ window.addEventListener('load', (event) => {
               markers: false
             }
         });
-        // plan_visit_timeline.from(".home-page .plan-visit .item1", { 
-        //     y: 50,
-        //     opacity: 0,
-        //     duration: 1.5
-        // }, 0);
-        // plan_visit_timeline.from(".home-page .plan-visit .item2", { 
-        //     y: 100,
-        //     opacity: 0,
-        //     duration: 2
-        // }, 0);
-        // plan_visit_timeline.from(".home-page .plan-visit .item3", {
-        //     y: 200,
-        //     opacity: 0,
-        //     duration: 2.5
-        // }, 0);
-    }    
-
-    // Function to update classes (Shared by Arrows and Scroll)
-    function goToStep(step) {
-        // Clean up old classes and add the new ones
-        for (let i = 1; i <= maxSteps; i++) {
-            document.getElementById('camera_view').classList.toggle(`move_step${i}`, i <= step);
-        }
-        
-        currentStep = step;
     }
+    
 
     // 1. Only start if the click begins ON the cameraView element
     if(cameraView && window.innerWidth > 991) {
-    //     // Create the ScrollTrigger that "Locks" the page
-    //     ScrollTrigger.create({
-    //         trigger: cameraView, // The section shown in your image
-    //         start: "top top",
-    //         end: `+=${maxSteps * 500}`,    // Distance user must scroll to finish all steps
-    //         pin: true,                     // Pins the section in place
-    //         scrub: true,
-    //         onUpdate: (self) => {
-    //             // Calculate which step we should be on based on scroll progress (0 to 1)
-    //             const progressStep = Math.round(self.progress * maxSteps);
-    //             if (progressStep !== currentStep) {
-    //                 goToStep(progressStep);
-    //             }
-    //         }
-    //     });
+        if (document.getElementById('camera_view_next')) {
+            document.getElementById('camera_view_next').addEventListener('mouseenter', stopAutoScroll);
+            document.getElementById('camera_view_next').addEventListener('mouseleave', startAutoScroll);
+        }
+
+        // Logic for the Previous Button
+        if (document.getElementById('camera_view_prev')) {
+            document.getElementById('camera_view_prev').addEventListener('mouseenter', stopAutoScroll);
+            document.getElementById('camera_view_prev').addEventListener('mouseleave', startAutoScroll);
+        }
 
         // Update your Arrow Event Listeners to use the same goToStep function
         document.getElementById('camera_view_next').addEventListener('click', () => {
-            if (currentStep < maxSteps) goToStep(currentStep + 1);
+            if (currentStep < maxSteps) goToStep(currentStep + 2);
         });
 
         document.getElementById('camera_view_prev').addEventListener('click', () => {
-            if (currentStep > 0) goToStep(currentStep - 1);
+            if (currentStep > 0) goToStep(currentStep - 2);
         });
-
-        document.getElementById('step2').addEventListener('click', () => {
-            // alert("sf");
-            goToStep(2);
-        });
-        
-
-    //     cameraView.addEventListener('mousedown', (e) => {
-    //         if (e.button === 0) { // Check for left click
-    //             isHolding = true;
-    //             // Optional: prevent text selection while dragging
-    //             e.preventDefault(); 
-    //         }
-    //     });
-    //     // 2. Stop tracking when mouse is released
-    //     window.addEventListener('mouseup', () => {
-    //         isHolding = false;
-    //         // Optional: Reset position when let go
-    //         cameraView.classList.remove('move-left', 'move-right');
-    //         cameraView.style.setProperty('--bg-shift', '0px');
-    //     });
     }
 });
 
@@ -411,6 +391,8 @@ const ascc_app = {
                 'move_step6'
             );
         }
+
+        startAutoScroll();
     }
 };
 

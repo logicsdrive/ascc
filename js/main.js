@@ -1,37 +1,60 @@
 const cameraView = document.getElementById('camera_view');
 const maxSteps = 6;
-let isHolding = false;
 let currentStep = 0;
-
+let isHolding = false;
 // --- Auto-scroll Logic ---
 let autoScrollInterval;
-const scrollDelay = 3000; // Time in milliseconds (3 seconds)
+const scrollDelay = 10000;
 
-// Function to update classes (Shared by Arrows and Scroll)
+// Function to update classes
 function goToStep(step) {
-    // Clean up old classes and add the new ones
     for (let i = 1; i <= maxSteps; i++) {
-        document.getElementById('camera_view').classList.toggle(`move_step${i}`, i <= step);
+        cameraView.classList.toggle(`move_step${i}`, i <= step);
     }
-    
     currentStep = step;
 }
+
+// Start auto scroll
 function startAutoScroll() {
+    stopAutoScroll(); // prevent duplicate
+
     autoScrollInterval = setInterval(() => {
         let nextStep = currentStep + 2;
-        
-        // If we exceed max steps, reset to 0
+
         if (nextStep > maxSteps) {
             nextStep = 0;
         }
-        
+
         goToStep(nextStep);
     }, scrollDelay);
 }
 
+// Stop auto scroll
 function stopAutoScroll() {
     clearInterval(autoScrollInterval);
 }
+
+// Hover on each object
+document.querySelectorAll(".object").forEach(item => {
+
+    item.addEventListener("mouseenter", () => {
+        stopAutoScroll();
+    });
+
+    item.addEventListener("mouseleave", () => {
+        startAutoScroll();
+    });
+
+});
+
+window.addEventListener("load", function () {
+    setTimeout(() => {
+        startAutoScroll();
+    }, 1000); // 1 second delay
+});
+
+
+
 
 window.addEventListener('load', (event) => {
     gsap.registerPlugin(ScrollTrigger);

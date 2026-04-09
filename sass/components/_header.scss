@@ -19,7 +19,7 @@
     .search-field{
         margin-right: 1rem; pointer-events: none; width: 400px; opacity: 0; transition: .6s ease all; transform: translateX(-20px);
 
-        .form-control{height: 56px; border: 0; padding-left: 74px; font-family: var(--font-light);}
+        .form-control{height: 56px; border: 0; padding-left: 74px; padding-right:90px; font-family: var(--font-light);}
         .icon{left: 38px;}
         .cross-icon{position: absolute; top: 50%; transform: translateY(-50%); inset-inline-end: 68px; cursor: pointer;}
         .send-icon{position: absolute; border: 0; padding: 0; top: 50%; transform: translateY(-50%); inset-inline-end: 30px; cursor: pointer;}
@@ -87,6 +87,15 @@
         .devider{display: none;}
         .list{gap: 20px;}
         .sign-list{gap: 20px;}
+
+        .search-field{
+            .form-control{
+                padding-left:45px;
+            }
+            .icon{
+                left:14px;
+            }
+        }
     }
     @media screen and (max-width:450px){
         .search-field{

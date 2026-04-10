@@ -2,7 +2,7 @@
     <div class="container">
         <div class="grid">
             <div class="item logo-holder">
-                <img src="images/site_logo.png" alt="" />
+                <img src="images/site_logo.png" alt="" loading="lazy">
             </div>
             <div class="item quick-links last-margin-0">
                 <h4>Quick Links</h4>
@@ -20,25 +20,25 @@
                 <h4>Social Contact</h4>
                 <div class="h-list social-icons gap-2">
                     <a href="#" title="" class="icon-rounded">
-                        <img src="images/facebook_icon.svg" alt="" />
+                        <img src="images/facebook_icon.svg" alt="" loading="lazy">
                     </a>
                     <a href="#" title="" class="icon-rounded">
-                        <img src="images/linkedin_icon.svg" alt="" />
+                        <img src="images/linkedin_icon.svg" alt="" loading="lazy">
                     </a>
                     <a href="#" title="" class="icon-rounded">
-                        <img src="images/instagram_icon.svg" alt="" />
+                        <img src="images/instagram_icon.svg" alt="" loading="lazy">
                     </a>
                     <a href="#" title="" class="icon-rounded">
-                        <img src="images/twitter_icon.svg" alt="" />
+                        <img src="images/twitter_icon.svg" alt="" loading="lazy">
                     </a>
                 </div>
             </div>
             <div class="item app-buttons-holder">
                 <a href="#" class="app-button">
-                    <img src="images/apple-button.png" alt="" />
+                    <img src="images/apple-button.png" alt="" loading="lazy">
                 </a>
                 <a href="#" class="app-button">
-                    <img src="images/playstore-button.png" alt="" />
+                    <img src="images/playstore-button.png" alt="" loading="lazy">
                 </a>
             </div>
         </div>

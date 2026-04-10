@@ -40,6 +40,9 @@
     .pass-field{grid-column: 1 / -1; }
     .pass-field .form-control{
         padding-inline-end: 200px;
+        @media screen and (max-width:767px){
+            padding-inline-end: 140px;
+        }
     }
     .change-pass-text{
         color: var(--primary-color); font-size: 1rem; font-family: var(--font-medium);

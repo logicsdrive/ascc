@@ -1,0 +1,416 @@
+body{
+  direction: rtl;
+  text-align: right;
+  letter-spacing: 0;
+}
+label , input , .form-control{
+  text-align: right;
+}
+.flip {
+    transform: scale(1);
+}
+.form-element .icon {
+    left: 1.5rem;
+    right:unset
+}
+.form-element .control-label {
+
+    right: 1.5rem;
+    left:unset
+}
+.site-header .search-field{
+  margin-left: 1rem;
+  margin-right:0;
+}
+.site-header .search-field .form-control {
+    padding-right: 74px;
+    padding-left:90px;
+}
+.site-header .search-field .send-icon{
+  transform: translateY(-50%) scaleX(-1);
+}
+.site-header .search-field .icon{
+  right:38px;
+  left:auto;
+}
+.dropdown-menu .dropdown-item span{
+  text-align: right;
+}
+.signin-modal .forgot-link{
+  text-align: left;
+}
+.site-nav{
+  left:-100%;
+  right:unset;
+  transition: left 0.7s ease;
+}
+.site-nav .nav-item .icon{
+  transform: scaleX(-1);
+}
+.menu-opened .site-nav {
+    left: 0;
+    right:unset;
+}
+.search-field .form-control{
+      padding: 4px 62px 4px 26px;
+}
+.search-field .icon {
+    right: 1.625rem;
+    left:unset;
+}
+.category-item .icon-bg{
+  right:0;
+  left:auto;
+  transform: scaleX(-1);
+}
+
+.category-item .icon-bg img {
+    transform: scaleX(-1);
+    margin-right: 44px;
+    margin-left: 0;
+}
+.category-item .border-line{
+  right:0;
+  left: auto;
+}
+.category-item .booking-information .item svg{
+  transform: scaleX(-1);
+}
+.pagination .arrow{
+  transform: scaleX(-1);
+}
+
+/* Home Page */
+.home-page .camera-view .group{
+  direction: ltr;
+}
+.home-page .camera-view .arrows .arrow svg{
+  transform: none;
+}
+
+.home-page .home-block1 .item .inner .title-holder svg,
+.home-page .plan-visit .arrows .arrow.prev,
+.home-page .plan-visit .read-more svg,
+.home-page .gallery .arrows .arrow.prev{
+  transform: scaleX(-1);
+}
+.home-page .home-block1 .item .image{
+  right:0;
+}
+
+.contact .form-element .icon {
+
+    right: 0;
+    left:unset
+}
+.contact .form-element .form-control {
+    padding: 2px 22px 10px 0;
+}
+.contact .address .item a{
+  direction: ltr;
+}
+
+.home-page .camera-mobile-view{
+  direction: ltr;
+  text-align: left;
+}
+.home-page .camera-mobile-view .arrows-holder .arrows{
+  flex-direction: row-reverse;
+}
+
+
+.home-page .camera-mobile-view .arrows-holder .arrows .arrow.prev{
+  transform: scaleX(-1);
+}
+
+
+/* About Page */
+.about .view2 .leading-with-innovation .item .image,
+.about .view2 .awards .item .image{
+  right:0;
+  left:auto;
+}
+.about .view3 .block1 .slot svg{
+  transform: scale(-1);
+}
+
+/* meusem Pages */
+.nature-page .page-title-banner .page-banner-desc:after{
+  right:0;
+  left:auto;
+}
+
+.nature-page .page-title-banner .page-banner-desc{
+  padding-right: 1rem;
+  padding-left:0;
+}
+.nature-page .arabic-science-block1 .opacity-box {
+    padding: 70px 74px 70px 42px;
+}
+
+.nature-page .arabic-science-block2 .text {
+    right: 573px;
+    left:auto;
+}
+.nature-page .arabic-science-block2 .arrows .arrow.prev{
+  transform: scaleX(-1);
+}
+.nature-page .arabic-science-block3 .opacity-box {
+    padding: 70px 77px 70px 32px;
+}
+.other-museums .arrows .arrow.prev{
+  transform: scaleX(-1);
+}
+.museum-item .border-line{
+  right:0;
+  left: auto;
+}
+.museum-item .booking-information .item svg{
+  transform: scaleX(-1);
+}
+
+
+/* Book Ticket Page */
+.booking-details .important-notes ul li:after{
+  right:12px;
+  left: auto;
+}
+.booking-details .important-notes ul li{
+  padding-right:30px;
+  padding-left:0;
+}
+.booking-details .payment-method .item input{
+  right:0;
+  left: unset;
+}
+.booking-details .tdata .tcell:first-child {
+    padding-left: 44px;
+    padding-right:0;
+}
+.booking-confirmation .table td:first-child{
+  padding-left:.5rem;
+  padding-right:0;
+}
+
+/* Booking Confirmation  */
+
+.booking-confirmation .info .item {
+    border-left: solid 1px rgba(0, 0, 0, 0.24);
+    border-right:0;
+}
+@media (min-width: 992px) {
+    .booking-confirmation .info .item:first-child {
+        padding-right: 0;
+        padding-left:80px;
+    }
+      .booking-confirmation .info .item:last-child {
+        padding-left: 0;
+        padding-right:80px;
+        border-left: 0;
+    }
+}
+
+.iti .iti__tel-input {
+    padding-right: 68px !important;
+    padding-inline-start:  0!important;
+    padding-left:1.5rem !important;
+}
+.iti .iti__country-container {
+    inset-inline-end: 15px !important;
+    inset-inline-start: auto !important;
+    right: 0 !important;
+    left: auto !important;
+}
+
+
+/* Education Page */
+.content-row .image{
+  right:0;
+  left: auto;
+}
+.content-row:nth-child(even) .image {
+    left: 0;
+    right: auto;
+}
+.content-row .content {
+    padding: 65px 100px 65px 118px;
+}
+
+/* Fine Arts Page */
+.finearts .selection-process .item .image{
+  right:0;
+  left:auto;
+}
+.nature-page .human-body-block3 .text {
+    padding: 90px 77px 77px 0;
+}
+
+
+/* Human Body Page */
+
+.nature-page .explore-carousel .arrows .arrow{
+  transform: scaleX(-1);
+}
+
+
+/* Our Earth Page */
+.nature-page .earth-block3 {
+    padding: 5.625rem 4.8125rem 6.25rem 2.5rem;
+}
+
+/* Eco System Page */
+
+.nature-page .echo-block3{
+  padding: 5.625rem 4.8125rem 6.25rem 2.5rem;
+}
+.nature-page .space-center {
+    padding: 5.875rem 4.75rem 5.875rem 0;
+}
+
+/* Profile Page */
+.profile .tabs .item {
+    border-radius: 0 10px 10px 0;
+}
+.profile .tabs .item.active {
+    border-right: solid 2px var(--primary-color);
+    border-left:0;
+}
+.profile .profile-image .icon {
+    left: 0;
+    right:auto;
+}
+
+/* Rantals page */
+.rentals .left-bar .item {
+    padding: 5px 24px 5px 52px;
+    background-position: left 31px center;
+    background: #f5f7f7 url(../images/icons/leftIcon-arrow.svg) left 31px center no-repeat;
+}
+.rentals .right {
+    padding-right: 122px;
+    padding-left:0;
+}
+.rentals .places-graph .link_bridge1 .icon {
+    right: 284px;
+    left: auto;
+}
+
+
+/* Rantal Page */
+.rentals .places-graph .link_bridge2 .icon{
+      right: 325px;
+      left:auto;
+}
+.rentals .places-area .area-zoomed-view .cross{
+  left:0;
+  right:auto;
+}
+.rentals .places-area .area-column .list > li.sub-item:after{
+  right:10px;
+  left:unset;
+}
+/* Theatre Page */
+.theatre-page .theatre_icon {
+    margin-right: 24px;
+    margin-left:0;
+}
+
+/* Trans & Robot Page */
+.nature-page .trans-block3 .info {
+    padding: 5.875rem 4.75rem 5.875rem 0;
+}
+
+/* Visitor Map Page  */
+
+.visitor-map .info .grid .item span:after{
+  right:15px;
+  left:auto;
+}
+.visitor-map .info .grid .item span {
+    padding-right: 30px;
+    padding-left:0;
+}
+.visitor-map .info {
+    border-right: 5px solid #cf9c5a;
+    border-left:0;
+}
+/* 
+Responsive Code */
+@media (max-width: 1399px) {
+	.nature-page .arabic-science-block2 .text {
+		right: 0;
+	}
+	.rentals .right {
+        padding-right: 60px;
+    }
+}
+@media (max-width: 1199px) {
+    .content-row .content {
+        padding: 40px;
+    }
+	.booking-confirmation .info .item {
+        border: 0;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    }
+	.nature-page .echo-block3 {
+        padding: 30px;
+    }
+	.nature-page .space-center {
+        padding: 40px 20px 200px;
+    }
+	.rentals .right {
+        padding-right: 30px;
+    }
+	.rentals .places-area.show-left-col .area-column-close-icon{
+		left:0;
+		right:unset;
+	}
+}
+@media (max-width: 1070px) {
+    .rentals .right {
+        padding: 30px 0 0;
+    }
+}
+@media (max-width: 991px) {
+    .nature-page .earth-block3 {
+        padding: 30px;
+    }
+	.nature-page .arabic-science-block3 .opacity-box {
+        padding: 30px;
+    }
+	.nature-page .human-body-block3 .text {
+        padding: 300px 30px 30px 30px;
+    }
+	.profile .tabs .item{
+		border-radius: 10px;
+	}
+	.nature-page .trans-block3 .info {
+        padding: 0;
+    }
+}
+@media screen and (max-width:767px){
+  .site-header .search-field .form-control{
+    padding-right:42px;
+  }
+  .site-header .search-field .icon{
+    right:14px;
+  }
+    .nature-page .arabic-science-block1 .opacity-box {
+      padding: 30px;
+  }
+    .content-row .content {
+        padding: 25px;
+    }
+	.nature-page .human-body-block3 .text {
+        padding: 300px 20px 30px 20px;
+    }
+	.theatre-page .theatre_icon{
+		margin:0;
+	}
+}
+@media screen and (max-width:1200px){
+  .site-header .search-field{
+    left:0;
+    right:unset;
+  }
+}

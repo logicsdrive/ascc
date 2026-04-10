@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ar" class="home-loading ar">
+    <head>
+        <?php include 'components/head.php';  ?>
+    </head>
+    <body class="home-page">
+        <div class="page-loader">
+            <img src="images/loader.gif" alt="">
+        </div>
+        <div class="enter-the-center">
+            <video class="background-video" autoplay muted loop playsinline>
+                <source src="images/hero.mp4" type="video/mp4">
+            </video>
+            <h1 class="title">
+                <span class="ar">مركز الشيخ عبد الله السالم الثقافي</span>
+                <span class="en">Sheikh Abdullah AlSalem Cultural Centre</span>
+            </h1>
+            <button type="button" data-custom-cursor="يدخل" class="btn btn-primary center-button" onclick="ascc_app.homeSectionVisible()">أدخل المركز</button>
+        </div>
+        <?php include 'components/header.php';  ?>
+        <main>
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <div class="contentWrapper">
+                        <div class="camera-mobile-view">
+                            <h2 class="title">اكتشف متاحفنا</h2>
+                            <div class="container">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block1_tree.png" alt="" >
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block1.png" alt="" >
+                                                    <img class="animated_object" src="images/home_banner/banner_block1_vector.gif" alt="" >
+                                                    <div class="text">
+                                                        <h5>العلوم العربية الإسلامية</h5>
+                                                        <p>مع تركيزها على العصر الذهبي للإسلام والمساهمات العلمية والثقافية والفنية التي لا تعد ولا تحصى للمسلمين والعرب في العلوم الحديثة</p>
+                                                    </div>
+                                                </div>
+                                                <a href="arabic-science.php" class="abs-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block2_tree.png" alt="" >
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" >
+                                                    <img class="animated_object" src="images/home_banner/banner_block2_vector.gif" alt="" >
+                                                    <div class="text">
+                                                        <h5>فضاء</h5>
+                                                        <p>he study of space & the universe has always evoked mystery & inspiration. The Centre’s Space exhibit gives audiences an unprecedented opportunity..</p>
+                                                    </div>
+                                                </div>
+                                                <a href="our-space.php" class="abs-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block4_tree.png" alt="" >
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" >
+                                                    <img class="animated_object" src="images/home_banner/banner_block3_vector.gif" alt="" >
+                                                    <div class="text">
+                                                        <h5>guest relation</h5>
+                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block4_tree.png" alt="" >
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" >
+                                                    <img class="animated_object" src="images/home_banner/banner_block4_vector.gif" alt="" >
+                                                    <div class="text">
+                                                        <h5>Theater</h5>
+                                                        <p>he study of space & the universe has always evoked mystery & inspiration. The Centre’s Space exhibit gives audiences an unprecedented opportunity..</p>
+                                                    </div>
+                                                </div>
+                                                <a href="theatre.php" class="abs-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block5_tree.png" alt="" >
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" >
+                                                    <img class="animated_object" src="images/home_banner/banner_block5_vector.gif" alt="" >
+                                                    <div class="text">
+                                                        <h5>Transportation & Robots</h5>
+                                                        <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers.</p>
+                                                    </div>
+                                                </div>
+                                                <a href="trans-n-robots.php" class="abs-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block6_tree.png" alt="" >
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" >
+                                                    <img class="animated_object" src="images/home_banner/banner_block6_vector.gif" alt="" >
+                                                    <div class="text">
+                                                        <h5>Science & Technology – Human Body</h5>
+                                                        <p>There is nothing more exciting and intricate than the workings of the human body and mind. Its secrets are revealed as we journey through.</p>
+                                                    </div>
+                                                </div>
+                                                 <a href="human-body.php" class="abs-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block7_tree.png" alt="" >
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" >
+                                                    <img class="animated_object" src="images/home_banner/banner_block7_vector.gif" alt="" >
+                                                    <div class="text">
+                                                        <h5>Ecosystems</h5>
+                                                        <p>Travel back in time to gain a unique insight into the natural world – both past and present, understand the importance of ecosystems.</p>
+                                                    </div>
+                                                </div>
+                                                <a href="our-echosystem.php" class="abs-link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="object-item">
+                                                <img class="tree" src="images/home_banner/banner_block8_tree.png" alt="" >
+                                                <div class="base">
+                                                    <img src="images/home_banner/mobile/banner_block2.png" alt="" >
+                                                    <img class="animated_object" src="images/home_banner/banner_block8_vector.gif" alt="" >
+                                                    <div class="text">
+                                                        <h5>Natural History – Our Earth</h5>
+                                                        <p>Enter the world of the dinosaurs! See the amazing reptiles and mammals that lived on Earth up to 65 million years ago.</p>
+                                                    </div>
+                                                </div>
+                                                <a href="our-earth.php" class="abs-link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrows-holder">
+                                <span>Click the arrow to view the remaining museums</span>
+                                <div class="h-list arrows">
+                                    <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                    <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="camera-view" id="camera_view">
+                            <div class="overlay"></div>
+                            <h1 class="section-title">اكتشف متاحفنا</h1>
+                            <div class="group">
+                                <div class="set set4" id="step4">
+                                    <a href="our-echosystem.php" data-custom-cursor="استكشف المزيد" class="object object1">
+                                        <img src="images/home_banner/banner_block7.png" alt="" >
+                                        <img class="tree" src="images/home_banner/banner_block7_tree.png" alt="" >
+                                        <img class="animated_object static" src="images/home_banner/banner_block7_vector.png" alt="" >
+                                        <img class="animated_object gif" src="images/home_banner/banner_block7_vector.gif" alt="" >
+                                        <div class="text">
+                                            <h5>النظم البيئية</h5>
+                                            <p>سافر عبر الزمن لاكتساب نظرة فريدة على العالم الطبيعي - الماضي والحاضر - وفهم أهمية النظم البيئية.</p>
+                                        </div>
+                                    </a>
+                                    <a href="our-earth.php" data-custom-cursor="استكشف المزيد" class="object object2">
+                                        <img src="images/home_banner/banner_block8.png" alt="" >
+                                        <img class="tree" src="images/home_banner/banner_block8_tree.png" alt="" />   
+                                        <img class="animated_object static" src="images/home_banner/banner_block8_vector.png" alt="" />
+                                        <img class="animated_object gif" src="images/home_banner/banner_block8_vector.gif" alt="" />
+                                        <div class="text">
+                                            <h5>التاريخ الطبيعي - كوكبنا</h5>
+                                            <p>ادخل عالم الديناصورات! شاهد الزواحف والثدييات المذهلة التي عاشت على الأرض منذ ما يصل إلى 65 مليون سنة.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="set set3" id="step3">
+                                    <a href="trans-n-robots.php" data-custom-cursor="استكشف المزيد" class="object object1">
+                                        <img src="images/home_banner/banner_block5.png" alt="" />
+                                        <img class="tree" src="images/home_banner/banner_block5_tree.png" alt="" />
+                                        <img class="animated_object static" src="images/home_banner/banner_block5_vector.png" alt="" >
+                                        <img class="animated_object gif" src="images/home_banner/banner_block5_vector.gif" alt="" >
+                                        <div class="text">
+                                            <h5>النقل والروبوتات</h5>
+                                            <p>Through the centuries the evolution of transport has taken us from elementary hot air balloons to jet engines, horse-drawn carriages to cars and small boats to oil tankers.</p>
+                                        </div>
+                                    </a>
+                                    <a href="human-body.php" data-custom-cursor="استكشف المزيد" class="object object2">
+                                        <img src="images/home_banner/banner_block6.png" alt="" >
+                                        <img class="tree" src="images/home_banner/banner_block6_tree.png" alt="" >
+                                        <img class="animated_object static" src="images/home_banner/banner_block6_vector.png" alt="" >
+                                        <img class="animated_object gif" src="images/home_banner/banner_block6_vector.gif" alt="" >
+                                        <div class="text">
+                                            <h5>العلوم والتكنولوجيا - جسم الإنسان</h5>
+                                            <p>There is nothing more exciting and intricate than the workings of the human body and mind. Its secrets are revealed as we journey through.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="set set2" id="step2">
+                                    <a href="#" data-custom-cursor="استكشف المزيد" class="object object1">
+                                        <img src="images/home_banner/banner_block3.png" alt="" >
+                                        <img class="animated_object static" src="images/home_banner/banner_block3_vector.png" alt="" >
+                                        <img class="animated_object gif" src="images/home_banner/banner_block3_vector.gif" alt="" >
+                                        <div class="text">
+                                            <h5>guest relation</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                        </div>
+                                    </a>
+                                    <a href="theatre.php" data-custom-cursor="استكشف المزيد" class="object object2">
+                                        <img src="images/home_banner/banner_block4.png" alt="" >
+                                        <img class="tree" src="images/home_banner/banner_block4_tree.png" alt="" >
+                                        <img class="animated_object static" src="images/home_banner/banner_block4_vector.png" alt="" >
+                                        <img class="animated_object gif" src="images/home_banner/banner_block4_vector.gif" alt="" >
+                                        <div class="text">
+                                            <h5>Theater</h5>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="set set1" id="step1">
+                                    <a href="arabic-science.php" data-custom-cursor="استكشف المزيد" class="object object1">
+                                        <img class="tree" src="images/home_banner/banner_block1_tree.png" alt="" >
+                                        <img src="images/home_banner/banner_block1.png" alt="" >
+                                        <img class="animated_object" src="images/home_banner/banner_block1_vector.gif" alt="" >
+                                        <div class="text">
+                                            <h5>العلوم العربية الإسلامية</h5>
+                                            <p>مع تركيزها على العصر الذهبي للإسلام والمساهمات العلمية والثقافية والفنية التي لا تعد ولا تحصى للمسلمين والعرب في العلوم الحديثة</p>
+                                        </div>
+                                    </a>
+                                    <a href="our-space.php" data-custom-cursor="استكشف المزيد" class="object object2">
+                                        <img class="tree" src="images/home_banner/banner_block2_tree.png" alt="" >
+                                        <img src="images/home_banner/banner_block2.png" alt="" >
+                                        <img class="animated_object" src="images/home_banner/banner_block2_vector.gif" alt="" >
+                                        <div class="text">
+                                            <h5>فضاء</h5>
+                                            <p>لطالما أثارت دراسة الفضاء والكون الغموض والإلهام. ويمنح معرض الفضاء في المركز الزوار فرصة غير مسبوقة لاستكشاف عجائب هذا الكون المجهول.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="arrows">
+                                <span class="arrow next" id="camera_view_prev">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.17091 7.57892L11.4119 7.58333L9.49815 9.50144C9.44252 9.55568 9.39827 9.62047 9.36798 9.69202C9.3377 9.76356 9.32199 9.84044 9.32177 9.91813C9.32339 10.0331 9.35893 10.1451 9.42392 10.24C9.48892 10.3349 9.58048 10.4085 9.68713 10.4516C9.79377 10.4947 9.91077 10.5053 10.0234 10.4822C10.1361 10.4591 10.2395 10.4032 10.3205 10.3216L13.2396 7.40695C13.2939 7.35269 13.337 7.28825 13.3664 7.21731C13.3958 7.14638 13.4109 7.07035 13.4109 6.99356C13.4109 6.91678 13.3958 6.84074 13.3664 6.76981C13.337 6.69888 13.2939 6.63444 13.2396 6.58018L10.3205 3.66553C9.76933 3.09451 8.92492 3.94553 9.49815 4.4923L11.4229 6.41703L1.17091 6.41262C1.09131 6.40772 1.01155 6.41917 0.936551 6.44626C0.861547 6.47335 0.792884 6.51551 0.734789 6.57014C0.676694 6.62478 0.630398 6.69072 0.598753 6.76392C0.567107 6.83712 0.550781 6.91602 0.550781 6.99577C0.550781 7.07551 0.567107 7.15442 0.598753 7.22761C0.630398 7.30081 0.676694 7.36676 0.734789 7.42139C0.792884 7.47602 0.861547 7.51818 0.936551 7.54527C1.01155 7.57236 1.09131 7.58381 1.17091 7.57892Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                <span class="arrow prev" id="camera_view_next">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.8291 7.57892L2.58815 7.58333L4.50185 9.50144C4.55748 9.55568 4.60173 9.62047 4.63202 9.69202C4.6623 9.76356 4.67801 9.84044 4.67823 9.91813C4.67661 10.0331 4.64107 10.1451 4.57608 10.24C4.51108 10.3349 4.41952 10.4085 4.31287 10.4516C4.20623 10.4947 4.08923 10.5053 3.97655 10.4822C3.86388 10.4591 3.76054 10.4032 3.67949 10.3216L0.760433 7.40695C0.706103 7.35269 0.663001 7.28825 0.633595 7.21731C0.604187 7.14638 0.589051 7.07035 0.589051 6.99356C0.589051 6.91678 0.604187 6.84074 0.633595 6.76981C0.663001 6.69888 0.706103 6.63444 0.760433 6.58018L3.67949 3.66553C4.23067 3.09451 5.07508 3.94553 4.50185 4.4923L2.57712 6.41703L12.8291 6.41262C12.9087 6.40772 12.9884 6.41917 13.0634 6.44626C13.1385 6.47335 13.2071 6.51551 13.2652 6.57014C13.3233 6.62478 13.3696 6.69072 13.4012 6.76392C13.4329 6.83712 13.4492 6.91602 13.4492 6.99577C13.4492 7.07551 13.4329 7.15442 13.4012 7.22761C13.3696 7.30081 13.3233 7.36676 13.2652 7.42139C13.2071 7.47602 13.1385 7.51818 13.0634 7.54527C12.9884 7.57236 12.9087 7.58381 12.8291 7.57892Z" fill="black"/>
+                                    </svg>
+                                </span>
+                                
+                            </div>
+                            <!-- <div class="mouse-pointer">
+                                <span>To look around, hold and hold left mouse button</span>
+                                <img class="mx-auto" src="images/mouse.png" loading="lazy" alt="" >
+                            </div>                  -->
+                        </div>
+                        <div class="home-block1" data-speed="1">
+                            <div class="container">
+                                <div class="grid">
+                                    <div class="item position-relative">
+                                        <figure class="image"><img src="images/our-mission-image.jpg" alt="" ></figure>
+                                        <div class="inner">
+                                            <div class="title-holder">
+                                                <h4 class="section-title">ماذا يجري</h4>
+                                                <svg class="icon" width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <foreignObject x="-40" y="-40" width="125.816" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_693_7914_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="1" y="1" width="43.8182" height="43" rx="21.5" stroke="currentColor" stroke-width="2"/>
+                                                    <path d="M20.6172 17.25L25.9626 22.5L20.6172 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <defs>
+                                                        <clipPath id="bgblur_0_693_7914_clip_path" transform="translate(40 40)"><rect x="1" y="1" width="43.8182" height="43" rx="21.5"/></clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <p>يمكنكم اكتشاف ومشاهدة كل ما هو جديد داخل المتحف ومتابعة أخبارنا.</p>
+                                        </div>
+                                        <a href="whatson.php" data-custom-cursor="اقرأ المزيد" class="abs-link"></a>
+                                    </div>
+                                    <div class="item position-relative">
+                                        <figure class="image"><img src="images/our-vision-image.jpg" alt="" ></figure>
+                                        <div class="inner">
+                                            <div class="title-holder">
+                                                <h4 class="section-title">معلومات عنا</h4>
+                                                <svg class="icon" width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <foreignObject x="-40" y="-40" width="125.816" height="125"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(20px);clip-path:url(#bgblur_0_693_7914_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="40" x="1" y="1" width="43.8182" height="43" rx="21.5" stroke="currentColor" stroke-width="2"/>
+                                                    <path d="M20.6172 17.25L25.9626 22.5L20.6172 27.75" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <defs>
+                                                        <clipPath id="bgblur_0_693_7914_clip_path" transform="translate(40 40)"><rect x="1" y="1" width="43.8182" height="43" rx="21.5"/></clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <p>يُعد مركز الشيخ عبد الله السالم الثقافي أحد أكبر المجمعات الثقافية في العالم.</p>
+                                        </div>
+                                        <a href="about.php" data-custom-cursor="اقرأ المزيد" class="abs-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="plan-visit">
+                            <div class="plan-visit__banner">
+                                <img src="images/plan-visit.jpg" alt="" class="img-fluid" loading="lazy" width="1902" height="414">
+                            </div>
+                            <div class="container">
+                                <div class="title-area">
+                                    <h2 class="section-title" data-animate="fade-up">خطط لزيارتك</h2>
+                                    <div class="h-list arrows" data-animate="fade-left">
+                                        <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                        <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                    </div>
+                                </div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="item item1">
+                                                <a href="courtyard.php" class="btn btn-outline-primary">فناء</a>
+                                                <p>يحيط بالمركز مساحة مفتوحة حيث يمكن للزوار الاسترخاء والاستكشاف والاستمتاع بمعارضنا الخارجية التفاعلية</p>
+                                                <a href="courtyard.php" class="read-more">
+                                                    اقرأ المزيد
+                                                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item item2">
+                                                <a href="#" class="btn btn-outline-primary">ساعات العمل</a>
+                                                <p>يحيط بالمركز مساحة مفتوحة حيث يمكن للزوار الاسترخاء والاستكشاف والاستمتاع بمعارضنا الخارجية التفاعلية</p>
+                                                <a href="#" class="read-more">
+                                                    اقرأ المزيد
+                                                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item item3">
+                                                <a href="tickets.php" class="btn btn-outline-primary">سعر التذكرة</a>
+                                                <p>يحيط بالمركز مساحة مفتوحة حيث يمكن للزوار الاسترخاء والاستكشاف والاستمتاع بمعارضنا الخارجية التفاعلية</p>
+                                                <a href="tickets.php" class="read-more">
+                                                    اقرأ المزيد
+                                                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="item">
+                                                <a href="courtyard.php" class="btn btn-outline-primary">فناء</a>
+                                                <p>يحيط بالمركز مساحة مفتوحة حيث يمكن للزوار الاسترخاء والاستكشاف والاستمتاع بمعارضنا الخارجية التفاعلية</p>
+                                                <a href="courtyard.php" class="read-more">
+                                                    اقرأ المزيد
+                                                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 7.74801L4.75645 4.37401L1 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="gallery">
+                            <div class="container">
+                                <div class="title-area">
+                                    <h2 class="section-title" data-animate="fade-right">معرض</h2>
+                                    <div class="h-list nav tabs-list mb-0" data-animate="fade-left">
+                                        <a href="#events_tab" data-bs-toggle="tab" class="btn btn-outline-dark active">الأحداث</a>
+                                        <a href="#gallery_tab" data-bs-toggle="tab" class="btn btn-outline-dark">معرض</a>
+                                        <a href="#summer_tab" data-bs-toggle="tab" class="btn btn-outline-dark">صيف</a>
+                                        <a href="#rentable_tab" data-bs-toggle="tab" class="btn btn-outline-dark">قابلة للتأجير</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="events_tab" role="tabpanel">
+                                    <div class="swiper events_swiper animate-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image1.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image2.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image3.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image4.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image5.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image1.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image2.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image3.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="h-list arrows">
+                                            <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                            <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="gallery_tab" role="tabpanel">
+                                    <div class="swiper events_swiper animate-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image1.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image2.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image3.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image4.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image5.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image1.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image2.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image3.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="h-list arrows">
+                                            <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                            <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="summer_tab" role="tabpanel">
+                                    <div class="swiper events_swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image1.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image2.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image3.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image4.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image5.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image1.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image2.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image3.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="h-list arrows">
+                                            <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                            <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="rentable_tab" role="tabpanel">
+                                    <div class="swiper events_swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image1.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image2.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image3.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image4.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image5.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image1.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image2.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image3.webp" alt="" ></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="h-list arrows">
+                                            <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                            <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="container">
+                                <div class="block1">
+                                    <h2 class="section-title mb-2">Contact Us</h2>
+                                    <p class="tagline">We'd love to hear from you! Get in touch with us for any questions, suggestions, or feedback</p>
+                                    <div class="columns">
+                                        <form class="form">
+                                            <div class="grid">
+                                                <div class="form-element">
+                                                    <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.99902 1.83331C9.56372 1.83331 10.8328 3.10166 10.833 4.66632C10.833 6.23113 9.56383 7.50031 7.99902 7.50031C6.43437 7.50013 5.16602 6.23102 5.16602 4.66632C5.16619 3.10177 6.43447 1.83349 7.99902 1.83331Z" stroke="white"/>
+                                                        <path d="M7.99902 10.1667C11.0839 10.1667 13.4463 12.172 13.5547 14.4997H2.44434C2.55272 12.1721 4.91439 10.1669 7.99902 10.1667Z" stroke="white"/>
+                                                    </svg>
+                                                    <input type="text" class="form-control" required placeholder="Full Name *" />
+                                                </div>
+                                                <div class="form-element">
+                                                    <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.66699 2.83331H11.334C12.2573 2.83331 12.9501 3.06441 13.4102 3.49152C13.8634 3.9124 14.1669 4.59514 14.167 5.66632V10.3333C14.167 11.4046 13.8634 12.0872 13.4102 12.5081C12.9501 12.9353 12.2573 13.1663 11.334 13.1663H4.66699C3.7438 13.1663 3.05078 12.9352 2.59082 12.5081C2.13766 12.0872 1.83398 11.4045 1.83398 10.3333V5.66632C1.83405 4.59522 2.13762 3.9124 2.59082 3.49152C3.05078 3.06441 3.7438 2.83337 4.66699 2.83331ZM12.1074 5.3714C11.7629 4.93285 11.1303 4.87684 10.709 5.21613L8.62207 6.88312H8.62109C8.47243 7.00244 8.24716 7.07843 7.99707 7.07843C7.74714 7.07838 7.52264 7.00235 7.37402 6.88312H7.37305L5.28613 5.21613H5.28516C4.84695 4.86344 4.2234 4.95582 3.88574 5.3714L3.87988 5.37921C3.54731 5.80523 3.61245 6.43493 4.03906 6.78156L4.04199 6.78351L6.125 8.44659V8.44757C6.66027 8.88392 7.34352 9.08624 8.00098 9.08624C8.66036 9.08618 9.3341 8.88298 9.87305 8.4505L11.958 6.78351L11.959 6.78448L11.9629 6.78156C12.3858 6.43784 12.4541 5.81279 12.1182 5.38507H12.1191C12.1172 5.38254 12.1152 5.37977 12.1133 5.37726C12.1117 5.37532 12.11 5.37333 12.1084 5.3714H12.1074Z" stroke="white"/>
+                                                    </svg>
+                                                    <input type="email" class="form-control" required placeholder="Email Address *" />
+                                                </div>
+                                                <div class="form-element">
+                                                    <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M3.72754 1.83337C3.84398 1.83341 3.95603 1.85827 4.05078 1.90369V1.90466L4.05762 1.90759C4.15667 1.95331 4.23771 2.01776 4.30273 2.11169L4.30664 2.1156L5.85254 4.29626L5.85449 4.29919C5.95629 4.44059 6.0222 4.55924 6.06445 4.66248L6.06738 4.67029C6.10789 4.76481 6.12109 4.83742 6.12109 4.88025C6.12106 4.9395 6.10405 5.01034 6.05371 5.09314L6.0498 5.09998L6.04492 5.10779C5.98617 5.21158 5.89095 5.33596 5.75391 5.47302L5.74707 5.47986L5.24707 5.99939C5.07223 6.17423 4.99414 6.39257 4.99414 6.62048C4.99418 6.721 5.00779 6.80886 5.0293 6.8949L5.03613 6.92224L5.0459 6.94861C5.06021 6.98678 5.07496 7.02041 5.08301 7.03943C5.09055 7.05725 5.09231 7.0636 5.09277 7.06482L5.10742 7.10681L5.12793 7.14587C5.27156 7.40919 5.50348 7.72625 5.80566 8.08337L5.80957 8.08728C6.11457 8.43972 6.44139 8.80112 6.79688 9.16345L6.80078 9.16736C6.83903 9.2056 6.87805 9.24332 6.91211 9.27576C6.9478 9.30975 6.97864 9.3384 7.00684 9.36658L7.01172 9.37146C7.08099 9.43911 7.08086 9.54527 7.01367 9.61267L5.78027 10.8461C5.71755 10.9088 5.61535 10.9154 5.54004 10.8451C5.50143 10.8067 5.46337 10.7708 5.42969 10.7386L5.32715 10.64C4.65827 9.96447 4.05504 9.25711 3.51758 8.51892C3.05552 7.87624 2.67701 7.23913 2.38672 6.61267L2.26758 6.34412C1.97548 5.63405 1.83398 4.97387 1.83398 4.35974C1.83402 3.96582 1.90334 3.59607 2.03809 3.25916L2.03906 3.25623C2.17048 2.92225 2.38047 2.60958 2.68359 2.32361L2.69141 2.31677C3.0426 1.97106 3.38879 1.83337 3.72754 1.83337Z" stroke="white"/>
+                                                        <path d="M11.0938 9.85999C11.1471 9.85999 11.2167 9.871 11.3115 9.90979C11.416 9.95258 11.5379 10.0194 11.6855 10.1198L13.8838 11.6813L13.8887 11.6842C13.9935 11.7567 14.0477 11.8257 14.0791 11.8932C14.1254 12.011 14.1475 12.1125 14.1475 12.2203C14.1474 12.3474 14.1234 12.4826 14.0762 12.6158C14.0562 12.6692 14.0459 12.6978 14.0332 12.7233L14.0283 12.733C13.9348 12.931 13.8147 13.1159 13.6562 13.2906C13.3862 13.5881 13.0998 13.7945 12.7871 13.9303L12.7256 13.9567C12.3923 14.0922 12.0294 14.1666 11.6338 14.1666C11.0329 14.1666 10.3727 14.0256 9.65625 13.7203C8.92911 13.4105 8.19637 12.9908 7.46484 12.4586H7.46582C7.35838 12.3787 7.25315 12.3003 7.15039 12.2223L8.6416 10.7311C8.71144 10.7743 8.77727 10.8154 8.8418 10.8492L8.86426 10.861L8.8877 10.8707C8.89109 10.8721 8.8986 10.8756 8.91992 10.8854C8.93813 10.8937 8.96681 10.9066 8.99707 10.9196L9.00781 10.9244L9.01855 10.9283C9.14479 10.9756 9.26174 10.9869 9.36035 10.9869C9.6123 10.9869 9.82366 10.8898 9.98535 10.7291L10.4912 10.2291L10.4941 10.2272C10.6406 10.0807 10.7595 9.99101 10.8516 9.94299L10.8662 9.93518L10.8799 9.92737C10.9647 9.87575 11.0296 9.85999 11.0938 9.85999Z" stroke="white"/>
+                                                    </svg>
+                                                    <input type="tel" class="form-control" required placeholder="Phone Number *" />
+                                                </div>
+                                                <div class="form-element">
+                                                    <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.7061 5.37854C12.9958 5.3785 12.2062 5.37976 11.626 5.37366H11.6201C10.8765 5.37348 10.2872 4.77735 10.2871 4.09338V1.93323C11.2379 2.88529 12.7612 4.42648 13.7061 5.37854Z" stroke="white"/>
+                                                        <path d="M5.37891 1.83337H8.20605C8.29656 1.8334 8.37305 1.90985 8.37305 2.00037V3.92712C8.37327 5.78304 9.8833 7.29329 11.7393 7.29333H13.666C13.7565 7.29333 13.833 7.3698 13.833 7.46033V10.9535C13.833 12.0208 13.4636 12.812 12.9033 13.3383C12.338 13.869 11.5385 14.1664 10.6191 14.1664H5.37891C4.45954 14.1663 3.65993 13.8691 3.09473 13.3383C2.53443 12.812 2.16604 12.0207 2.16602 10.9535V5.04626C2.16612 3.97938 2.53467 3.18869 3.09473 2.66248C3.65993 2.13163 4.45954 1.83347 5.37891 1.83337ZM4.99902 10.3334C4.44969 10.3336 3.99902 10.784 3.99902 11.3334C3.99902 11.8827 4.4497 12.3332 4.99902 12.3334H7.66602C8.21549 12.3334 8.66602 11.8828 8.66602 11.3334C8.66602 10.7839 8.21549 10.3334 7.66602 10.3334H4.99902ZM4.99902 7.66638C4.4498 7.66656 3.9992 8.11716 3.99902 8.66638C3.99902 9.21575 4.4497 9.6662 4.99902 9.66638H8.99902C9.5485 9.66638 9.99902 9.21586 9.99902 8.66638C9.99885 8.11705 9.54839 7.66638 8.99902 7.66638H4.99902Z" stroke="white"/>
+                                                    </svg>
+                                                    <input type="text" class="form-control" placeholder="Subject" />
+                                                </div>
+                                                <div class="form-element full">
+                                                    <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4.66699 2.12H11.334C12.2204 2.12 12.9205 2.41356 13.3975 2.8905C13.8742 3.36738 14.1669 4.06698 14.167 4.953V8.953C14.167 9.83928 13.8743 10.5395 13.3975 11.0165C12.9205 11.4934 12.2204 11.787 11.334 11.787H10.834V13.7069C10.8338 13.8381 10.688 13.9169 10.5781 13.8436H10.5771L7.61133 11.87L7.48535 11.787H4.66699C3.78087 11.7869 3.08137 11.4933 2.60449 11.0165C2.12755 10.5395 1.83398 9.83938 1.83398 8.953V4.953C1.83406 4.06678 2.12761 3.36739 2.60449 2.8905C3.08138 2.41362 3.78077 2.12007 4.66699 2.12ZM5.66699 5.99988C5.1177 6.00006 4.66706 6.45056 4.66699 6.99988C4.66699 7.54924 5.11766 7.9997 5.66699 7.99988H10.334C10.8835 7.99988 11.334 7.54935 11.334 6.99988C11.3339 6.45045 10.8834 5.99988 10.334 5.99988H5.66699Z" stroke="white"/>
+                                                    </svg>
+                                                    <input type="text" class="form-control" required placeholder="Message *" />
+                                                </div>
+                                            </div>
+                                            <div class="button-row text-md-start text-center">
+                                                <a class="btn btn-primary action-button" href="#thankyou-modal" data-bs-toggle="modal">Send</a>
+                                            </div>
+                                        </form>
+                                        <aside class="address">
+                                            <div class="item">
+                                                <label>E-mail</label>
+                                                <a href="mailto: info@ascckw.com">info@ascckw.com</a>
+                                            </div>
+                                            <div class="item">
+                                                <label>Mobile Number</label>
+                                                <a href="tel: +965 22222211">+965 22222211</a>
+                                            </div>
+                                            <div class="item">
+                                                <label>Address</label>
+                                                Sheikh Abdullah Al-Salem Cultural Centre, Baghdad Street, Block 11, Salmiya, Hawalli Governorate, Kuwait 22065
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
+                            <figure class="block2">
+                                <img src="images/contact_map.jpg" alt="" >
+                            </figure>
+                        </div>
+                    </div>
+                    <?php include 'components/footer.php';  ?>
+                    <script>
+                        const swiperConfig = {
+                            slidesPerView: 1,
+                            spaceBetween: 30,            
+                            centeredSlides: false,
+                            loop: true,
+                            effect: "coverflow",
+                             speed: 900,
+                            coverflowEffect: {
+                                rotate: 0,
+                                stretch: 0,
+                                depth: 120,
+                                modifier: 1,
+                                slideShadows: false,
+                            },
+                            breakpoints: {
+                                768: {
+                                    spaceBetween: 60,
+                                    centeredSlides: true,
+                                    slidesPerView: "auto",
+                                    slidesPerView: 'auto',
+                                },
+                                1200: {
+                                    centeredSlides: true,
+                                    spaceBetween: 190,
+                                    slidesPerView: "auto",
+                                    slidesPerView: 'auto',
+                                },
+                            }
+                        };
+                        const swiperElements = document.querySelectorAll(".events_swiper");
+                        swiperElements.forEach((el) => {
+                            new Swiper(el, {
+                                ...swiperConfig, // Spread the shared config here
+                                navigation: {
+                                    // This ensures each slider uses its own specific arrows
+                                    nextEl: el.querySelector(".arrows .next"),
+                                    prevEl: el.querySelector(".arrows .prev"),
+                                },
+
+                            });
+                        });
+                        const plan_visit_swiper = new Swiper(".plan-visit .swiper", {
+                            slidesPerView: 1,
+                            spaceBetween: 30,
+                            slideToClickedSlide: true,
+                            speed: 900,
+                            loop: true,
+                            navigation: {
+                                nextEl: ".plan-visit .arrows .next",
+                                prevEl: ".plan-visit .arrows .prev",
+                            },
+                            breakpoints: {
+                                768: {
+                                    spaceBetween: 40,
+                                    slidesPerView: 2,
+                                },
+                                1200: {
+                                    spaceBetween: 60,
+                                    slidesPerView: 3,
+                                },
+                            }
+                        });
+                        const camera_mobile_view = new Swiper(".camera-mobile-view .swiper", {
+                            slidesPerView: 1,
+                            speed: 900,
+                            loop: true,
+                            navigation: {
+                                nextEl: ".camera-mobile-view .arrows .next",
+                                prevEl: ".camera-mobile-view .arrows .prev",
+                            },
+                            breakpoints: {
+                                900: {
+                                    slidesPerView: 2,
+                                },
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

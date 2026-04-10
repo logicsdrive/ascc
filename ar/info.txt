@@ -1,0 +1,25 @@
+https://www.figma.com/proto/uDBYYSoSu9YdGxMSzjAiLK/ASCC-innerpages?node-id=47-642&viewport=-612%2C-19701%2C0.53&t=RgPPWvY0gjS7S0Nm-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=47%3A642&show-proto-sidebar=1
+
+prototype
+https://www.figma.com/proto/uDBYYSoSu9YdGxMSzjAiLK/ASCC-innerpages?node-id=47-642&viewport=-612%2C-19701%2C0.53&t=RgPPWvY0gjS7S0Nm-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=47%3A642&show-proto-sidebar=1
+
+
+figma
+https://www.figma.com/design/uDBYYSoSu9YdGxMSzjAiLK/ASCC-innerpages?node-id=573-5991&t=TiCM1lTBGOl3LjTT-0
+
+figma responsive
+https://www.figma.com/proto/Ljani4P5qJObkCtCGtgUsj/ascc-mobile?page-id=0%3A1&node-id=4-326&viewport=322%2C249%2C0.46&t=Np1GbE1P3kRJdDvs-1&scaling=scale-down&content-scaling=fixed&fuid=1463137827143714917
+
+copy
+https://www.figma.com/design/ZiPkr5BxrNmg9TTMvBa9oe/ASCC-innerpages--1---Copy-?node-id=0-1&p=f&t=G5yjAFbrXzG4hmJF-0
+
+
+command to run php project
+php -S 127.0.0.1:8000
+
+command to compile custom-bootstrap file
+sass custom-bootstrap.scss custom-bootstrap.css --style=compressed --no-source-map
+
+
+feedback doc
+https://docs.google.com/document/d/1SceH6LsI58h-RPAFr9sdZe6mgjvkUQsvLcnkaK4_kMk/edit?tab=t.0

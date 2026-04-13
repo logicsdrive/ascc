@@ -11,7 +11,7 @@
             <video class="background-video" autoplay muted loop playsinline>
                 <source src="images/hero.mp4" type="video/mp4">
             </video>
-            <h1 class="title">
+            <h1 class="title"> 
                 <span class="ar">مركز الشيخ عبد الله السالم الثقافي</span>
                 <span class="en">Sheikh Abdullah AlSalem Cultural Centre</span>
             </h1>
@@ -252,6 +252,7 @@
                                 </span>
                                 
                             </div>
+                            <div class="camera-view__bg" data-bg="images/track_background.webp"></div>
                             <!-- <div class="mouse-pointer">
                                 <span>To look around, hold and hold left mouse button</span>
                                 <img class="mx-auto" src="images/mouse.png" loading="lazy" alt="" >
@@ -754,6 +755,13 @@
                                 900: {
                                     slidesPerView: 2,
                                 },
+                            }
+                        });
+
+                        document.querySelectorAll(".camera-view__bg").forEach(el => {
+                            const bg = el.getAttribute("data-bg");
+                            if (bg) {
+                                el.style.backgroundImage = `url(${bg})`;
                             }
                         });
                     </script>

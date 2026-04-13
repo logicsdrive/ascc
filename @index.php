@@ -252,6 +252,7 @@
                                 </span>
                                 
                             </div>
+                            <div class="camera-view__bg" data-bg="images/track_background.webp"></div>
                             <!-- <div class="mouse-pointer">
                                 <span>To look around, hold and hold left mouse button</span>
                                 <img class="mx-auto" src="images/mouse.png" loading="lazy" alt="" >
@@ -754,6 +755,12 @@
                                 900: {
                                     slidesPerView: 2,
                                 },
+                            }
+                        });
+                        document.querySelectorAll(".camera-view__bg").forEach(el => {
+                            const bg = el.getAttribute("data-bg");
+                            if (bg) {
+                                el.style.backgroundImage = `url(${bg})`;
                             }
                         });
                     </script>

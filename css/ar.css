@@ -371,7 +371,7 @@ Responsive Code */
         padding: 30px 0 0;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 991px) { 
     .nature-page .earth-block3 {
         padding: 30px;
     }

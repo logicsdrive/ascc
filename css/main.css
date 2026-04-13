@@ -1757,6 +1757,20 @@ strong {
     background-position: center bottom;
     background-position-x: calc(50% + var(--bg-shift, 0px));
     transform: scale(1);
+    transition: transform 0.8s ease, background-position-x 0.8s ease;
+    display: none; }
+  .home-page .camera-view__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-size: cover;
+    background-position: center bottom;
+    background-position-x: calc(50% + var(--bg-shift, 0px));
+    transform: scale(1);
     transition: transform 0.8s ease, background-position-x 0.8s ease; }
   .home-page .camera-view .mouse-pointer {
     position: absolute;
@@ -1926,6 +1940,8 @@ strong {
       left: 290px; }
   .home-page .camera-view.move_step1:after {
     transform: scale(1.1); }
+  .home-page .camera-view.move_step1 .camera-view__bg {
+    transform: scale(1.1); }
   .home-page .camera-view.move_step1 .set1 {
     transform: translateX(0) !important;
     --offset: 900px;
@@ -1948,6 +1964,8 @@ strong {
     transform: translateY(10px); }
   .home-page .camera-view.move_step2:after {
     transform: scale(1.2); }
+  .home-page .camera-view.move_step2 .camera-view__bg {
+    transform: scale(1.2); }
   .home-page .camera-view.move_step2 .set1 {
     --offset: 1500px;
     pointer-events: none; }
@@ -1963,6 +1981,8 @@ strong {
   .home-page .camera-view.move_step2 .surface {
     transform: translateY(20px); }
   .home-page .camera-view.move_step3:after {
+    transform: scale(1.3); }
+  .home-page .camera-view.move_step3 .camera-view__bg {
     transform: scale(1.3); }
   .home-page .camera-view.move_step3 .set2 {
     --offset: 900px;
@@ -1981,6 +2001,8 @@ strong {
     transform: translateY(30px); }
   .home-page .camera-view.move_step4:after {
     transform: scale(1.4); }
+  .home-page .camera-view.move_step4 .camera-view__bg {
+    transform: scale(1.4); }
   .home-page .camera-view.move_step4 .set2 {
     --offset: 1500px;
     pointer-events: none; }
@@ -1994,6 +2016,8 @@ strong {
   .home-page .camera-view.move_step4 .surface {
     transform: translateY(40px); }
   .home-page .camera-view.move_step5:after {
+    transform: scale(1.5); }
+  .home-page .camera-view.move_step5 .camera-view__bg {
     transform: scale(1.5); }
   .home-page .camera-view.move_step5 .set2 {
     pointer-events: none; }
@@ -2011,6 +2035,8 @@ strong {
   .home-page .camera-view.move_step5 .surface {
     transform: translateY(50px); }
   .home-page .camera-view.move_step6:after {
+    transform: scale(1.6); }
+  .home-page .camera-view.move_step6 .camera-view__bg {
     transform: scale(1.6); }
   .home-page .camera-view.move_step6 .set3 {
     --offset: 1500px;

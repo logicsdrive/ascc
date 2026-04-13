@@ -182,6 +182,7 @@ setTimeout(function() {
     document.body.classList.add("page-loaded");
 }, 3000);
 
+
 const ascc_app = {
      isAnimating: false,
     init: function(){

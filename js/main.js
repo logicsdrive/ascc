@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 setTimeout(function() {
     document.body.classList.add("page-loaded");
-}, 3000);
+}, 4000);
 
 
 const ascc_app = {

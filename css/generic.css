@@ -573,6 +573,10 @@ a:hover {
   .site-footer .app-buttons-holder {
     display: grid;
     gap: 8px; }
+    @media screen and (max-width: 575px) {
+      .site-footer .app-buttons-holder {
+        display: flex;
+        align-items: center; } }
   .site-footer .app-button {
     display: block;
     transition: .5s ease all; }

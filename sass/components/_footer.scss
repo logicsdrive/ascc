@@ -45,7 +45,12 @@
     }
     .social-icons .icon-rounded:hover{background: var(--primary-color);}
 
-    .app-buttons-holder{display: grid; gap: 8px;}
+    .app-buttons-holder{display: grid; gap: 8px; 
+        @media screen and (max-width:575px){
+            display:flex;
+            align-items: center;
+        }
+    }
     .app-button{
         display: block;
         transition: .5s ease all;

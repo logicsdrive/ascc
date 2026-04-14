@@ -68,6 +68,11 @@
 @media (min-width: 1200px) {
     .container{max-width: 1560px; --bs-gutter-x: 60px;}
 }
+@media screen and (max-width:1200px){
+    .container{
+        --bs-gutter-x: 20px;
+    }
+}
 
 @mixin media-breakpoint-down($name) {
     $max: map-get($grid-breakpoints, $name);
@@ -121,7 +126,7 @@ body{
     font-family: var(--font-light);
     overflow-x: hidden;
     @media screen and (max-width:767px){
-        font-size: px_rem(18px);
+        font-size: px_rem(17px);
         line-height: px_rem(22px);
     }
 }

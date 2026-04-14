@@ -133,6 +133,14 @@ label , input , .form-control{
 .about .view3 .block1 .slot svg{
   transform: scale(-1);
 }
+.about .view3 .get-access .content ul li {
+    padding-right: 30px;
+    padding-left:0;
+}
+.about .view3 .get-access .content ul li:after{
+  right:12px;
+  left:auto;
+}
 
 /* meusem Pages */
 .nature-page .page-title-banner .page-banner-desc:after{
@@ -190,6 +198,9 @@ label , input , .form-control{
 .booking-confirmation .table td:first-child{
   padding-left:.5rem;
   padding-right:0;
+}
+.booking-details .rules-dropdown-menu .data > *:last-child{
+  text-align: right;
 }
 
 /* Booking Confirmation  */
@@ -407,6 +418,10 @@ Responsive Code */
 	.theatre-page .theatre_icon{
 		margin:0;
 	}
+  .booking-details .rules-dropdown-menu .data > *:last-child{
+  width: 100%;
+    max-width: 350px;
+}
 }
 @media screen and (max-width:1200px){
   .site-header .search-field{

@@ -11,6 +11,11 @@
 <meta property="og:url" content="https://dev.kuwaitnet.net/atif/ascc/">
 <meta property="og:type" content="website">
 
+<!-- Preconnect (IMPORTANT for speed) -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <!-- SEO -->
 
 <meta name="description" content="<?= isset($pageDescription) ? $pageDescription : 'ASCC'; ?>">
@@ -22,10 +27,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
 
-<!-- Bootstrap 5 CSS -->
-<link href="./css/custom-bootstrap.css" rel="stylesheet">
+<!-- CSS (critical first) -->
+<link rel="stylesheet" href="./css/custom-bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Plugin CSS (non-critical last) -->
 <link rel="stylesheet" href="./css/flatpickr.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.1/build/css/intlTelInput.css">
-
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/main.css">

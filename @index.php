@@ -5,7 +5,7 @@
     </head>
     <body class="home-page">
         <div class="page-loader">
-            <img src="images/loader.gif" alt="" loading="lazy">
+            <img src="images/loader.gif" alt="" class="img-fluid">
         </div>
         <div class="enter-the-center">
             <video class="background-video" autoplay muted loop playsinline>

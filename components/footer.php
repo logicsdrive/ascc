@@ -48,9 +48,11 @@
 <?php include 'images/svg_assets.php'; ?>
 
 <!-- scripts -->
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script> 
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/flatpickr.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/intlTelInput.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>

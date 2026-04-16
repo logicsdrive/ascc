@@ -292,7 +292,7 @@ label , input , .form-control{
 }
 
 /* Rantals page */
-.rentals .left-bar .item {
+.rentals .nav-bar .item {
     padding: 5px 24px 5px 52px;
     background-position: left 31px center;
     background: #f5f7f7 url(../images/icons/leftIcon-arrow.svg) left 31px center no-repeat;
@@ -399,7 +399,7 @@ Responsive Code */
         padding: 0;
     }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:767px){ 
   .site-header .search-field .form-control{
     padding-right:42px;
   }

@@ -195,174 +195,181 @@ $pageDescription = "ASCC";
                             </div>
                         </div>
                         <div class="container places-area-wrapper">
-                            <aside class="left-bar">
-                                <h2 class="section-title" data-animate="fade-up">Available places</h2>
-                                <p data-animate="fade-up">You can tap on any museum to explore it or use the tabs at the bottom to navigate</p>
-                                <div class="nav buttons" data-animate="fade-up">
-                                    <button class="btn btn-outline-dark active" data-bs-target="#indoor_tab" data-bs-toggle="tab">Indoor</button>
-                                    <button class="btn btn-outline-dark" data-bs-target="#outdoor_tab" data-bs-toggle="tab">Outdoor</button>
+                            <aside class="">
+                                <div class="topHead">
+                                    <h2 class="section-title" data-animate="fade-up">Available places</h2>
+                                    <p data-animate="fade-up">You can tap on any museum to explore it or use the tabs at the bottom to navigate</p>
+                                    <div class="nav buttons" data-animate="fade-up">
+                                        <button class="btn btn-outline-dark active" data-bs-target="#indoor_tab" data-bs-toggle="tab">Indoor</button>
+                                        <button class="btn btn-outline-dark" data-bs-target="#outdoor_tab" data-bs-toggle="tab">Outdoor</button>
+                                    </div>
                                 </div>
                                 <div class="tab-content" data-animate="fade-up">
                                     <div class="tab-pane active" id="indoor_tab" role="tabpanel">
-                                        <div class="nav-bar">
-                                            <div class="item">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#echosystem_icon"></use>
-                                                </svg>
-                                                <span>Ecosystems</span>
+                                        <div class="d-flex">
+                                            <div class="nav-bar">
+                                                <div class="item" onclick="activeZoomedView('earth');">
+                                                    <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#link_brideg_icon"></use>
+                                                    </svg>
+                                                    <span>Our Earth (1)</span>
+                                                </div>
+                                                <div class="item" onclick="activeZoomedView('trans');">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#trans_icon"></use>
+                                                    </svg>
+                                                    <span>Transportation & Robots (2)</span>
+                                                </div>
+                                                <div class="item" onclick="activeZoomedView('theatre');">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#theatre_icon"></use>
+                                                    </svg>
+                                                    <span>Theatre (1)</span>
+                                                </div>
+                                                <div class="item" onclick="activeZoomedView('arabic-science');">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#theatre_icon"></use>
+                                                    </svg>
+                                                    <span>Arabic Islamic science (3)</span>
+                                                </div>
+                                                <div class="item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#echosystem_icon"></use>
+                                                    </svg>
+                                                    <span>Ecosystems</span>
+                                                </div>
+                                                <div class="item">
+                                                    <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#link_brideg_icon"></use>
+                                                    </svg>
+                                                    <span>Link Bridge (1)</span>
+                                                </div>
+                                                <div class="item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#human_icon"></use>
+                                                    </svg>
+                                                    <span>Link Bridge (1)</span>
+                                                </div>
+                                                <div class="item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#human_icon"></use>
+                                                    </svg>
+                                                    <span>Human Body</span>
+                                                </div>
+                                                <div class="item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#space_icon"></use>
+                                                    </svg>
+                                                    <span>Space</span>
+                                                </div>
                                             </div>
-                                            <div class="item">
-                                                <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#link_brideg_icon"></use>
-                                                </svg>
-                                                <span>Link Bridge (1)</span>
-                                            </div>
-                                            <div class="item" onclick="activeZoomedView('earth');">
-                                                <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#link_brideg_icon"></use>
-                                                </svg>
-                                                <span>Our Earth (1)</span>
-                                            </div>
-                                            <div class="item" onclick="activeZoomedView('trans');">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#trans_icon"></use>
-                                                </svg>
-                                                <span>Transportation & Robots (2)</span>
-                                            </div>
-                                            <div class="item">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#human_icon"></use>
-                                                </svg>
-                                                <span>Link Bridge (1)</span>
-                                            </div>
-                                            <div class="item">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#human_icon"></use>
-                                                </svg>
-                                                <span>Human Body</span>
-                                            </div>
-                                            <div class="item" onclick="activeZoomedView('theatre');">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#theatre_icon"></use>
-                                                </svg>
-                                                <span>Theatre (1)</span>
-                                            </div>
-                                            <div class="item" onclick="activeZoomedView('arabic-science');">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#theatre_icon"></use>
-                                                </svg>
-                                                <span>Arabic Islamic science (3)</span>
-                                            </div>
-                                            <div class="item">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#space_icon"></use>
-                                                </svg>
-                                                <span>Space</span>
+                                             <div class="places-graph">
+                                                <div class="scroll">
+                                                    <div class="link_bridge1" data-animate="fade-right">
+                                                        <div class="item echosystem no-area">
+                                                            <img src="images/place_echosystem.png" width="305" height="170" alt="" />
+                                                            <div class="text" style="top: 60px; right: 80px;">
+                                                                <span>النظم البيئية</span>
+                                                                <span>Ecosystems</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <span>Link Bridge</span>
+                                                            <img src="images/bridge_icon1.png" alt="" />    
+                                                        </div>
+                                                        <div class="item earth zoom-image" id="earth" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('earth');">
+                                                            <img src="images/place_earth.png" width="346" height="186" alt="" />
+                                                            <span class="marker" style="bottom: 36px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
+                                                            <div class="text" style="top: 66px; left: 83px;">
+                                                                <span>الأرض كوكبنا</span>
+                                                                <span>Our Earth</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="link_bridge2" data-animate="fade-left">
+                                                        <div>
+                                                            <div class="item trans" style="margin-bottom: 34px;" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('trans');">
+                                                                <img class="marker marker1" style="top: 36px; right: 112px;" src="images/area_marker.png" alt="" />
+                                                                <img class="marker marker2" style="bottom: 34px; right: 100px;" src="images/area_marker.png" alt="" />
+                                                                <img src="images/place_trans.png" width="343" height="198" alt="" />
+                                                                <div class="text" style="top: 66px; left: 164px;">
+                                                                    <span>النقل والربوتات</span>
+                                                                    <span>Transportation &<br/> Robots</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="icon">
+                                                                <span>Link Bridge</span>
+                                                                <img src="images/bridge_icon2.png" alt="" />    
+                                                            </div>
+                                                            <div class="item arabic-science" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('arabic-science');">
+                                                                <span class="marker" style="top: 25px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
+                                                                <span class="marker" style="top: 27px; right: 50px;"><img src="images/area_marker.png" alt="" /></span>
+                                                                <span class="marker" style="bottom: 15px; right: 110px;"><img src="images/area_marker.png" alt="" /></span>
+                                                                <img src="images/place_arabic_science.png" width="333" height="181" alt="" />
+                                                                <div class="text" style="top: 44px; right: 40px;">
+                                                                    <span>العلوم العربية الاسلامية /مركز الفنون الجميلة</span>
+                                                                    <span>Arabic Islamic science /fine arts centre</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="item human-body no-area" style="margin-bottom: 16px;">
+                                                                <img src="images/place_human.png" width="307" height="172" alt="" />
+                                                                <div class="text" style="top: 66px; left: 83px;">
+                                                                    <span>جسم الإنسان</span>
+                                                                    <span>Human Body</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item theatre" style="margin-bottom: 8px;" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('theatre');">
+                                                                <img class="marker" style="bottom: 38px; right: 44px;" src="images/area_marker.png" alt="" />
+                                                                <img src="images/place_theatre.png" alt="" />
+                                                                <div class="text" style="top: 40px; right: 100px;">
+                                                                    <span>المسرح</span>
+                                                                    <span>Theatre</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item space no-area">
+                                                                <img src="images/place_space.png" width="311" height="174" alt="" />
+                                                                <div class="text" style="top: 66px; left: 96px;">
+                                                                    <span>الفضاء</span>
+                                                                    <span>Space</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="outdoor_tab" role="tabpanel">
-                                        <div class="nav-bar">
-                                            <div class="item">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#echosystem_icon"></use>
-                                                </svg>
-                                                <span>Ecosystems</span>
+                                        <div class="d-flex">
+                                            <div class="nav-bar">
+                                                <div class="item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#echosystem_icon"></use>
+                                                    </svg>
+                                                    <span>Ecosystems</span>
+                                                </div>
+                                                <div class="item">
+                                                    <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#link_brideg_icon"></use>
+                                                    </svg>
+                                                    <span>Link Bridge (1)</span>
+                                                </div>
+                                                <div class="item">
+                                                    <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href="#link_brideg_icon"></use>
+                                                    </svg>
+                                                    <span>Our Earth (1)</span>
+                                                </div>
                                             </div>
-                                            <div class="item">
-                                                <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#link_brideg_icon"></use>
-                                                </svg>
-                                                <span>Link Bridge (1)</span>
-                                            </div>
-                                            <div class="item" onclick="activeZoomedView('earth');">
-                                                <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <use href="#link_brideg_icon"></use>
-                                                </svg>
-                                                <span>Our Earth (1)</span>
+                                            <div class="places-graph">
+                                                Outdoor Musems
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </aside>
-                            <div class="right">
-                                <div class="places-graph">
-                                    <div class="scroll">
-                                        <div class="link_bridge1" data-animate="fade-right">
-                                            <div class="item echosystem no-area">
-                                                <img src="images/place_echosystem.png" width="305" height="170" alt="" />
-                                                <div class="text" style="top: 60px; right: 80px;">
-                                                    <span>النظم البيئية</span>
-                                                    <span>Ecosystems</span>
-                                                </div>
-                                            </div>
-                                            <div class="icon">
-                                                <span>Link Bridge</span>
-                                                <img src="images/bridge_icon1.png" alt="" />    
-                                            </div>
-                                            <div class="item earth zoom-image" id="earth" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('earth');">
-                                                <img src="images/place_earth.png" width="346" height="186" alt="" />
-                                                <span class="marker" style="bottom: 36px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
-                                                <div class="text" style="top: 66px; left: 83px;">
-                                                    <span>الأرض كوكبنا</span>
-                                                    <span>Our Earth</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="link_bridge2" data-animate="fade-left">
-                                            <div>
-                                                <div class="item trans" style="margin-bottom: 34px;" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('trans');">
-                                                    <img class="marker marker1" style="top: 36px; right: 112px;" src="images/area_marker.png" alt="" />
-                                                    <img class="marker marker2" style="bottom: 34px; right: 100px;" src="images/area_marker.png" alt="" />
-                                                    <img src="images/place_trans.png" width="343" height="198" alt="" />
-                                                    <div class="text" style="top: 66px; left: 164px;">
-                                                        <span>النقل والربوتات</span>
-                                                        <span>Transportation &<br/> Robots</span>
-                                                    </div>
-                                                </div>
-                                                <div class="icon">
-                                                    <span>Link Bridge</span>
-                                                    <img src="images/bridge_icon2.png" alt="" />    
-                                                </div>
-                                                <div class="item arabic-science" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('arabic-science');">
-                                                    <span class="marker" style="top: 25px; left: 125px;"><img src="images/area_marker.png" alt="" /></span>
-                                                    <span class="marker" style="top: 27px; right: 50px;"><img src="images/area_marker.png" alt="" /></span>
-                                                    <span class="marker" style="bottom: 15px; right: 110px;"><img src="images/area_marker.png" alt="" /></span>
-                                                    <img src="images/place_arabic_science.png" width="333" height="181" alt="" />
-                                                    <div class="text" style="top: 44px; right: 40px;">
-                                                        <span>العلوم العربية الاسلامية /مركز الفنون الجميلة</span>
-                                                        <span>Arabic Islamic science /fine arts centre</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="item human-body no-area" style="margin-bottom: 16px;">
-                                                    <img src="images/place_human.png" width="307" height="172" alt="" />
-                                                    <div class="text" style="top: 66px; left: 83px;">
-                                                        <span>جسم الإنسان</span>
-                                                        <span>Human Body</span>
-                                                    </div>
-                                                </div>
-                                                <div class="item theatre" style="margin-bottom: 8px;" onclick="uiActions.zoomAndOpen(this, event); activeZoomedView('theatre');">
-                                                    <img class="marker" style="bottom: 38px; right: 44px;" src="images/area_marker.png" alt="" />
-                                                    <img src="images/place_theatre.png" alt="" />
-                                                    <div class="text" style="top: 40px; right: 100px;">
-                                                        <span>المسرح</span>
-                                                        <span>Theatre</span>
-                                                    </div>
-                                                </div>
-                                                <div class="item space no-area">
-                                                    <img src="images/place_space.png" width="311" height="174" alt="" />
-                                                    <div class="text" style="top: 66px; left: 96px;">
-                                                        <span>الفضاء</span>
-                                                        <span>Space</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </main>

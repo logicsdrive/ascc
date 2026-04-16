@@ -13,46 +13,49 @@
   overflow: hidden;
   padding: 3rem 0 5rem;
   position: relative; }
+  .rentals .places-area-wrapper .d-flex {
+    flex-direction: column; }
   @media (min-width: 1071px) {
-    .rentals .places-area-wrapper {
-      display: grid;
-      grid-template-columns: auto 1fr; } }
-  .rentals .left-bar {
+    .rentals .places-area-wrapper .d-flex {
+      flex-direction: row; } }
+  .rentals .topHead {
     width: 380px; }
-    .rentals .left-bar .section-title {
-      margin-bottom: 12px; }
-    .rentals .left-bar .buttons {
-      display: grid;
-      margin: 12px 0 20px;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 12px; }
-    .rentals .left-bar .buttons .btn.active {
-      background: var(--primary-color);
-      border-color: var(--primary-color); }
-    .rentals .left-bar .nav-bar {
-      background: white;
-      display: grid;
-      grid-gap: 10px;
-      border-radius: 15px;
-      padding: 15px; }
-    .rentals .left-bar .item {
-      min-height: 54px;
-      cursor: pointer;
-      padding: 5px 52px 5px 24px;
-      border-radius: 15px;
-      font-size: 18px;
-      display: grid;
-      grid-template-columns: 24px 1fr;
-      align-items: center;
-      grid-gap: 10px;
-      background: #f5f7f7 url(../images/right-arrow.svg) calc(100% - 32px) center no-repeat; }
-    .rentals .left-bar .item:hover {
-      background-color: #e2e2e2; }
-  .rentals .right {
-    padding-left: 122px;
-    padding-top: 38px; }
+  .rentals .section-title {
+    margin-bottom: 12px; }
+  .rentals .buttons {
+    display: grid;
+    margin: 12px 0 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px; }
+  .rentals .buttons .btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color); }
+  .rentals .nav-bar {
+    background: white;
+    display: grid;
+    grid-gap: 10px;
+    border-radius: 15px;
+    padding: 15px;
+    width: 380px; }
+  .rentals .nav-bar .item {
+    min-height: 54px;
+    cursor: pointer;
+    padding: 5px 52px 5px 24px;
+    border-radius: 15px;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    align-items: center;
+    grid-gap: 10px;
+    background: #f5f7f7 url(../images/right-arrow.svg) calc(100% - 32px) center no-repeat; }
+  .rentals .nav-bar .item:hover {
+    background-color: #e2e2e2; }
   .rentals .places-graph {
-    position: relative; }
+    position: relative;
+    padding-inline-start: 122px; }
+    @media screen and (min-width: 1071px) {
+      .rentals .places-graph {
+        top: -150px; } }
     .rentals .places-graph .item {
       cursor: pointer;
       position: relative;
@@ -359,20 +362,18 @@
         padding: 15px;
         background: white; } }
   @media (max-width: 1399px) {
-    .rentals .right {
-      padding-left: 60px; } }
+    .rentals .places-graph {
+      padding-inline-start: 60px; } }
   @media (max-width: 1199px) {
-    .rentals .left-bar {
+    .rentals .topHead, .rentals .nav-bar {
       width: 320px; }
-    .rentals .right {
-      padding-left: 30px; } }
+    .rentals .places-graph {
+      padding-inline-start: 30px; } }
   @media (max-width: 1070px) {
-    .rentals .left-bar {
+    .rentals .topHead, .rentals .nav-bar {
       width: 100%; }
-    .rentals .right {
-      padding: 30px 0 0;
-      display: flex;
-      justify-content: center; }
+    .rentals .places-graph {
+      padding: 30px 0 0; }
     .rentals .title-area {
       flex-direction: column;
       gap: 20px; } }

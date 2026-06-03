@@ -55,6 +55,6 @@
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        ascc_app.initExploreSlider();
+        ascc_app.initExploreSlider(); 
     });
 </script>

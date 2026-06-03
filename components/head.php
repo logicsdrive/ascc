@@ -32,5 +32,6 @@
 <link rel="stylesheet" href="css/main.css">
 
 <!-- Plugin CSS (non-critical last) -->
+ <link rel="stylesheet" href="./css/select2.min.css">
 <link rel="stylesheet" href="./css/flatpickr.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.1/build/css/intlTelInput.css">

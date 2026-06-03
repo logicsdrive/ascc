@@ -19,6 +19,12 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
+@font-face {
+  font-family: 'Berytus';
+  src: url("../fonts/berytus-light/Berytus-Light.woff2") format("woff2"), url("../fonts/berytus-light/Berytus-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
 :root {
   --font-thin: 'PFDinTextArabicW21-Thin', cursive;
   --font-light: 'PFDinTextArabicW21-Light', cursive;
@@ -1276,6 +1282,38 @@ strong {
   .form-element .form-control::-webkit-input-placeholder {
     color: inherit;
     opacity: 0.5; }
+  .form-element .select2-container {
+    width: 100% !important; }
+  .form-element .select2-container--default .select2-selection--single {
+    box-shadow: none;
+    color: black;
+    font-family: var(--font-medium);
+    font-size: 1rem;
+    line-height: 1.375rem;
+    border: 1px solid transparent;
+    padding: 36px 1.5rem 14px;
+    border-radius: 50px !important;
+    height: auto;
+    background: #fff; }
+    .form-element .select2-container--default .select2-selection--single .select2-selection__rendered {
+      padding: 0;
+      padding-inline-end: 1rem;
+      color: black;
+      font-family: var(--font-medium);
+      font-size: 1rem; }
+    .form-element .select2-container--default .select2-selection--single .select2-selection__arrow {
+      top: 60%;
+      transform: translateY(-50%);
+      width: 20px;
+      inset-inline-end: 17px;
+      height: auto; }
+      .form-element .select2-container--default .select2-selection--single .select2-selection__arrow b {
+        width: 10px;
+        height: 6px;
+        background: url(../images/dd_arrow.png) center center no-repeat;
+        border: 0; }
+  .form-element.gray .select2-container--default .select2-selection--single {
+    background: #f5f7f7; }
 
 .search-field {
   position: relative;
@@ -1313,6 +1351,21 @@ strong {
 @media screen and (max-width: 575px) {
   .search-results .grid {
     grid-template-columns: 1fr; } }
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #cf9c5a !important;
+  color: #fff !important; }
+
+.select2-dropdown {
+  border-color: #aaaaaa57 !important;
+  border-radius: 20px !important;
+  background: #fff !important;
+  overflow: hidden; }
+  .select2-dropdown .select2-results__option {
+    padding: 8px 20px;
+    color: black;
+    font-family: var(--font-medium);
+    font-size: 1rem; }
 
 .datepicker-cell.selected, .datepicker-cell.selected:hover {
   background: var(--primary-color); }
@@ -1457,11 +1510,10 @@ strong {
     display: flex;
     align-items: center;
     justify-content: center; }
-  .flatpickr-calendar .flatpickr-day.prevMonthDay {
-    display: none; }
   .flatpickr-calendar .flatpickr-day.prevMonthDay,
   .flatpickr-calendar .flatpickr-day.nextMonthDay {
-    color: #555555; }
+    color: rgba(85, 85, 85, 0.5);
+    pointer-events: none; }
   .flatpickr-calendar .flatpickr-weekday {
     height: 35px;
     text-transform: capitalize;
@@ -1507,6 +1559,7 @@ strong {
 
 .iti {
   display: block;
+  width: 100%;
   --iti-hover-color: tranparent;
   --iti-arrow-padding: 28px; }
   .iti .iti__tel-input {
@@ -1646,8 +1699,6 @@ strong {
     .home-page .enter-the-center .title .ar {
       font-size: inherit; } }
 .home-page .camera-mobile-view {
-  background: url("../images/home_banner/mobile-background.png") center bottom no-repeat;
-  background-size: cover;
   padding-top: 150px;
   padding-bottom: 4.6875rem;
   display: none; }
@@ -3390,6 +3441,17 @@ strong {
   height: 100%;
   object-fit: cover;
   min-height: 250px; }
+.contact .phone-field .iti {
+  width: 100%; }
+  .contact .phone-field .iti .iti__arrow {
+    filter: invert(1);
+    opacity: .7; }
+.contact .phone-field .iti--inline-dropdown .iti__dropdown-content {
+  left: 0;
+  right: auto; }
+  .contact .phone-field .iti--inline-dropdown .iti__dropdown-content [lang="ar"] {
+    left: auto;
+    right: 0; }
 @media (max-width: 991px) {
   .contact .columns {
     gap: 40px; } }
@@ -4070,30 +4132,40 @@ strong {
     height: 350px; }
   .nature-page .image-content .content {
     padding: 30px; } }
-.nature-page .explore-spacestation .section-title {
-  text-align: center;
-  color: white;
-  margin-bottom: 3rem; }
-.nature-page .explore-spacestation .section-title[data-tagline]:after {
-  content: attr(data-tagline);
-  text-transform: capitalize;
-  font-size: 20px;
-  line-height: 1;
-  display: block;
-  font-family: var(--font-thin);
-  padding-top: 1rem; }
-.nature-page .explore-spacestation .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 36px; }
-.nature-page .explore-spacestation .grid .item {
-  border-radius: 10px;
-  height: 316px;
-  overflow: hidden; }
-.nature-page .explore-spacestation .grid .item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+.nature-page .explore-spacestation {
+  padding: 4rem 0; }
+  .nature-page .explore-spacestation .section-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem; }
+  .nature-page .explore-spacestation .section-title[data-tagline]:after {
+    content: attr(data-tagline);
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 1;
+    display: block;
+    font-family: var(--font-thin);
+    padding-top: 1rem; }
+  .nature-page .explore-spacestation .item {
+    border-radius: 10px;
+    height: 316px;
+    overflow: hidden; }
+  .nature-page .explore-spacestation .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .nature-page .explore-spacestation .h-list.arrows {
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 20px;
+    position: relative;
+    z-index: 11; }
+    .nature-page .explore-spacestation .h-list.arrows .arrow {
+      color: white;
+      cursor: pointer; }
+      .nature-page .explore-spacestation .h-list.arrows .arrow.swiper-button-disabled {
+        opacity: .7;
+        pointer-events: none; }
 .nature-page .page-title-banner .page-banner-desc {
   padding-left: 1rem; }
 .nature-page .page-title-banner .page-banner-desc:after {

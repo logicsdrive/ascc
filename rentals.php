@@ -167,7 +167,7 @@ $pageDescription = "ASCC";
                                             <span>Available Date</span>
                                         </div>
                                     </div>
-                                    <div class="grid">
+                                    <div class="grid"> 
                                         <?php include 'components/rentals_details.php';  ?>
                                         <div class="area-zoomed-view">
                                             <div class="image">

@@ -9,6 +9,7 @@ $pageDescription = "ASCC";
     </head>
     <body>
         <?php include 'components/header.php';  ?>
+        
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <?php
@@ -86,7 +87,10 @@ $pageDescription = "ASCC";
                                                 </div>
                                                 <div class="form-element">
                                                     <label class="control-label">Country</label>
-                                                    <input type="text" placeholder="Enter Country" value="Kuwait" class="form-control" />
+                                                    <select class="selectpicker">
+                                                        <option>Kuwait</option>
+                                                        <option>Pakistan</option>
+                                                    </select>
                                                 </div>
                                                 <div class="form-element pass-field">
                                                     <label class="control-label">Password</label>
@@ -124,6 +128,16 @@ $pageDescription = "ASCC";
                     </div>
                 </main>
                 <?php include 'components/footer.php';  ?>
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+                 <script src="js/select2.min.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $('.selectpicker').select2({
+                            minimumResultsForSearch: Infinity,
+                            dropdownParent: $('.main-content')
+                        });
+                    });
+                </script>
             </div>
         </div>
     </body>

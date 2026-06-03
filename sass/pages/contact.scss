@@ -30,6 +30,25 @@
     .address .item a:hover{color: var(--primary-color);}
 
     .block2 img{display: block; width: 100%; height:100%; object-fit: cover; min-height:250px;}
+    .phone-field{
+        .iti{
+            width:100%;
+            .iti__arrow{
+                filter: invert(1);
+                opacity: .7;
+            }
+        }
+        .iti--inline-dropdown {
+            .iti__dropdown-content{
+                left: 0;
+                right: auto;
+                [lang="ar"] {
+                     left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
 
     @media (max-width: 991px) {
         .columns{gap: 40px;}

@@ -187,27 +187,42 @@ const ascc_app = {
      isAnimating: false,
     init: function(){
         this.eventBindings();
-        if (document.querySelector('.js-calendar')) {
-            flatpickr(".js-calendar", {
-                disableMobile: true,
-                showMonths: 1,
-                dateFormat: "Y-m-d",
-                locale: {
-                    weekdays: {
-                        shorthand: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
-                        longhand: [
-                            "Monday",
-                            "Tuesday",
-                            "Wednesday",
-                            "Thursday",
-                            "Friday",
-                            "Saturday",
-                            "Sunday"
-                        ]
-                    }
-                }
-            });
+       if (document.querySelector('.js-calendar')) {
+    flatpickr(".js-calendar", {
+        disableMobile: true,
+        showMonths: 1,
+        dateFormat: "Y-m-d",
+
+        // ✅ FIX: correct week alignment
+        firstDayOfWeek: 1, // Monday start
+
+        locale: {
+            weekdays: {
+                shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+                longhand: [
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                ]
+            },
+            // optional but recommended
+            months: {
+                shorthand: [
+                    "Jan","Feb","Mar","Apr","May","Jun",
+                    "Jul","Aug","Sep","Oct","Nov","Dec"
+                ],
+                longhand: [
+                    "January","February","March","April","May","June",
+                    "July","August","September","October","November","December"
+                ]
+            }
         }
+    });
+}
 
         // 1. Select all elements with the class ".phone-input"
         const phoneFields = document.querySelectorAll(".phone-input");
@@ -340,6 +355,34 @@ const ascc_app = {
                     spaceBetween: 40,
                     slidesPerView: "auto",
                     slidesPerView: 3,
+                },
+            }
+        });
+    },
+    exploreSpacestationSlider: function() {
+        new Swiper(".explore-spacestation-slider .swiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            slideToClickedSlide: true,
+            navigation: {
+                nextEl: ".explore-spacestation-slider .arrows .next",
+                prevEl: ".explore-spacestation-slider .arrows .prev",
+            },
+            breakpoints: {
+                992: {
+                    spaceBetween: 30,
+                    slidesPerView: "auto",
+                    slidesPerView: 4,
+                },
+                768: {
+                    spaceBetween: 30,
+                    slidesPerView: "auto",
+                    slidesPerView: 3,
+                },
+                 576: {
+                    spaceBetween: 25,
+                    slidesPerView: "auto",
+                    slidesPerView: 2,
                 },
             }
         });

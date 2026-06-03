@@ -48,6 +48,7 @@
 <?php include 'images/svg_assets.php'; ?>
 
 <!-- scripts -->
+
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script> 
 <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
@@ -60,5 +61,6 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
 
 <!-- Optional Custom JS -->
+
 <script src="js/animate.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js"></script> 

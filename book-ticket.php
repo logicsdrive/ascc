@@ -292,9 +292,12 @@ $pageDescription = "ASCC";
                                                 <label class="control-label">Phone</label>
                                                 <input type="tel" id="phone" class="form-control phone-input">
                                             </div>
-                                            <div class="form-element full">
+                                            <div class="form-element full gray">
                                                 <label class="control-label">Country</label>
-                                                <input type="text" placeholder="Enter Country" class="form-control" />
+                                                <select class="selectpicker">
+                                                    <option>Kuwait</option>
+                                                    <option>Pakistan</option>
+                                                </select>
                                             </div>
                                             <div class="d-grid gap-1 full">
                                                 <div class="custom-checkbox">
@@ -366,6 +369,16 @@ $pageDescription = "ASCC";
                     </div>
                 </main>
                 <?php include 'components/footer.php';  ?>
+                 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+                 <script src="js/select2.min.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $('.selectpicker').select2({
+                            minimumResultsForSearch: Infinity,
+                            dropdownParent: $('.main-content')
+                        });
+                    });
+                </script>
             </div>
         </div>
     </body>

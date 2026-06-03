@@ -2,6 +2,7 @@ body{
   direction: rtl;
   text-align: right;
   letter-spacing: 0;
+  font-family: 'Berytus' !important;
 }
 label , input , .form-control{
   text-align: right;

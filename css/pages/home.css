@@ -84,8 +84,6 @@
     .home-page .enter-the-center .title .ar {
       font-size: inherit; } }
 .home-page .camera-mobile-view {
-  background: url("../images/home_banner/mobile-background.png") center bottom no-repeat;
-  background-size: cover;
   padding-top: 150px;
   padding-bottom: px_rem(75px);
   display: none; }

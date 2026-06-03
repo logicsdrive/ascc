@@ -34,6 +34,14 @@
 	font-style:normal;
 	font-display:swap;
 }
+@font-face {
+    font-family: 'Berytus';
+    src: url('../fonts/berytus-light/Berytus-Light.woff2') format('woff2'),
+        url('../fonts/berytus-light/Berytus-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root{
     --font-thin: 'PFDinTextArabicW21-Thin', cursive;
@@ -360,6 +368,46 @@ strong{font-family: var(--font-medium); font-weight: normal;}
     .form-control:focus{border-color: var(--primary-color);}
     .form-control::-moz-placeholder{color: inherit; opacity: 0.5;}
     .form-control::-webkit-input-placeholder{color: inherit; opacity: 0.5;}
+    .select2-container{
+        width:100% !important;
+        
+    }
+    
+    .select2-container--default {
+        .select2-selection--single{
+             box-shadow: none; color: black; font-family: var(--font-medium); font-size: 1rem; line-height: px_rem(22px); border: 1px solid transparent; padding: 36px 1.5rem 14px; border-radius: 50px !important;
+            height: auto;
+            background: #fff;
+            .select2-selection__rendered{
+                padding:0;
+                padding-inline-end: 1rem;
+                color: black;
+                font-family: var(--font-medium);
+                font-size: 1rem;
+            }
+            .select2-selection__arrow {
+                top: 60%;
+                transform: translateY(-50%);
+                width: 20px;
+                inset-inline-end: 17px;
+                height:auto;
+                b{
+                    width: 10px;
+                    height: 6px;
+                    background: url(../images/dd_arrow.png) center center no-repeat;
+                    border: 0;
+                }
+            }
+        }
+    }
+    &.gray{
+        .select2-container--default {
+        .select2-selection--single{
+            background: #f5f7f7;
+
+        }
+    }
+    }
 }
 .search-field{
     position: relative; width: 100%; flex-grow: 1;
@@ -379,7 +427,22 @@ strong{font-family: var(--font-medium); font-weight: normal;}
     }
    }
 }
-
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+        background-color: #cf9c5a !important;
+        color:#fff !important;
+    }
+    .select2-dropdown{
+        border-color:#aaaaaa57 !important;
+        border-radius: 20px !important;
+        background: #fff !important;
+        overflow: hidden;
+        .select2-results__option{
+            padding: 8px 20px;
+            color: black;
+            font-family: var(--font-medium);
+            font-size:1rem;
+        }
+    }
 .datepicker-cell.selected, .datepicker-cell.selected:hover{background: var(--primary-color);}
 
 .dropdown-menu{
@@ -472,9 +535,9 @@ strong{font-family: var(--font-medium); font-weight: normal;}
         font-weight: normal; font-size: 14px; color: black; font-family: var(--font-medium);
         display: flex; align-items: center; justify-content: center;
     }
-    .flatpickr-day.prevMonthDay{display: none;}
+    // .flatpickr-day.prevMonthDay{display: none;}
     .flatpickr-day.prevMonthDay,
-    .flatpickr-day.nextMonthDay{color: rgba(85, 85, 85, 1);}
+    .flatpickr-day.nextMonthDay{color: rgba(85, 85, 85, .5); pointer-events: none;}
     .flatpickr-weekday{
         height: 35px;
         text-transform: capitalize;
@@ -512,7 +575,7 @@ strong{font-family: var(--font-medium); font-weight: normal;}
 
 .iti{
     display: block;
-
+    width:100%;
     --iti-hover-color: tranparent;
     // --iti-flag-width: 21px;
     // --iti-flag-height: 14px;

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Berytus';
+    src: url('Berytus-Light.woff2') format('woff2'),
+        url('Berytus-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -286,7 +286,7 @@ $pageDescription = "ASCC";
                                             </div>
                                             <div class="form-element">
                                                 <label class="control-label">Email</label>
-                                                <input type="email" placeholder="Enter Email" class="form-control" />
+                                                <input type="email" placeholder="Enter Email" class="form-control" /> 
                                             </div>
                                             <div class="form-element phone-field dropdown">
                                                 <label class="control-label">Phone</label>

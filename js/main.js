@@ -475,3 +475,117 @@ window.addEventListener("scroll", () => {
         header.classList.remove(toggleClass);
     }
 });
+$(document).ready(function () {
+    $('.selectpicker').select2({
+        minimumResultsForSearch: Infinity,
+        dropdownParent: $('.main-content')
+    });
+    $(".timepicker").timepicker({
+            timeFormat: "h:i A",
+            interval: 30,
+            dropdown: true,
+            scrollbar: true,
+            appendTo: "body"
+        });
+    if ($('.dropzone_upload').length > 0) {
+
+    $('.dropzone_upload').each(function () {
+
+        new Dropzone(this, {
+            previewTemplate: document.querySelector('#preview-template').innerHTML,
+            addRemoveLinks: true,
+            parallelUploads: 2,
+            thumbnailHeight: 120,
+            thumbnailWidth: 120,
+            maxFilesize: 3,
+            filesizeBase: 1000,
+
+            thumbnail: function (file, dataUrl) {
+                if (file.previewElement) {
+                    file.previewElement.classList.remove("dz-file-preview");
+
+                    var images = file.previewElement.querySelectorAll("[data-dz-thumbnail]");
+                    for (var i = 0; i < images.length; i++) {
+                        var thumbnailElement = images[i];
+                        thumbnailElement.alt = file.name;
+                        thumbnailElement.src = dataUrl;
+                    }
+
+                    setTimeout(function () {
+                        file.previewElement.classList.add("dz-image-preview");
+                    }, 1);
+                }
+            }
+        });
+
+    });
+
+}
+    
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    function updateGroup(name) {
+        const radios = document.querySelectorAll(`input[type="radio"][name="${name}"]`);
+
+        radios.forEach(radio => {
+            const parent = radio.closest(".form-check.customRadio");
+            if (!parent) return;
+
+            if (radio.checked) {
+                parent.classList.add("active");
+            } else {
+                parent.classList.remove("active");
+            }
+        });
+    }
+    const allRadios = document.querySelectorAll('input[type="radio"]');
+    const processedGroups = new Set();
+
+    allRadios.forEach(radio => {
+        const name = radio.getAttribute("name");
+        if (!processedGroups.has(name)) {
+            updateGroup(name);
+            processedGroups.add(name);
+        }
+    });
+    document.addEventListener("change", function (e) {
+        if (e.target.matches('input[type="radio"]')) {
+            updateGroup(e.target.getAttribute("name"));
+        }
+    });
+
+});
+document.querySelectorAll('.imageUpload input[type="file"]').forEach(function(input) {
+
+    input.addEventListener('change', function(e) {
+
+        let file = e.target.files[0];
+        let parent = this.closest('.imageUpload');
+
+        if (file) {
+
+            let reader = new FileReader();
+
+            reader.onload = function(event) {
+
+                // remove old image if exists
+                let oldImg = parent.querySelector('img');
+                if (oldImg) oldImg.remove();
+
+                // create new image
+                let img = document.createElement('img');
+                img.src = event.target.result;
+
+                parent.appendChild(img);
+
+                // add class
+                parent.classList.add('has-image');
+            };
+
+            reader.readAsDataURL(file);
+        }
+
+    });
+
+});

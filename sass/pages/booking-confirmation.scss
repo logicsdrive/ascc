@@ -41,4 +41,30 @@
         .info{grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 20px;}
         .info .item{padding: 0 0 20px; border: 0; border-bottom: solid 1px rgba(0, 0, 0, 0.10);}
     }
+    &.request{
+        .section-title{
+            +p{
+                font-size:1.25rem;
+                max-width:650px;
+                margin-left:auto;
+                margin-right:auto;
+                color:#9EACAA;
+                font-family: var(--font-medium);
+                margin-bottom:px_rem(50px);
+                text-align:center;
+            }
+        }
+        .info{
+            @media screen and (min-width:1201px){
+                display:flex;
+            align-items: center;
+            justify-content: center;
+            }
+        }
+        @media screen and (max-width:767px){
+            .section-title + p{
+                margin-bottom:px_rem(25px);
+            }
+        }
+    }
 }

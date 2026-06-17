@@ -111,7 +111,7 @@ $pageDescription = "ASCC";
                                                          <div class="row">
                                                             <div class="col-md-6 mb-3">
                                                                 <div class="form-check customRadio">
-                                                                    <input class="form-check-input" type="radio" name="Registration" id="Registration1" value="Registration1" checked="">
+                                                                    <input class="form-check-input" type="checkbox" name="Registration" id="Registration1" value="Registration1" checked="">
                                                                     <label class="form-check-label" for="Registration1">
                                                                         Week 1
                                                                     </label>
@@ -119,7 +119,7 @@ $pageDescription = "ASCC";
                                                             </div>
                                                             <div class="col-md-6 mb-3">
                                                                 <div class="form-check customRadio">
-                                                                    <input class="form-check-input" type="radio" name="Registration" id="Registration2" value="Registration2">
+                                                                    <input class="form-check-input" type="checkbox" name="Registration" id="Registration2" value="Registration2">
                                                                     <label class="form-check-label" for="Registration2">
                                                                      Week 2
                                                                     </label>

@@ -55,6 +55,15 @@ $pageDescription = "ASCC";
                                     <h5>Payment Method</h5>
                                     <span>KNET</span>
                                 </div>
+                                <div class="item" data-animate="fade-up">
+                                    <h5>Payment Method</h5>
+                                    <span>KNET</span>
+                                </div>
+                                <div class="item" data-animate="fade-up">
+                                    <h5>Payment Method</h5>
+                                    <span>KNET</span>
+                                </div>
+                                
                             </div>
                             <div class="knet-seeklogo" data-animate="fade-up">
                                 <img src="images/knet-seeklogo.jpg" alt="" />

@@ -35,7 +35,7 @@ $pageDescription = "ASCC";
                                             <li>Civil ID copy is required.</li>
                                             <li>Payment (if applicable) will be requested after approval.</li>
                                         </ul>
-                                    </div>
+                                    </div> 
                                 </div>
                                 <div class="middle">
                                     <div class="steps">
@@ -129,7 +129,7 @@ $pageDescription = "ASCC";
                                                                     <div class="dz-button">
                                                                         <img src="images/upload-btn.svg" alt="" class="img-fluid">
                                                                         <h4>Click to upload PDF</h4>
-                                                                        <p>or drag and drop</p>
+                                                                        <p>or drag and drop</p> 
                                                                     </div>
                                                                 </div>
                                                             </form>

@@ -1573,7 +1573,7 @@ strong {
   .iti .iti__dropdown-content {
     right: 0;
     left: auto;
-    z-index: 100; }
+    z-index: 100 !important; }
   .iti .iti__arrow {
     width: 10px;
     height: 6px;
@@ -1680,8 +1680,9 @@ strong {
   .customRadio .form-check-input {
     float: none;
     margin: 0;
-    box-shadow: none; }
-    .customRadio .form-check-input:checked[type=radio] {
+    box-shadow: none;
+    border-radius: 100%; }
+    .customRadio .form-check-input:checked[type=radio], .customRadio .form-check-input:checked[type=checkbox] {
       background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='9.5' stroke='%23CF9C5A'/%3E%3Ccircle cx='10' cy='10' r='5' fill='%23CF9C5A'/%3E%3C/svg%3E%0A");
       background-repeat: no-repeat;
       border-color: transparent;

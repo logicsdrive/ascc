@@ -248,3 +248,25 @@
         </div>
     </div>
 </div>
+<div class="modal fade task-finished-modal" id="booking-notice-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form action="javascript: avoid(0)" class="content">
+                    <svg class="mb-4 mx-auto" width="60" height="61" viewBox="0 0 60 61" fill="none">
+                        <path d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#CF9C5A"/>
+                        <path d="M30 34.8706C31.025 34.8706 31.875 34.0206 31.875 32.9956V20.4956C31.875 19.4706 31.025 18.6206 30 18.6206C28.975 18.6206 28.125 19.4706 28.125 20.4956V32.9956C28.125 34.0206 28.975 34.8706 30 34.8706Z" fill="white"/>
+                        <path d="M32.3 39.5456C32.175 39.2456 32 38.9706 31.775 38.7206C31.525 38.4956 31.25 38.3206 30.95 38.1956C30.35 37.9456 29.65 37.9456 29.05 38.1956C28.75 38.3206 28.475 38.4956 28.225 38.7206C28 38.9706 27.825 39.2456 27.7 39.5456C27.575 39.8456 27.5 40.1706 27.5 40.4956C27.5 40.8206 27.575 41.1456 27.7 41.4456C27.825 41.7706 28 42.0206 28.225 42.2706C28.475 42.4956 28.75 42.6706 29.05 42.7956C29.35 42.9206 29.675 42.9956 30 42.9956C30.325 42.9956 30.65 42.9206 30.95 42.7956C31.25 42.6706 31.525 42.4956 31.775 42.2706C32 42.0206 32.175 41.7706 32.3 41.4456C32.425 41.1456 32.5 40.8206 32.5 40.4956C32.5 40.1706 32.425 39.8456 32.3 39.5456Z" fill="white"/>
+                    </svg>
+
+                    <h2 class="title mb-2">booking NOTICE</h2>
+                    <p>Submitting this form is not confirmation of your school booking</p>
+                    <div class="h-list gap-3 pt-1">
+                        <button class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary flex-grow-1" onclick="window.location.href='confirmation.php'">Proceed</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

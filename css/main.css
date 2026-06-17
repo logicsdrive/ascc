@@ -1573,7 +1573,7 @@ strong {
   .iti .iti__dropdown-content {
     right: 0;
     left: auto;
-    z-index: 100; }
+    z-index: 100 !important; }
   .iti .iti__arrow {
     width: 10px;
     height: 6px;
@@ -1680,8 +1680,9 @@ strong {
   .customRadio .form-check-input {
     float: none;
     margin: 0;
-    box-shadow: none; }
-    .customRadio .form-check-input:checked[type=radio] {
+    box-shadow: none;
+    border-radius: 100%; }
+    .customRadio .form-check-input:checked[type=radio], .customRadio .form-check-input:checked[type=checkbox] {
       background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='9.5' stroke='%23CF9C5A'/%3E%3Ccircle cx='10' cy='10' r='5' fill='%23CF9C5A'/%3E%3C/svg%3E%0A");
       background-repeat: no-repeat;
       border-color: transparent;
@@ -2722,7 +2723,6 @@ strong {
   .about .view1 .image {
     margin: 0;
     max-width: 650px;
-    height: 436px;
     flex-shrink: 0;
     overflow: hidden;
     background: #EEE;
@@ -2740,14 +2740,14 @@ strong {
       max-width: 450px; } }
   @media (max-width: 767px) {
     .about .view1 {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      justify-content: center; }
       .about .view1 .text {
         max-width: 100%; }
       .about .view1 .image {
         width: 100%;
         order: -1;
-        height: auto;
-        aspect-ratio: 16 / 9; } }
+        height: auto; } }
 .about .view2 .image-text {
   display: grid;
   margin-bottom: 166px;
@@ -3489,7 +3489,8 @@ strong {
 .booking-confirmation .info .item {
   border-right: solid 1px rgba(0, 0, 0, 0.24);
   font-family: var(--font-thin);
-  padding: 0 80px; }
+  padding: 0 80px;
+  margin-bottom: 16px; }
 .booking-confirmation .info .item h5 {
   font-size: 1.25rem;
   font-family: var(--font-medium);
@@ -3504,7 +3505,10 @@ strong {
     padding-left: 0; }
   .booking-confirmation .info .item:last-child {
     padding-right: 0;
-    border-right: 0; } }
+    border-right: 0; }
+  .booking-confirmation .info .item:nth-child(6),
+  .booking-confirmation .info .item:nth-child(11) {
+    padding-left: 0; } }
 .booking-confirmation .knet-seeklogo {
   display: flex;
   align-items: center;
@@ -3546,6 +3550,9 @@ strong {
   align-items: center;
   font-size: 1rem;
   line-height: 1.25rem; }
+.booking-confirmation .order-details .item span {
+  font-size: 1.25rem;
+  font-family: var(--font-medium); }
 .booking-confirmation .order-details .item span:last-child {
   text-align: right; }
 .booking-confirmation .order-details .item .pro-info {
@@ -3577,23 +3584,28 @@ strong {
     padding: 0 0 20px;
     border: 0;
     border-bottom: solid 1px rgba(0, 0, 0, 0.1); } }
-.booking-confirmation.request .section-title + p {
-  font-size: 1.25rem;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #9EACAA;
-  font-family: var(--font-medium);
-  margin-bottom: 3.125rem;
-  text-align: center; }
-@media screen and (min-width: 1201px) {
-  .booking-confirmation.request .info {
-    display: flex;
-    align-items: center;
-    justify-content: center; } }
-@media screen and (max-width: 767px) {
+.booking-confirmation.request {
+  padding: 3rem 0 5rem; }
+  @media screen and (max-width: 767px) {
+    .booking-confirmation.request {
+      padding: 3rem; } }
   .booking-confirmation.request .section-title + p {
-    margin-bottom: 1.5625rem; } }
+    font-size: 1.25rem;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #9EACAA;
+    font-family: var(--font-medium);
+    margin-bottom: 3.125rem;
+    text-align: center; }
+  @media screen and (min-width: 1201px) {
+    .booking-confirmation.request .info {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+  @media screen and (max-width: 767px) {
+    .booking-confirmation.request .section-title + p {
+      margin-bottom: 1.5625rem; } }
 
 .contact-page {
   background: #25262a; }
@@ -4136,7 +4148,13 @@ strong {
 .booking-details .tdata {
   font-family: var(--font-thin);
   display: table;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: 100%; }
+  .booking-details .tdata #order-line-items {
+    display: table-row-group;
+    padding-bottom: 10px; }
+    .booking-details .tdata #order-line-items .trow:last-child .tcell {
+      padding-bottom: 10px; }
 .booking-details .tdata .trow {
   display: table-row; }
 .booking-details .tdata .tcell {
@@ -4432,6 +4450,45 @@ strong {
       height: 24px;
       background-repeat: no-repeat;
       background-size: contain; }
+.booking-details.visit .form-group {
+  margin-bottom: 14px; }
+  .booking-details.visit .form-group .control-label {
+    font-size: 1.125rem;
+    color: #000;
+    font-family: var(--font-thin);
+    margin-bottom: 14px; }
+.booking-details.visit .left {
+  padding-inline-start: calc((100vw - 1515px) / 2);
+  position: relative;
+  width: 670px;
+  flex: 0 0 670px; }
+  @media screen and (max-width: 1550px) {
+    .booking-details.visit .left {
+      padding-inline-start: 30px; } }
+  @media screen and (max-width: 1199px) {
+    .booking-details.visit .left {
+      padding-inline-start: 20px; } }
+  .booking-details.visit .left .background-video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .5; }
+.booking-details.visit .middle {
+  margin-inline-end: calc((100vw - 1515px) / 2); }
+  @media screen and (max-width: 1550px) {
+    .booking-details.visit .middle {
+      margin-inline-end: 30px; } }
+  @media screen and (max-width: 1199px) {
+    .booking-details.visit .middle {
+      margin-inline-end: 20px; } }
+  .booking-details.visit .middle h3 {
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    font-family: var(--font-medium); }
 @media screen and (max-width: 1550px) {
   .booking-details .retalDetails .left {
     width: 375px;
@@ -4443,10 +4500,10 @@ strong {
     padding-left: 30px;
     padding-right: 30px; } }
 @media screen and (max-width: 1200px) {
-  .booking-details .retalDetails .left {
+  .booking-details .retalDetails .left, .booking-details.visit .left {
     width: 100%;
     flex: none; }
-  .booking-details .retalDetails .middle {
+  .booking-details .retalDetails .middle, .booking-details.visit .middle {
     margin: 30px 0 0;
     padding-bottom: 40px;
     padding-right: 20px;

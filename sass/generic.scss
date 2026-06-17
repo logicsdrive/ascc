@@ -593,7 +593,7 @@ strong{font-family: var(--font-medium); font-weight: normal;}
     }
 
     .iti__dropdown-content{
-        right: 0; left: auto; z-index: 100;
+        right: 0; left: auto; z-index: 100 !important;
     }
 
     .iti__arrow{width: 10px; height: 6px; background: url(../images/dd_arrow.png) center center no-repeat; border: 0;}
@@ -715,7 +715,8 @@ strong{font-family: var(--font-medium); font-weight: normal;}
         float:none;
         margin:0;
         box-shadow: none;
-        &:checked[type=radio]{
+        border-radius: 100%;
+        &:checked[type=radio] , &:checked[type=checkbox]{
             background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='9.5' stroke='%23CF9C5A'/%3E%3Ccircle cx='10' cy='10' r='5' fill='%23CF9C5A'/%3E%3C/svg%3E%0A");
             background-repeat: no-repeat;
             border-color: transparent;

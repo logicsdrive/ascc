@@ -398,19 +398,19 @@
                                                     <label class="lbl">A journey under starts</label>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            <!-- <div class="swiper-slide">
                                                 <div class="item">
                                                     <figure class="image"><img src="images/echo-image4.webp" alt="" loading="lazy"></figure>
                                                     <label class="lbl">A journey under starts</label>
                                                 </div>
-                                            </div>
-                                            <div class="swiper-slide">
+                                            </div> -->
+                                            <!-- <div class="swiper-slide">
                                                 <div class="item">
                                                     <figure class="image"><img src="images/echo-image5.webp" alt="" loading="lazy"></figure>
                                                     <label class="lbl">A journey under starts</label>
                                                 </div>
-                                            </div>
-                                            <div class="swiper-slide">
+                                            </div> -->
+                                            <!-- <div class="swiper-slide">
                                                 <div class="item">
                                                     <figure class="image"><img src="images/echo-image1.webp" alt="" loading="lazy"></figure>
                                                     <label class="lbl">A journey under starts</label>
@@ -427,7 +427,7 @@
                                                     <figure class="image"><img src="images/echo-image3.webp" alt="" loading="lazy"></figure>
                                                     <label class="lbl">A journey under starts</label>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="h-list arrows">
                                             <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
@@ -704,7 +704,7 @@
                             slidesPerView: 1,
                             spaceBetween: 30,            
                             centeredSlides: false,
-                            loop: true,
+                            // loop: true,
                             effect: "coverflow",
                              speed: 900,
                             coverflowEffect: {
@@ -732,7 +732,7 @@
                         const swiperElements = document.querySelectorAll(".events_swiper");
                         swiperElements.forEach((el) => {
                             new Swiper(el, {
-                                ...swiperConfig, // Spread the shared config here
+                                ...swiperConfig, // Spread the shared config here 
                                 navigation: {
                                     // This ensures each slider uses its own specific arrows
                                     nextEl: el.querySelector(".arrows .next"),

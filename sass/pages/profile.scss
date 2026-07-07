@@ -67,3 +67,96 @@
         .change-pass-text{inset-inline-end: 26px;}
     }
 }
+
+.profile-dropdown{
+    .profile-link{
+        font-size:1.125rem;
+        color:#fff;
+        display:inline-flex;
+        align-items:center;
+        gap:7px;
+        position:relative;
+        // font-family: var(--font-medium);
+        &:after{
+            content:"";
+            position:relative;
+            background-image: url("data:image/svg+xml,%3Csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.00001L5.375 4.75646L9.75 1.00002' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            width:11px;
+            height:6px;
+            background-repeat:no-repeat;
+            display:inline-block;
+            transition:.5s ease all;
+        }
+        &.show{
+            &:after{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .dropdown-menu{
+        min-width:240px;
+        border-radius:20px;
+        background: #FFFFFF;
+        padding:12px;
+    }
+    .profile-info{
+        display:flex;
+        align-items:center;
+        gap:8px;
+        margin-bottom:10px;
+        .profile-image{
+            width:45px;
+            height:45px;
+            border-radius:100%;
+            overflow:hidden;
+            img{
+                width:100%;
+                height:100%;
+                object-fit:cover;
+            }
+        }
+        .profile-name{
+            font-size:14px;
+            color:#000;
+            font-family: var(--font-medium);
+        }
+        p{
+            font-size:13px;
+            color:#000;
+            opacity:70%;
+            line-height:1;
+            margin-top:2px;
+            margin-bottom:0;
+            font-family: var(--font-thin);
+        }
+    }
+    ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+        li{
+            &:not(:last-child){
+                border-bottom: 1px solid #0000000D;
+            }
+            a{
+                padding:8px 0;
+                display:flex;
+                align-items:center;
+                gap:8px;
+                color:#000;
+                font-size:14px;
+                &:hover{
+                    color:var(--primary-color);
+                }
+            }
+        }
+    }
+    @media screen and (max-width:767px){
+         .profile-link{
+            span{
+                display:none;
+                gap:5px;
+            }
+         }
+    }
+}

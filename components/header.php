@@ -41,6 +41,43 @@
                         </svg>
                         <span class="d-none d-md-block">Sign In</span>
                     </div>
+                    <div class="dropdown profile-dropdown">
+                        <a href="javascript: void(0);" class="profile-link btn-toggler" data-bs-offset="0,10" data-bs-toggle="dropdown">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" >
+                                <use href="#user_icon"></use>
+                            </svg>
+                            <span>My Profile</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <div class="profile-info">
+                                <div class="profile-image">
+                                    <img src="images/user-img.png" alt="" loading="lazy" class="img-fluid">
+                                </div>
+                                <div>
+                                    <div class="profile-name">Murad Mohamed</div>
+                                    <p>Murad Mohamed@gmail.com</p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><a href="#">
+                                    <img src="images/profile.svg" alt="" class="img-fluid" loading="lazy">
+
+                                    My Profile
+                                </a></li>
+                                <li><a href="#">
+                                    <img src="images/booking-ticket.svg" alt="" class="img-fluid" loading="lazy">
+
+
+                                    My Bookings
+                                </a></li>
+                                <li><a href="#">
+                                   <img src="images/logout.svg" alt="" class="img-fluid" loading="lazy">
+
+                                    Sign Out
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="dropdown">
                         <a href="javascript: void(0);" class="btn btn-primary" data-bs-offset="0,10" data-bs-toggle="dropdown">Book Now</a>
                         <div class="dropdown-menu book-now-dropdown dropdown-menu-end">

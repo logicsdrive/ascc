@@ -1,4 +1,4 @@
-<title><?= isset($pageTitle) ? $pageTitle : 'ASCC - Welcome'; ?></title>
+<title><?= isset($pageTitle) ? $pageTitle : 'ASCC - Welcome'; ?></title> 
 <!-- Basic Page Needs -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,5 +37,6 @@
 
     <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.css">
+      <link rel="stylesheet" href="./css/swiper-bundle.8.4.7.min.css">
 <link rel="stylesheet" href="css/main.css">
 

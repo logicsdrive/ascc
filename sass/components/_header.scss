@@ -97,6 +97,10 @@
             }
         }
     }
+    @media screen and (max-width:575px){
+         .list{gap: 14px;}
+        .sign-list{gap: 14px;}
+    }
     @media screen and (max-width:450px){
         .search-field{
             max-width: 350px;

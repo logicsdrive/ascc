@@ -188,41 +188,29 @@ const ascc_app = {
     init: function(){
         this.eventBindings();
        if (document.querySelector('.js-calendar')) {
-    flatpickr(".js-calendar", {
-        disableMobile: true,
-        showMonths: 1,
-        dateFormat: "Y-m-d",
+            flatpickr(".js-calendar", {
+                disableMobile: true,
+                dateFormat: "Y-m-d",
+                // defaultDate: "today",
 
-        // ✅ FIX: correct week alignment
-        firstDayOfWeek: 1, // Monday start
-
-        locale: {
-            weekdays: {
-                shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-                longhand: [
-                    "Sunday",
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday"
-                ]
-            },
-            // optional but recommended
-            months: {
-                shorthand: [
-                    "Jan","Feb","Mar","Apr","May","Jun",
-                    "Jul","Aug","Sep","Oct","Nov","Dec"
-                ],
-                longhand: [
-                    "January","February","March","April","May","June",
-                    "July","August","September","October","November","December"
-                ]
-            }
+                locale: {
+                    firstDayOfWeek: 1,
+                    weekdays: {
+                        shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+                        longhand: [
+                            "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+                        ]
+                    },
+                    months: {
+                        shorthand: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+                        longhand: [
+                            "January","February","March","April","May","June",
+                            "July","August","September","October","November","December"
+                        ]
+                    }
+                }
+            });
         }
-    });
-}
 
         // 1. Select all elements with the class ".phone-input"
         const phoneFields = document.querySelectorAll(".phone-input");
@@ -336,24 +324,37 @@ const ascc_app = {
             spaceBetween: 0,
             centeredSlides: false,
             loop: true,
-            effect: "coverflow",
+              speed: 900,
+            // effect: "coverflow",
             slideToClickedSlide: true,
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 120,
-                modifier: 1,
-                slideShadows: false,
-            },
+            // coverflowEffect: {
+            //     rotate: 0,
+            //     stretch: 0,
+            //     depth: 150,
+            //     modifier: 1,
+            //     slideShadows: false,
+            // },
             navigation: {
                 nextEl: ".explore-carousel .arrows .next",
                 prevEl: ".explore-carousel .arrows .prev",
             },
             breakpoints: {
-                768: {
+                1250: {
                     centeredSlides: true,
                     spaceBetween: 40,
-                    slidesPerView: "auto",
+                    // slidesPerView: "auto",
+                    slidesPerView: 5,
+                },
+                992: {
+                    centeredSlides: true,
+                    spaceBetween: 25,
+                    // slidesPerView: "auto",
+                    slidesPerView: 4,
+                },
+                667: {
+                    centeredSlides: true,
+                    spaceBetween: 25,
+                    // slidesPerView: "auto",
                     slidesPerView: 3,
                 },
             }

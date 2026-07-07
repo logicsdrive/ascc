@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="home-loading">
+<html lang="en" dir="ltr" class="home-loading">
     <head>
         <?php include 'components/head.php';  ?>
     </head>
@@ -376,6 +376,62 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper events_swiper animate-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image1.webp" alt="" loading="lazy"></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image2.webp" alt="" loading="lazy"></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image3.webp" alt="" loading="lazy"></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image4.webp" alt="" loading="lazy"></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image5.webp" alt="" loading="lazy"></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image1.webp" alt="" loading="lazy"></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div> -->
+                                            <!-- <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image2.webp" alt="" loading="lazy"></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <figure class="image"><img src="images/echo-image3.webp" alt="" loading="lazy"></figure>
+                                                    <label class="lbl">A journey under starts</label>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="h-list arrows">
+                                            <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                            <svg class="next arrow flip" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
+                                        </div>
+                                    </div>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="events_tab" role="tabpanel">
                                     <div class="swiper events_swiper animate-slider">
@@ -398,25 +454,25 @@
                                                     <label class="lbl">A journey under starts</label>
                                                 </div>
                                             </div>
-                                            <!-- <div class="swiper-slide">
+                                            <div class="swiper-slide">
                                                 <div class="item">
                                                     <figure class="image"><img src="images/echo-image4.webp" alt="" loading="lazy"></figure>
                                                     <label class="lbl">A journey under starts</label>
                                                 </div>
-                                            </div> -->
-                                            <!-- <div class="swiper-slide">
+                                            </div>
+                                            <div class="swiper-slide">
                                                 <div class="item">
                                                     <figure class="image"><img src="images/echo-image5.webp" alt="" loading="lazy"></figure>
                                                     <label class="lbl">A journey under starts</label>
                                                 </div>
-                                            </div> -->
+                                            </div>
                                             <!-- <div class="swiper-slide">
                                                 <div class="item">
                                                     <figure class="image"><img src="images/echo-image1.webp" alt="" loading="lazy"></figure>
                                                     <label class="lbl">A journey under starts</label>
                                                 </div>
-                                            </div>
-                                            <div class="swiper-slide">
+                                            </div> -->
+                                            <!-- <div class="swiper-slide">
                                                 <div class="item">
                                                     <figure class="image"><img src="images/echo-image2.webp" alt="" loading="lazy"></figure>
                                                     <label class="lbl">A journey under starts</label>
@@ -436,7 +492,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="gallery_tab" role="tabpanel">
-                                    <div class="swiper events_swiper animate-slider">
+                                    <div class="swiper events_swiper">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="item">
@@ -468,7 +524,7 @@
                                                     <label class="lbl">A journey under starts</label>
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            <!-- <div class="swiper-slide">
                                                 <div class="item">
                                                     <figure class="image"><img src="images/echo-image1.webp" alt="" loading="lazy"></figure>
                                                     <label class="lbl">A journey under starts</label>
@@ -485,7 +541,7 @@
                                                     <figure class="image"><img src="images/echo-image3.webp" alt="" loading="lazy"></figure>
                                                     <label class="lbl">A journey under starts</label>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="h-list arrows">
                                             <svg class="prev arrow" width="46" height="46" fill="none"><use href="#swiper_arrow"></use></svg>
@@ -704,28 +760,27 @@
                             slidesPerView: 1,
                             spaceBetween: 30,            
                             centeredSlides: false,
-                            // loop: true,
-                            effect: "coverflow",
+                            loop: true,
+                            // effect: "coverflow",
                              speed: 900,
-                            coverflowEffect: {
-                                rotate: 0,
-                                stretch: 0,
-                                depth: 120,
-                                modifier: 1,
-                                slideShadows: false,
-                            },
+                              observeParents: true,
+                            // coverflowEffect: {
+                            //     rotate: 0,
+                            //     stretch: 0,
+                            //     depth: 120,
+                            //     modifier: 1,
+                            //     slideShadows: false,
+                            // },
                             breakpoints: {
                                 768: {
                                     spaceBetween: 60,
                                     centeredSlides: true,
                                     slidesPerView: "auto",
-                                    slidesPerView: 'auto',
                                 },
                                 1200: {
                                     centeredSlides: true,
                                     spaceBetween: 190,
-                                    slidesPerView: "auto",
-                                    slidesPerView: 'auto',
+                                     slidesPerView: 5,
                                 },
                             }
                         };

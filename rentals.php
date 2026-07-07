@@ -53,15 +53,24 @@ $pageDescription = "ASCC";
                                         <div class="area-zoomed-view">
                                             <div class="image">
                                                 <div class="point point1" data-area-view="data/lecture_hall.html" style="top: 70px; left: 420px;">
-                                                    <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
+                                                    <div onclick="
+  document.querySelector('.places-area').classList.add('show-left-col');
+  document.querySelector('html').classList.add('no-scroll');
+"><img src="images/marker_large.png" alt="" /></div>
                                                     <span>Lecture Hall</span>
                                                 </div>
                                                 <div class="point point2" data-area-view="data/workshops.html" style="top: 80px; right: 190px;">
-                                                    <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
+                                                    <div onclick="
+  document.querySelector('.places-area').classList.add('show-left-col');
+  document.querySelector('html').classList.add('no-scroll');
+"><img src="images/marker_large.png" alt="" /></div>
                                                     <span>Workshops</span>
                                                 </div>
                                                 <div class="point point3" data-area-view="data/wings.html" style="bottom: 100px; right: 300px;">
-                                                    <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
+                                                    <div onclick="
+  document.querySelector('.places-area').classList.add('show-left-col');
+  document.querySelector('html').classList.add('no-scroll');
+"><img src="images/marker_large.png" alt="" /></div>
                                                     <span>The Wing</span>
                                                 </div>
                                                 <img src="images/place_arabic_science_zoomed.png" width="927" height="502" loading="lazy" alt="" />
@@ -98,7 +107,10 @@ $pageDescription = "ASCC";
                                         <div class="area-zoomed-view">
                                             <div class="image">
                                                 <div class="point" data-area-view="data/lecture_hall.html" style="bottom: 60px; left: 250px;">
-                                                    <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
+                                                    <div onclick="
+  document.querySelector('.places-area').classList.add('show-left-col');
+  document.querySelector('html').classList.add('no-scroll');
+"><img src="images/marker_large.png" alt="" /></div>
                                                     <span>Lecture Hall</span>
                                                 </div>
                                                 <img src="images/place_earth_zoomed.png" width="900" height="484" loading="lazy" alt="" />
@@ -135,7 +147,10 @@ $pageDescription = "ASCC";
                                         <div class="area-zoomed-view">
                                             <div class="image">
                                                 <div class="point" data-area-view="data/lecture_hall.html" style="top: 160px; right: 60px;">
-                                                    <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
+                                                    <div onclick="
+  document.querySelector('.places-area').classList.add('show-left-col');
+  document.querySelector('html').classList.add('no-scroll');
+"><img src="images/marker_large.png" alt="" /></div>
                                                     <span>Lecture Hall</span>
                                                 </div>
                                                 <img src="images/place_theatre_zoomed.png" width="900" height="344" loading="lazy" alt="" />
@@ -172,11 +187,17 @@ $pageDescription = "ASCC";
                                         <div class="area-zoomed-view">
                                             <div class="image">
                                                 <div class="point" data-area-view="data/lecture_hall.html" style="top: 70px; left: 530px;">
-                                                    <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
+                                                    <div onclick="
+  document.querySelector('.places-area').classList.add('show-left-col');
+  document.querySelector('html').classList.add('no-scroll');
+"><img src="images/marker_large.png" alt="" /></div>
                                                     <span>Lecture Hall</span>
                                                 </div>
                                                 <div class="point" data-area-view="data/workshops.html" style="bottom: 80px; right: 255px;">
-                                                    <div onclick="document.querySelector('.places-area').classList.add('show-left-col')"><img src="images/marker_large.png" alt="" /></div>
+                                                    <div onclick="
+  document.querySelector('.places-area').classList.add('show-left-col');
+  document.querySelector('html').classList.add('no-scroll');
+" ><img src="images/marker_large.png" alt="" /></div>
                                                     <span>Workshops</span>
                                                 </div>
                                                 <img src="images/place_trans_zoomed.png" width="900" height="520" loading="lazy" alt="" />
@@ -518,6 +539,7 @@ $pageDescription = "ASCC";
                 });
                 document.body.classList.remove("show-zoomed-view");
                 document.querySelector('.places-area').classList.remove('show-left-col');
+                 document.querySelector('html').classList.remove('no-scroll');
             }
             document.addEventListener("DOMContentLoaded", function() {
                 const gallery_thumbnails = new Swiper(".gallery-modal .thumbnails", {

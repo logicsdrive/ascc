@@ -1846,6 +1846,9 @@ strong {
 @media screen and (max-width: 1200px) {
   .overflowHidden {
     overflow: hidden !important; } }
+img#flag_id_country {
+  display: none; }
+
 .home-loading {
   overflow: hidden; }
 
